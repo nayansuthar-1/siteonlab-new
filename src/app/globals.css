@@ -31,6 +31,15 @@
   --color-brand-cyan: #3b82f6;
   --color-brand-text: #cbd5e1;
   --color-brand-muted: #94a3b8;
+
+  /* Case-studies additional tokens (non-conflicting names) */
+  --color-brand-orange-glow: rgba(234, 88, 12, 0.15);
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  /* Blog additional tokens (non-conflicting names) */
+  --color-brand-border: #2D333F;
+  --color-brand-heading: #F8FAFC;
+  --color-brand-paragraph: #94A3B8;
 }
 
 @layer base {
@@ -99,6 +108,42 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+/* ============================================================
+   Per-page theme scope: Case Studies.
+   ============================================================ */
+.theme-case {
+  --color-brand-bg: #05090f;
+  --color-brand-accent: #2563eb;
+  --color-brand-orange: #ea580c;
+  --color-brand-card-hover: #1e2a44;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Mirror the case-studies app's index.css body rule (root sets its own
+     text color via utilities, so only overflow is replicated here). */
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   Per-page theme scope: Blog.
+   The blog AI Studio app uses Manrope (display) + a distinct
+   palette and JetBrains Mono.
+   ============================================================ */
+.theme-blog {
+  --color-brand-bg: #0F1115;
+  --color-brand-card: #1A1D23;
+  --color-brand-accent: #3B82F6;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Custom fade-in animations for scrolling (homepage) */
 @keyframes fadeInUp {
   from {
@@ -142,6 +187,21 @@
   border-color: rgba(59, 130, 246, 0.4);
 }
 
+/* Case-studies custom utilities (hidden scrollbars + glassmorphism cards) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass-panel {
+  background: rgba(15, 21, 36, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 /* Custom scrollbar styling — scoped per page via :has() so each route
    matches its own AI Studio export (and the homepage keeps the browser
    default, exactly like its zip). */
@@ -171,4 +231,19 @@ html:has(.theme-contact) ::-webkit-scrollbar-thumb {
 }
 html:has(.theme-contact) ::-webkit-scrollbar-thumb:hover {
   background: #3b82f6;
+}
+
+html:has(.theme-blog) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:has(.theme-blog) ::-webkit-scrollbar-track {
+  background: #0F1115;
+}
+html:has(.theme-blog) ::-webkit-scrollbar-thumb {
+  background: #2D333F;
+  border-radius: 4px;
+}
+html:has(.theme-blog) ::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
 }
