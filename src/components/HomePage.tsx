@@ -193,7 +193,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-bg text-gray-100 font-sans selection:bg-brand-primary selection:text-black relative overflow-x-hidden">
+    <div className="theme-home min-h-screen bg-brand-bg text-gray-100 font-sans selection:bg-brand-primary selection:text-black relative overflow-x-hidden">
 
       {/* SECTION 1: Sticky Announcement Bar */}
       <div id="announcement-bar" className="w-full bg-zinc-950 border-b border-zinc-900 py-2 px-4 sticky top-0 z-50 text-center flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 transition-all">
