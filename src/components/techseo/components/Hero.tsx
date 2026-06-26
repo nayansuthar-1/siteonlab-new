@@ -22,7 +22,7 @@ export default function Hero({ onRequestBlueprint, onSeeCaseStudies }: HeroProps
 
   const urlsToSimulate = [
     "/solutions/enterprise-cloud",
-    "/pricing/b2b-saas",
+    "/industries.b2b-saas",
     "/demo/schedule-request",
     "/resources/technical-seo-checklist",
     "/blog/dynamic-rendering-guide",
