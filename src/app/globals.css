@@ -56,6 +56,11 @@
   --color-brand-violet: #1d4ed8;
   --color-brand-emerald: #10b981;
   --color-brand-dark-card: #0d0d0e;
+
+  /* B2B SaaS landing additional tokens (non-conflicting names) */
+  --color-brand-darkest: #020617;
+  --color-brand-accent-bright: #3b82f6;
+  --color-brand-accent-orange: #f97316;
 }
 
 @layer base {
@@ -266,6 +271,103 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-space-grotesk), sans-serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+/* ============================================================
+   Per-page theme scope: AI Software Development service page.
+   Literal colors; Inter / Space Grotesk / Playfair (serif) /
+   JetBrains. Scoped .glow-border overrides the SEO studio's
+   global one for this page only.
+   ============================================================ */
+.theme-aisoftware {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+.theme-aisoftware .glow-border {
+  position: relative;
+}
+.theme-aisoftware .glow-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.08), rgba(96, 165, 250, 0.15));
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.theme-aisoftware .glow-border:hover::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(96, 165, 250, 0.3));
+}
+
+/* ============================================================
+   Per-page theme scope: B2B Paid Media service page.
+   Literal colors; Inter / Outfit / Playfair (serif) / JetBrains.
+   ============================================================ */
+.theme-paidmedia {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-outfit), sans-serif;
+  --font-serif: var(--font-playfair), serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+/* ============================================================
+   Per-page theme scope: Conversion Rate Optimization service page.
+   The source used an orange accent (#FB923C) — recolored to the
+   site's standard blue (#3b82f6) per request. Fonts: Inter /
+   Lora (serif display) / Fira Code (mono).
+   ============================================================ */
+.theme-cro {
+  --color-brand-bg: #050505;
+  --color-brand-accent: #3b82f6;
+  --color-brand-text: #F5F5F5;
+  --color-brand-border: rgba(255, 255, 255, 0.1);
+  --color-brand-card: #0D0D0D;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-lora), Georgia, serif;
+  --font-mono: var(--font-fira-code), ui-monospace, SFMono-Regular, monospace;
+}
+
+/* ============================================================
+   Per-page theme scope: B2B SaaS landing page.
+   Slate/carbon palette; Inter / Space Grotesk. Scoped
+   .radial-glow / .card-glow override the global AI-SEO versions.
+   ============================================================ */
+.theme-saas {
+  --color-brand-dark: #0f172a;
+  --color-brand-accent: #2563eb;
+  --color-brand-accent-glow: rgba(37, 99, 235, 0.12);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+}
+
+.theme-saas .radial-glow {
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.08) 0%, rgba(2, 6, 23, 0) 75%);
+}
+.theme-saas .card-glow {
+  transition: all 0.3s ease;
+}
+.theme-saas .card-glow:hover {
+  box-shadow: 0 0 20px -2px rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.35);
+  background-color: rgba(15, 23, 42, 0.6);
+}
+
+@keyframes border-pulse {
+  0%, 100% {
+    border-color: rgba(30, 41, 59, 0.8);
+  }
+  50% {
+    border-color: rgba(37, 99, 235, 0.5);
+  }
+}
+.theme-saas .border-pulse-active {
+  animation: border-pulse 4s infinite;
 }
 
 /* Custom fade-in animations for scrolling (homepage) */

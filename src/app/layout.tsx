@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, JetBrains_Mono, Manrope, Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono, Manrope, Outfit, Plus_Jakarta_Sans, Playfair_Display, Lora, Fira_Code } from "next/font/google";
 import "./globals.css";
 
 // Self-hosted via next/font — the same Google fonts each AI Studio zip loaded,
@@ -47,6 +47,29 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-lora",
+  display: "swap",
+});
+
+const firaCode = Fira_Code({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-fira-code",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "SiteOnLab | AI-Powered B2B Revenue Growth & AI Visibility Agency",
   description:
@@ -61,7 +84,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${manrope.variable} ${outfit.variable} ${plusJakarta.variable}`}
+      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${manrope.variable} ${outfit.variable} ${plusJakarta.variable} ${playfairDisplay.variable} ${lora.variable} ${firaCode.variable}`}
     >
       <body>{children}</body>
     </html>
