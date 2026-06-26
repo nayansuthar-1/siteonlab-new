@@ -40,6 +40,12 @@
   --color-brand-border: #2D333F;
   --color-brand-heading: #F8FAFC;
   --color-brand-paragraph: #94A3B8;
+
+  /* Demand-gen service page additional tokens (non-conflicting names) */
+  --color-brand-secondary: #10b981;
+  --color-dark-bg: #0a0a0b;
+  --color-dark-card: #18181b;
+  --color-dark-border: rgba(255, 255, 255, 0.08);
 }
 
 @layer base {
@@ -142,6 +148,18 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   Per-page theme scope: Demand Generation service page.
+   ============================================================ */
+.theme-demandgen {
+  --color-brand-primary: #2563eb;
+  --color-brand-accent: #3b82f6;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
 /* Custom fade-in animations for scrolling (homepage) */
