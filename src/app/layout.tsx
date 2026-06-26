@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, JetBrains_Mono, Manrope } from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono, Manrope, Outfit } from "next/font/google";
 import "./globals.css";
 
 // Self-hosted via next/font — the same Google fonts each AI Studio zip loaded,
@@ -33,6 +33,13 @@ const manrope = Manrope({
   display: "swap",
 });
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-outfit",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "SiteOnLab | AI-Powered B2B Revenue Growth & AI Visibility Agency",
   description:
@@ -47,7 +54,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${manrope.variable}`}
+      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${manrope.variable} ${outfit.variable}`}
     >
       <body>{children}</body>
     </html>

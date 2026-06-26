@@ -46,6 +46,10 @@
   --color-dark-bg: #0a0a0b;
   --color-dark-card: #18181b;
   --color-dark-border: rgba(255, 255, 255, 0.08);
+
+  /* SEO service-page builder additional tokens (non-conflicting names) */
+  --color-primary: #3B82F6;
+  --color-secondary: #2563EB;
 }
 
 @layer base {
@@ -162,6 +166,27 @@
   --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
+/* ============================================================
+   Per-page theme scope: GTM & Revenue Strategy service page.
+   This page uses only literal colors; its index.css just sets
+   fonts (Inter / Outfit / JetBrains Mono).
+   ============================================================ */
+.theme-gtm {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-outfit), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+/* ============================================================
+   Per-page theme scope: SEO service-page builder (studio).
+   Fonts only — the studio uses literal colors + .bg-mesh-dark.
+   ============================================================ */
+.theme-seo {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+}
+
 /* Custom fade-in animations for scrolling (homepage) */
 @keyframes fadeInUp {
   from {
@@ -220,6 +245,32 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* SEO studio custom utilities (background mesh + gradient glow border) */
+.bg-mesh-dark {
+  background-color: #050505;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(37, 99, 235, 0.04) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(59, 130, 246, 0.03) 0px, transparent 50%);
+}
+
+.glow-border {
+  position: relative;
+}
+
+.glow-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to bottom right, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.08));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
 /* Custom scrollbar styling — scoped per page via :has() so each route
    matches its own AI Studio export (and the homepage keeps the browser
    default, exactly like its zip). */
@@ -264,4 +315,19 @@ html:has(.theme-blog) ::-webkit-scrollbar-thumb {
 }
 html:has(.theme-blog) ::-webkit-scrollbar-thumb:hover {
   background: #3B82F6;
+}
+
+html:has(.theme-seo) ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+html:has(.theme-seo) ::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+html:has(.theme-seo) ::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 3px;
+}
+html:has(.theme-seo) ::-webkit-scrollbar-thumb:hover {
+  background: #374151;
 }
