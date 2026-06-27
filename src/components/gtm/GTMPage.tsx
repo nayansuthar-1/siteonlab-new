@@ -84,7 +84,7 @@ export default function App() {
   const activeCase = CASE_STUDIES_DATA.find(c => c.id === selectedCaseId);
 
   return (
-    <div className="theme-gtm min-h-screen bg-[#050505] text-slate-300 font-sans antialiased selection:bg-blue-500/30 selection:text-white relative overflow-x-hidden">
+    <div className="theme-gtm min-h-screen bg-[#050505] text-slate-300 font-sans antialiased selection:bg-blue-500/30 selection:text-white relative overflow-x-clip">
       
       {/* Absolute Decorative Glow Elements */}
       <div className="absolute top-[-10%] left-[-20%] w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[160px] pointer-events-none" />
@@ -96,18 +96,11 @@ export default function App() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 pointer-events-none" />
 
       {/* ────────────────────────────────────────────────────────
-          NAV HEADER (Highly Polished Contextual Frame)
-          ──────────────────────────────────────────────────────── */}
-
-      {/* Spacer for Nav Header */}
-      <div className="h-24 sm:h-28" />
-
-      {/* ────────────────────────────────────────────────────────
           1. HERO SECTION
           ──────────────────────────────────────────────────────── */}
-      <section id="hero-section" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+      <section id="hero-section" className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Content */}
           <div className="lg:col-span-7 space-y-6 md:space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-slate-900 border border-white/5 rounded-full">
