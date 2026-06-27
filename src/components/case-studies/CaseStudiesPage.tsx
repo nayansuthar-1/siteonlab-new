@@ -16,8 +16,6 @@ import {
   AlertCircle 
 } from 'lucide-react';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
 import Counter from './components/Counter';
 import CaseStudyCard from './components/CaseStudyCard';
 import { AGGREGATE_METRICS, FEATURED_CASE_STUDY, GRID_CASE_STUDIES, CLIENT_LOGOS } from './data';
@@ -125,9 +123,6 @@ export default function App() {
       {/* Background Ambience Lines */}
       <div className="absolute top-0 left-0 right-0 h-[800px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/15 via-brand-bg to-transparent pointer-events-none z-0" />
       <div className="absolute top-[1200px] right-0 w-[500px] h-[500px] bg-brand-orange/5 blur-[120px] rounded-full pointer-events-none z-0" />
-
-      {/* Sticky Header (Includes Sticky Announcement Bar & Navigation) */}
-      <Header />
 
       <main className="flex-1 relative z-10">
 
@@ -507,10 +502,6 @@ export default function App() {
         </section>
 
       </main>
-
-      {/* SECTION 10: FOOTER */}
-      <Footer />
-
 
       {/* INTERACTIVE COMPONENT A: BOOKING FORM MODAL */}
       {isBookingOpen && (

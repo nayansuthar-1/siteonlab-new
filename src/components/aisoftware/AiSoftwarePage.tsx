@@ -315,42 +315,6 @@ export default function App() {
       </div>
 
       {/* Header/Navigation */}
-      <header className="border-b border-white/10 bg-[#050505]/80 backdrop-blur-lg relative z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 bg-blue-600 rounded-sm flex items-center justify-center font-bold text-white shadow-md">
-              <span className="font-sans font-bold text-base text-white">S</span>
-            </div>
-            <div>
-              <span className="font-sans font-semibold text-xl tracking-tight uppercase text-white">
-                SiteOnLab
-              </span>
-              <span className="block text-[8px] font-mono tracking-widest text-blue-400 uppercase">
-                AI SYSTEMS & GROWTH
-              </span>
-            </div>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8 text-xs font-medium uppercase tracking-widest text-white/60">
-            <a href="#services" className="hover:text-white transition-colors">Solutions</a>
-            <a href="#process" className="hover:text-white transition-colors">Methodology</a>
-            <a onClick={scrollToCaseStudies} className="hover:text-white transition-colors cursor-pointer">Success Stories</a>
-            <a onClick={scrollToAssessment} className="hover:text-white transition-colors cursor-pointer">Readiness Diagnostic</a>
-            <a href="#faqs" className="hover:text-white transition-colors">FAQs</a>
-          </nav>
-
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setShowBlueprintModal(true)}
-              className="px-6 py-2 border border-white/20 text-[10px] uppercase tracking-widest text-white hover:bg-white hover:text-black transition-colors rounded-none font-sans font-semibold cursor-pointer"
-              id="header-cta-blueprint"
-            >
-              Request Blueprint
-            </button>
-          </div>
-        </div>
-      </header>
 
       <main className="relative z-10">
 
@@ -1030,36 +994,6 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 bg-[#050505] relative z-20 py-12 text-xs sm:text-sm text-white/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="space-y-2 text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-2">
-              <div className="w-6 h-6 rounded-sm bg-blue-600 flex items-center justify-center text-[11px] text-white font-bold font-sans">
-                S
-              </div>
-              <span className="font-sans font-semibold text-white tracking-tight uppercase">
-                SiteOnLab
-              </span>
-            </div>
-            <p className="max-w-xs font-sans text-white/40">
-              B2B-only growth engineering agency. Bridging the gap between robust AI software and multi-touch pipeline metrics.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-8 font-medium text-[10px] font-mono uppercase tracking-widest">
-            <a href="#services" className="hover:text-white transition-colors">Solutions</a>
-            <a href="#process" className="hover:text-white transition-colors">Methodology</a>
-            <a onClick={scrollToCaseStudies} className="hover:text-white transition-colors cursor-pointer">Success Stories</a>
-            <a onClick={scrollToAssessment} className="hover:text-slate-300 cursor-pointer">Assessment</a>
-            <a href="#faqs" className="hover:text-slate-300">FAQs</a>
-          </div>
-
-          <div className="text-center md:text-right space-y-1 font-mono text-[11px]">
-            <div>© 2026 SiteOnLab, Inc. All rights reserved.</div>
-            <div>Designed for Enterprise-grade B2B Pipeline Growth</div>
-          </div>
-        </div>
-      </footer>
 
       {/* MODAL 1: SEO Preview Full Modal Screen */}
       <AnimatePresence>

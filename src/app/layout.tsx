@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, JetBrains_Mono, Manrope, Outfit, Plus_Jakarta_Sans, Playfair_Display, Lora, Fira_Code } from "next/font/google";
 import "./globals.css";
+import SiteNav from "@/components/shared/SiteNav";
+import SiteFooter from "@/components/shared/SiteFooter";
 
 // Self-hosted via next/font — the same Google fonts each AI Studio zip loaded,
 // with the same static weights so rendering (incl. font-black fallbacks) matches.
@@ -86,7 +88,11 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${manrope.variable} ${outfit.variable} ${plusJakarta.variable} ${playfairDisplay.variable} ${lora.variable} ${firaCode.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <SiteNav />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }

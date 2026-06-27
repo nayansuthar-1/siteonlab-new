@@ -98,56 +98,6 @@ export default function App() {
       <div className="absolute top-[45%] right-[-5%] w-[500px] h-[500px] bg-zinc-800/[0.05] rounded-full blur-3xl pointer-events-none" />
 
       {/* STICKY EDITORIAL HEADER */}
-      <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 border-b ${
-          scrolled
-            ? "bg-[#0A0A0A]/95 backdrop-blur-md border-zinc-800/80 py-3.5 shadow-lg"
-            : "bg-transparent border-transparent py-5"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="h-8 w-8 bg-zinc-900 border border-zinc-800 flex items-center justify-center">
-              <Coins className="h-4.5 w-4.5 text-blue-500 stroke-[2]" />
-            </div>
-            <div>
-              <span className="font-display font-medium text-sm text-white tracking-widest uppercase">
-                SiteOn<span className="text-blue-500">Lab</span>
-              </span>
-              <span className="text-[9px] font-mono text-zinc-500 block leading-none uppercase tracking-wider">Paid Media</span>
-            </div>
-          </div>
-
-          {/* Desktop Navigation links - elegant editorial serif hover */}
-          <nav className="hidden md:flex items-center gap-8 text-[11px] text-zinc-400 font-mono uppercase tracking-widest">
-            <a href="#overview" className="hover:text-blue-400 transition-colors">
-              Services
-            </a>
-            <a href="#process" className="hover:text-blue-400 transition-colors">
-              Our Process
-            </a>
-            <a href="#why-choose-us" className="hover:text-blue-400 transition-colors">
-              Why Us
-            </a>
-            <a href="#case-studies" className="hover:text-blue-400 transition-colors">
-              Results
-            </a>
-            <a href="#faq" className="hover:text-blue-400 transition-colors">
-              FAQs
-            </a>
-          </nav>
-
-          {/* Header Action Button - flat, sharp border */}
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setIsBlueprintOpen(true)}
-              className="bg-blue-600 hover:bg-blue-500 text-white text-[10px] font-mono uppercase tracking-widest px-4 py-2 rounded-none transition-all duration-200 border border-blue-500 hover:border-blue-400 cursor-pointer"
-            >
-              Get Blueprint
-            </button>
-          </div>
-        </div>
-      </header>
 
       {/* 1. HERO SECTION (Editorial format: Display font, Serif accents, side-by-side) */}
       <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 border-b border-zinc-900 overflow-hidden">
@@ -653,66 +603,6 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#050505] border-t border-zinc-900 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-4 space-y-4 text-left">
-            <div className="flex items-center gap-2">
-              <div className="h-8 w-8 bg-zinc-900 border border-zinc-800 flex items-center justify-center">
-                <Coins className="h-4.5 w-4.5 text-blue-500 stroke-[2]" />
-              </div>
-              <span className="font-display font-medium text-sm text-white tracking-widest uppercase">
-                SiteOn<span className="text-blue-500">Lab</span>
-              </span>
-            </div>
-            <p className="text-xs text-zinc-500 leading-relaxed max-w-sm font-sans">
-              Connecting search & social campaign architectures to downstream revenue. We eliminate vanity spend waste and drive predictable sales meetings.
-            </p>
-            <div className="text-[10px] font-mono text-zinc-600 uppercase tracking-wider">
-              © 2026 SiteOnLab Corp. All rights reserved.
-            </div>
-          </div>
-
-          {/* Links columns */}
-          <div className="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-6 text-left">
-            <div className="space-y-3">
-              <h5 className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest">Navigation</h5>
-              <ul className="space-y-2 text-xs text-zinc-500 font-sans">
-                <li><a href="#overview" className="hover:text-blue-400 transition-colors">Services</a></li>
-                <li><a href="#process" className="hover:text-blue-400 transition-colors">Process Roadmap</a></li>
-                <li><a href="#why-choose-us" className="hover:text-blue-400 transition-colors">Why Teams Pick Us</a></li>
-                <li><a href="#case-studies" className="hover:text-blue-400 transition-colors">Case Metrics</a></li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h5 className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest">Contact</h5>
-              <ul className="space-y-2 text-xs text-zinc-500 font-sans">
-                <li className="flex items-center gap-1.5"><Phone className="h-3.5 w-3.5" /> +1 (888) 555-0192</li>
-                <li className="flex items-center gap-1.5"><Mail className="h-3.5 w-3.5" /> grow@siteonlab.com</li>
-                <li className="flex items-center gap-1.5"><Globe className="h-3.5 w-3.5" /> siteonlab.com/paid-media</li>
-              </ul>
-            </div>
-
-            <div className="space-y-3 col-span-2 sm:col-span-1">
-              <h5 className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest font-bold">Interactive Utilities</h5>
-              <div className="space-y-2">
-                <button
-                  onClick={() => setIsBlueprintOpen(true)}
-                  className="w-full text-left bg-zinc-900 hover:bg-zinc-800 border border-zinc-850 text-xs px-3 py-1.5 rounded-none text-zinc-400 hover:text-white transition-colors cursor-pointer uppercase tracking-widest font-mono text-[9px]"
-                >
-                  Growth Audit Form
-                </button>
-                <button
-                  onClick={() => setIsAssessmentOpen(true)}
-                  className="w-full text-left bg-zinc-900 hover:bg-zinc-800 border border-zinc-850 text-xs px-3 py-1.5 rounded-none text-zinc-400 hover:text-white transition-colors cursor-pointer uppercase tracking-widest font-mono text-[9px]"
-                >
-                  Funnel Scorecard
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
 
       {/* FLOATING SEO INSPECTOR */}
       <div className="fixed bottom-4 left-4 z-40">

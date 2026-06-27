@@ -266,38 +266,6 @@ export default function App() {
       <div className="absolute bottom-[800px] left-10 w-[450px] h-[450px] bg-emerald-950/5 rounded-full blur-[120px] pointer-events-none" />
 
       {/* SEO FIELDS HEADER DISPLAY */}
-      <header className="sticky top-0 z-30 bg-[#040815]/80 backdrop-blur-md border-b border-gray-900/80 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-              <span className="font-display font-extrabold text-white text-base">S</span>
-            </div>
-            <div>
-              <span className="font-display font-black text-white text-lg tracking-tight">SiteOnLab</span>
-              <span className="text-[10px] text-gray-500 font-mono block -mt-1 uppercase tracking-wider">Enterprise B2B</span>
-            </div>
-          </div>
-
-          {/* Nav Jumps */}
-          <nav className="hidden md:flex items-center gap-7 text-xs font-mono tracking-wider uppercase text-gray-400">
-            <button onClick={() => scrollToId('overview')} className="hover:text-white transition">Services</button>
-            <button onClick={() => scrollToId('process')} className="hover:text-white transition">Process</button>
-            <button onClick={() => scrollToId('why-choose-us')} className="hover:text-white transition">Why Us</button>
-            <button onClick={() => scrollToId('case-studies')} className="hover:text-white transition">Case Studies</button>
-            <button onClick={() => scrollToId('faq')} className="hover:text-white transition">FAQs</button>
-          </nav>
-
-          {/* Header CTA */}
-          <div className="flex items-center gap-3">
-            <button
-              onClick={handleOpenROIModal}
-              className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-xs font-bold transition shadow-lg shadow-indigo-600/10 hover:shadow-indigo-600/25 active:scale-95"
-            >
-              Get Blueprint
-            </button>
-          </div>
-        </div>
-      </header>
 
       {/* 1. HERO SECTION */}
       <section id="hero" className="relative pt-10 pb-20 md:py-24 px-6">
@@ -752,21 +720,6 @@ export default function App() {
       </section>
 
       {/* CORPORATE FOOTER */}
-      <footer className="bg-[#030610] border-t border-gray-900 py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-500 font-mono">
-          <div className="flex items-center gap-2">
-            <span className="font-display font-black text-white">SiteOnLab</span>
-            <span className="text-gray-600">|</span>
-            <span>B2B Pipeline Engineers</span>
-          </div>
-
-          <div className="flex gap-6">
-            <span>© 2026 SiteOnLab. All rights reserved.</span>
-            <a href="#" className="hover:text-white transition">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition">Terms of Service</a>
-          </div>
-        </div>
-      </footer>
 
       {/* FLOATING INSPECTOR WIDGETS */}
       <SEOMetadataPanel />

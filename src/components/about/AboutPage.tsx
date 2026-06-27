@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 import * as LucideIcons from "lucide-react";
 import {
-  TrendingUp, Bot, Users, CheckCircle, ArrowRight, ChevronRight, Menu, X, Star,
+  TrendingUp, Bot, Users, CheckCircle, ArrowRight, ChevronRight, Star,
   Briefcase, Shield, Globe, Award, Zap, Sparkles, Clock, ArrowUpRight,
-  DollarSign, Mail, Linkedin, Twitter, Facebook, Play, Check, Activity,
+  DollarSign, Mail, Play, Check, Activity,
   Info, Eye, Edit, MessageSquare, AlertCircle, RefreshCw
 } from "lucide-react";
 
@@ -15,8 +15,7 @@ import BookingModal from "./BookingModal";
 import AssessmentModal from "./AssessmentModal";
 
 export default function AboutPage() {
-  // Navigation & Modal states
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // Modal states
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [isAssessmentOpen, setIsAssessmentOpen] = useState(false);
 
@@ -138,24 +137,6 @@ export default function AboutPage() {
   return (
     <div className="theme-about min-h-screen bg-brand-bg text-brand-text-primary selection:bg-brand-accent/30 selection:text-white">
 
-      {/* SECTION 1: STICKY ANNOUNCEMENT BAR */}
-      <div className="sticky top-0 z-50 w-full bg-slate-950 border-b border-slate-900 py-2.5 px-4 text-xs md:text-sm font-medium">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="flex items-center gap-2 text-center sm:text-left">
-            <span className="inline-flex items-center justify-center px-2 py-0.5 rounded bg-brand-accent/20 border border-brand-accent/30 text-xs font-bold text-brand-accent">ALERT</span>
-            <span className="text-brand-text-secondary">
-              Now helping B2B teams get found in Google — and cited in ChatGPT, Perplexity & AI Overviews.
-            </span>
-          </div>
-          <button
-            onClick={() => setIsBookingOpen(true)}
-            className="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-accent hover:bg-brand-accent-hover text-white rounded text-xs transition-all-300 font-semibold cursor-pointer shadow-md shadow-brand-accent/20"
-          >
-            Book a Meeting
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </button>
-        </div>
-      </div>
 
       {/* ADMIN CONTROL PANEL FLAVOR FOR PLACEHOLDER HIGHLIGHTS */}
       <div className="fixed bottom-6 right-6 z-40 bg-slate-900/90 backdrop-blur border border-slate-800 rounded-full px-4 py-2 flex items-center gap-3 shadow-2xl">
@@ -172,133 +153,6 @@ export default function AboutPage() {
         </button>
       </div>
 
-      {/* SECTION 2: NAVIGATION */}
-      <nav className="sticky top-[41px] sm:top-[37px] z-40 w-full bg-brand-bg/95 backdrop-blur-md border-b border-slate-900/85">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo */}
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-accent to-brand-orange flex items-center justify-center font-bold text-white shadow-lg shadow-brand-accent/15">
-                S
-              </div>
-              <span className="text-xl font-bold tracking-tight text-white flex items-center">
-                SiteOn<span className="text-brand-accent">Lab</span>
-                <span className="text-xs font-mono text-brand-orange ml-1 bg-brand-orange/10 px-1 py-0.2 rounded border border-brand-orange/20">B2B</span>
-              </span>
-            </div>
-
-            {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-              <a href="#framework" className="text-brand-text-secondary hover:text-white transition-all-300">Framework</a>
-              <a href="#services" className="text-brand-text-secondary hover:text-white transition-all-300">Services</a>
-              <a href="#industries" className="text-brand-text-secondary hover:text-white transition-all-300">Industries</a>
-              <a href="#case-studies" className="text-brand-text-secondary hover:text-white transition-all-300">Case Studies</a>
-              <a href="#about" className="text-brand-accent border-b-2 border-brand-accent py-1 font-semibold">About</a>
-              <a href="#resources" className="text-brand-text-secondary hover:text-white transition-all-300">Resources</a>
-            </div>
-
-            {/* CTA */}
-            <div className="hidden md:block">
-              <button
-                onClick={() => setIsBookingOpen(true)}
-                className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-xl border border-slate-800 hover:border-slate-700 transition-all-300 cursor-pointer shadow-sm flex items-center gap-1.5 text-sm"
-              >
-                Book a Strategy Call
-                <ArrowRight className="w-4 h-4 text-brand-accent" />
-              </button>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 rounded-xl text-brand-text-secondary hover:text-white hover:bg-slate-950 transition-all-300"
-                aria-label="Toggle navigation menu"
-              >
-                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Navigation Dropdown */}
-        <AnimatePresence>
-          {isMobileMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-brand-bg-light border-b border-slate-800 overflow-hidden"
-            >
-              <div className="px-4 pt-2 pb-6 space-y-3 font-medium text-base">
-                <a
-                  href="#framework"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-lg text-brand-text-secondary hover:bg-slate-900 hover:text-white transition-all-300"
-                >
-                  Framework
-                </a>
-                <a
-                  href="#services"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-lg text-brand-text-secondary hover:bg-slate-900 hover:text-white transition-all-300"
-                >
-                  Services
-                </a>
-                <a
-                  href="#industries"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-lg text-brand-text-secondary hover:bg-slate-900 hover:text-white transition-all-300"
-                >
-                  Industries
-                </a>
-                <a
-                  href="#case-studies"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-lg text-brand-text-secondary hover:bg-slate-900 hover:text-white transition-all-300"
-                >
-                  Case Studies
-                </a>
-                <a
-                  href="#about"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-lg bg-brand-accent/10 text-brand-accent font-semibold"
-                >
-                  About (Active)
-                </a>
-                <a
-                  href="#resources"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-2 rounded-lg text-brand-text-secondary hover:bg-slate-900 hover:text-white transition-all-300"
-                >
-                  Resources
-                </a>
-
-                <div className="pt-4 border-t border-slate-800 space-y-2 px-3">
-                  <button
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      setIsBookingOpen(true);
-                    }}
-                    className="w-full py-2.5 bg-brand-accent hover:bg-brand-accent-hover text-white text-center font-semibold rounded-xl block transition-all-300 cursor-pointer shadow-md"
-                  >
-                    Book a Strategy Call
-                  </button>
-                  <button
-                    onClick={() => {
-                      setIsMobileMenuOpen(false);
-                      setIsAssessmentOpen(true);
-                    }}
-                    className="w-full py-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-brand-text-secondary hover:text-white text-center font-semibold rounded-xl block transition-all-300 cursor-pointer"
-                  >
-                    Take Assessment
-                  </button>
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </nav>
 
       {/* SECTION 3: ABOUT HERO */}
       <section id="about-hero" className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden border-b border-slate-900">
@@ -865,81 +719,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 13: FOOTER */}
-      <footer className="bg-slate-950 text-brand-text-secondary pt-16 pb-12 border-t border-slate-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 pb-12 border-b border-slate-900">
-            {/* Column 1: Logo and Summary */}
-            <div className="col-span-2 space-y-4">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-accent to-brand-orange flex items-center justify-center font-bold text-white text-sm">
-                  S
-                </div>
-                <span className="text-lg font-bold tracking-tight text-white">
-                  SiteOn<span className="text-brand-accent">Lab</span>
-                </span>
-              </div>
-              <p className="text-xs text-brand-text-muted leading-relaxed pr-4">
-                The AI-powered B2B revenue growth and AI visibility agency. We build predictable pipelines for high-growth tech, SaaS, MSPs, and industrial categories.
-              </p>
-              <div className="flex gap-3 pt-2">
-                <a href="#twitter" className="p-1.5 rounded-lg bg-slate-900 hover:text-white transition-colors"><Twitter className="w-4 h-4" /></a>
-                <a href="#linkedin" className="p-1.5 rounded-lg bg-slate-900 hover:text-white transition-colors"><Linkedin className="w-4 h-4" /></a>
-                <a href="#facebook" className="p-1.5 rounded-lg bg-slate-900 hover:text-white transition-colors"><Facebook className="w-4 h-4" /></a>
-              </div>
-            </div>
-
-            {/* Column 2: Services (grouped by the 5 pillars) */}
-            <div className="space-y-3.5">
-              <h4 className="text-xs font-bold text-white uppercase tracking-wider">Services</h4>
-              <ul className="text-xs space-y-2">
-                <li><a href="#geo-aeo" className="hover:text-white transition-colors">1. AI GEO & AEO Optimization</a></li>
-                <li><a href="#seo" className="hover:text-white transition-colors">2. Technical & Semantic SEO</a></li>
-                <li><a href="#demand-gen" className="hover:text-white transition-colors">3. B2B Demand Generation</a></li>
-                <li><a href="#cro" className="hover:text-white transition-colors">4. CRO & Pipeline Conversion</a></li>
-                <li><a href="#automation" className="hover:text-white transition-colors">5. AI RevOps Automation</a></li>
-              </ul>
-            </div>
-
-            {/* Column 3: Industries */}
-            <div className="space-y-3.5">
-              <h4 className="text-xs font-bold text-white uppercase tracking-wider">Industries</h4>
-              <ul className="text-xs space-y-2">
-                <li><a href="#b2b-saas" className="hover:text-white transition-colors">B2B SaaS / Cloud</a></li>
-                <li><a href="#cloud-tech" className="hover:text-white transition-colors">Enterprise Tech</a></li>
-                <li><a href="#it-msp" className="hover:text-white transition-colors">IT Services & MSPs</a></li>
-                <li><a href="#cyber" className="hover:text-white transition-colors">Cybersecurity</a></li>
-                <li><a href="#industrial" className="hover:text-white transition-colors">Manufacturing & IIoT</a></li>
-              </ul>
-            </div>
-
-            {/* Column 4: Resources */}
-            <div className="space-y-3.5">
-              <h4 className="text-xs font-bold text-white uppercase tracking-wider">Resources</h4>
-              <ul className="text-xs space-y-2">
-                <li><a href="#blog" className="hover:text-white transition-colors">Insights Blog</a></li>
-                <li><a href="#podcast" className="hover:text-white transition-colors">GEO Strategy Podcast</a></li>
-                <li><button onClick={() => setIsAssessmentOpen(true)} className="text-left hover:text-white transition-colors cursor-pointer">AI Citation Tool</button></li>
-                <li><a href="#whitepapers" className="hover:text-white transition-colors">Whitepapers</a></li>
-                <li><a href="#calculators" className="hover:text-white transition-colors">LTV/CAC Calculators</a></li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Lower footer row */}
-          <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-brand-text-muted">
-            <p>&copy; {new Date().getFullYear()} SiteOnLab Inc. All rights reserved. Registered US Corp.</p>
-
-            <div className="flex gap-6">
-              <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#terms" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#sitemap" className="hover:text-white transition-colors">Sitemap</a>
-            </div>
-          </div>
-
-        </div>
-      </footer>
 
       {/* Booking Modal */}
       <BookingModal

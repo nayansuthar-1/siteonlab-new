@@ -98,43 +98,6 @@ export default function App() {
       {/* ────────────────────────────────────────────────────────
           NAV HEADER (Highly Polished Contextual Frame)
           ──────────────────────────────────────────────────────── */}
-      <header 
-        id="site-header"
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          scrolled ? 'bg-[#050505]/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="relative flex items-center justify-center w-9 h-9 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-lg shadow-md shadow-blue-500/10">
-              <span className="font-display font-black text-white text-xl tracking-tighter">S</span>
-              <div className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-indigo-500 rounded-full border border-slate-950" />
-            </div>
-            <div>
-              <span className="font-display font-bold text-white text-lg tracking-tight">SiteOn<span className="text-blue-500">Lab</span></span>
-              <span className="hidden sm:inline-block text-[10px] text-blue-400 font-mono tracking-widest uppercase ml-2 px-1.5 py-0.5 bg-blue-500/10 rounded border border-blue-500/20">
-                GTM & Revenue Strategy
-              </span>
-            </div>
-          </div>
-
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
-            <button id="nav-btn-services" onClick={() => scrollToSection('services-overview')} className="hover:text-blue-400 transition-colors">Services</button>
-            <button id="nav-btn-process" onClick={() => scrollToSection('process-section')} className="hover:text-blue-400 transition-colors">Process</button>
-            <button id="nav-btn-why" onClick={() => scrollToSection('why-us')} className="hover:text-blue-400 transition-colors">Why SiteOnLab</button>
-            <button id="nav-btn-cases" onClick={() => scrollToSection('case-studies')} className="hover:text-blue-400 transition-colors">Case Studies</button>
-            <button id="nav-btn-faqs" onClick={() => scrollToSection('faqs')} className="hover:text-blue-400 transition-colors">FAQs</button>
-          </nav>
-
-          <button 
-            id="header-cta-blueprint"
-            onClick={() => setIsBlueprintOpen(true)}
-            className="px-4 py-2 bg-slate-900 hover:bg-slate-800 border border-white/10 hover:border-blue-500/30 text-white text-xs font-semibold rounded-lg shadow-lg transition-all duration-200"
-          >
-            Request Growth Blueprint
-          </button>
-        </div>
-      </header>
 
       {/* Spacer for Nav Header */}
       <div className="h-24 sm:h-28" />
@@ -652,48 +615,6 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer id="site-footer" className="bg-[#030303] border-t border-white/5 py-12 text-xs text-gray-500 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded flex items-center justify-center">
-                <span className="font-display font-black text-white text-xs">S</span>
-              </div>
-              <span className="font-display font-bold text-white text-sm">SiteOnLab</span>
-            </div>
-            <p className="leading-relaxed">
-              B2B-first Go-To-Market & Revenue Strategy consulting. We build systems that turn intent signals into qualified revenue.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold text-white text-xs mb-3">Service Deliverables</h4>
-            <ul className="space-y-1.5">
-              <li>ICP Validation Models</li>
-              <li>Multi-Channel Playbooks</li>
-              <li>Sales Enablement Assets</li>
-              <li>Closed-Loop Attribution</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold text-white text-xs mb-3">Growth Resources</h4>
-            <ul className="space-y-1.5 cursor-pointer">
-              <li onClick={() => setIsBlueprintOpen(true)} className="hover:text-emerald-400 transition-colors">Growth Blueprint Diagnostic</li>
-              <li onClick={() => setIsAssessmentOpen(true)} className="hover:text-emerald-400 transition-colors">GTM Revenue Assessment</li>
-              <li onClick={() => scrollToSection('case-studies')} className="hover:text-emerald-400 transition-colors">Enterprise Case Studies</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display font-semibold text-white text-xs mb-3">Governance</h4>
-            <p className="leading-relaxed mb-2">
-              All strategies are customized for your company’s technographic parameters.
-            </p>
-            <p>© {new Date().getFullYear()} SiteOnLab. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
 
       {/* ────────────────────────────────────────────────────────
           MODALS & FLYOUTS

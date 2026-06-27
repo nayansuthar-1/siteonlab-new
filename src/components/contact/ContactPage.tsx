@@ -3,12 +3,9 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { FileCode, Terminal } from "lucide-react";
-import AnnouncementBar from "./AnnouncementBar";
-import Navigation from "./Navigation";
 import ContactHero from "./ContactHero";
 import MainContactBlock from "./MainContactBlock";
 import TrustStrip from "./TrustStrip";
-import Footer from "./Footer";
 import ExportModal from "./ExportModal";
 
 export default function ContactPage() {
@@ -21,12 +18,6 @@ export default function ContactPage() {
 
   return (
     <div className="theme-contact bg-brand-dark min-h-screen text-brand-text flex flex-col relative font-sans select-none antialiased">
-      {/* 1. Sticky Announcement Bar */}
-      <AnnouncementBar onBookMeeting={triggerDirectBooking} />
-
-      {/* 2. Sticky Navigation Header */}
-      <Navigation onBookCall={triggerDirectBooking} />
-
       {/* Main Page Layout */}
       <main className="flex-grow">
         {/* 3. Compact Contact Hero */}
@@ -42,9 +33,6 @@ export default function ContactPage() {
         {/* 5. Thin Trust Strip */}
         <TrustStrip />
       </main>
-
-      {/* 6. Footer section */}
-      <Footer />
 
       {/* DELIVERABLE EXPORT PANEL FLOATING ACTOR */}
       <div className="fixed bottom-6 right-6 z-30">

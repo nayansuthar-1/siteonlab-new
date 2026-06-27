@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Metrics from "./components/Metrics";
 import SeoMetaPreview from "./components/SeoMetaPreview";
@@ -13,7 +12,6 @@ import Testimonials from "./components/Testimonials";
 import RelatedServices from "./components/RelatedServices";
 import Faq from "./components/Faq";
 import FinalCta from "./components/FinalCta";
-import Footer from "./components/Footer";
 import BlueprintModal from "./components/BlueprintModal";
 
 export default function App() {
@@ -40,9 +38,6 @@ export default function App() {
   return (
     <div className="theme-techseo min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-blue-500 selection:text-white">
       
-      {/* 1. Header */}
-      <Header onRequestBlueprint={handleRequestBlueprint} />
-
       {/* 2. Hero Section */}
       <Hero 
         onRequestBlueprint={handleRequestBlueprint} 
@@ -103,9 +98,6 @@ export default function App() {
         onRequestBlueprint={handleRequestBlueprint} 
         onTakeAssessment={handleTakeAssessment} 
       />
-
-      {/* Footer */}
-      <Footer />
 
       {/* Interactive Blueprint & Assessment Generation Modal */}
       <BlueprintModal 

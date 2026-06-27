@@ -6,7 +6,6 @@
  */
 
 import React, { useState } from 'react';
-import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import TrustMetrics from './components/TrustMetrics';
 import ServiceOverview from './components/ServiceOverview';
@@ -17,7 +16,6 @@ import Testimonial from './components/Testimonial';
 import RelatedServices from './components/RelatedServices';
 import FAQSection from './components/FAQSection';
 import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer';
 import SEOPreview from './components/SEOPreview';
 import GrowthBlueprintModal from './components/GrowthBlueprintModal';
 import AssessmentTool from './components/AssessmentTool';
@@ -39,13 +37,6 @@ export default function App() {
 
   return (
     <div id="app-root" className="theme-demandgen min-h-screen bg-dark-bg font-sans text-zinc-100 selection:bg-brand-primary/30 selection:text-zinc-200">
-      
-      {/* Header component */}
-      <Header
-        onRequestBlueprint={() => setIsBlueprintModalOpen(true)}
-        onOpenAssessment={handleOpenAssessment}
-        onScrollToSection={handleScrollToSection}
-      />
 
       <main id="app-main">
         {/* 1. Hero Section */}
@@ -106,9 +97,6 @@ export default function App() {
           onOpenAssessment={handleOpenAssessment}
         />
       </main>
-
-      {/* Footer */}
-      <Footer />
 
       {/* Persistent Floating SEO & AI Metadata Preview Inspector */}
       <SEOPreview />

@@ -16,14 +16,13 @@ import {
   ChevronRight,
   ChevronDown,
   Check,
-  Menu,
   X,
   ArrowUpRight,
   Calendar,
   CheckCircle,
   ArrowRight,
   ChevronUp,
-  Award
+  Award,
 } from "lucide-react";
 import InteractiveVisualizer from "./InteractiveVisualizer";
 import {
@@ -38,10 +37,8 @@ import {
 
 export default function HomePage() {
   // Navigation & UI States
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [selectedIndustry, setSelectedIndustry] = useState<string>("saas");
-  const [scrolled, setScrolled] = useState(false);
 
   // Modal / Conversion Flow States
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
@@ -77,15 +74,6 @@ export default function HomePage() {
   const [brandsCount, setBrandsCount] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-
     // Increment counters smoothly
     const pipelineInterval = setInterval(() => {
       setPipelineCount(prev => (prev < 25 ? prev + 1 : 25));
@@ -100,7 +88,6 @@ export default function HomePage() {
     }, 15);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       clearInterval(pipelineInterval);
       clearInterval(growthInterval);
       clearInterval(brandsInterval);
@@ -194,110 +181,6 @@ export default function HomePage() {
 
   return (
     <div className="theme-home min-h-screen bg-brand-bg text-gray-100 font-sans selection:bg-brand-primary selection:text-black relative overflow-x-hidden">
-
-      {/* SECTION 1: Sticky Announcement Bar */}
-      <div id="announcement-bar" className="w-full bg-zinc-950 border-b border-zinc-900 py-2 px-4 sticky top-0 z-50 text-center flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 transition-all">
-        <span className="text-[11px] md:text-xs text-gray-300 tracking-wide">
-          <span className="inline-block px-1.5 py-0.5 bg-brand-primary/15 text-brand-primary rounded font-mono text-[9px] mr-2 border border-brand-primary/20">NEW REPORT</span>
-          Now helping B2B teams get found in Google — and cited in ChatGPT, Perplexity &amp; AI Overviews.
-        </span>
-        <button
-          id="announcement-cta"
-          onClick={() => { resetBooking(); setBookingModalOpen(true); }}
-          className="text-[10px] md:text-xs text-brand-primary font-bold hover:underline cursor-pointer flex items-center gap-1 hover:text-white transition"
-        >
-          Book a Meeting <ChevronRight className="w-3.5 h-3.5" />
-        </button>
-      </div>
-
-      {/* SECTION 2: Sticky Navigation */}
-      <header
-        id="main-nav"
-        className={`w-full z-40 sticky top-[37px] sm:top-[33px] transition-all duration-300 border-b ${
-          scrolled
-            ? "bg-brand-bg/95 backdrop-blur-md border-zinc-800 shadow-xl"
-            : "bg-transparent border-transparent"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
-
-          {/* Logo */}
-          <div className="flex items-center gap-2" id="nav-logo">
-            <span className="font-display font-black text-lg sm:text-2xl tracking-wider text-white">
-              SiteOn<span className="text-brand-primary">Lab</span>
-            </span>
-            <span className="hidden lg:inline text-[9px] font-mono border border-zinc-800 rounded px-1.5 py-0.5 text-gray-500 bg-zinc-950/40">
-              REVENUE &amp; GEO ENGINE
-            </span>
-          </div>
-
-          {/* Desktop Navigation Menu */}
-          <nav className="hidden md:flex items-center gap-1.5 lg:gap-2 text-xs lg:text-sm font-semibold tracking-wide text-gray-300" id="desktop-menu">
-            <a href="#framework" className="px-3 py-2 rounded hover:text-brand-primary hover:bg-zinc-900/40 transition">Framework</a>
-            <a href="#services" className="px-3 py-2 rounded hover:text-brand-primary hover:bg-zinc-900/40 transition">Services</a>
-            <a href="#industries" className="px-3 py-2 rounded hover:text-brand-primary hover:bg-zinc-900/40 transition">Industries</a>
-            <a href="#case-studies" className="px-3 py-2 rounded hover:text-brand-primary hover:bg-zinc-900/40 transition">Case Studies</a>
-            <a href="#why-works" className="px-3 py-2 rounded hover:text-brand-primary hover:bg-zinc-900/40 transition">Why It Works</a>
-            <a href="#faq" className="px-3 py-2 rounded hover:text-brand-primary hover:bg-zinc-900/40 transition">FAQ</a>
-            <a href="#insights" className="px-3 py-2 rounded hover:text-brand-primary hover:bg-zinc-900/40 transition">Resources</a>
-          </nav>
-
-          {/* Right Action */}
-          <div className="hidden md:flex items-center gap-4" id="nav-actions">
-            <button
-              id="nav-cta-btn"
-              onClick={() => { resetBooking(); setBookingModalOpen(true); }}
-              className="bg-brand-primary hover:bg-cyan-400 text-black px-4.5 py-2.5 rounded-lg text-xs font-bold tracking-wider uppercase transition-all duration-300 hover:shadow-lg hover:shadow-brand-primary/20 cursor-pointer"
-            >
-              Book a Strategy Call
-            </button>
-          </div>
-
-          {/* Mobile hamburger button */}
-          <div className="md:hidden flex items-center">
-            <button
-              id="mobile-menu-toggle"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-400 hover:text-white p-2 cursor-pointer focus:outline-none"
-              aria-label="Toggle Menu"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-
-        </div>
-
-        {/* Mobile menu panel */}
-        {mobileMenuOpen && (
-          <div className="md:hidden bg-[#0a0f1b] border-b border-zinc-800 px-4 py-6 flex flex-col gap-4" id="mobile-menu-panel">
-            <nav className="flex flex-col gap-3 text-sm font-medium text-gray-300">
-              <a href="#framework" onClick={() => setMobileMenuOpen(false)} className="py-2 hover:text-brand-primary border-b border-zinc-900">Framework</a>
-              <a href="#services" onClick={() => setMobileMenuOpen(false)} className="py-2 hover:text-brand-primary border-b border-zinc-900">Services</a>
-              <a href="#industries" onClick={() => setMobileMenuOpen(false)} className="py-2 hover:text-brand-primary border-b border-zinc-900">Industries</a>
-              <a href="#case-studies" onClick={() => setMobileMenuOpen(false)} className="py-2 hover:text-brand-primary border-b border-zinc-900">Case Studies</a>
-              <a href="#why-works" onClick={() => setMobileMenuOpen(false)} className="py-2 hover:text-brand-primary border-b border-zinc-900">Why It Works</a>
-              <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="py-2 hover:text-brand-primary border-b border-zinc-900">FAQ</a>
-              <a href="#insights" onClick={() => setMobileMenuOpen(false)} className="py-2 hover:text-brand-primary">Resources</a>
-            </nav>
-            <div className="flex flex-col gap-2 mt-4">
-              <button
-                id="mobile-cta-btn-1"
-                onClick={() => { setMobileMenuOpen(false); resetBooking(); setBookingModalOpen(true); }}
-                className="bg-brand-primary text-black w-full text-center py-3 rounded-lg text-xs font-bold tracking-wider uppercase"
-              >
-                Book a Strategy Call
-              </button>
-              <button
-                id="mobile-cta-btn-2"
-                onClick={() => { setMobileMenuOpen(false); resetAssessment(); setAssessmentModalOpen(true); }}
-                className="bg-brand-card border border-zinc-800 text-gray-300 w-full text-center py-3 rounded-lg text-xs font-bold tracking-wider uppercase"
-              >
-                Take the AI Assessment
-              </button>
-            </div>
-          </div>
-        )}
-      </header>
 
       {/* SECTION 3: Hero Section */}
       <section id="hero" className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-zinc-900 overflow-hidden">
@@ -1236,72 +1119,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* SECTION 16: Footer */}
-      <footer id="footer" className="bg-zinc-950 pt-16 pb-8 border-t border-zinc-900 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-16" id="footer-grid">
-
-          {/* Branding Column */}
-          <div className="lg:col-span-2 flex flex-col items-start gap-4" id="footer-col-brand">
-            <span className="font-display font-black text-2xl tracking-wider text-white">
-              SiteOn<span className="text-brand-primary">Lab</span>
-            </span>
-            <p className="text-xs text-gray-400 leading-relaxed max-w-sm">
-              The AI-powered B2B revenue growth and AI visibility agency. We align search positioning with qualified pipeline metrics and CRM tracking logic.
-            </p>
-            <p className="text-[10px] text-gray-500 font-mono mt-2">
-              © 2026 SiteOnLab Agency Inc. All rights reserved.
-            </p>
-          </div>
-
-          {/* Link Column 1: Services */}
-          <div id="footer-col-services">
-            <h4 className="text-xs uppercase tracking-wider text-white font-bold font-mono mb-4">Services</h4>
-            <ul className="space-y-2 text-xs text-gray-400 font-medium">
-              <li><a href="#services" className="hover:text-brand-primary transition">Organic SEO &amp; GEO</a></li>
-              <li><a href="#services" className="hover:text-brand-primary transition">Demand Gen &amp; PPC</a></li>
-              <li><a href="#services" className="hover:text-brand-primary transition">B2B Web Development</a></li>
-              <li><a href="#services" className="hover:text-brand-primary transition">AI Ops &amp; Automation</a></li>
-              <li><a href="#services" className="hover:text-brand-primary transition">Commercial GTM Strategy</a></li>
-            </ul>
-          </div>
-
-          {/* Link Column 2: Industries */}
-          <div id="footer-col-industries">
-            <h4 className="text-xs uppercase tracking-wider text-white font-bold font-mono mb-4">Industries</h4>
-            <ul className="space-y-2 text-xs text-gray-400 font-medium">
-              <li><button onClick={() => { setSelectedIndustry("saas"); }} className="hover:text-brand-primary transition cursor-pointer text-left">B2B SaaS</button></li>
-              <li><button onClick={() => { setSelectedIndustry("it-msp"); }} className="hover:text-brand-primary transition cursor-pointer text-left">IT Services &amp; MSPs</button></li>
-              <li><button onClick={() => { setSelectedIndustry("cybersecurity"); }} className="hover:text-brand-primary transition cursor-pointer text-left">Cybersecurity</button></li>
-              <li><button onClick={() => { setSelectedIndustry("professional-services"); }} className="hover:text-brand-primary transition cursor-pointer text-left">Professional Consulting</button></li>
-              <li><button onClick={() => { setSelectedIndustry("software-dev"); }} className="hover:text-brand-primary transition cursor-pointer text-left">Software Development</button></li>
-            </ul>
-          </div>
-
-          {/* Link Column 3: Resources & Company */}
-          <div id="footer-col-company">
-            <h4 className="text-xs uppercase tracking-wider text-white font-bold font-mono mb-4">Resources</h4>
-            <ul className="space-y-2 text-xs text-gray-400 font-medium">
-              <li><button onClick={() => { resetBooking(); setBookingModalOpen(true); }} className="hover:text-brand-primary transition cursor-pointer text-left">The Search Blog</button></li>
-              <li><button onClick={() => { resetAssessment(); setAssessmentModalOpen(true); }} className="hover:text-brand-primary transition cursor-pointer text-left">AI Visibility Quiz</button></li>
-              <li><a href="#case-studies" className="hover:text-brand-primary transition">Partner Case Studies</a></li>
-              <li><a href="#framework" className="hover:text-brand-primary transition">Methodology Playbook</a></li>
-              <li><button onClick={() => { resetBooking(); setBookingModalOpen(true); }} className="hover:text-brand-primary transition cursor-pointer text-left">Book Strategy Call</button></li>
-            </ul>
-          </div>
-
-        </div>
-
-        {/* Legal bar */}
-        <div className="max-w-7xl mx-auto pt-8 border-t border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-gray-500 font-mono" id="footer-legal-bar">
-          <div className="flex flex-wrap gap-4 sm:gap-6 justify-center">
-            <a href="#privacy" className="hover:text-brand-primary transition">Privacy Policy</a>
-            <a href="#terms" className="hover:text-brand-primary transition">Terms of Service</a>
-            <a href="#sitemap" className="hover:text-brand-primary transition">Sitemap</a>
-          </div>
-          <span>Built exclusively for conversion optimization. No white-label indicators.</span>
-        </div>
-      </footer>
 
 
       {/* CONVERSION OVERLAY 1: INTERACTIVE BOOKING MODAL */}
