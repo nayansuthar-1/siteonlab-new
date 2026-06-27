@@ -22,7 +22,8 @@ export default function AboutPage() {
   // Interactive Widgets states
   const [selectedIndustry, setSelectedIndustry] = useState(INDUSTRIES[0].id);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const [highlightPlaceholders, setHighlightPlaceholders] = useState(true);
+  // Placeholder-highlight scaffolding is disabled on the public page.
+  const highlightPlaceholders = false;
 
   // Animated Counter States
   const [counterPipeline, setCounterPipeline] = useState(0);
@@ -136,23 +137,6 @@ export default function AboutPage() {
 
   return (
     <div className="theme-about min-h-screen bg-brand-bg text-brand-text-primary selection:bg-brand-accent/30 selection:text-white">
-
-
-      {/* ADMIN CONTROL PANEL FLAVOR FOR PLACEHOLDER HIGHLIGHTS */}
-      <div className="fixed bottom-6 right-6 z-40 bg-slate-900/90 backdrop-blur border border-slate-800 rounded-full px-4 py-2 flex items-center gap-3 shadow-2xl">
-        <div className="flex items-center gap-2">
-          <div className={`w-2.5 h-2.5 rounded-full ${highlightPlaceholders ? "bg-amber-400 animate-ping" : "bg-slate-600"}`}></div>
-          <span className="text-xs font-semibold text-brand-text-secondary">Highlight Custom Placeholders</span>
-        </div>
-        <button
-          onClick={() => setHighlightPlaceholders(!highlightPlaceholders)}
-          className={`p-1.5 rounded-full transition-all-300 cursor-pointer ${highlightPlaceholders ? "bg-amber-500/20 text-amber-400 hover:bg-amber-500/30" : "bg-slate-800 text-slate-400 hover:text-white"}`}
-          title="Toggle highlight markers on editable team profiles and metrics"
-        >
-          <Edit className="w-3.5 h-3.5" />
-        </button>
-      </div>
-
 
       {/* SECTION 3: ABOUT HERO */}
       <section id="about-hero" className="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden border-b border-slate-900">

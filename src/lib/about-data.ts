@@ -115,95 +115,103 @@ export const TESTIMONIALS: Testimonial[] = [
   }
 ];
 
+// Team photos are intentionally omitted (avatarUrl left undefined) — each card
+// renders an initials placeholder until real images are supplied.
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "team-1",
-    name: "Dr. Arthur Pendelton",
-    role: "Founder & CEO",
-    bio: "Former B2B RevOps VP and AI research lead. Pioneer of Generative Engine Optimization (GEO) algorithms.",
-    avatarUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "AP",
+    name: "Hitesh Solanki",
+    role: "Co-Founder, Head of Client Acquisition",
+    bio: "",
+    initials: "HS",
     isPlaceholder: true
   },
   {
     id: "team-2",
-    name: "Sarah Jenkins, MBA",
-    role: "Director of Growth",
-    bio: "12+ years leading full-funnel marketing strategies for hyper-growth Silicon Valley B2B enterprise SaaS.",
-    avatarUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "SJ",
+    name: "Kartik Malviya",
+    role: "Co-Founder, Head of Tech",
+    bio: "",
+    initials: "KM",
     isPlaceholder: true
   },
   {
     id: "team-3",
-    name: "Vikram Mehta",
-    role: "Head of AI Visibility & GEO",
-    bio: "Engineers crawler ingestion architectures. Specializes in LLM citation patterns and conversational web search index optimization.",
-    avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "VM",
+    name: "Kalpesh Kumar",
+    role: "Head of Finance",
+    bio: "",
+    initials: "KK",
     isPlaceholder: true
   },
   {
     id: "team-4",
-    name: "Clara Oster",
-    role: "SEO Lead",
-    bio: "Authored industry-leading guides on semantic entity search. Expert in technical indexing at enterprise scale.",
-    avatarUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "CO",
+    name: "Bhavesh Malviya",
+    role: "Sr. Graphics Designer",
+    bio: "",
+    initials: "BM",
     isPlaceholder: true
   },
   {
     id: "team-5",
-    name: "Marcus Brody",
-    role: "Paid Media & Demand Gen Lead",
-    bio: "Managed over $40M in ad spend across LinkedIn, Google Ads, and metadata platforms with razor-focused CAC-to-LTV targets.",
-    avatarUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "MB",
+    name: "Kabir",
+    role: "Head of Operations",
+    bio: "",
+    initials: "K",
     isPlaceholder: true
   },
   {
     id: "team-6",
-    name: "Daria Kovalenko",
-    role: "Content & Topical Authority Lead",
-    bio: "B2B tech editorial expert. Translates highly technical architectures into comprehensive, citation-rich industry hubs.",
-    avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "DK",
+    name: "Manav Parihar",
+    role: "Web Development Lead",
+    bio: "",
+    initials: "MP",
     isPlaceholder: true
   },
   {
     id: "team-7",
-    name: "Zack Chen",
-    role: "Web & CRO Lead",
-    bio: "Design-minded full stack developer specializing in high-converting, blazing-fast web experiences for B2B tech.",
-    avatarUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "ZC",
+    name: "Ajaypal Singh",
+    role: "SEO Lead",
+    bio: "",
+    initials: "AS",
     isPlaceholder: true
   },
   {
     id: "team-8",
-    name: "Liam O'Connor",
-    role: "AI Automation Engineer",
-    bio: "Builds custom LLM agents and scraper automation loops to accelerate research and programmatic indexing workflows.",
-    avatarUrl: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "LO",
+    name: "Nayan Suthar",
+    role: "Full Stack Developer",
+    bio: "",
+    initials: "NS",
     isPlaceholder: true
   },
   {
     id: "team-9",
-    name: "Amanda Blake",
-    role: "Analytics & RevOps Lead",
-    bio: "Connects marketing analytics to CRM systems (Salesforce, HubSpot) to guarantee full pipeline and closed-won attribution.",
-    avatarUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "AB",
+    name: "Jayanti Suthar",
+    role: "Full Stack Developer",
+    bio: "",
+    initials: "JS",
     isPlaceholder: true
   },
   {
     id: "team-10",
-    name: "Nicolette Dupris",
-    role: "Customer Success Manager",
-    bio: "Ensures SiteOnLab campaigns align seamlessly with client executive teams' quarterly revenue and board targets.",
-    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=256&h=256",
-    initials: "ND",
+    name: "Swaroop Singh",
+    role: "Sr. SEO Expert",
+    bio: "",
+    initials: "SS",
+    isPlaceholder: true
+  },
+  {
+    id: "team-11",
+    name: "Atul Purohit",
+    role: "Web Developer",
+    bio: "",
+    initials: "AP",
+    isPlaceholder: true
+  },
+  {
+    id: "team-12",
+    name: "Kunal Gugarwal",
+    role: "Web Developer",
+    bio: "",
+    initials: "KG",
     isPlaceholder: true
   }
 ];
