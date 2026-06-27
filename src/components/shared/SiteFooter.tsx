@@ -38,6 +38,7 @@ const columns: FooterColumn[] = [
   {
     title: "Resources",
     links: [
+      { label: "Website Audit", href: "/website-audit" },
       { label: "Blog", href: "/blog" },
       { label: "Case Studies", href: "/case-studies" },
       { label: "B2B SaaS", href: "/industries/b2b-saas" },

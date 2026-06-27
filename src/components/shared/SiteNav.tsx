@@ -22,6 +22,7 @@ import {
   Cpu,
   Cloud,
   BookOpen,
+  Gauge,
   type LucideIcon,
 } from "lucide-react";
 
@@ -63,6 +64,7 @@ const industries: MenuItem[] = [
 ];
 
 const resources: MenuItem[] = [
+  { label: "Website Audit", href: "/website-audit", description: "Free instant performance & SEO report.", icon: Gauge },
   { label: "Blog", href: "/blog", description: "Insights on B2B growth & AI search.", icon: BookOpen },
 ];
 
