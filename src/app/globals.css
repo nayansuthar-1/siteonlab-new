@@ -715,3 +715,20 @@ html:has(.theme-marketingauto) ::-webkit-scrollbar-thumb {
 html:has(.theme-marketingauto) ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
 }
+
+/* ============================================================
+   UNIFIED TYPOGRAPHY
+   Every page uses the homepage font system, regardless of its
+   per-page theme scope:
+     • paragraphs / body  → Inter        (--font-sans)
+     • headings / display → Space Grotesk (--font-display)
+     • mono labels        → JetBrains Mono (--font-mono)
+   Declared last so it overrides each .theme-* scope's own fonts
+   (equal specificity, later source order wins). Colors/layout in
+   those scopes are untouched — only the font variables change.
+   ============================================================ */
+[class*="theme-"] {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}

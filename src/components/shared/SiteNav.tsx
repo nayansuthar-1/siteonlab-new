@@ -174,12 +174,6 @@ export default function SiteNav() {
         <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <Link
             href="/contact"
-            className="rounded-lg border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 transition-colors hover:border-slate-500 hover:text-white"
-          >
-            Contact
-          </Link>
-          <Link
-            href="/contact"
             className="flex items-center gap-1.5 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-500"
           >
             Book a Strategy Call
@@ -283,13 +277,6 @@ export default function SiteNav() {
             })}
 
             <div className="flex flex-col gap-2 pt-4">
-              <Link
-                href="/contact"
-                onClick={() => setMobileOpen(false)}
-                className="rounded-lg border border-slate-700 px-4 py-3 text-center text-sm font-semibold text-slate-200 hover:text-white"
-              >
-                Contact
-              </Link>
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
