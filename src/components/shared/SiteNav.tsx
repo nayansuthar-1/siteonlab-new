@@ -11,6 +11,7 @@ import {
   Sparkles,
   Search,
   Wrench,
+  MapPin,
   TrendingUp,
   Target,
   Crosshair,
@@ -48,6 +49,7 @@ const services: MenuItem[] = [
   { label: "AI SEO & GEO", href: "/service/ai-seo-and-geo", description: "Get cited in ChatGPT, Perplexity & AI Overviews.", icon: Sparkles },
   { label: "SEO", href: "/service/seo", description: "Rank for high-intent buyer keywords.", icon: Search },
   { label: "Technical SEO", href: "/service/technical-seo", description: "Fix crawl, speed & indexation issues.", icon: Wrench },
+  { label: "Local SEO", href: "/service/local-seo", description: "Rank in the map pack & local search.", icon: MapPin },
   { label: "Demand Generation", href: "/service/demand-generation", description: "A multi-channel pipeline engine.", icon: TrendingUp },
   { label: "B2B Paid Media", href: "/service/b2b-paid-media", description: "High-ROI paid acquisition.", icon: Target },
   { label: "ABM", href: "/service/abm", description: "Account-based marketing programs.", icon: Crosshair },
@@ -68,8 +70,23 @@ const resources: MenuItem[] = [
   { label: "Blog", href: "/blog", description: "Insights on B2B growth & AI search.", icon: BookOpen },
 ];
 
-// Split services into 3 balanced columns for the mega menu.
-const serviceColumns: MenuItem[][] = [services.slice(0, 4), services.slice(4, 8), services.slice(8, 12)];
+// Split services into 3 balanced columns for the mega menu, in order.
+// Distributes any remainder to the left columns (e.g. 13 → 5 / 4 / 4) so
+// adding a service never silently drops off the end.
+function splitIntoColumns<T>(items: T[], columns: number): T[][] {
+  const base = Math.floor(items.length / columns);
+  const extra = items.length % columns;
+  const result: T[][] = [];
+  let start = 0;
+  for (let i = 0; i < columns; i++) {
+    const size = base + (i < extra ? 1 : 0);
+    result.push(items.slice(start, start + size));
+    start += size;
+  }
+  return result;
+}
+
+const serviceColumns: MenuItem[][] = splitIntoColumns(services, 3);
 
 const navEntries: NavEntry[] = [
   { label: "Home", href: "/" },

@@ -61,6 +61,16 @@
   --color-brand-darkest: #020617;
   --color-brand-accent-bright: #3b82f6;
   --color-brand-accent-orange: #f97316;
+
+  /* Local SEO service page additional tokens (non-conflicting names).
+     The zip used cyan as its brand color; per request we keep the
+     homepage blue (--color-brand-primary stays #3b82f6) and add the
+     light/dark blue + dark surface tokens this page references. */
+  --color-brand-primary-light: #60a5fa;
+  --color-brand-primary-dark: #2563eb;
+  --color-dark-base: #0a0a0b;
+  --color-dark-panel: #151517;
+  --color-dark-panel-light: #1e1e21;
 }
 
 @layer base {
@@ -368,6 +378,26 @@
 }
 .theme-saas .border-pulse-active {
   animation: border-pulse 4s infinite;
+}
+
+/* ============================================================
+   Per-page theme scope: Local SEO service page.
+   Colors come from @theme tokens (homepage blue + dark zinc
+   surfaces). Only --color-dark-border is overridden here because
+   the global token (set by the demand-gen page) is translucent
+   white, while this page's zip uses a solid zinc border. Fonts are
+   handled by the unified typography block at the bottom of the file.
+   The .glow-shadow utilities mirror the zip's index.css, recolored
+   from cyan to the homepage blue per request. */
+.theme-localseo {
+  --color-dark-border: #27272a;
+}
+
+.theme-localseo .glow-shadow {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+.theme-localseo .glow-shadow-strong {
+  box-shadow: 0 0 35px rgba(59, 130, 246, 0.3);
 }
 
 /* Custom fade-in animations for scrolling (homepage) */
@@ -713,6 +743,21 @@ html:has(.theme-marketingauto) ::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 html:has(.theme-marketingauto) ::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+html:has(.theme-localseo) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:has(.theme-localseo) ::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+html:has(.theme-localseo) ::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+html:has(.theme-localseo) ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
 }
 
