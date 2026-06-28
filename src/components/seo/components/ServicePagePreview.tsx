@@ -247,37 +247,6 @@ export default function ServicePagePreview({ data, onCtaClick }: ServicePagePrev
 
   return (
     <div className="bg-mesh-dark min-h-screen text-[#F2F2F2] selection:bg-blue-600 selection:text-white">
-      {/* Dynamic Header/Nav */}
-      <header className="sticky top-0 z-40 bg-[#050505]/95 backdrop-blur-md border-b border-white/10 px-6 py-4 transition-all duration-300">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-blue-600 rounded-sm flex items-center justify-center font-bold text-sm italic text-white">
-              S/L
-            </div>
-            <span className="font-bold tracking-tight text-lg text-white">
-              SiteOnLab
-            </span>
-          </div>
-
-          <nav className="hidden md:flex items-center space-x-8 text-[10px] uppercase tracking-[0.2em] font-semibold text-white/50">
-            <button onClick={() => handleScrollTo("overview")} className="hover:text-blue-400 transition-colors cursor-pointer">Services</button>
-            <button onClick={() => handleScrollTo("process")} className="hover:text-blue-400 transition-colors cursor-pointer">Process</button>
-            <button onClick={() => handleScrollTo("why-choose-us")} className="hover:text-blue-400 transition-colors cursor-pointer">Why Us</button>
-            <button onClick={() => handleScrollTo("case-studies")} className="hover:text-blue-400 transition-colors cursor-pointer">Case Studies</button>
-            <button onClick={() => handleScrollTo("faqs")} className="hover:text-blue-400 transition-colors cursor-pointer">FAQ</button>
-          </nav>
-
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={() => onCtaClick?.("Header Primary")}
-              className="bg-white text-black px-5 py-2.5 rounded-full text-[11px] font-bold uppercase tracking-wider hover:bg-blue-400 hover:text-white transition-all duration-200 cursor-pointer"
-            >
-              {data.primaryCtaText || "Request Blueprint"}
-            </button>
-          </div>
-        </div>
-      </header>
-
       {/* 1. HERO SECTION */}
       <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 border-b border-white/10">
         <div className="absolute inset-x-0 top-0 h-[500px] bg-gradient-to-b from-blue-500/5 via-transparent to-transparent blur-3xl pointer-events-none" />
