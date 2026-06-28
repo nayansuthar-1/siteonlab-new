@@ -400,6 +400,19 @@
   box-shadow: 0 0 35px rgba(59, 130, 246, 0.3);
 }
 
+/* ============================================================
+   Per-page theme scope: Revenue Measurement & Analytics service
+   page. The zip uses literal colors throughout — its primary is
+   already the homepage blue (Tailwind blue-*), with emerald/indigo
+   as intentional data-viz accents — so only fonts are declared
+   (Inter / Space Grotesk / JetBrains Mono). The scope class also
+   triggers the unified-typography rule at the bottom of the file. */
+.theme-rma {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
 /* Custom fade-in animations for scrolling (homepage) */
 @keyframes fadeInUp {
   from {
@@ -759,6 +772,20 @@ html:has(.theme-localseo) ::-webkit-scrollbar-thumb {
 }
 html:has(.theme-localseo) ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
+}
+
+html:has(.theme-rma) ::-webkit-scrollbar {
+  width: 8px;
+}
+html:has(.theme-rma) ::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+html:has(.theme-rma) ::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+html:has(.theme-rma) ::-webkit-scrollbar-thumb:hover {
+  background: #374151;
 }
 
 /* ============================================================

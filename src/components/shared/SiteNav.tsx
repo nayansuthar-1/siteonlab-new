@@ -21,6 +21,7 @@ import {
   Rocket,
   MonitorSmartphone,
   Cpu,
+  BarChart3,
   Cloud,
   BookOpen,
   Gauge,
@@ -57,6 +58,7 @@ const services: MenuItem[] = [
   { label: "Marketing Automation", href: "/service/marketing-automation", description: "Nurture & scale with workflows.", icon: Zap },
   { label: "Conversion Rate Optimization", href: "/service/conversion-rate-optimization", description: "Turn traffic into revenue.", icon: MousePointerClick },
   { label: "GTM & Revenue Strategy", href: "/service/gtm-revenue-strategy", description: "Go-to-market revenue planning.", icon: Rocket },
+  { label: "Revenue Measurement & Analytics", href: "/service/revenue-measurement-and-analytics", description: "Attribute pipeline to real revenue.", icon: BarChart3 },
   { label: "B2B Website Design & Dev", href: "/service/b2b-website-design-development", description: "Sites engineered to convert.", icon: MonitorSmartphone },
   { label: "AI Software Development", href: "/service/ai-software-development", description: "Custom AI tools & applications.", icon: Cpu },
 ];
