@@ -71,6 +71,7 @@ const industries: MenuItem[] = [
   { label: "Cybersecurity", href: "/industries/cybersecurity", description: "Revenue-first growth for security firms.", icon: ShieldCheck },
   { label: "Professional Services", href: "/industries/professional-services", description: "Pipeline & authority for advisory firms.", icon: Briefcase },
   { label: "Manufacturing & Industrial", href: "/industries/manufacturing-industrial", description: "Qualified pipeline for industrial brands.", icon: Factory },
+  { label: "B2B Technology", href: "/industries/b2b-technology", description: "Pipeline & AI search visibility for tech firms.", icon: Cpu },
 ];
 
 const resources: MenuItem[] = [

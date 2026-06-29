@@ -909,6 +909,29 @@ html:has(.theme-mfg) ::-webkit-scrollbar-thumb:hover {
 }
 
 /* ============================================================
+   Per-page theme scope: B2B Technology industry page.
+   The zip uses literal colors (near-black #0A0A0B base + homepage
+   blue-* accent) and explicit font-display/font-mono classes on its
+   headings, so no color or font tokens need overriding — the
+   .theme-b2btech class exists so the unified-typography rule below
+   applies (Inter / Space Grotesk / JetBrains Mono). Only a scoped
+   scrollbar matching the dark base is declared here. */
+html:has(.theme-b2btech) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:has(.theme-b2btech) ::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+html:has(.theme-b2btech) ::-webkit-scrollbar-thumb {
+  background: #222224;
+  border-radius: 4px;
+}
+html:has(.theme-b2btech) ::-webkit-scrollbar-thumb:hover {
+  background: #333336;
+}
+
+/* ============================================================
    UNIFIED TYPOGRAPHY
    Every page uses the homepage font system, regardless of its
    per-page theme scope:
