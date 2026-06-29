@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk, JetBrains_Mono, Manrope, Outfit, Plus_Jakarta_San
 import "./globals.css";
 import SiteNav from "@/components/shared/SiteNav";
 import SiteFooter from "@/components/shared/SiteFooter";
+import ChromeGate from "@/components/shared/ChromeGate";
 
 // Self-hosted via next/font — the same Google fonts each AI Studio zip loaded,
 // with the same static weights so rendering (incl. font-black fallbacks) matches.
@@ -89,9 +90,13 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${manrope.variable} ${outfit.variable} ${plusJakarta.variable} ${playfairDisplay.variable} ${lora.variable} ${firaCode.variable}`}
     >
       <body>
-        <SiteNav />
+        <ChromeGate>
+          <SiteNav />
+        </ChromeGate>
         {children}
-        <SiteFooter />
+        <ChromeGate>
+          <SiteFooter />
+        </ChromeGate>
       </body>
     </html>
   );

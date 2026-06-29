@@ -48,7 +48,7 @@ type MenuItem = {
 
 type NavEntry =
   | { label: string; href: string }
-  | { label: string; columns: MenuItem[][]; featured?: boolean };
+  | { label: string; columns: MenuItem[][]; featured?: boolean; cta?: boolean };
 
 const services: MenuItem[] = [
   { label: "AI SEO & GEO", href: "/service/ai-seo-and-geo", description: "Get cited in ChatGPT, Perplexity & AI Overviews.", icon: Sparkles },
@@ -103,7 +103,7 @@ const navEntries: NavEntry[] = [
   { label: "Home", href: "/" },
   { label: "About us", href: "/about" },
   { label: "Services", columns: serviceColumns, featured: true },
-  { label: "Industries", columns: [industries] },
+  { label: "Industries", columns: splitIntoColumns(industries, 2), cta: true },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Resources", columns: [resources] },
 ];
@@ -233,7 +233,17 @@ export default function SiteNav() {
             className="absolute inset-x-0 top-full hidden border-b border-slate-800/80 bg-[#0b1120]/98 backdrop-blur-md lg:block"
           >
             <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-              <div className={`grid gap-8 ${entry.featured ? "lg:grid-cols-[1fr_1fr_1fr_minmax(0,17rem)]" : "lg:grid-cols-[minmax(0,28rem)]"}`}>
+              <div
+                className={`grid gap-8 ${
+                  entry.featured
+                    ? "lg:grid-cols-[1fr_1fr_1fr_minmax(0,17rem)]"
+                    : entry.columns.length >= 2
+                      ? entry.cta
+                        ? "lg:grid-cols-[minmax(0,20rem)_minmax(0,20rem)_minmax(0,17rem)]"
+                        : "lg:grid-cols-[minmax(0,20rem)_minmax(0,20rem)]"
+                      : "lg:grid-cols-[minmax(0,28rem)]"
+                }`}
+              >
                 {entry.columns.map((col, i) => (
                   <div key={i} className="space-y-1">
                     {col.map((item) => (
@@ -242,7 +252,7 @@ export default function SiteNav() {
                   </div>
                 ))}
 
-                {entry.featured && (
+                {(entry.featured || entry.cta) && (
                   <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-6">
                     <p className="text-xs font-semibold uppercase tracking-wider text-blue-400">Get started</p>
                     <h4 className="mt-2 text-base font-bold text-white">Engineer your revenue engine</h4>

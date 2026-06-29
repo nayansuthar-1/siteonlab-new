@@ -975,6 +975,30 @@ html:has(.theme-lawfirm) ::-webkit-scrollbar-thumb:hover {
 }
 
 /* ============================================================
+   Per-page theme scope: /package standalone landing page.
+   The zip already uses the homepage palette (#0b1120 base, indigo
+   #6366f1 / blue #2563eb accents) and the homepage type system
+   (Space Grotesk display via explicit font-display, Inter body), so
+   no color or font tokens are overridden — the .theme-package class
+   exists only so the unified-typography rule below maps the font
+   vars (Inter / Space Grotesk / JetBrains Mono). This page renders
+   without the global SiteNav/SiteFooter (see ChromeGate); it ships
+   its own header + footer. Scoped scrollbar matches the slate base. */
+html:has(.theme-package) ::-webkit-scrollbar {
+  width: 8px;
+}
+html:has(.theme-package) ::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+html:has(.theme-package) ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+html:has(.theme-package) ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ============================================================
    UNIFIED TYPOGRAPHY
    Every page uses the homepage font system, regardless of its
    per-page theme scope:
