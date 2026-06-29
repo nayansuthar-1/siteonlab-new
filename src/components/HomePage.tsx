@@ -213,13 +213,6 @@ export default function HomePage() {
               >
                 Book a Strategy Call
               </button>
-              <button
-                id="hero-secondary-cta"
-                onClick={() => { resetAssessment(); setAssessmentModalOpen(true); }}
-                className="bg-brand-card hover:bg-brand-card-light text-gray-200 border border-zinc-800 px-6 py-4 rounded-xl text-xs md:text-sm font-bold tracking-wider uppercase transition-all duration-300 text-center cursor-pointer"
-              >
-                Take the AI Visibility Assessment
-              </button>
             </div>
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mt-4 text-xs font-mono text-gray-500" id="hero-pillars">
