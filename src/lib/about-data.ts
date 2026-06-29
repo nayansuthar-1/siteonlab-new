@@ -213,6 +213,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
     bio: "",
     initials: "KG",
     isPlaceholder: true
+  },
+  {
+    id: "team-13",
+    name: "Ankush Kumar",
+    role: "Wordpress Developer",
+    bio: "",
+    initials: "AK",
+    isPlaceholder: true
   }
 ];
 
