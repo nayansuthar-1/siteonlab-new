@@ -17,7 +17,7 @@ export default function RelatedIndustries() {
             Explore how we help other B2B companies grow.
           </h2>
           <p className="text-slate-400 mt-6 text-base sm:text-lg leading-relaxed font-sans">
-            SiteOnLab operates exclusively in the B2B sector. Discover how our specialized growth blueprints drive pipeline for software houses, technical advisors, and high-compliance brands.
+            HybridMonks operates exclusively in the B2B sector. Discover how our specialized growth blueprints drive pipeline for software houses, technical advisors, and high-compliance brands.
           </p>
         </div>
 

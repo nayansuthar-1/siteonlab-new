@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
             A Technical SEO agency that connects technical site health to revenue.
           </h2>
           <p className="mt-4 text-sm sm:text-base text-gray-400 leading-relaxed font-light">
-            Most agencies hand you automated audits or raw page speed scores and call it done. <strong className="text-white font-medium">SiteOnLab</strong> builds a comprehensive measurement and execution layer so you can see exactly how technical SEO performance contributes across your buyers&rsquo; journey.
+            Most agencies hand you automated audits or raw page speed scores and call it done. <strong className="text-white font-medium">HybridMonks</strong> builds a comprehensive measurement and execution layer so you can see exactly how technical SEO performance contributes across your buyers&rsquo; journey.
           </p>
         </div>
 

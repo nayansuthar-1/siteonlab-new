@@ -58,7 +58,7 @@ export default function Testimonial() {
 
         {/* Subtitle assurance */}
         <p className="font-mono text-[9px] text-zinc-500 mt-8 text-center uppercase tracking-widest">
-          SiteOnLab customer satisfaction score: NPS 76 (Industry Average: 24)
+          HybridMonks customer satisfaction score: NPS 76 (Industry Average: 24)
         </p>
 
       </div>

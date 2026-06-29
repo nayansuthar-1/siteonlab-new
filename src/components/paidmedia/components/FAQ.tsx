@@ -15,7 +15,7 @@ export default function FAQ() {
   const faqs: FAQItem[] = [
     {
       question: "What is Paid Media?",
-      answer: "Paid Media refers to external marketing efforts that involve paid ad placements. For B2B companies, this primarily encompasses Google Search Ads (targeting buyer-intent keywords), Paid Social campaigns (on platforms like LinkedIn or Meta targeting firmographic data), and programmatic display or retargeting networks. At SiteOnLab, we design Paid Media campaigns specifically to build brand authority and capture active demand."
+      answer: "Paid Media refers to external marketing efforts that involve paid ad placements. For B2B companies, this primarily encompasses Google Search Ads (targeting buyer-intent keywords), Paid Social campaigns (on platforms like LinkedIn or Meta targeting firmographic data), and programmatic display or retargeting networks. At HybridMonks, we design Paid Media campaigns specifically to build brand authority and capture active demand."
     },
     {
       question: "How is Paid Media different for B2B companies?",
@@ -30,8 +30,8 @@ export default function FAQ() {
       answer: "We reject simple pixel-based conversion reporting that only measures clicks or raw form fills. Instead, we configure end-to-end multi-touch revenue attribution. By linking ad platform conversion tags with Salesforce, HubSpot, or other CRMs, we connect specific ad groups and search queries directly to open pipeline values, sales cycle velocity, and closed-won contract value. This ensures ad spend is optimized for enterprise ROI, not vanity metrics."
     },
     {
-      question: "What makes SiteOnLab different from other agencies?",
-      answer: "Most traditional agencies optimize campaigns for click volume, CTRs, and cost-per-lead (CPL) without knowing if those leads are qualified. SiteOnLab is built on a pipeline-first ethos. We co-own our clients' revenue targets. We optimize strictly for business outcomes and customer acquisition efficiency (CAC). Furthermore, we design bespoke, intent-symmetric landing pages for every campaign instead of using lazy homepage destinations."
+      question: "What makes HybridMonks different from other agencies?",
+      answer: "Most traditional agencies optimize campaigns for click volume, CTRs, and cost-per-lead (CPL) without knowing if those leads are qualified. HybridMonks is built on a pipeline-first ethos. We co-own our clients' revenue targets. We optimize strictly for business outcomes and customer acquisition efficiency (CAC). Furthermore, we design bespoke, intent-symmetric landing pages for every campaign instead of using lazy homepage destinations."
     },
     {
       question: "Do you handle implementation or only strategy?",
@@ -39,7 +39,7 @@ export default function FAQ() {
     },
     {
       question: "We tried this before and it did not work. Why would this be different?",
-      answer: "When B2B paid media fails, it almost always boils down to three fatal issues: 1) Using broad-match keywords on Google Ads (wasting budget on non-intent terms), 2) Directing traffic to homepage or general pages with broad conversion forms, and 3) Optimizing bidding algorithms for raw lead volume rather than pipeline. SiteOnLab fixes this by mapping campaigns strictly to exact buyer-intent queries, using symmetric, single-purpose landing pages, and connecting CRM feedback loops directly into campaign bidding models."
+      answer: "When B2B paid media fails, it almost always boils down to three fatal issues: 1) Using broad-match keywords on Google Ads (wasting budget on non-intent terms), 2) Directing traffic to homepage or general pages with broad conversion forms, and 3) Optimizing bidding algorithms for raw lead volume rather than pipeline. HybridMonks fixes this by mapping campaigns strictly to exact buyer-intent queries, using symmetric, single-purpose landing pages, and connecting CRM feedback loops directly into campaign bidding models."
     },
     {
       question: "How does this service support AI visibility?",

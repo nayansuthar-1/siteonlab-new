@@ -155,7 +155,7 @@ export default function HeroSection({ onRequestBlueprint, onSeeCaseStudies }: He
             <div className="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800 text-[10px] font-mono text-slate-400">
               <div>
                 <span className="text-slate-600 block">OPTIMIZATION ENGINE:</span>
-                <span className="text-blue-400">SITEONLAB_GEO_v4.1</span>
+                <span className="text-blue-400">HYBRIDMONKS_GEO_v4.1</span>
               </div>
               <div>
                 <span className="text-slate-600 block">CYCLES COHORT:</span>

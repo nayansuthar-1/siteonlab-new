@@ -86,7 +86,7 @@ export default function BlueprintModal({ isOpen, onClose, initialData }: Bluepri
           <div className="p-6 md:p-8">
             <div className="flex items-center gap-2 text-brand-primary">
               <Sparkles className="w-5 h-5" />
-              <span className="text-xs font-mono font-bold uppercase tracking-widest">SiteOnLab Engine</span>
+              <span className="text-xs font-mono font-bold uppercase tracking-widest">HybridMonks Engine</span>
             </div>
 
             <h3 className="text-xl md:text-2xl font-display font-extrabold text-white mt-2">
@@ -231,7 +231,7 @@ export default function BlueprintModal({ isOpen, onClose, initialData }: Bluepri
             </div>
 
             <h3 className="text-xl md:text-2xl font-display font-extrabold text-white mt-2">
-              Your SiteOnLab Growth Blueprint
+              Your HybridMonks Growth Blueprint
             </h3>
             <p className="text-xs text-gray-400 mt-1">
               Estimated metrics for {companyUrl.replace(/https?:\/\/(www\.)?/, '')} in {targetCity}.

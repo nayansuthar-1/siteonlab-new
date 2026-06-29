@@ -94,7 +94,7 @@ export default function HeroGraphic() {
   };
 
   // Calculator math
-  const targetCr = currentCr * 2.16; // Standard SiteOnLab 216% lift (3.88% avg lift / or standard multiplier)
+  const targetCr = currentCr * 2.16; // Standard HybridMonks 216% lift (3.88% avg lift / or standard multiplier)
   const currentLeads = Math.round(traffic * (currentCr / 100));
   const newLeads = Math.round(traffic * (targetCr / 100));
   const incrementalLeads = Math.max(0, newLeads - currentLeads);
@@ -169,10 +169,10 @@ export default function HeroGraphic() {
               </div>
             </div>
 
-            {/* VARIANT B: SITEONLAB */}
+            {/* VARIANT B: HYBRIDMONKS */}
             <div className="bg-[#3b82f6]/5 border border-[#3b82f6]/20 p-4 rounded-2xl relative overflow-hidden text-left">
               <div className="absolute top-0 right-0 bg-[#3b82f6]/10 text-[#3b82f6] text-[9px] uppercase tracking-widest font-bold px-2 py-0.5 rounded-bl font-mono">
-                SiteOnLab
+                HybridMonks
               </div>
               <div className="flex justify-between items-center mb-3">
                 <span className="text-xs font-mono text-[#3b82f6] bg-[#3b82f6]/10 px-2.5 py-1 rounded-md border border-[#3b82f6]/25">
@@ -241,7 +241,7 @@ export default function HeroGraphic() {
 
           <div className="text-center">
             <span className="text-[11px] font-mono text-slate-500">
-              SiteOnLab applies strict sequential testing math to determine true business-level uplift.
+              HybridMonks applies strict sequential testing math to determine true business-level uplift.
             </span>
           </div>
         </div>
@@ -316,7 +316,7 @@ export default function HeroGraphic() {
                   +{incrementalLeads} <span className="text-sm font-sans text-slate-400 font-medium">/ month</span>
                 </div>
                 <p className="text-[11px] text-slate-400 leading-normal">
-                  Increasing conversions from {currentCr.toFixed(1)}% to {targetCr.toFixed(1)}% (SiteOnLab standard +216% uplift).
+                  Increasing conversions from {currentCr.toFixed(1)}% to {targetCr.toFixed(1)}% (HybridMonks standard +216% uplift).
                 </p>
               </div>
 
@@ -337,7 +337,7 @@ export default function HeroGraphic() {
 
           <div className="text-center">
             <span className="text-[11px] font-mono text-slate-500">
-              Uplifts derived from historical averages across SiteOnLab client programs. Results vary by industry vertical.
+              Uplifts derived from historical averages across HybridMonks client programs. Results vary by industry vertical.
             </span>
           </div>
         </div>

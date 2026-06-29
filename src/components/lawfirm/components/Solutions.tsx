@@ -44,7 +44,7 @@ export default function Solutions() {
             A complete B2B growth system built for <span className="italic font-serif text-[#3b82f6]">Law Firms</span>.
           </h2>
           <p className="mt-4 text-white/60 text-base sm:text-lg font-light leading-relaxed">
-            SiteOnLab deploys a unified, state-bar-compliant client acquisition engine that connects high-intent search queries directly to your partner consultation calendars. We combine prestige-tier design with advanced automation to ensure no leads are lost.
+            HybridMonks deploys a unified, state-bar-compliant client acquisition engine that connects high-intent search queries directly to your partner consultation calendars. We combine prestige-tier design with advanced automation to ensure no leads are lost.
           </p>
         </div>
 

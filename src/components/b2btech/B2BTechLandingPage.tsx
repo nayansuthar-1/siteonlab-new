@@ -256,7 +256,7 @@ export default function B2BTechLandingPage() {
         </section>
 
 
-        {/* SECTION 4: HOW SITEONLAB SOLVES THESE CHALLENGES */}
+        {/* SECTION 4: HOW HYBRIDMONKS SOLVES THESE CHALLENGES */}
         <section id="solutions" className="py-16 sm:py-24 bg-transparent border-b border-white/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -266,7 +266,7 @@ export default function B2BTechLandingPage() {
                 A complete B2B growth system built for Technology companies.
               </h2>
               <p className="text-sm sm:text-base text-white/60 mt-3 leading-relaxed">
-                We bypass high-level marketing advice. SiteOnLab engineers a custom, integrated system that captures in-market buyer intent, leverages emerging AI search pathways, and establishes transparent CRM revenue attribution.
+                We bypass high-level marketing advice. HybridMonks engineers a custom, integrated system that captures in-market buyer intent, leverages emerging AI search pathways, and establishes transparent CRM revenue attribution.
               </p>
             </div>
 
@@ -357,7 +357,7 @@ export default function B2BTechLandingPage() {
                     </div>
 
                     <div>
-                      <span className="text-[11px] font-mono uppercase text-white/40 font-bold block">SiteOnLab Campaign Playbook:</span>
+                      <span className="text-[11px] font-mono uppercase text-white/40 font-bold block">HybridMonks Campaign Playbook:</span>
                       <p className="text-xs text-blue-300 mt-1 leading-relaxed">
                         {BUYER_JOURNEY[selectedJourneyIdx].siteOnLabPlaybook}
                       </p>
@@ -434,7 +434,7 @@ export default function B2BTechLandingPage() {
         </section>
 
 
-        {/* SECTION 7: WHY CHOOSE SITEONLAB */}
+        {/* SECTION 7: WHY CHOOSE HYBRIDMONKS */}
         <section className="py-16 sm:py-24 bg-transparent border-b border-white/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -600,7 +600,7 @@ export default function B2BTechLandingPage() {
                   </div>
 
                   <div className="space-y-1">
-                    <span className="font-bold text-blue-300 block font-mono uppercase text-[10px]">The SiteOnLab Playbook:</span>
+                    <span className="font-bold text-blue-300 block font-mono uppercase text-[10px]">The HybridMonks Playbook:</span>
                     <p className="bg-blue-600/10 p-4 rounded-sm border border-blue-500/20 text-blue-200 leading-relaxed text-xs">
                       {CASE_STUDIES[selectedCaseStudyIdx].solution}
                     </p>
@@ -665,7 +665,7 @@ export default function B2BTechLandingPage() {
                 Explore how we help other B2B companies grow.
               </h2>
               <p className="text-xs text-white/60 mt-2">
-                SiteOnLab works exclusively with B2B sectors. Select any corresponding industry category below to read specialized playbooks.
+                HybridMonks works exclusively with B2B sectors. Select any corresponding industry category below to read specialized playbooks.
               </p>
             </div>
 
@@ -796,7 +796,7 @@ export default function B2BTechLandingPage() {
                 <div className="space-y-4 bg-[#0F0F11] border border-white/10 p-5 rounded-sm">
                   <div className="flex items-center space-x-2 text-blue-300">
                     <ShieldCheck className="w-5 h-5 text-blue-400 shrink-0" />
-                    <span className="text-xs font-bold font-mono uppercase tracking-wider">SiteOnLab Security Guarantee</span>
+                    <span className="text-xs font-bold font-mono uppercase tracking-wider">HybridMonks Security Guarantee</span>
                   </div>
                   <p className="text-xs text-[#F8F8F8]/50 leading-relaxed">
                     We strictly sign Non-Disclosure Agreements (NDAs) before auditing any technical architecture, CRM configuration, or code repositories. Your IP and customer pipeline information remain fully isolated and secure.

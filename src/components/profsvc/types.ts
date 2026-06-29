@@ -23,7 +23,7 @@ export interface JourneyStage {
   title: string;
   buyerMindset: string;
   keyChallenge: string;
-  siteonlabSupport: string;
+  hybridmonksSupport: string;
   metricsToWatch: string;
 }
 

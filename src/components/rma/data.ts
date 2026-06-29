@@ -4,11 +4,11 @@ export const HERO_CONTENT = {
   eyebrowCategory: "Revenue Operations",
   eyebrowName: "Revenue Measurement & Analytics",
   title: "The Revenue Measurement & Analytics agency that drives CRM pipeline, multi-touch attribution, and marketing ROI.",
-  subheading: "SiteOnLab helps B2B SaaS, technology, enterprise software, and IT/MSP companies turn chaotic marketing data into a measurable revenue channel. We help you map complete buyer journeys, track multi-touch attribution, and optimize marketing spend for closed revenue — measured by qualified pipeline, not vanity metrics.",
+  subheading: "HybridMonks helps B2B SaaS, technology, enterprise software, and IT/MSP companies turn chaotic marketing data into a measurable revenue channel. We help you map complete buyer journeys, track multi-touch attribution, and optimize marketing spend for closed revenue — measured by qualified pipeline, not vanity metrics.",
   primaryCTA: "Request a Growth Blueprint",
   secondaryCTA: "See Case Studies",
-  metaTitle: "Revenue Measurement & Analytics Agency for B2B Pipeline Growth | SiteOnLab",
-  metaDescription: "SiteOnLab helps B2B SaaS, tech, and service companies use Revenue Measurement and Analytics to drive qualified pipeline, improve tracking accuracy, and connect marketing performance directly to CRM revenue."
+  metaTitle: "Revenue Measurement & Analytics Agency for B2B Pipeline Growth | HybridMonks",
+  metaDescription: "HybridMonks helps B2B SaaS, tech, and service companies use Revenue Measurement and Analytics to drive qualified pipeline, improve tracking accuracy, and connect marketing performance directly to CRM revenue."
 };
 
 export const TRUST_METRICS: TrustMetric[] = [
@@ -149,7 +149,7 @@ export const CASE_STUDIES: CaseStudy[] = [
 ];
 
 export const TESTIMONIAL = {
-  quote: "SiteOnLab's Revenue Measurement framework completely revolutionized how we allocate budget. We stopped arguing about vanity click reports and started investing solely in the campaigns driving actual SQLs. Our ROI is clearer than ever.",
+  quote: "HybridMonks's Revenue Measurement framework completely revolutionized how we allocate budget. We stopped arguing about vanity click reports and started investing solely in the campaigns driving actual SQLs. Our ROI is clearer than ever.",
   author: "Sarah Jenkins",
   title: "VP of Growth Marketing, CloudScale Technologies",
   metric: "142% Close-Rate Increase",
@@ -197,7 +197,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     id: "faq-5",
-    question: "What makes SiteOnLab different from other agencies?",
+    question: "What makes HybridMonks different from other agencies?",
     answer: "We are an engineering-first revenue marketing agency, not a visual design studio or generic content farm. We write custom tracking scripts, configure server-side Google Tag Manager containers, and connect data warehouses to your systems. We measure our success entirely on your pipeline growth and attribution accuracy, not rankings or traffic spikes."
   },
   {
@@ -208,7 +208,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: "faq-7",
     question: "We tried this before and it did not work. Why would this be different?",
-    answer: "Most failures happen because agencies rely on basic third-party browser cookies, which are heavily blocked by AdBlockers, Safari, and Brave, leading to up to 40% data loss. SiteOnLab implements first-party server-side tracking and direct server-to-server CRM syncing. This bypasses browser restrictions, giving you 99% data completeness and absolute confidence in your reports."
+    answer: "Most failures happen because agencies rely on basic third-party browser cookies, which are heavily blocked by AdBlockers, Safari, and Brave, leading to up to 40% data loss. HybridMonks implements first-party server-side tracking and direct server-to-server CRM syncing. This bypasses browser restrictions, giving you 99% data completeness and absolute confidence in your reports."
   },
   {
     id: "faq-8",

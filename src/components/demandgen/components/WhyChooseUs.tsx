@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
           </div>
           <div className="lg:col-span-6">
             <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
-              Most agencies hand you a PDF containing click reports or impression graphs and call it done. <strong className="text-white font-medium">SiteOnLab</strong> builds a full measurement layer so you can see exactly how our campaign activities contribute across the entire buyer journey, from first touch to qualified opportunity.
+              Most agencies hand you a PDF containing click reports or impression graphs and call it done. <strong className="text-white font-medium">HybridMonks</strong> builds a full measurement layer so you can see exactly how our campaign activities contribute across the entire buyer journey, from first touch to qualified opportunity.
             </p>
           </div>
         </div>

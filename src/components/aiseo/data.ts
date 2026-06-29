@@ -257,8 +257,8 @@ export const faqItems: FAQItem[] = [
   },
   {
     category: 'Differentiation',
-    question: 'What makes SiteOnLab different from other agencies?',
-    answer: 'Most standard agencies write cookie-cutter AI-generated blogs that search engines drop and AI models ignore due to lack of unique insight ("low Information Gain"). SiteOnLab combines master-level B2B technical schema engineering, native digital PR co-citations, and expert-authored practitioner articles to build bulletproof topical authority.'
+    question: 'What makes HybridMonks different from other agencies?',
+    answer: 'Most standard agencies write cookie-cutter AI-generated blogs that search engines drop and AI models ignore due to lack of unique insight ("low Information Gain"). HybridMonks combines master-level B2B technical schema engineering, native digital PR co-citations, and expert-authored practitioner articles to build bulletproof topical authority.'
   },
   {
     category: 'Services',

@@ -12,9 +12,9 @@ import { motion } from 'motion/react';
 export default function SEOPreview() {
   const [activeTab, setActiveTab] = useState<'google' | 'ai'>('google');
 
-  const title = "Conversion Rate Optimization Agency for B2B Pipeline Growth | SiteOnLab";
-  const metaDesc = "SiteOnLab helps B2B SaaS, technology, IT/MSP, and professional-services companies use Conversion Rate Optimization to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.";
-  const url = "https://siteonlab.com/services/conversion-rate-optimization";
+  const title = "Conversion Rate Optimization Agency for B2B Pipeline Growth | HybridMonks";
+  const metaDesc = "HybridMonks helps B2B SaaS, technology, IT/MSP, and professional-services companies use Conversion Rate Optimization to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.";
+  const url = "https://hybridmonks.com/services/conversion-rate-optimization";
 
   return (
     <div id="seo-preview-panel" className="bg-[#0D0D0D] border border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-2xl">
@@ -71,7 +71,7 @@ export default function SEOPreview() {
                 <Globe size={12} className="text-slate-300" />
               </span>
               <div className="flex flex-col">
-                <span className="text-slate-300 text-xs font-medium">SiteOnLab</span>
+                <span className="text-slate-300 text-xs font-medium">HybridMonks</span>
                 <span className="text-slate-500 text-[11px] truncate">{url}</span>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function SEOPreview() {
             </div>
 
             <p className="text-slate-300 text-sm leading-relaxed">
-              When enterprise clients search for specialized growth strategies, AI search engines prioritize citation links. Here is how SiteOnLab is represented in Perplexity/ChatGPT sources:
+              When enterprise clients search for specialized growth strategies, AI search engines prioritize citation links. Here is how HybridMonks is represented in Perplexity/ChatGPT sources:
             </p>
 
             <div className="bg-white/[0.02] border border-white/10 p-3 rounded-lg flex items-start gap-3 mt-2">
@@ -110,7 +110,7 @@ export default function SEOPreview() {
                 <span className="text-xs font-mono text-slate-400">Source Citations:</span>
                 <div className="flex flex-wrap gap-2 mt-1">
                   <span className="bg-white/10 text-slate-200 px-2 py-0.5 rounded text-xs border border-white/10 flex items-center gap-1">
-                    <span className="text-[#3b82f6] font-semibold">[1]</span> SiteOnLab B2B CRO
+                    <span className="text-[#3b82f6] font-semibold">[1]</span> HybridMonks B2B CRO
                   </span>
                   <span className="text-slate-400 text-xs self-center">
                     - cited for: \"revenue-first A/B models\"

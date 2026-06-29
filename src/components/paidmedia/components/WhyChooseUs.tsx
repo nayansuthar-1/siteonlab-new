@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
             A Paid Media agency that connects paid ad performance to revenue.
           </h2>
           <p className="text-slate-400 mt-4 leading-relaxed text-sm sm:text-base font-light">
-            Most agencies hand you vanity reports full of CTRs, impressions, and click scores and call it done. SiteOnLab builds a full measurement layer so you can see how paid media contributes across the complete buyer journey, from first touch to qualified opportunity.
+            Most agencies hand you vanity reports full of CTRs, impressions, and click scores and call it done. HybridMonks builds a full measurement layer so you can see how paid media contributes across the complete buyer journey, from first touch to qualified opportunity.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function WhyChooseUs() {
               {/* Technical Indicator Footer */}
               <div className="border-t border-slate-900 mt-6 pt-4 flex items-center justify-between text-[11px] text-slate-500 font-mono">
                 <span>Optimization Protocol</span>
-                <span className="text-blue-400">SiteOnLab Standard</span>
+                <span className="text-blue-400">HybridMonks Standard</span>
               </div>
 
             </div>

@@ -92,7 +92,7 @@ export default function ServiceOverview() {
                         {comp.title}
                       </h4>
                       <span className="font-mono text-[10px] text-brand-accent uppercase tracking-wider font-bold">
-                        SiteOnLab Core Component
+                        HybridMonks Core Component
                       </span>
                     </div>
                   </div>

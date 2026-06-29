@@ -202,7 +202,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed font-sans" id="hero-subtitle">
-              SiteOnLab is the AI-Powered B2B Revenue Growth agency for SaaS, tech, IT/MSP, cybersecurity, and professional-services firms. We engineer demand, win the shortlist in Google AND AI search, and convert it into revenue we can prove.
+              HybridMonks is the AI-Powered B2B Revenue Growth agency for SaaS, tech, IT/MSP, cybersecurity, and professional-services firms. We engineer demand, win the shortlist in Google AND AI search, and convert it into revenue we can prove.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto" id="hero-ctas">
@@ -246,7 +246,7 @@ export default function HomePage() {
       <section id="results" className="bg-zinc-950 border-y border-zinc-900 py-10 sm:py-16 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
 
-          {/* Note: SiteOnLab Team can easily edit these placeholders */}
+          {/* Note: HybridMonks Team can easily edit these placeholders */}
           {/* PLACEHOLDER 1 */}
           <div className="text-center md:px-6 pt-6 md:pt-0" id="result-stat-1">
             <span className="block font-display font-black text-4xl sm:text-5xl lg:text-6xl text-brand-primary tracking-tight mb-2">
@@ -391,7 +391,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mt-6 pt-4 border-t border-zinc-900/80 text-[11px] text-brand-primary font-semibold italic flex items-center gap-1">
-              <Sparkles className="w-3.5 h-3.5" /> SiteOnLab proprietary specialization.
+              <Sparkles className="w-3.5 h-3.5" /> HybridMonks proprietary specialization.
             </div>
           </div>
 
@@ -501,7 +501,7 @@ export default function HomePage() {
                 <div className="bg-zinc-950/80 rounded-lg p-4 border border-zinc-900 flex items-start gap-3 mt-2">
                   <CheckCircle className="w-5 h-5 text-brand-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <span className="block text-[11px] font-mono uppercase tracking-wider text-brand-primary font-bold">The SiteOnLab Solution</span>
+                    <span className="block text-[11px] font-mono uppercase tracking-wider text-brand-primary font-bold">The HybridMonks Solution</span>
                     <p className="text-xs sm:text-sm text-gray-300 mt-1 leading-relaxed">
                       {item.solution}
                     </p>
@@ -846,7 +846,7 @@ export default function HomePage() {
           <div className="lg:col-span-7 flex flex-col gap-6" id="why-works-content">
             <div>
               <div className="inline-block px-2.5 py-1 bg-brand-primary/10 text-brand-primary rounded font-mono text-[10px] uppercase font-bold tracking-wider mb-4 border border-brand-primary/20">
-                The SiteOnLab Edge
+                The HybridMonks Edge
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-extrabold text-white leading-tight">
                 Why it works.
@@ -915,7 +915,7 @@ export default function HomePage() {
 
             <div className="text-center pb-4 border-b border-zinc-900">
               <span className="block text-[10px] font-mono uppercase tracking-wider text-gray-500 font-bold mb-1">Operations Hub</span>
-              <h4 className="text-sm font-bold font-display text-white">SiteOnLab Core Growth Engineers</h4>
+              <h4 className="text-sm font-bold font-display text-white">HybridMonks Core Growth Engineers</h4>
             </div>
 
             {/* Simulated Team Active Status Matrix */}
@@ -939,7 +939,7 @@ export default function HomePage() {
             </div>
 
             <div className="bg-brand-primary/5 rounded p-4 border border-brand-primary/10 text-center text-xs text-gray-400 leading-relaxed font-sans">
-              &quot;SiteOnLab combines executive engineering rigor with rapid marketing execution, allowing us to hit aggressive pipelines comfortably.&quot;
+              &quot;HybridMonks combines executive engineering rigor with rapid marketing execution, allowing us to hit aggressive pipelines comfortably.&quot;
             </div>
           </div>
 
@@ -1239,7 +1239,7 @@ export default function HomePage() {
                   Excellent, <strong className="text-brand-primary">{bookingForm.name}</strong>. We have saved your slot for <strong className="text-white">{bookingForm.day} at {bookingForm.time}</strong>. An email calendar invite containing meeting links has been dispatched.
                 </p>
                 <p className="text-[11px] text-gray-500 italic">
-                  A SiteOnLab strategic partner will review your business presence beforehand. See you soon!
+                  A HybridMonks strategic partner will review your business presence beforehand. See you soon!
                 </p>
                 <button
                   onClick={() => setBookingModalOpen(false)}
@@ -1282,7 +1282,7 @@ export default function HomePage() {
               <div className="space-y-6" id="assessment-step-1">
                 <div>
                   <h3 className="text-lg font-bold text-white font-display mb-1">What is your primary commercial sector?</h3>
-                  <p className="text-xs text-gray-400">SiteOnLab strategies are optimized for specialized B2B committee markets.</p>
+                  <p className="text-xs text-gray-400">HybridMonks strategies are optimized for specialized B2B committee markets.</p>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   {["B2B SaaS / Software", "IT Services / MSPs", "Cybersecurity", "Professional Services", "Manufacturing / Industrial", "Other B2B Sector"].map((sector) => (

@@ -98,9 +98,9 @@ export default function HeroGraphics() {
             <span className="font-mono text-xs text-slate-400 tracking-wider uppercase">Live GEO Citation Simulator</span>
           </div>
           
-          {/* SiteOnLab Optimizer Toggle Switch */}
+          {/* HybridMonks Optimizer Toggle Switch */}
           <div className="flex items-center gap-2.5 self-stretch sm:self-auto bg-slate-950/80 p-1.5 rounded-lg border border-slate-800/80">
-            <span className="text-[10px] font-mono text-slate-400 font-medium px-1.5">SITEONLAB OPTIMIZATION</span>
+            <span className="text-[10px] font-mono text-slate-400 font-medium px-1.5">HYBRIDMONKS OPTIMIZATION</span>
             <button 
               id="optimizer-toggle"
               onClick={() => {
@@ -318,8 +318,8 @@ export default function HeroGraphics() {
           <Layers className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
           <p>
             {isOptimized 
-              ? "SiteOnLab Optimization forces ChatGPT & Perplexity's semantic retrieval layer to digest structured JSON-LD schema & co-citations, securing brand recommendation."
-              : "Without optimization, generative engines scrap competitor datasets and omit your brand. Toggle the switch to see the SiteOnLab lift."}
+              ? "HybridMonks Optimization forces ChatGPT & Perplexity's semantic retrieval layer to digest structured JSON-LD schema & co-citations, securing brand recommendation."
+              : "Without optimization, generative engines scrap competitor datasets and omit your brand. Toggle the switch to see the HybridMonks lift."}
           </p>
         </div>
 

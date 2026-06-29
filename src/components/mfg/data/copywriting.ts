@@ -13,13 +13,13 @@ import {
 
 export const INDUSTRY_NAME = "Manufacturing & Industrial";
 export const URL_SLUG = "/industries/manufacturing-industrial";
-export const SEO_TITLE = "Manufacturing B2B Marketing Agency & Growth Partner | SiteOnLab";
-export const SEO_META_DESC = "Scale your manufacturing company with SiteOnLab. We drive qualified B2B pipeline, SEO authority, and AI search visibility for industrial brands.";
+export const SEO_TITLE = "Manufacturing B2B Marketing Agency & Growth Partner | HybridMonks";
+export const SEO_META_DESC = "Scale your manufacturing company with HybridMonks. We drive qualified B2B pipeline, SEO authority, and AI search visibility for industrial brands.";
 
 export const HERO_CONTENT = {
   eyebrow: "Industries | Manufacturing & Industrial",
   title: "B2B Marketing for Manufacturing & Industrial Companies That Drives Qualified Pipeline, Revenue, and Long-Term Growth.",
-  supporting: "Modern industrial buyers do 70% of their research before ever speaking with a sales representative. SiteOnLab helps custom manufacturers, industrial equipment OEMs, and tier-1 suppliers capture active demand and dominate both traditional and AI-driven search engines (Google AI Overviews, ChatGPT, Gemini). We replace empty clicks with measurable pipeline, aligning your technical capabilities with the commercial needs of enterprise procurement and engineering teams.",
+  supporting: "Modern industrial buyers do 70% of their research before ever speaking with a sales representative. HybridMonks helps custom manufacturers, industrial equipment OEMs, and tier-1 suppliers capture active demand and dominate both traditional and AI-driven search engines (Google AI Overviews, ChatGPT, Gemini). We replace empty clicks with measurable pipeline, aligning your technical capabilities with the commercial needs of enterprise procurement and engineering teams.",
   ctaPrimary: "Request a Growth Blueprint",
   ctaSecondary: "See Case Studies"
 };
@@ -261,7 +261,7 @@ export const CASE_STUDIES: CaseStudy[] = [
 ];
 
 export const TESTIMONIAL: Testimonial = {
-  quote: "SiteOnLab transformed how we source enterprise accounts. They didn't just understand B2B marketingâ€”they understood our machines, our AS9100 quality standards, and how design engineers make decisions. Within nine months, our organic pipeline expanded by over $6 million, and we are now cited as the premier contract manufacturing authority across both Google and major AI search engines.",
+  quote: "HybridMonks transformed how we source enterprise accounts. They didn't just understand B2B marketingâ€”they understood our machines, our AS9100 quality standards, and how design engineers make decisions. Within nine months, our organic pipeline expanded by over $6 million, and we are now cited as the premier contract manufacturing authority across both Google and major AI search engines.",
   clientName: "Marcus Vance",
   role: "VP of Global Business Development",
   company: "Apex Precision Components",
@@ -326,7 +326,7 @@ export const FAQS: FAQ[] = [
 export const RAW_MARKDOWN_COPY = `
 # Industry Authority: B2B Marketing & Pipeline Generation for Manufacturing & Industrial Companies
 
-**An SEO and AI-Optimized Strategic Guide & Execution Blueprint by SiteOnLab**
+**An SEO and AI-Optimized Strategic Guide & Execution Blueprint by HybridMonks**
 
 ---
 
@@ -340,7 +340,7 @@ B2B marketing for Manufacturing & Industrial companies that drives qualified pip
 ### Executive Copy
 Modern industrial buyers execute approximately 70% of their research and vendor vetting online before ever initiating contact with a sales representative or submitting a Request for Quote (RFQ). Sourcing directors, design engineers, and buying committees require more than generic marketing slogans; they seek verifiable technical capability, capacity, material sciences expertise, and strict quality certifications.
 
-SiteOnLab acts as your high-performing growth partner. We replace empty digital vanity metrics with measurable pipeline and qualified RFQs through a comprehensive growth system uniting Technical Industrial SEO, Generative Engine Optimization (GEO/AI search readiness), high-converting web experiences, account-based paid advertising (ABM), and advanced CRM/ERP revenue integration.
+HybridMonks acts as your high-performing growth partner. We replace empty digital vanity metrics with measurable pipeline and qualified RFQs through a comprehensive growth system uniting Technical Industrial SEO, Generative Engine Optimization (GEO/AI search readiness), high-converting web experiences, account-based paid advertising (ABM), and advanced CRM/ERP revenue integration.
 
 ---
 
@@ -376,7 +376,7 @@ Engineers are trained to detect fluff. When generalist marketing agencies write 
 
 ---
 
-## SECTION 4: HOW SITEONLAB SOLVES THESE CHALLENGES
+## SECTION 4: HOW HYBRIDMONKS SOLVES THESE CHALLENGES
 We have engineered a complete, revenue-oriented growth system designed specifically to address the nuances of B2B industrial buying behavior.
 
 * **Technical Industrial SEO**: We optimize your platform to capture high-intent engineering searches, focusing on ASTM standards, material classes, specific lathe/mill models, and custom manufacturing processes. We build massive organic topical authority.
@@ -393,13 +393,13 @@ We have engineered a complete, revenue-oriented growth system designed specifica
 We design custom marketing campaigns that align with the specific psychological stages of the B2B industrial purchasing funnel:
 
 1. **Awareness**: The buyer experiences a component failure or seeks to mitigate supply chain risk by finding a domestic partner.
-   * *SiteOnLab Support*: We deploy targeted technical SEO and informational guides to answer specific engineering issues, putting your brand in front of them immediately.
+   * *HybridMonks Support*: We deploy targeted technical SEO and informational guides to answer specific engineering issues, putting your brand in front of them immediately.
 2. **Research**: The buyer evaluates capabilities, machine dimensions, and quality frameworks.
-   * *SiteOnLab Support*: We design clear, scannable machine capacity tables, ISO/AS9100 certification vaults, and downloadable equipment lists.
+   * *HybridMonks Support*: We design clear, scannable machine capacity tables, ISO/AS9100 certification vaults, and downloadable equipment lists.
 3. **Evaluation**: The buyer submits drawings or detailed RFQs to their shortlisted vendors.
-   * *SiteOnLab Support*: We implement secure, frictionless CAD upload systems and automated lead qualification to ensure your team quotes first.
+   * *HybridMonks Support*: We implement secure, frictionless CAD upload systems and automated lead qualification to ensure your team quotes first.
 4. **Decision**: Sourcing and finance leaders review past success, logistics, and legal compliance.
-   * *SiteOnLab Support*: We provide high-impact case studies, material trace certificates, and interactive ROI metrics to alleviate risk and secure the order.
+   * *HybridMonks Support*: We provide high-impact case studies, material trace certificates, and interactive ROI metrics to alleviate risk and secure the order.
 
 ---
 
@@ -412,7 +412,7 @@ Our approach is highly structured, transparent, and performance-based:
 
 ---
 
-## SECTION 7: WHY MANUFACTURING COMPANIES PARTNER WITH SITEONLAB
+## SECTION 7: WHY MANUFACTURING COMPANIES PARTNER WITH HYBRIDMONKS
 * **Industrial Specialization**: We understand CNC machining, metallurgy, AS9100 rules, and molding. We speak the technical language of your buyers.
 * **Revenue-First Mentality**: We do not focus on vanity metrics; we optimize for qualified RFQs, closed contracts, and sales-ready pipelines.
 * **AI-First Preparation**: We are pioneers in GEO, ensuring your capabilities are indexed and cited by Gemini and ChatGPT.
@@ -439,7 +439,7 @@ We offer an integrated suite of capabilities tailored to scale your manufacturin
 ---
 
 ## SECTION 10: CLIENT TESTIMONIAL
-"SiteOnLab deeply understands how engineers think and how procurement selects partners. They optimized our visibility, securing over $6 million in organic pipeline and establishing our brand as the leading authority across Google and ChatGPT." â€” Marcus Vance, VP of Business Development, Apex Precision Components.
+"HybridMonks deeply understands how engineers think and how procurement selects partners. They optimized our visibility, securing over $6 million in organic pipeline and establishing our brand as the leading authority across Google and ChatGPT." â€” Marcus Vance, VP of Business Development, Apex Precision Components.
 
 ---
 
@@ -460,7 +460,7 @@ We provide transparent, highly detailed answers regarding our scope, deliverable
 ---
 
 ## SECTION 13: THE DECISION: START YOUR INDUSTRIAL GROWTH ENGINE
-Stop relying on unpredictable referrals and outdated sales techniques. Partner with SiteOnLab to build a modern, scalable, and predictable growth pipeline.
+Stop relying on unpredictable referrals and outdated sales techniques. Partner with HybridMonks to build a modern, scalable, and predictable growth pipeline.
 
 [Request a Growth Blueprint] | [Book a Strategy Call]
 `;

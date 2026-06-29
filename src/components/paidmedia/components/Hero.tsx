@@ -42,7 +42,7 @@ export default function Hero({ onRequestBlueprint, onSeeCaseStudies }: HeroProps
 
             {/* Structured B2B Subheading */}
             <p className="text-base sm:text-lg text-slate-400 leading-relaxed max-w-xl font-light">
-              SiteOnLab helps B2B SaaS, technology, IT/MSP, and professional-services companies turn search and social ad networks into a measurable revenue channel. We help you <strong className="text-white font-medium">rank instantly for buyer-intent terms</strong>, <strong className="text-white font-medium">hyper-target ICP stakeholders</strong>, and <strong className="text-white font-medium">convert traffic into qualified opportunities</strong> â€” measured by pipeline, not vanity metrics.
+              HybridMonks helps B2B SaaS, technology, IT/MSP, and professional-services companies turn search and social ad networks into a measurable revenue channel. We help you <strong className="text-white font-medium">rank instantly for buyer-intent terms</strong>, <strong className="text-white font-medium">hyper-target ICP stakeholders</strong>, and <strong className="text-white font-medium">convert traffic into qualified opportunities</strong> â€” measured by pipeline, not vanity metrics.
             </p>
 
             {/* CTA Buttons */}

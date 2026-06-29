@@ -26,12 +26,12 @@ export default function Faq() {
     {
       id: "faq-4",
       question: "How do you measure ROI?",
-      answer: "Unlike traditional agencies that report on vanity metrics like impressions or simple keyword clicks, SiteOnLab connects performance directly to your marketing pipeline. We integrate custom multi-attribution scripts with your CRM (HubSpot, Salesforce) to track first-touch, assisted, and last-touch closed-won pipeline revenue driven by technically-optimized pages.",
+      answer: "Unlike traditional agencies that report on vanity metrics like impressions or simple keyword clicks, HybridMonks connects performance directly to your marketing pipeline. We integrate custom multi-attribution scripts with your CRM (HubSpot, Salesforce) to track first-touch, assisted, and last-touch closed-won pipeline revenue driven by technically-optimized pages.",
     },
     {
       id: "faq-5",
-      question: "What makes SiteOnLab different from other agencies?",
-      answer: "Most agencies run a generic audit template from a third-party tool, hand you a list of 100 errors, and expect your developers to fix them. SiteOnLab operates as an engineering-led team: we understand modern JS frameworks, we write high-quality schema code, and we can directly implement the updates in your codebase. Additionally, we are one of the few agencies natively structuring sites for AI Search citation engines.",
+      question: "What makes HybridMonks different from other agencies?",
+      answer: "Most agencies run a generic audit template from a third-party tool, hand you a list of 100 errors, and expect your developers to fix them. HybridMonks operates as an engineering-led team: we understand modern JS frameworks, we write high-quality schema code, and we can directly implement the updates in your codebase. Additionally, we are one of the few agencies natively structuring sites for AI Search citation engines.",
     },
     {
       id: "faq-6",
@@ -41,7 +41,7 @@ export default function Faq() {
     {
       id: "faq-7",
       question: "We tried this before and it did not work. Why would this be different?",
-      answer: "Most past SEO failures result from agencies treating technical SEO as a one-time setup step or focusing purely on vanity blog content. If your underlying site has hydration delays, deep crawling bottlenecks, or incorrect canonical directives, even the best content won't rank. SiteOnLab begins by fixing the infrastructure, ensuring your high-intent pipeline pages can actually be indexed and delivered at sub-second speeds.",
+      answer: "Most past SEO failures result from agencies treating technical SEO as a one-time setup step or focusing purely on vanity blog content. If your underlying site has hydration delays, deep crawling bottlenecks, or incorrect canonical directives, even the best content won't rank. HybridMonks begins by fixing the infrastructure, ensuring your high-intent pipeline pages can actually be indexed and delivered at sub-second speeds.",
     },
     {
       id: "faq-8",

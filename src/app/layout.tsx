@@ -74,7 +74,7 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "SiteOnLab | AI-Powered B2B Revenue Growth & AI Visibility Agency",
+  title: "HybridMonks | AI-Powered B2B Revenue Growth & AI Visibility Agency",
   description:
     "AI-Powered B2B Revenue Growth & AI Visibility Agency. Get found in Google and recommended by ChatGPT, Perplexity, and AI Overviews.",
 };

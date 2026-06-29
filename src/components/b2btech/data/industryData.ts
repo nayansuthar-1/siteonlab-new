@@ -63,7 +63,7 @@ export interface RelatedIndustry {
 }
 
 export const SEO_DATA = {
-  titleTag: "B2B Technology Marketing Agency | SiteOnLab",
+  titleTag: "B2B Technology Marketing Agency | HybridMonks",
   metaDescription: "Drive qualified pipeline and revenue for your B2B Technology company. Expert B2B SEO, AI search visibility optimization (GEO), high-converting websites, and full-funnel digital marketing.",
   urlSlug: "/industries/b2b-technology",
   h1: "B2B Marketing for B2B Technology Companies That Drives Qualified Pipeline, Revenue, and Long-Term Growth",
@@ -89,7 +89,7 @@ export const SEO_DATA = {
 export const HERO_DATA = {
   eyebrow: "INDUSTRIES | B2B TECHNOLOGY",
   h1: "B2B Marketing for Technology Companies That Scalably Drives Qualified Pipeline and Revenue",
-  supportingCopy: "In the high-stakes B2B technology landscape, standard lead generation is dead. Tech buyers are 80% through their decision process before ever talking to sales. SiteOnLab designs and executes a modern growth engine—unifying high-authority SEO, AI Search Visibility (GEO/LLM), high-performing web platforms, and precision paid media—to position your technology firm as the obvious market choice. We bypass vanity metrics to deliver what your executive team actually measures: pipeline velocity and closed-won revenue.",
+  supportingCopy: "In the high-stakes B2B technology landscape, standard lead generation is dead. Tech buyers are 80% through their decision process before ever talking to sales. HybridMonks designs and executes a modern growth engine—unifying high-authority SEO, AI Search Visibility (GEO/LLM), high-performing web platforms, and precision paid media—to position your technology firm as the obvious market choice. We bypass vanity metrics to deliver what your executive team actually measures: pipeline velocity and closed-won revenue.",
   primaryCta: "Request a Growth Blueprint",
   secondaryCta: "See Case Studies"
 };
@@ -336,7 +336,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: "B2B SaaS / DevSecOps",
     title: "Scaling Enterprise Security Pipeline for DevSecOps Platform",
     challenge: "A security posture management platform was struggling to attract technical security officers and CTOs due to heavy market noise and an outdated website that failed to demonstrate compliance readiness.",
-    solution: "SiteOnLab engineered a massive SEO restructurings targeted at developer compliance, created a secure resource hub, and optimized the product footprint for AI search citations on Perplexity and Gemini.",
+    solution: "HybridMonks engineered a massive SEO restructurings targeted at developer compliance, created a secure resource hub, and optimized the product footprint for AI search citations on Perplexity and Gemini.",
     outcome: "Generated a 310% increase in high-intent organic demo requests, unlocked $4.2M in new enterprise sales pipeline, and secured 14 primary recommendations in AI security searches.",
     metrics: ["+310% Demo Requests", "$4.2M New Pipeline", "14x AI Search Citations"],
     timeline: "First 6 Months"
@@ -362,7 +362,7 @@ export const CASE_STUDIES: CaseStudy[] = [
 ];
 
 export const TESTIMONIAL = {
-  quote: "SiteOnLab is the only agency we've worked with that actually speaks our language. They designed our website and optimized our organic search. Instead of sending us useless traffic graphs, they connected our marketing spend directly to our HubSpot dashboard, demonstrating a 3.4x pipeline velocity increase in our first year. Their AI Visibility optimizations are a total game-changer.",
+  quote: "HybridMonks is the only agency we've worked with that actually speaks our language. They designed our website and optimized our organic search. Instead of sending us useless traffic graphs, they connected our marketing spend directly to our HubSpot dashboard, demonstrating a 3.4x pipeline velocity increase in our first year. Their AI Visibility optimizations are a total game-changer.",
   clientName: "Marcus Vance",
   role: "Chief Marketing Officer",
   company: "AetherShield Cybersecurity",
@@ -426,7 +426,7 @@ export const FAQS: FAQItem[] = [
 
 export const FINAL_CTA = {
   h2: "Let's build a predictable, high-velocity growth engine for your B2B Technology company.",
-  body: "Stop wasting budget on clicks, traffic spikes, and unengaged leads. Partner with SiteOnLab to design an high-converting, AI-ready B2B growth system that captures enterprise buyers and drives closed-won revenue.",
+  body: "Stop wasting budget on clicks, traffic spikes, and unengaged leads. Partner with HybridMonks to design an high-converting, AI-ready B2B growth system that captures enterprise buyers and drives closed-won revenue.",
   primaryCta: "Request a Growth Blueprint",
   secondaryCta: "Book a Strategy Call"
 };

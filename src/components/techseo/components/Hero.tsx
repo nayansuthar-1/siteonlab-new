@@ -84,9 +84,9 @@ export default function Hero({ onRequestBlueprint, onSeeCaseStudies }: HeroProps
     setPagesCrawled(0);
     setErrorsFound(0);
     setConsoleLogs([
-      "Initializing SiteOnLab Crawler v2.8...",
+      "Initializing HybridMonks Crawler v2.8...",
       "Connecting to target DNS endpoints...",
-      "User-Agent: SiteOnLabBot/1.0 (+https://siteonlab.com/bot)",
+      "User-Agent: HybridMonksBot/1.0 (+https://hybridmonks.com/bot)",
       "Parsing main index XML Sitemap...",
     ]);
   };
@@ -117,7 +117,7 @@ export default function Hero({ onRequestBlueprint, onSeeCaseStudies }: HeroProps
 
             {/* Subheading */}
             <p className="text-base sm:text-lg text-gray-400 max-w-2xl leading-relaxed font-light">
-              SiteOnLab helps B2B SaaS and IT/MSP companies turn their site architecture into a measurable revenue channel. We help you rank for buyer-intent searches, get cited by AI engines, and convert visibility into qualified pipeline.
+              HybridMonks helps B2B SaaS and IT/MSP companies turn their site architecture into a measurable revenue channel. We help you rank for buyer-intent searches, get cited by AI engines, and convert visibility into qualified pipeline.
             </p>
 
             {/* CTAs */}
@@ -165,7 +165,7 @@ export default function Hero({ onRequestBlueprint, onSeeCaseStudies }: HeroProps
                   <span className="h-2.5 w-2.5 rounded-full bg-red-500/70"></span>
                   <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/70"></span>
                   <span className="h-2.5 w-2.5 rounded-full bg-green-500/70"></span>
-                  <span className="text-[10px] font-mono text-gray-400 ml-1">SiteOnLab Crawler Engine</span>
+                  <span className="text-[10px] font-mono text-gray-400 ml-1">HybridMonks Crawler Engine</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-[10px] text-gray-400 font-mono uppercase tracking-wider">
                   <Activity className="h-3 w-3 text-blue-500 animate-pulse" />

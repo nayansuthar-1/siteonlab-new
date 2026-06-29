@@ -118,12 +118,12 @@ export default function App() {
               <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono">
                 <div className="bg-zinc-950 p-3 rounded-lg border border-zinc-800">
                   <span className="text-[10px] text-blue-400 block mb-1 font-bold">TITLE TAG</span>
-                  <p className="text-zinc-200">Marketing Automation Agency for B2B Pipeline Growth | SiteOnLab</p>
+                  <p className="text-zinc-200">Marketing Automation Agency for B2B Pipeline Growth | HybridMonks</p>
                 </div>
                 <div className="bg-zinc-950 p-3 rounded-lg border border-zinc-800">
                   <span className="text-[10px] text-blue-400 block mb-1 font-bold">META DESCRIPTION</span>
                   <p className="text-zinc-300 leading-normal">
-                    SiteOnLab helps B2B SaaS and technology companies use marketing automation to drive qualified pipeline, improve velocity, and connect marketing performance to revenue.
+                    HybridMonks helps B2B SaaS and technology companies use marketing automation to drive qualified pipeline, improve velocity, and connect marketing performance to revenue.
                   </p>
                 </div>
                 <div className="bg-zinc-950 p-3 rounded-lg border border-zinc-800">
@@ -158,7 +158,7 @@ export default function App() {
               </h1>
               
               <p className="text-sm sm:text-base text-zinc-400 leading-relaxed font-light">
-                SiteOnLab helps B2B SaaS, technology, IT/MSP, and professional-services companies turn marketing automation into a measurable revenue channel. We help you nurture cold prospects, speed up sales cycles, and convert engagement into qualified pipeline — measured by qualified pipeline, not vanity metrics.
+                HybridMonks helps B2B SaaS, technology, IT/MSP, and professional-services companies turn marketing automation into a measurable revenue channel. We help you nurture cold prospects, speed up sales cycles, and convert engagement into qualified pipeline — measured by qualified pipeline, not vanity metrics.
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
@@ -382,7 +382,7 @@ export default function App() {
                 A marketing automation agency that connects campaign activity to revenue.
               </h2>
               <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light">
-                Most agencies hand you open-rate reports and call it done. SiteOnLab builds a full measurement layer so you can see how marketing automation contributes across the buyer journey, from first touch to qualified opportunity.
+                Most agencies hand you open-rate reports and call it done. HybridMonks builds a full measurement layer so you can see how marketing automation contributes across the buyer journey, from first touch to qualified opportunity.
               </p>
               <div className="pt-2">
                 <button

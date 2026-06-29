@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
         {/* Header */}
         <div className="max-w-3xl text-left mb-16">
           <span className="text-[#3b82f6] text-xs font-bold uppercase tracking-[0.3em] bg-[#3b82f6]/5 border border-[#3b82f6]/20 px-3 py-1">
-            Why Companies Choose SiteOnLab
+            Why Companies Choose HybridMonks
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-light tracking-tight text-white leading-tight">
             A B2B growth agency that understands <span className="italic font-serif text-[#3b82f6]">Law Firms</span>.

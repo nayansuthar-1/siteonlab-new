@@ -154,8 +154,8 @@ const FAQ_ITEMS: FAQItem[] = [
     answer: "We configure a dedicated measurement layer that maps Local Map clicks, direction inquiries, and geographic search forms directly to your sales pipeline. Using dynamic call-routing numbers and CRM integrations, we measure exact outcomes—qualified pipeline value and CAC efficiency—rather than simple web impressions."
   },
   {
-    question: "What makes SiteOnLab different from other local SEO agencies?",
-    answer: "Most agencies run template checkmarks: they blast your business to generic directories and deliver a vanity report. SiteOnLab builds a full-funnel local marketing system. We integrate advanced coordinate schemas, optimize for voice search and AI LLM citation algorithms, and build honest multi-location analytics dashboards to demonstrate clear revenue attribution."
+    question: "What makes HybridMonks different from other local SEO agencies?",
+    answer: "Most agencies run template checkmarks: they blast your business to generic directories and deliver a vanity report. HybridMonks builds a full-funnel local marketing system. We integrate advanced coordinate schemas, optimize for voice search and AI LLM citation algorithms, and build honest multi-location analytics dashboards to demonstrate clear revenue attribution."
   },
   {
     question: "Do you handle profile implementation or only strategy?",
@@ -163,7 +163,7 @@ const FAQ_ITEMS: FAQItem[] = [
   },
   {
     question: "We tried local SEO before and it did not work. Why would this be different?",
-    answer: "Usually, past failures trace back to poor citation hygiene (competing duplicate listings), generic non-B2B keyword maps, or send-to-homepage layouts that drop conversions. SiteOnLab focuses strictly on high-intent intent queries, programmatic geo-targeted landing templates, and honest CRM-integrated tracking to guarantee measurable growth."
+    answer: "Usually, past failures trace back to poor citation hygiene (competing duplicate listings), generic non-B2B keyword maps, or send-to-homepage layouts that drop conversions. HybridMonks focuses strictly on high-intent intent queries, programmatic geo-targeted landing templates, and honest CRM-integrated tracking to guarantee measurable growth."
   },
   {
     question: "How does this service support voice search and AI visibility?",
@@ -226,7 +226,7 @@ export default function LocalSeoPage() {
               </h1>
 
               <p id="hero-subtext" className="text-sm md:text-base text-gray-400 mt-5 leading-relaxed max-w-lg">
-                SiteOnLab helps B2B enterprise networks, multi-location tech firms, IT/MSPs, and professional service companies turn geographic search and local map listings into a measurable revenue engine. We help you rank in the Local 3-Pack, capture regional intent queries, and attribute citations directly to CRM pipeline.
+                HybridMonks helps B2B enterprise networks, multi-location tech firms, IT/MSPs, and professional service companies turn geographic search and local map listings into a measurable revenue engine. We help you rank in the Local 3-Pack, capture regional intent queries, and attribute citations directly to CRM pipeline.
               </p>
 
               {/* Action Buttons */}
@@ -434,7 +434,7 @@ export default function LocalSeoPage() {
                 A Local SEO agency that connects maps visibility to revenue.
               </h2>
               <p className="text-sm text-gray-400 mt-4 leading-relaxed">
-                Most agencies hand you a vanity spreadsheet showing search impressions and call it a success. SiteOnLab constructs a complete multi-coordinate attribution layer so you can trace how Local SEO drives physical conversions and regional pipeline.
+                Most agencies hand you a vanity spreadsheet showing search impressions and call it a success. HybridMonks constructs a complete multi-coordinate attribution layer so you can trace how Local SEO drives physical conversions and regional pipeline.
               </p>
 
               <button
@@ -564,7 +564,7 @@ export default function LocalSeoPage() {
                   <p>{CASE_STUDIES[activeCaseIndex].challenge}</p>
                 </div>
                 <div>
-                  <strong className="text-brand-primary block mb-1 font-mono uppercase tracking-wider text-[10px]">The SiteOnLab Solution</strong>
+                  <strong className="text-brand-primary block mb-1 font-mono uppercase tracking-wider text-[10px]">The HybridMonks Solution</strong>
                   <p>{CASE_STUDIES[activeCaseIndex].solution}</p>
                 </div>
               </div>

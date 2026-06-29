@@ -104,7 +104,7 @@ export default function BlueprintModal({ isOpen, onClose }: BlueprintModalProps)
                   <Sparkles className="h-4.5 w-4.5 animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-sans text-lg font-bold text-white">SiteOnLab Growth Blueprint</h3>
+                  <h3 className="font-sans text-lg font-bold text-white">HybridMonks Growth Blueprint</h3>
                   <p className="font-sans text-xs text-zinc-400">Custom Content Strategy Blueprint & Scorecard</p>
                 </div>
               </div>

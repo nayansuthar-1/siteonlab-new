@@ -24,7 +24,7 @@ export default function Footer() {
               <Target className="h-4.5 w-4.5 text-white" />
             </div>
             <span className="font-display text-lg font-bold tracking-tight text-white">
-              SiteOn<span className="text-brand-accent">Lab</span>
+              Hybrid<span className="text-brand-accent">Monks</span>
             </span>
           </div>
 
@@ -42,7 +42,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-[11px] text-zinc-500 font-mono">
           <div>
-            &copy; {currentYear} SiteOnLab. All rights reserved. Registered trademark.
+            &copy; {currentYear} HybridMonks. All rights reserved. Registered trademark.
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1 hover:text-zinc-400 cursor-pointer">

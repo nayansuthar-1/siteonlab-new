@@ -14,11 +14,11 @@ interface StudioSidebarProps {
 }
 
 const B2B_TIPS = [
-  "SiteOnLab Copy Tip: Optimize copy for buyer intent, not high generic search volume.",
-  "SiteOnLab Copy Tip: Focus on CAC efficiency and qualified pipeline over vanity metrics.",
-  "SiteOnLab Copy Tip: AI answer engines look for authoritative entities and Q&A formats.",
-  "SiteOnLab Copy Tip: Write for the whole buying committee (security, legal, and CFO).",
-  "SiteOnLab Copy Tip: Frame client wins as a direct pipeline outcome (+X% qualified demos)."
+  "HybridMonks Copy Tip: Optimize copy for buyer intent, not high generic search volume.",
+  "HybridMonks Copy Tip: Focus on CAC efficiency and qualified pipeline over vanity metrics.",
+  "HybridMonks Copy Tip: AI answer engines look for authoritative entities and Q&A formats.",
+  "HybridMonks Copy Tip: Write for the whole buying committee (security, legal, and CFO).",
+  "HybridMonks Copy Tip: Frame client wins as a direct pipeline outcome (+X% qualified demos)."
 ];
 
 export default function StudioSidebar({
@@ -104,7 +104,7 @@ export default function StudioSidebar({
 - **Category:** ${data.serviceCategory}
 - **Service Name:** ${data.serviceName}
 - **H1:** The ${data.serviceName} agency that drives ${data.outcome1}, ${data.outcome2}, and ${data.outcome3}.
-- **Subheading:** SiteOnLab helps ${data.icp} turn ${data.serviceChannel} into a measurable revenue channel. We help you ${data.primaryBenefit}, ${data.secondaryBenefit}, and ${data.conversionBenefit} — measured by qualified pipeline, not vanity metrics.
+- **Subheading:** HybridMonks helps ${data.icp} turn ${data.serviceChannel} into a measurable revenue channel. We help you ${data.primaryBenefit}, ${data.secondaryBenefit}, and ${data.conversionBenefit} — measured by qualified pipeline, not vanity metrics.
 - **Primary CTA:** ${data.primaryCtaText}
 - **Secondary CTA:** ${data.secondaryCtaText}
 
@@ -244,7 +244,7 @@ ${data.faqs?.map((f) => `### Q: ${f.question}\n**A:** ${f.answer}`).join("\n\n")
                 B2B AI Copywriter
               </h3>
               <p className="text-xs text-gray-400 leading-relaxed">
-                Describe any custom B2B service or consulting category below. Gemini will instantly write structured, high-converting copy across all 10 landing page sections following SiteOnLab's honest, pipeline-first voice.
+                Describe any custom B2B service or consulting category below. Gemini will instantly write structured, high-converting copy across all 10 landing page sections following HybridMonks's honest, pipeline-first voice.
               </p>
             </div>
 
@@ -866,7 +866,7 @@ ${data.faqs?.map((f) => `### Q: ${f.question}\n**A:** ${f.answer}`).join("\n\n")
                 Copywriting Delivery File
               </h4>
               <p className="text-xs text-gray-400 leading-relaxed">
-                SiteOnLab is built to supply copy structured for lightning-fast implementation. Copy any structured export formats below to paste directly into Notion, HubSpot, or Webflow.
+                HybridMonks is built to supply copy structured for lightning-fast implementation. Copy any structured export formats below to paste directly into Notion, HubSpot, or Webflow.
               </p>
             </div>
 

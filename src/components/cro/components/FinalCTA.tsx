@@ -274,7 +274,7 @@ export default function FinalCTA() {
                         Conversion Health Score: {score}/27
                       </h3>
                       <p className="text-xs text-slate-500 font-mono">
-                        SiteOnLab Analysis Grade: {healthGrade === 'A' ? 'High Yield' : 'Significant Leaks'}
+                        HybridMonks Analysis Grade: {healthGrade === 'A' ? 'High Yield' : 'Significant Leaks'}
                       </p>
                     </div>
                   </div>

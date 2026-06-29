@@ -27,11 +27,11 @@ export default function FAQ() {
     },
     {
       question: "How do you measure ROI?",
-      answer: "We reject vanity metrics like click-through rates. SiteOnLab connects A/B testing platforms directly to your CRM (HubSpot, Salesforce). We measure program ROI using qualified sales opportunities generated, pipeline dollar value added, and improvement in your Customer Acquisition Cost (CAC)."
+      answer: "We reject vanity metrics like click-through rates. HybridMonks connects A/B testing platforms directly to your CRM (HubSpot, Salesforce). We measure program ROI using qualified sales opportunities generated, pipeline dollar value added, and improvement in your Customer Acquisition Cost (CAC)."
     },
     {
-      question: "What makes SiteOnLab different from other agencies?",
-      answer: "Most agencies give you static recommendations and leave the coding and copywriting to you, or suggest superficial changes like button colors. SiteOnLab is a full-service, revenue-first partner: we formulate the hypotheses, write the enterprise copy, design the wireframes, code the testing scripts, and analyze the pipeline revenue data ourselves."
+      question: "What makes HybridMonks different from other agencies?",
+      answer: "Most agencies give you static recommendations and leave the coding and copywriting to you, or suggest superficial changes like button colors. HybridMonks is a full-service, revenue-first partner: we formulate the hypotheses, write the enterprise copy, design the wireframes, code the testing scripts, and analyze the pipeline revenue data ourselves."
     },
     {
       question: "Do you handle implementation or only strategy?",

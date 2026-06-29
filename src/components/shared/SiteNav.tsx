@@ -154,14 +154,14 @@ export default function SiteNav() {
     <header className="sticky top-0 z-50 w-full border-b border-slate-800/80 bg-[#0b1120]/90 font-(family-name:--font-inter) backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center" aria-label="SiteOnLab home">
+        <Link href="/" className="flex shrink-0 items-center" aria-label="HybridMonks home">
           <Image
-            src="/siteonlab-logo.png"
-            alt="SiteOnLab"
+            src="/hybridmonks.png"
+            alt="HybridMonks"
             width={210}
             height={70}
             priority
-            className="h-11 w-auto sm:h-12"
+            className="h-14 w-auto sm:h-16"
           />
         </Link>
 

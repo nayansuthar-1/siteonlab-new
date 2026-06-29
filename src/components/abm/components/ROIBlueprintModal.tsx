@@ -90,7 +90,7 @@ export default function ROIBlueprintModal({ isOpen, onClose }: ROIBlueprintModal
               Model Your ABM Pipeline Potential
             </h3>
             <p className="text-xs text-gray-400 mb-6">
-              Adjust sliders below based on your average deal size and sales metrics to model the impact of a tailored SiteOnLab ABM program.
+              Adjust sliders below based on your average deal size and sales metrics to model the impact of a tailored HybridMonks ABM program.
             </p>
 
             <div className="space-y-6">
@@ -253,7 +253,7 @@ export default function ROIBlueprintModal({ isOpen, onClose }: ROIBlueprintModal
                 </form>
 
                 <p className="text-[10px] text-gray-500 text-center">
-                  By clicking, you consent to receive direct revenue analysis and suggestions from SiteOnLab. No credit card required.
+                  By clicking, you consent to receive direct revenue analysis and suggestions from HybridMonks. No credit card required.
                 </p>
               </div>
             ) : (

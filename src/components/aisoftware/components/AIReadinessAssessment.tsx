@@ -126,7 +126,7 @@ export default function AIReadinessAssessment({ onRequestBlueprint }: AIReadines
     recommendations = [
       "Prioritize custom model fine-tuning (e.g., fine-tuning LLaMA/Gemini models) on your domain-specific historical interaction data to reduce token latency and increase precision.",
       "Deploy self-correcting agent chains utilizing state-of-the-art frameworks to handle complex operations (e.g., auto-routing lead classification to revenue workflows).",
-      "Connect a custom revenue measurement layer (SiteOnLab standard) to attribute AI utilization statistics directly to customer retention and sales pipeline growth."
+      "Connect a custom revenue measurement layer (HybridMonks standard) to attribute AI utilization statistics directly to customer retention and sales pipeline growth."
     ];
   } else if (percentage >= 50) {
     tier = "AI System Integrator";
@@ -152,7 +152,7 @@ export default function AIReadinessAssessment({ onRequestBlueprint }: AIReadines
           </div>
           <div>
             <h3 className="font-serif font-semibold text-lg text-white tracking-tight">AI Software Readiness Assessment</h3>
-            <p className="text-xs font-mono text-white/40 uppercase tracking-widest">SITEONLAB DIAGNOSTIC UTILITY</p>
+            <p className="text-xs font-mono text-white/40 uppercase tracking-widest">HYBRIDMONKS DIAGNOSTIC UTILITY</p>
           </div>
         </div>
         {!isCompleted && (
@@ -313,7 +313,7 @@ export default function AIReadinessAssessment({ onRequestBlueprint }: AIReadines
             <div className="bg-[#0c0c0c] border border-white/10 p-5 rounded-sm space-y-4">
               <div className="space-y-1">
                 <h6 className="font-serif font-semibold text-sm text-white flex items-center gap-1">
-                  How SiteOnLab helps close these gaps:
+                  How HybridMonks helps close these gaps:
                 </h6>
                 <p className="text-xs text-white/60 font-sans leading-relaxed">
                   We specialize in taking businesses from manual processes and legacy software pipelines directly into production-ready compliance-first AI integrations inside 90 days, while configuring full-funnel CRM attribution signals.

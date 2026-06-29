@@ -38,12 +38,12 @@ export default function Footer() {
                 <span className="relative font-display font-bold text-white text-base">S</span>
               </div>
               <span className="font-display font-bold text-white text-lg tracking-tighter">
-                SiteOn<span className="text-blue-500">Lab</span>
+                Hybrid<span className="text-blue-500">Monks</span>
               </span>
             </a>
             
             <p className="text-xs text-slate-500 leading-relaxed max-w-sm">
-              SiteOnLab is an AI-powered B2B revenue growth and AI search visibility agency. We make B2B companies the brand buyers find in Google and get recommended in ChatGPT, Perplexity, and AI Overviews.
+              HybridMonks is an AI-powered B2B revenue growth and AI search visibility agency. We make B2B companies the brand buyers find in Google and get recommended in ChatGPT, Perplexity, and AI Overviews.
             </p>
 
             <div className="flex items-center gap-3">
@@ -116,7 +116,7 @@ export default function Footer() {
               </div>
               <div className="flex gap-2.5 items-center">
                 <Mail size={14} className="text-blue-500 flex-shrink-0" />
-                <a href="mailto:intelligence@siteonlab.com" className="hover:text-white transition-colors">intelligence@siteonlab.com</a>
+                <a href="mailto:intelligence@hybridmonks.com" className="hover:text-white transition-colors">intelligence@hybridmonks.com</a>
               </div>
               <div className="flex gap-2.5 items-center">
                 <Phone size={14} className="text-blue-500 flex-shrink-0" />
@@ -130,7 +130,7 @@ export default function Footer() {
         {/* Bottom Legal bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-slate-500">
           <div>
-            &copy; {currentYear} SiteOnLab LLC. All rights reserved. 
+            &copy; {currentYear} HybridMonks LLC. All rights reserved. 
           </div>
           <div className="flex gap-6">
             <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>

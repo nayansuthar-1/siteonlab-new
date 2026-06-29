@@ -254,8 +254,8 @@ export const FAQS_DATA: FAQItem[] = [
   },
   {
     id: 'faq-5',
-    question: 'What makes SiteOnLab different from other agencies?',
-    answer: 'Most traditional agencies focus on a single silo (e.g., just running ads or just doing blog writing) and measure success on vanity metrics. SiteOnLab is a full-funnel revenue partner. We bridge the critical gap between marketing activity and CRM sales data, ensuring every strategy directly supports your sales team and generates measurable pipeline.'
+    question: 'What makes HybridMonks different from other agencies?',
+    answer: 'Most traditional agencies focus on a single silo (e.g., just running ads or just doing blog writing) and measure success on vanity metrics. HybridMonks is a full-funnel revenue partner. We bridge the critical gap between marketing activity and CRM sales data, ensuring every strategy directly supports your sales team and generates measurable pipeline.'
   },
   {
     id: 'faq-6',
@@ -265,7 +265,7 @@ export const FAQS_DATA: FAQItem[] = [
   {
     id: 'faq-7',
     question: 'We tried this before and it did not work. Why would this be different?',
-    answer: 'Previous attempts usually fail due to three things: channel isolation (e.g., running cold ads with no landing-page correlation), poor sales alignment (marketing and sales teams not sharing feedback loops), or looking at the wrong metrics. SiteOnLab builds integrated systems with closed-loop tracking, ensuring sales feedback dynamically optimizes marketing targeting daily.'
+    answer: 'Previous attempts usually fail due to three things: channel isolation (e.g., running cold ads with no landing-page correlation), poor sales alignment (marketing and sales teams not sharing feedback loops), or looking at the wrong metrics. HybridMonks builds integrated systems with closed-loop tracking, ensuring sales feedback dynamically optimizes marketing targeting daily.'
   },
   {
     id: 'faq-8',

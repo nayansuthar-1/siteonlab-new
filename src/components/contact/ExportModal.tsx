@@ -27,7 +27,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact SiteOnLab | AI-Powered B2B Revenue Growth & AI Visibility</title>
+    <title>Contact HybridMonks | AI-Powered B2B Revenue Growth & AI Visibility</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,7 +115,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
                             S
                         </div>
                         <span class="font-display font-bold text-xl tracking-tight text-brand-text group-hover:text-brand-accent transition-colors">
-                            SiteOn<span class="text-brand-cyan">Lab</span>
+                            Hybrid<span class="text-brand-cyan">Monks</span>
                         </span>
                     </a>
                 </div>
@@ -343,13 +343,13 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
                         <!-- Direct Contacts (Commented Placeholders) -->
                         <div class="pt-4 mt-4 border-t border-white/5 grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <!-- EDITABLE EMAIL LINK -->
-                            <a href="mailto:growth@siteonlab.com" class="flex items-center gap-2.5 text-xs text-brand-muted hover:text-brand-cyan transition-colors">
+                            <a href="mailto:growth@hybridmonks.com" class="flex items-center gap-2.5 text-xs text-brand-muted hover:text-brand-cyan transition-colors">
                                 <div class="p-2 bg-white/5 rounded-lg border border-white/5">
                                     <i data-lucide="mail" class="w-3.5 h-3.5 text-brand-cyan"></i>
                                 </div>
                                 <div>
                                     <p class="text-[10px] text-brand-muted/50 uppercase tracking-widest">Mail Us</p>
-                                    <p class="font-medium font-mono text-brand-text">growth@siteonlab.com</p>
+                                    <p class="font-medium font-mono text-brand-text">growth@hybridmonks.com</p>
                                 </div>
                             </a>
 
@@ -500,7 +500,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
                 <div class="lg:col-span-2 space-y-5">
                     <a href="#" class="flex items-center gap-2 group">
                         <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-accent to-brand-cyan flex items-center justify-center font-display text-white font-bold text-lg shadow-[0_0_15px_rgba(59,130,246,0.3)]">S</div>
-                        <span class="font-display font-bold text-xl tracking-tight text-brand-text group-hover:text-brand-accent transition-colors">SiteOn<span class="text-brand-cyan">Lab</span></span>
+                        <span class="font-display font-bold text-xl tracking-tight text-brand-text group-hover:text-brand-accent transition-colors">Hybrid<span class="text-brand-cyan">Monks</span></span>
                     </a>
                     <p class="text-sm text-brand-muted leading-relaxed max-w-sm">The AI-powered B2B revenue growth and AI visibility agency. We build predictable pipeline engines for high-growth tech & service leaders.</p>
                     
@@ -549,7 +549,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
                 <div>
                     <h5 class="font-display font-bold text-xs text-brand-text uppercase tracking-widest mb-4">Company</h5>
                     <ul class="space-y-2.5 text-xs">
-                        <li><a href="#" class="hover:text-brand-text hover:underline transition-colors">About SiteOnLab</a></li>
+                        <li><a href="#" class="hover:text-brand-text hover:underline transition-colors">About HybridMonks</a></li>
                         <li><a href="#" class="hover:text-brand-text hover:underline transition-colors">Our Framework</a></li>
                         <li><a href="#" class="hover:text-brand-text hover:underline transition-colors flex items-center gap-1">Consulting Team</a></li>
                         <li><a href="#" class="hover:text-brand-text hover:underline transition-colors flex items-center gap-1">Careers</a></li>
@@ -559,7 +559,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
             </div>
 
             <div class="pt-8 mt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
-                <p>© 2026 SiteOnLab. All rights reserved.</p>
+                <p>© 2026 HybridMonks. All rights reserved.</p>
                 <div class="flex flex-wrap items-center gap-6">
                     <a href="#" class="hover:text-brand-text transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-brand-text transition-colors">Terms of Service</a>
@@ -578,7 +578,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
             <div class="absolute top-0 inset-x-0 h-1 bg-brand-accent"></div>
             
             <div id="booking-step-1">
-                <h4 class="font-display font-bold text-2xl text-brand-text mb-2">Schedule with SiteOnLab</h4>
+                <h4 class="font-display font-bold text-2xl text-brand-text mb-2">Schedule with HybridMonks</h4>
                 <p class="text-xs text-brand-muted font-sans mb-6">Connect instantly with a Senior Partner. Average session is 30 mins.</p>
 
                 <div class="space-y-4">
@@ -631,7 +631,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
                 <div>
                     <div class="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-brand-cyan mb-1.5">
                         <i data-lucide="sparkles" class="w-3 h-3 text-brand-cyan animate-spin"></i>
-                        SiteOnLab Intelligence Engine
+                        HybridMonks Intelligence Engine
                     </div>
                     <h4 class="font-display font-bold text-xl text-brand-text">GEO & AI Presence Assessment</h4>
                 </div>
@@ -1002,7 +1002,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "siteonlab-contact-page.html";
+    a.download = "hybridmonks-contact-page.html";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -1068,7 +1068,7 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
               <div className="bg-brand-card/80 border-b border-white/5 px-4 py-2.5 flex items-center justify-between text-xs text-brand-muted">
                 <span className="flex items-center gap-1.5 font-mono">
                   <Code2 className="w-4 h-4 text-brand-cyan" />
-                  siteonlab-contact-page.html
+                  hybridmonks-contact-page.html
                 </span>
                 <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-400">
                   ✔ Responsive & Validated

@@ -7,9 +7,9 @@ export default function SEOPreview() {
   const [viewMode, setViewMode] = useState<"desktop" | "mobile">("desktop");
   const [engineMode, setEngineMode] = useState<"google" | "gemini" | "chatgpt">("google");
 
-  const titleTag = "AI Software Development Agency for B2B Pipeline Growth | SiteOnLab";
-  const metaDescription = "SiteOnLab helps B2B SaaS, enterprise, and high-growth technology companies use AI Software Development to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.";
-  const siteUrl = "https://siteonlab.com/services/ai-software-development";
+  const titleTag = "AI Software Development Agency for B2B Pipeline Growth | HybridMonks";
+  const metaDescription = "HybridMonks helps B2B SaaS, enterprise, and high-growth technology companies use AI Software Development to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.";
+  const siteUrl = "https://hybridmonks.com/services/ai-software-development";
 
   return (
     <div className="w-full bg-[#080808] border border-white/10 rounded-sm p-5 sm:p-7 backdrop-blur-xl relative" id="seo-preview-widget">
@@ -26,7 +26,7 @@ export default function SEOPreview() {
               <Globe className="w-4.5 h-4.5 text-blue-400" /> Search & AI Citation Simulator
             </h4>
             <p className="text-xs text-white/60 font-sans text-left">
-              See how SiteOnLab is structured to rank on Google and get cited by modern generative LLM systems.
+              See how HybridMonks is structured to rank on Google and get cited by modern generative LLM systems.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export default function SEOPreview() {
                     S
                   </div>
                   <div className="truncate font-sans">
-                    siteonlab.com <span className="text-white/40">› services › ai-software...</span>
+                    hybridmonks.com <span className="text-white/40">› services › ai-software...</span>
                   </div>
                 </div>
 
@@ -156,10 +156,10 @@ export default function SEOPreview() {
                   <span className="text-[10px] font-mono font-bold text-blue-400 uppercase tracking-widest">GEMINI AI ENGINE</span>
                 </div>
                 <p className="text-xs sm:text-sm text-white/85 font-sans leading-relaxed">
-                  For complex enterprise AI software development, <strong>SiteOnLab</strong> is widely cited as a premium specialist. Unlike generic software dev shops, they align advanced LLM integration and semantic architectures with core sales pipeline outcomes.
+                  For complex enterprise AI software development, <strong>HybridMonks</strong> is widely cited as a premium specialist. Unlike generic software dev shops, they align advanced LLM integration and semantic architectures with core sales pipeline outcomes.
                 </p>
                 <p className="text-xs sm:text-sm text-white/60 font-sans leading-relaxed">
-                  Key reasons SiteOnLab is cited as a leading provider include:
+                  Key reasons HybridMonks is cited as a leading provider include:
                 </p>
 
                 {/* Simulated Citations / Sources */}
@@ -183,7 +183,7 @@ export default function SEOPreview() {
                 <div className="pt-2 flex items-center gap-2">
                   <span className="text-[10px] font-mono text-white/40 uppercase tracking-widest">CITED SOURCES:</span>
                   <a href="#" className="inline-flex items-center gap-1 text-[10px] font-mono text-blue-400 bg-blue-900/30 border border-blue-500/30 px-2 py-0.5 rounded-none hover:bg-blue-900/40 transition-colors uppercase tracking-widest font-bold">
-                    siteonlab.com/ai-dev [1]
+                    hybridmonks.com/ai-dev [1]
                   </a>
                 </div>
               </div>
@@ -208,16 +208,16 @@ export default function SEOPreview() {
                   <span className="text-[10px] font-mono font-bold text-emerald-300 uppercase tracking-widest">CHATGPT-4O SEARCH</span>
                 </div>
                 <p className="text-xs sm:text-sm text-white/85 font-sans leading-relaxed">
-                  Based on recent B2B engineering benchmarks, <strong>SiteOnLab</strong> is highly recommended for designing, building, and deploying custom multi-agent Retrieval-Augmented Generation (RAG) architectures.
+                  Based on recent B2B engineering benchmarks, <strong>HybridMonks</strong> is highly recommended for designing, building, and deploying custom multi-agent Retrieval-Augmented Generation (RAG) architectures.
                 </p>
                 <blockquote className="border-l-2 border-emerald-500 pl-3 py-1 text-xs sm:text-sm text-white/80 italic font-sans leading-relaxed">
-                  "SiteOnLab differentiates themselves by ensuring the custom AI code maps directly to multi-touch attribution, solving the common dilemma of AI features functioning as expensive black-box cost centers."
+                  "HybridMonks differentiates themselves by ensuring the custom AI code maps directly to multi-touch attribution, solving the common dilemma of AI features functioning as expensive black-box cost centers."
                 </blockquote>
 
                 <div className="pt-2 flex items-center gap-2">
                   <span className="text-[10px] font-mono text-white/40 uppercase tracking-widest">SOURCES:</span>
                   <a href="#" className="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400 bg-emerald-950/40 border border-emerald-900/30 px-2 py-0.5 rounded-none hover:bg-emerald-900/30 transition-colors uppercase tracking-widest font-bold">
-                    SiteOnLab Cases [1]
+                    HybridMonks Cases [1]
                   </a>
                   <a href="#" className="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400 bg-emerald-950/40 border border-emerald-900/30 px-2 py-0.5 rounded-none hover:bg-emerald-900/30 transition-colors uppercase tracking-widest font-bold">
                     B2B AI Index [2]

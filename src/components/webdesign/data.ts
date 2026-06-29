@@ -200,8 +200,8 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: "faq-5",
-    question: "What makes SiteOnLab different from other agencies?",
-    answer: "Most web design agencies focus solely on pretty graphics. SiteOnLab treats your website as a software product and a revenue-generation tool. We combine stunning aesthetic craft with sub-second page performance, LLM-crawling optimization, and direct pipeline attribution integrations."
+    question: "What makes HybridMonks different from other agencies?",
+    answer: "Most web design agencies focus solely on pretty graphics. HybridMonks treats your website as a software product and a revenue-generation tool. We combine stunning aesthetic craft with sub-second page performance, LLM-crawling optimization, and direct pipeline attribution integrations."
   },
   {
     id: "faq-6",

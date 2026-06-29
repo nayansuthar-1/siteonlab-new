@@ -166,7 +166,7 @@ export default function CaseStudies() {
               Pipeline & ROI Opportunity Estimator
             </h4>
             <p className="text-xs text-zinc-400">
-              Select your parameters below to see estimated business impact based on historic SiteOnLab program performance averages.
+              Select your parameters below to see estimated business impact based on historic HybridMonks program performance averages.
             </p>
           </div>
 

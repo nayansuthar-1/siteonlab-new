@@ -23,7 +23,7 @@ export default function BlueprintModal({ isOpen, onClose, isAssessmentMode = fal
   const [copied, setCopied] = useState(false);
 
   const loadingMessages = [
-    "Establishing handshake with SiteOnLab virtual auditor...",
+    "Establishing handshake with HybridMonks virtual auditor...",
     "Crawling site schema configurations & robots.txt directives...",
     "Validating DNS response parameters and HTTP/2 handshakes...",
     "Querying Gemini API server-side for bespoke B2B recommendations...",
@@ -300,7 +300,7 @@ export default function BlueprintModal({ isOpen, onClose, isAssessmentMode = fal
                       Generate My Technical SEO Blueprint
                     </button>
                     <p className="text-[10px] text-gray-500 mt-3 italic font-light">
-                      Powered by SiteOnLab Audit Engine and Gemini 3.5. Audit output is private and secure under standard NDA guidelines.
+                      Powered by HybridMonks Audit Engine and Gemini 3.5. Audit output is private and secure under standard NDA guidelines.
                     </p>
                   </div>
 
@@ -393,7 +393,7 @@ export default function BlueprintModal({ isOpen, onClose, isAssessmentMode = fal
 
                   <div className="text-center pt-2">
                     <div className="text-[10px] text-gray-500 max-w-lg mx-auto uppercase tracking-wider font-mono">
-                      Want an expert engineering walkthrough of these recommendations? Book a strategy audit directly with SiteOnLab.
+                      Want an expert engineering walkthrough of these recommendations? Book a strategy audit directly with HybridMonks.
                     </div>
                     <button
                       onClick={onClose}
@@ -410,7 +410,7 @@ export default function BlueprintModal({ isOpen, onClose, isAssessmentMode = fal
 
             {/* Footer */}
             <div className="p-4 bg-[#050505] border-t border-white/5 text-center text-[9px] font-mono text-gray-500 uppercase tracking-widest">
-              SITEONLAB © 2026 · SECURITY AUDITS ENABLED · ISO 27001 SECURED CONNECTIVITY
+              HYBRIDMONKS © 2026 · SECURITY AUDITS ENABLED · ISO 27001 SECURED CONNECTIVITY
             </div>
 
           </motion.div>

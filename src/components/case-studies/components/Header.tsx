@@ -68,7 +68,7 @@ export default function Header() {
                 </div>
                 <div className="flex flex-col">
                   <span className="font-display text-xl font-bold tracking-tight text-white">
-                    SiteOn<span className="text-brand-orange">Lab</span>
+                    Hybrid<span className="text-brand-orange">Monks</span>
                   </span>
                   <span className="text-[8px] font-mono tracking-widest text-slate-400 uppercase leading-none">
                     AI Revenue Agency

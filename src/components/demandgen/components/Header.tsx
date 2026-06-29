@@ -38,7 +38,7 @@ export default function Header({ onRequestBlueprint, onOpenAssessment, onScrollT
             <Target className="h-5 w-5 text-white animate-pulse" />
           </div>
           <span className="font-display text-xl font-bold tracking-tight text-white">
-            SiteOn<span className="text-brand-accent">Lab</span>
+            Hybrid<span className="text-brand-accent">Monks</span>
           </span>
         </div>
 

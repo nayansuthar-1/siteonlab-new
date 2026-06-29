@@ -85,7 +85,7 @@ export const METRICS: MetricItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "test-1",
-    quote: "SiteOnLab built a revenue system that revolutionized our inbound pipeline. Over 30% of our high-intent sales bookings now cite recommendations from ChatGPT & Perplexity, which we tracked back to SiteOnLab's GEO schema optimizations. They completely bypass the standard digital marketing playbook.",
+    quote: "HybridMonks built a revenue system that revolutionized our inbound pipeline. Over 30% of our high-intent sales bookings now cite recommendations from ChatGPT & Perplexity, which we tracked back to HybridMonks's GEO schema optimizations. They completely bypass the standard digital marketing playbook.",
     author: "Marcus Vance",
     role: "VP of Marketing",
     company: "Securify Technologies",
@@ -95,7 +95,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "test-2",
-    quote: "We were skeptical about 'AI search visibility', but SiteOnLab proved the concept in month one. Our technical consulting firm was buried on page 3 of standard search. Not only did they move us to page 1 on Google, but we are now the primary recommended MSP option when asking Perplexity for 'Enterprise DevOps partners'. Truly outstanding.",
+    quote: "We were skeptical about 'AI search visibility', but HybridMonks proved the concept in month one. Our technical consulting firm was buried on page 3 of standard search. Not only did they move us to page 1 on Google, but we are now the primary recommended MSP option when asking Perplexity for 'Enterprise DevOps partners'. Truly outstanding.",
     author: "Elena Rostova",
     role: "Director of Inbound Growth",
     company: "Apex Cloud Services",
@@ -105,7 +105,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "test-3",
-    quote: "Unlike agencies that hide behind traffic charts, SiteOnLab focuses on SQLs. They synced directly with our Salesforce instance and automated our top-of-funnel citation loops. In an era where AI Overviews are stealing Google traffic, they ensured our industrial SaaS is cited at the top of every key buying query.",
+    quote: "Unlike agencies that hide behind traffic charts, HybridMonks focuses on SQLs. They synced directly with our Salesforce instance and automated our top-of-funnel citation loops. In an era where AI Overviews are stealing Google traffic, they ensured our industrial SaaS is cited at the top of every key buying query.",
     author: "David Vance",
     role: "Chief Revenue Officer",
     company: "Logix Industrial",

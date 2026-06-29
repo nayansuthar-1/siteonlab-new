@@ -32,7 +32,7 @@ export default function App() {
   // SEO Fields Injection
   useEffect(() => {
     // 1. Title Tag
-    document.title = "Content Marketing Agency for B2B Pipeline Growth | SiteOnLab";
+    document.title = "Content Marketing Agency for B2B Pipeline Growth | HybridMonks";
 
     // 2. Meta Description
     let metaDescriptionElement = document.querySelector('meta[name="description"]');
@@ -43,7 +43,7 @@ export default function App() {
     }
     metaDescriptionElement.setAttribute(
       'content', 
-      "SiteOnLab helps B2B SaaS, tech, and services companies use Content Marketing to drive qualified pipeline, improve visibility, and connect marketing performance to revenue."
+      "HybridMonks helps B2B SaaS, tech, and services companies use Content Marketing to drive qualified pipeline, improve visibility, and connect marketing performance to revenue."
     );
   }, []);
 

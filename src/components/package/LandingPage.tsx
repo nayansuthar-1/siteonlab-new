@@ -205,7 +205,7 @@ export default function LandingPage() {
     },
     {
       question: "Is ad spend included in the monthly fee?",
-      answer: "No, advertising spend is billed directly by the platforms (Google Ads, LinkedIn Ads) to your credit card. SiteOnLab manages the entire strategy, targeting parameters, copywriting, landing page design, and creative optimization within your $2,000/month flat fee."
+      answer: "No, advertising spend is billed directly by the platforms (Google Ads, LinkedIn Ads) to your credit card. HybridMonks manages the entire strategy, targeting parameters, copywriting, landing page design, and creative optimization within your $2,000/month flat fee."
     },
     {
       question: "How is this different from a standard SEO agency?",
@@ -475,7 +475,7 @@ export default function LandingPage() {
             {/* Platform billing note */}
             <div className="text-center">
               <p className="text-sm text-slate-500 font-medium italic">
-                * Ad spend is billed separately by the respective advertising platforms. SiteOnLab manages the complete targeting, strategy, and creative execution.
+                * Ad spend is billed separately by the respective advertising platforms. HybridMonks manages the complete targeting, strategy, and creative execution.
               </p>
             </div>
           </div>
@@ -977,7 +977,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <span className="font-display text-xl font-bold tracking-tight text-white block mb-1">
-              SiteOn<span className="text-[#6366F1]">Lab</span>
+              Hybrid<span className="text-[#6366F1]">Monks</span>
             </span>
             <p className="text-xs text-slate-400">
               B2B Revenue Growth & AI Visibility Agency.
@@ -992,8 +992,8 @@ export default function LandingPage() {
           </div>
 
           <div className="text-xs text-slate-500 text-center md:text-right">
-            <p>© {new Date().getFullYear()} SiteOnLab. All rights reserved.</p>
-            <p className="mt-1 text-[10px] text-slate-600">The B2B Revenue Growth Engine™ is a protected service mark of SiteOnLab.</p>
+            <p>© {new Date().getFullYear()} HybridMonks. All rights reserved.</p>
+            <p className="mt-1 text-[10px] text-slate-600">The B2B Revenue Growth Engine™ is a protected service mark of HybridMonks.</p>
           </div>
         </div>
       </footer>

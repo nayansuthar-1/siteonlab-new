@@ -3,7 +3,7 @@
 import { SOLUTIONS, INDUSTRY_NAME } from "../data/copywriting";
 import { CheckCircle2, Award, Zap, HeartHandshake } from "lucide-react";
 
-export default function SiteOnLabSolutions() {
+export default function HybridMonksSolutions() {
   return (
     <section id="solutions" className="bg-[#0A0A0B] py-24 border-b border-slate-800/50 relative">
       <div className="absolute top-1/2 left-1/2 w-[35rem] h-[35rem] bg-blue-950/5 blur-[150px] rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
@@ -19,7 +19,7 @@ export default function SiteOnLabSolutions() {
             A complete B2B growth system built for {INDUSTRY_NAME} companies.
           </h2>
           <p className="text-slate-400 mt-6 text-base sm:text-lg leading-relaxed font-sans">
-            SiteOnLab bridges the gap between complex engineering capabilities and enterprise buyer requirements. We deploy a unified system that identifies active demand, captures buying committees, and records every single transaction back to its exact organic source.
+            HybridMonks bridges the gap between complex engineering capabilities and enterprise buyer requirements. We deploy a unified system that identifies active demand, captures buying committees, and records every single transaction back to its exact organic source.
           </p>
         </div>
 

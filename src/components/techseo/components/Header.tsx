@@ -18,7 +18,7 @@ export default function Header({ onRequestBlueprint }: HeaderProps) {
           </div>
           <div className="flex flex-col">
             <span className="font-display font-bold tracking-tight text-white text-lg">
-              SiteOnLab
+              HybridMonks
             </span>
           </div>
         </a>

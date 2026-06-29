@@ -195,7 +195,7 @@ export default function ProfessionalServicesLandingPage() {
         </section>
 
         {/* ========================================================== */}
-        {/* 4. HOW SITEONLAB SOLVES THESE CHALLENGES */}
+        {/* 4. HOW HYBRIDMONKS SOLVES THESE CHALLENGES */}
         {/* ========================================================== */}
         <section id="solutions" className="py-20 bg-[#0F172A] border-y border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -252,7 +252,7 @@ export default function ProfessionalServicesLandingPage() {
                 How modern Professional Services clients choose premium partners.
               </h2>
               <p className="text-slate-400 text-sm mt-3 leading-relaxed">
-                Enterprise clients undergo a high-scrutiny, four-stage discovery and validation lifecycle. See how SiteOnLab actively positions your firm to convert prospects during every key touchpoint.
+                Enterprise clients undergo a high-scrutiny, four-stage discovery and validation lifecycle. See how HybridMonks actively positions your firm to convert prospects during every key touchpoint.
               </p>
             </div>
 
@@ -317,9 +317,9 @@ export default function ProfessionalServicesLandingPage() {
                       </p>
                     </div>
                     <div>
-                      <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-wider">SiteOnLab Tactical Delivery</h4>
+                      <h4 className="text-xs font-semibold text-slate-300 uppercase tracking-wider">HybridMonks Tactical Delivery</h4>
                       <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                        {BUYER_JOURNEY[selectedJourneyStage].siteonlabSupport}
+                        {BUYER_JOURNEY[selectedJourneyStage].hybridmonksSupport}
                       </p>
                     </div>
                   </div>
@@ -393,13 +393,13 @@ export default function ProfessionalServicesLandingPage() {
         </section>
 
         {/* ========================================================== */}
-        {/* 7. WHY CHOOSE SITEONLAB */}
+        {/* 7. WHY CHOOSE HYBRIDMONKS */}
         {/* ========================================================== */}
         <section id="why-us" className="py-20 bg-[#0B0F19]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div className="text-center max-w-3xl mx-auto mb-14">
-              <span className="text-xs font-mono font-bold text-sky-400 uppercase tracking-widest block">Why Companies Choose SiteOnLab</span>
+              <span className="text-xs font-mono font-bold text-sky-400 uppercase tracking-widest block">Why Companies Choose HybridMonks</span>
               <h2 className="text-2xl sm:text-3xl font-bold font-display text-white mt-2">
                 A premium B2B growth agency that truly understands Professional Services.
               </h2>
@@ -581,7 +581,7 @@ export default function ProfessionalServicesLandingPage() {
                 Explore how we help other complex B2B companies grow.
               </h2>
               <p className="text-slate-400 text-sm mt-3 leading-relaxed">
-                SiteOnLab works exclusively with high-value B2B business units, applying custom pipeline-acquisition templates to high-barrier sectors.
+                HybridMonks works exclusively with high-value B2B business units, applying custom pipeline-acquisition templates to high-barrier sectors.
               </p>
             </div>
 
@@ -678,7 +678,7 @@ export default function ProfessionalServicesLandingPage() {
                 </h2>
 
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  Stop relying solely on volatile regional referral networks. Partner with SiteOnLab to transform your firm's expertise into an active digital pipeline. We will align your organic visibility, web UX, and ABM systems to target enterprise buying committees, protect your billing margins, and accelerate partner retainers.
+                  Stop relying solely on volatile regional referral networks. Partner with HybridMonks to transform your firm's expertise into an active digital pipeline. We will align your organic visibility, web UX, and ABM systems to target enterprise buying committees, protect your billing margins, and accelerate partner retainers.
                 </p>
 
                 <div className="space-y-3 pt-2 text-xs text-slate-400">

@@ -78,11 +78,11 @@ export default function BuyerJourneySection() {
                       </p>
                     </div>
 
-                    {/* SiteOnLab Campaign Playbook */}
+                    {/* HybridMonks Campaign Playbook */}
                     <div className="lg:border-l lg:border-slate-800 lg:pl-6">
                       <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sky-400 font-mono">
                         <Zap className="h-4 w-4 text-sky-400" />
-                        SiteOnLab Playbook
+                        HybridMonks Playbook
                       </div>
                       <p className="mt-3 text-sm text-sky-100/90 leading-relaxed font-sans font-medium">
                         {stage.marketingStrategy}

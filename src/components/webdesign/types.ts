@@ -1,5 +1,5 @@
 /**
- * Types and interfaces for the SiteOnLab B2B Website Design & Development Service Page
+ * Types and interfaces for the HybridMonks B2B Website Design & Development Service Page
  */
 
 export interface Metric {

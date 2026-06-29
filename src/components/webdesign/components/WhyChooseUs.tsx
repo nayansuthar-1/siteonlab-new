@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
             A website design & development agency that connects performance to revenue.
           </h2>
           <p className="font-sans text-base text-zinc-400 leading-relaxed">
-            Most agencies hand you standard design files, mockups, or basic code folders and call it done. SiteOnLab builds a complete measurement, indexing, and attribution layer so you can see exactly how your web platform drives pipeline from first touch to closed opportunity.
+            Most agencies hand you standard design files, mockups, or basic code folders and call it done. HybridMonks builds a complete measurement, indexing, and attribution layer so you can see exactly how your web platform drives pipeline from first touch to closed opportunity.
           </p>
         </div>
 

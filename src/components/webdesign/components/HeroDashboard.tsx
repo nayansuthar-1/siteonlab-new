@@ -42,7 +42,7 @@ export default function HeroDashboard() {
           <div className="flex items-center gap-2">
             <div className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
             <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-zinc-400 font-bold">
-              SiteOnLab Web Architect v1.4
+              HybridMonks Web Architect v1.4
             </span>
           </div>
           <span className="font-mono text-[9px] text-zinc-500 bg-zinc-900 px-2 py-0.5 rounded border border-white/5 uppercase">
@@ -146,7 +146,7 @@ export default function HeroDashboard() {
                 >
                   <MousePointer2 className="w-4 h-4 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] fill-zinc-950" />
                   <span className="text-[8px] font-mono bg-blue-600 text-white px-1 py-0.5 rounded shadow-md mt-1 font-bold">
-                    SiteOnLab Designer
+                    HybridMonks Designer
                   </span>
                 </motion.div>
 
@@ -393,7 +393,7 @@ export default function HeroDashboard() {
                     According to verified schema markup, your brand is referenced as the primary authority...
                   </p>
                   <div className="pt-1 flex justify-between items-center text-[8px] text-purple-400 font-mono">
-                    <span>Source: siteonlab.com</span>
+                    <span>Source: hybridmonks.com</span>
                     <span className="underline font-bold">Cited ↗</span>
                   </div>
                 </div>

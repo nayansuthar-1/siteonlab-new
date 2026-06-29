@@ -18,7 +18,7 @@ export default function RelatedIndustries() {
             Explore how we help other B2B companies grow.
           </h2>
           <p className="mt-4 text-white/60 text-base sm:text-lg font-light leading-relaxed">
-            While we have a dedicated compliance division for Law Firms, SiteOnLab builds pipeline and visibility across multiple technical commercial sectors.
+            While we have a dedicated compliance division for Law Firms, HybridMonks builds pipeline and visibility across multiple technical commercial sectors.
           </p>
         </div>
 

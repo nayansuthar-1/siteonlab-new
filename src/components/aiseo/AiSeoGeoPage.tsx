@@ -108,7 +108,7 @@ export default function App() {
 
               {/* Subheading */}
               <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl">
-                SiteOnLab helps B2B SaaS, technology, IT/MSP, and professional-services companies turn organic search and AI visibility into a measurable revenue channel. We help you rank for buyer-intent searches, get cited by AI engines, and convert visibility into qualified pipeline — measured by qualified pipeline, not vanity metrics.
+                HybridMonks helps B2B SaaS, technology, IT/MSP, and professional-services companies turn organic search and AI visibility into a measurable revenue channel. We help you rank for buyer-intent searches, get cited by AI engines, and convert visibility into qualified pipeline — measured by qualified pipeline, not vanity metrics.
               </p>
 
               {/* CTAs */}
@@ -326,7 +326,7 @@ export default function App() {
                 An AI SEO & GEO agency that connects LLM visibility to revenue.
               </h2>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Most agencies hand you monthly organic impressions reports, raw traffic clicks, and call it done. SiteOnLab builds a full attribution measurement layer so you can see exactly how AI search and traditional SEO contribute across the buyer journey, from first touch to qualified opportunity in your CRM.
+                Most agencies hand you monthly organic impressions reports, raw traffic clicks, and call it done. HybridMonks builds a full attribution measurement layer so you can see exactly how AI search and traditional SEO contribute across the buyer journey, from first touch to qualified opportunity in your CRM.
               </p>
               
               <div className="pt-4">
@@ -483,7 +483,7 @@ export default function App() {
 
                   <div className="space-y-2 bg-slate-950/60 p-4 rounded-xl border border-slate-900">
                     <h4 className="text-xs font-mono font-bold uppercase text-blue-400 tracking-wider flex items-center gap-1.5">
-                      <span className="h-1.5 w-1.5 rounded-full bg-blue-500"></span> SiteOnLab Execution
+                      <span className="h-1.5 w-1.5 rounded-full bg-blue-500"></span> HybridMonks Execution
                     </h4>
                     <p className="text-xs text-slate-300 leading-relaxed">
                       {caseStudies[activeCaseIndex].solution}
@@ -790,8 +790,8 @@ export default function App() {
                   </div>
                   <div>
                     <span className="text-[10px] font-mono text-slate-500 uppercase block">DIRECT EMAIL CONDUIT</span>
-                    <a href="mailto:hitesh@siteonlab.com" className="text-xs font-semibold text-white hover:text-blue-400 transition">
-                      hitesh@siteonlab.com
+                    <a href="mailto:hitesh@hybridmonks.com" className="text-xs font-semibold text-white hover:text-blue-400 transition">
+                      hitesh@hybridmonks.com
                     </a>
                   </div>
                 </div>

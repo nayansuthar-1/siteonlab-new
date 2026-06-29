@@ -129,7 +129,7 @@ export default function InteractiveCTAs() {
         <div className="max-w-5xl mx-auto rounded-sm bg-slate-900 border border-slate-800 p-8 sm:p-12 md:p-16 text-center relative z-10 shadow-2xl">
           {/* Subtle star graphic background */}
           <div className="absolute top-6 left-6 text-blue-500/15 font-sans text-[10px] uppercase tracking-widest font-mono">
-            SiteOnLab Engine Active
+            HybridMonks Engine Active
           </div>
 
           <span className="text-[10px] sm:text-xs font-bold tracking-widest text-blue-500 uppercase bg-blue-500/10 px-3 py-1.5 rounded-sm inline-block mb-6">

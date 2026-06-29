@@ -178,8 +178,8 @@ export const CASE_STUDIES: CaseStudyItem[] = [
 export const FAQS_DATA: FAQItem[] = [
   {
     id: 1,
-    question: "What makes SiteOnLab different from an SEO or PPC agency?",
-    answer: "SiteOnLab is built from the ground up for B2B revenue and AI visibility. Traditional agencies focus on vanity metrics like impressions and traffic, whereas we align our campaigns with qualified pipeline, customer acquisition cost (CAC), and closed revenue. Furthermore, we are pioneers in GEO (Generative Engine Optimization), ensuring your brand is recommended by AI tools like ChatGPT, Perplexity, and Gemini, alongside Google organic search."
+    question: "What makes HybridMonks different from an SEO or PPC agency?",
+    answer: "HybridMonks is built from the ground up for B2B revenue and AI visibility. Traditional agencies focus on vanity metrics like impressions and traffic, whereas we align our campaigns with qualified pipeline, customer acquisition cost (CAC), and closed revenue. Furthermore, we are pioneers in GEO (Generative Engine Optimization), ensuring your brand is recommended by AI tools like ChatGPT, Perplexity, and Gemini, alongside Google organic search."
   },
   {
     id: 2,

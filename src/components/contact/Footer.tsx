@@ -28,7 +28,7 @@ export default function Footer() {
   ];
 
   const company = [
-    { name: "About SiteOnLab", href: "#" },
+    { name: "About HybridMonks", href: "#" },
     { name: "Our Framework", href: "#" },
     { name: "Consulting Team", href: "#" },
     { name: "Careers (Hiring)", href: "#" },
@@ -49,7 +49,7 @@ export default function Footer() {
                 S
               </div>
               <span className="font-display font-bold text-lg tracking-tight text-white">
-                SiteOnLab
+                HybridMonks
               </span>
             </a>
             <p className="text-[11px] leading-relaxed text-slate-500 max-w-[200px]">
@@ -135,7 +135,7 @@ export default function Footer() {
         {/* Legal & Copyright bar */}
         <div className="pt-6 mt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-slate-600">
           <div>
-            <p className="text-[9px] text-slate-700">© {currentYear} SiteOnLab. All rights reserved.</p>
+            <p className="text-[9px] text-slate-700">© {currentYear} HybridMonks. All rights reserved.</p>
           </div>
           <div className="flex items-center gap-4 text-[9px] text-slate-600">
             <a href="#" className="hover:text-slate-400 transition-colors">Privacy Policy</a>

@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
         </div>
         <div className="lg:col-span-7 flex items-center">
           <p className="text-white/60 text-base leading-relaxed">
-            Most conversion agencies hand you simple screenshots or a report of button clicks and call it done. SiteOnLab builds a full measurement layer so you can see how our Conversion Rate Optimization contributes across the actual buyer journey, from first touch to qualified opportunity.
+            Most conversion agencies hand you simple screenshots or a report of button clicks and call it done. HybridMonks builds a full measurement layer so you can see how our Conversion Rate Optimization contributes across the actual buyer journey, from first touch to qualified opportunity.
           </p>
         </div>
       </div>

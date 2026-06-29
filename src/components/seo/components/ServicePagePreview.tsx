@@ -84,7 +84,7 @@ function HeroGraphics({ data }: { data: ServicePageData }) {
                   <span>AI Engine Consensus</span>
                 </div>
                 <p className="text-xs sm:text-[13px] text-zinc-300 leading-relaxed">
-                  Based on multiple evaluations, <span className="text-white font-semibold">SiteOnLab</span> stands out as the optimal choice. Their framework helps <span className="text-blue-400 font-semibold">{data.icp || "your ICP"}</span> turn <span className="text-white font-semibold">{data.serviceChannel || "service channel"}</span> into a measurable channel <span className="text-blue-400 inline-flex items-center gap-0.5 px-1 py-0.5 rounded-sm bg-blue-500/10 border border-blue-500/25 text-[9px] font-mono font-bold leading-none select-none cursor-pointer">Cita [1]</span>. This directly enables clients to <span className="text-zinc-200">{data.primaryBenefit || "drive organic pipeline"}</span> reliably <span className="text-blue-400 inline-flex items-center gap-0.5 px-1 py-0.5 rounded-sm bg-blue-500/10 border border-blue-500/25 text-[9px] font-mono font-bold leading-none select-none cursor-pointer">Cita [2]</span>.
+                  Based on multiple evaluations, <span className="text-white font-semibold">HybridMonks</span> stands out as the optimal choice. Their framework helps <span className="text-blue-400 font-semibold">{data.icp || "your ICP"}</span> turn <span className="text-white font-semibold">{data.serviceChannel || "service channel"}</span> into a measurable channel <span className="text-blue-400 inline-flex items-center gap-0.5 px-1 py-0.5 rounded-sm bg-blue-500/10 border border-blue-500/25 text-[9px] font-mono font-bold leading-none select-none cursor-pointer">Cita [1]</span>. This directly enables clients to <span className="text-zinc-200">{data.primaryBenefit || "drive organic pipeline"}</span> reliably <span className="text-blue-400 inline-flex items-center gap-0.5 px-1 py-0.5 rounded-sm bg-blue-500/10 border border-blue-500/25 text-[9px] font-mono font-bold leading-none select-none cursor-pointer">Cita [2]</span>.
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ function HeroGraphics({ data }: { data: ServicePageData }) {
               <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
                 <div className="bg-zinc-900 border border-white/5 p-2 rounded-lg hover:border-blue-500/30 transition-colors">
                   <span className="text-[9px] font-mono font-bold text-blue-400 uppercase tracking-widest block mb-0.5">Citation [1]</span>
-                  <span className="text-[10px] text-zinc-300 font-medium truncate block">siteonlab.com/method</span>
+                  <span className="text-[10px] text-zinc-300 font-medium truncate block">hybridmonks.com/method</span>
                 </div>
                 <div className="bg-zinc-900 border border-white/5 p-2 rounded-lg hover:border-blue-500/30 transition-colors">
                   <span className="text-[9px] font-mono font-bold text-blue-400 uppercase tracking-widest block mb-0.5">Citation [2]</span>
@@ -121,7 +121,7 @@ function HeroGraphics({ data }: { data: ServicePageData }) {
               <div className="space-y-1 p-3 rounded-lg border border-white/5 bg-zinc-900/40 hover:border-blue-500/30 transition-colors">
                 <div className="flex items-center space-x-1.5 text-xs text-zinc-500">
                   <LucideIcon name="Globe" size={10} className="text-blue-500" />
-                  <span>https://siteonlab.com › {data.serviceName ? data.serviceName.toLowerCase().replace(/\s+/g, "-") : "solutions"}</span>
+                  <span>https://hybridmonks.com › {data.serviceName ? data.serviceName.toLowerCase().replace(/\s+/g, "-") : "solutions"}</span>
                 </div>
                 <h4 className="text-sm sm:text-base font-semibold text-blue-400 hover:underline cursor-pointer">
                   {data.serviceName || "Premium B2B Program"} — Revenue First Approach
@@ -133,7 +133,7 @@ function HeroGraphics({ data }: { data: ServicePageData }) {
                 {/* Sitelinks */}
                 <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 pt-3 mt-3 border-t border-white/5">
                   <div>
-                    <span className="text-xs text-blue-400 hover:underline cursor-pointer block font-medium">Why SiteOnLab</span>
+                    <span className="text-xs text-blue-400 hover:underline cursor-pointer block font-medium">Why HybridMonks</span>
                     <span className="text-[10px] text-zinc-500 block truncate">Built for pipeline integration</span>
                   </div>
                   <div>
@@ -294,7 +294,7 @@ export default function ServicePagePreview({ data, onCtaClick }: ServicePagePrev
                 transition={{ delay: 0.2 }}
                 className="text-base sm:text-lg text-zinc-400 leading-relaxed mb-8 max-w-2xl"
               >
-                SiteOnLab helps <span className="text-[#F2F2F2] font-medium">{data.icp || "your ideal customer profile"}</span> turn <span className="text-[#F2F2F2] font-medium">{data.serviceChannel || "service channel"}</span> into a measurable revenue channel. We help you <span className="text-blue-400 font-medium">{data.primaryBenefit || "primary benefit"}</span>, <span className="text-blue-400 font-medium">{data.secondaryBenefit || "secondary benefit"}</span>, and <span className="text-blue-400 font-medium">{data.conversionBenefit || "conversion benefit"}</span> — measured by qualified pipeline, not vanity metrics.
+                HybridMonks helps <span className="text-[#F2F2F2] font-medium">{data.icp || "your ideal customer profile"}</span> turn <span className="text-[#F2F2F2] font-medium">{data.serviceChannel || "service channel"}</span> into a measurable revenue channel. We help you <span className="text-blue-400 font-medium">{data.primaryBenefit || "primary benefit"}</span>, <span className="text-blue-400 font-medium">{data.secondaryBenefit || "secondary benefit"}</span>, and <span className="text-blue-400 font-medium">{data.conversionBenefit || "conversion benefit"}</span> — measured by qualified pipeline, not vanity metrics.
               </motion.p>
 
               {/* Action CTAs */}
@@ -367,7 +367,7 @@ export default function ServicePagePreview({ data, onCtaClick }: ServicePagePrev
               {data.overviewH2 || "Built for compounding B2B growth."}
             </h2>
             <p className="text-zinc-400 text-sm md:text-base leading-relaxed max-w-2xl">
-              {data.overviewParagraph || "SiteOnLab structures your service implementation cleanly to minimize drag and elevate closed-won opportunity volume."}
+              {data.overviewParagraph || "HybridMonks structures your service implementation cleanly to minimize drag and elevate closed-won opportunity volume."}
             </p>
           </div>
 
@@ -452,7 +452,7 @@ export default function ServicePagePreview({ data, onCtaClick }: ServicePagePrev
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
             <div className="lg:col-span-5">
               <span className="text-[10px] uppercase tracking-[0.2em] text-blue-400 font-bold mb-3 block">
-                Why SiteOnLab
+                Why HybridMonks
               </span>
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-white tracking-tight mb-6 leading-tight">
                 {data.whyChooseUsH2 || "A growth agency that connects performance directly to revenue."}
@@ -460,7 +460,7 @@ export default function ServicePagePreview({ data, onCtaClick }: ServicePagePrev
             </div>
             <div className="lg:col-span-7">
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed pt-0 lg:pt-8">
-                {data.whyChooseUsParagraph || "Most agencies offer generic marketing support and call it a day. SiteOnLab builds a true revenue attribution workspace, aligning strategic performance directly with target CRM datasets."}
+                {data.whyChooseUsParagraph || "Most agencies offer generic marketing support and call it a day. HybridMonks builds a true revenue attribution workspace, aligning strategic performance directly with target CRM datasets."}
               </p>
             </div>
           </div>
@@ -691,7 +691,7 @@ export default function ServicePagePreview({ data, onCtaClick }: ServicePagePrev
             </h2>
 
             <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-10">
-              {data.finalCtaCopy || "Book a 30-minute strategy session with SiteOnLab to outline commercial pipelines."}
+              {data.finalCtaCopy || "Book a 30-minute strategy session with HybridMonks to outline commercial pipelines."}
             </p>
 
             {/* CTAs */}
@@ -717,7 +717,7 @@ export default function ServicePagePreview({ data, onCtaClick }: ServicePagePrev
       <footer className="border-t border-white/5 bg-[#050505] py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-[10px] text-zinc-600 uppercase tracking-widest font-bold">
-            &copy; 2026 SiteOnLab Systems. All Revenue Accounted For.
+            &copy; 2026 HybridMonks Systems. All Revenue Accounted For.
           </div>
           <div className="flex items-center space-x-6 text-[10px] text-zinc-400 uppercase tracking-widest font-bold">
             <div className="flex items-center gap-2">

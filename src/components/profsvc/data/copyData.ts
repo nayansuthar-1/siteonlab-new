@@ -18,7 +18,7 @@ import {
 } from "../types";
 
 export const SEO_METADATA: SEORequirements = {
-  titleTag: "B2B Professional Services Marketing Agency | SiteOnLab",
+  titleTag: "B2B Professional Services Marketing Agency | HybridMonks",
   metaDescription: "Accelerate qualified pipeline & revenue growth for your professional services firm. Specialized B2B marketing, SEO, and AI Search Visibility.",
   urlSlug: "/industries/professional-services",
   h1: "B2B Marketing for Professional Services Firms That Drives Qualified Pipeline, Brand Authority, and Partner Revenue",
@@ -34,8 +34,8 @@ export const SEO_METADATA: SEORequirements = {
   ],
   schemaRecommendations: [
     { type: "FAQPage Schema", details: "Implements structured JSON-LD FAQ data to secure rich snippets in Google SERPs." },
-    { type: "BreadcrumbList Schema", details: "Defines SiteOnLab > Industries > Professional Services navigation path." },
-    { type: "LocalBusiness / Organization Schema", details: "Declares SiteOnLab as a premium B2B Growth Agency with structured service capabilities." },
+    { type: "BreadcrumbList Schema", details: "Defines HybridMonks > Industries > Professional Services navigation path." },
+    { type: "LocalBusiness / Organization Schema", details: "Declares HybridMonks as a premium B2B Growth Agency with structured service capabilities." },
     { type: "Service Schema", details: "Details specialized SEO, AI Visibility Optimization, and Pipeline Generation services." }
   ]
 };
@@ -137,7 +137,7 @@ export const BUYER_JOURNEY: JourneyStage[] = [
     title: "Identifying Strategic Friction",
     buyerMindset: "The buyer realizes their current operations or legacy partners are causing inefficiencies or security vulnerabilities, but they don't yet know the best framework to fix it.",
     keyChallenge: "They are not looking for a vendor yet. They are looking to define their problem in clear, executive terms and find initial guidance.",
-    siteonlabSupport: "We publish deep, proprietary industry benchmark reports and thought leadership articles that define the exact problem they are facing and provide authoritative frameworks.",
+    hybridmonksSupport: "We publish deep, proprietary industry benchmark reports and thought leadership articles that define the exact problem they are facing and provide authoritative frameworks.",
     metricsToWatch: "Organic Impressions, AI Citations, High-Level Asset Downloads."
   },
   {
@@ -145,7 +145,7 @@ export const BUYER_JOURNEY: JourneyStage[] = [
     title: "Evaluating Frameworks and Methodologies",
     buyerMindset: "The buyer researches different methodologies to address their challenge (e.g., fractional vs. full-time advisory, custom development vs. off-the-shelf software).",
     keyChallenge: "They are highly skeptical of generic marketing claims and demand proof that a methodology actually works in their specific niche.",
-    siteonlabSupport: "We build detailed, transparent methodology breakdowns, comparative white papers, and interactive diagnostic calculators that prove your firm's approach is superior.",
+    hybridmonksSupport: "We build detailed, transparent methodology breakdowns, comparative white papers, and interactive diagnostic calculators that prove your firm's approach is superior.",
     metricsToWatch: "Time on Site, Methodology Page Views, High-Intent Content Downloads."
   },
   {
@@ -153,7 +153,7 @@ export const BUYER_JOURNEY: JourneyStage[] = [
     title: "Vetting the Competency of Specific Firms",
     buyerMindset: "The buyer compiles a shortlist of 3-4 professional services firms. They are examining case studies, reading partner bios, and validating market reputation.",
     keyChallenge: "The buying committee (procurement, legal, department heads) has diverse concerns regarding security, speed of delivery, and track record.",
-    siteonlabSupport: "We construct rigorous, data-rich B2B case studies that document the precise challenge, solutions, and financial/operational business outcomes with absolute clarity.",
+    hybridmonksSupport: "We construct rigorous, data-rich B2B case studies that document the precise challenge, solutions, and financial/operational business outcomes with absolute clarity.",
     metricsToWatch: "Case Study Page Views, Team Bio Page Engagement, Return Visits."
   },
   {
@@ -161,7 +161,7 @@ export const BUYER_JOURNEY: JourneyStage[] = [
     title: "Initiating Contact and Selecting the Partner",
     buyerMindset: "The buyer is ready to schedule a consultation but wants to ensure they won't be subjected to a high-pressure, generic sales pitch.",
     keyChallenge: "Friction in scheduling, lack of preparation from the sales rep, or a generic proposal can instantly derail the deal.",
-    siteonlabSupport: "We build frictionless, self-service booking calendars integrated with automated pre-qualification forms, ensuring a seamless handoff to your partners.",
+    hybridmonksSupport: "We build frictionless, self-service booking calendars integrated with automated pre-qualification forms, ensuring a seamless handoff to your partners.",
     metricsToWatch: "Consultations Requested, Discovery-to-Proposal Rate, Closed-Won Revenue."
   }
 ];
@@ -301,7 +301,7 @@ export const CASE_STUDIES: CaseStudyCard[] = [
     industry: "Enterprise Corporate Law",
     clientName: "Apex Counsel Group",
     challenge: "Apex Counsel Group relied entirely on partner referrals. Their website was an outdated digital resume, resulting in flat revenues and zero organic inbound lead generation.",
-    solution: "SiteOnLab built a custom authority digital flagship, designed deep comparative resources on enterprise regulatory compliance, and launched targeted ABM campaigns on LinkedIn targeting General Counsels.",
+    solution: "HybridMonks built a custom authority digital flagship, designed deep comparative resources on enterprise regulatory compliance, and launched targeted ABM campaigns on LinkedIn targeting General Counsels.",
     outcome: "Generated $8.4M in pre-qualified new pipeline within 9 months, reduced sales cycle length by 22%, and achieved #1 AI citation share for corporate compliance queries.",
     metrics: [
       { label: "New Pipeline", value: "$8.4M" },
@@ -329,7 +329,7 @@ export const CASE_STUDIES: CaseStudyCard[] = [
     industry: "Cybersecurity & IT Advisory",
     clientName: "SecurePath Networks",
     challenge: "SecurePath was stuck competing on price in a saturated cybersecurity market. Their marketing generated low-quality traffic that never converted into high-value consulting contracts.",
-    solution: "SiteOnLab implemented an Authority SEO campaign targeting high-intent CISO search terms, designed a custom interactive security health calculator, and built automated CRM lead enrichment flows.",
+    solution: "HybridMonks implemented an Authority SEO campaign targeting high-intent CISO search terms, designed a custom interactive security health calculator, and built automated CRM lead enrichment flows.",
     outcome: "Slashed cost-per-acquisition (CPA) by 45%, tripled marketing-qualified leads, and generated over $5.2M in recurring consulting pipeline.",
     metrics: [
       { label: "Consulting Pipeline", value: "$5.2M" },
@@ -341,7 +341,7 @@ export const CASE_STUDIES: CaseStudyCard[] = [
 ];
 
 export const TESTIMONIAL: Testimonial = {
-  quote: "SiteOnLab completely transformed how we generate enterprise business. We went from crossing our fingers for referrals to managing a highly predictable, high-value inbound pipeline of corporate clients. They understand the nuances of selling advisory services better than any agency we have ever worked with.",
+  quote: "HybridMonks completely transformed how we generate enterprise business. We went from crossing our fingers for referrals to managing a highly predictable, high-value inbound pipeline of corporate clients. They understand the nuances of selling advisory services better than any agency we have ever worked with.",
   clientName: "Eleanor Vance",
   role: "Managing Partner",
   company: "Vanguard Strategy Group",
@@ -413,7 +413,7 @@ export const RAW_MARKDOWN_COPY = `# B2B Professional Services Marketing: The Com
 
 *   **Eyebrow**: Industries | Professional Services
 *   **H1**: B2B marketing for Professional Services companies that drives qualified pipeline, brand authority, and partner revenue.
-*   **Supporting Copy**: Turn your firmâ€™s real-world expertise into a highly predictable online pipeline. SiteOnLab partners with leading consultancies, law firms, accounting networks, and enterprise IT advisors to engineer multi-channel growth systemsâ€”combining Authority SEO, Generative Engine Optimization (GEO), conversion-centric web design, and hyper-targeted account-based paid media. We align your digital footprint with your elite reputation to engage multi-stakeholder buying committees and accelerate partner revenue.
+*   **Supporting Copy**: Turn your firmâ€™s real-world expertise into a highly predictable online pipeline. HybridMonks partners with leading consultancies, law firms, accounting networks, and enterprise IT advisors to engineer multi-channel growth systemsâ€”combining Authority SEO, Generative Engine Optimization (GEO), conversion-centric web design, and hyper-targeted account-based paid media. We align your digital footprint with your elite reputation to engage multi-stakeholder buying committees and accelerate partner revenue.
 *   **Primary CTA**: Request a Growth Blueprint
 *   **Secondary CTA**: See Case Studies
 
@@ -450,7 +450,7 @@ Professional services are bought based on trust and specialized intellect. Yet, 
 
 ---
 
-## 4. How SiteOnLab Solves These Challenges
+## 4. How HybridMonks Solves These Challenges
 
 ### Authority B2B SEO & Topical Mapping
 We build dense, strategic topical authority maps that establish your firm as the default expert in your specialized field. We do not target easy, generic keywords that drive irrelevant traffic. Instead, we map out the precise, high-intent questions, regulatory concerns, and structural challenges that enterprise executives search when they are preparing to hire an external advisory partner.
@@ -480,22 +480,22 @@ We implement secure, enterprise-grade AI automation pipelines that pre-qualify i
 ### Stage 1: Awareness (Identifying Strategic Friction)
 *   **Buyer Mindset**: The executive notices a systemic drop in operational efficiency, a regulatory compliance exposure, or a vulnerability in their current IT architecture. They are searching for clear frameworks to define and quantify this strategic friction.
 *   **The Challenge**: Traditional sales pitches fail here because the buyer is not yet looking to hire a vendor. They want to understand the nature of their problem.
-*   **SiteOnLab Support**: We create deep-dive, diagnostic articles and industry benchmark reports that define their friction, establish absolute clarity, and position your firm as the default expert who truly understands their pain.
+*   **HybridMonks Support**: We create deep-dive, diagnostic articles and industry benchmark reports that define their friction, establish absolute clarity, and position your firm as the default expert who truly understands their pain.
 
 ### Stage 2: Research (Evaluating Methodologies)
 *   **Buyer Mindset**: The buyer understands their problem and is now comparing various strategic frameworks, delivery models, and strategic options (e.g., custom development vs. commercial software, specialized boutique advisory vs. global conglomerate).
 *   **The Challenge**: Executives are highly skeptical of self-proclaimed 'best-in-class' marketing claims. They demand objective, data-backed evidence of methodology viability.
-*   **SiteOnLab Support**: We design transparent methodology white papers, interactive self-assessment tools, and detailed diagnostic checklists that prove why your firm's specific approach is the most secure, cost-effective, and successful.
+*   **HybridMonks Support**: We design transparent methodology white papers, interactive self-assessment tools, and detailed diagnostic checklists that prove why your firm's specific approach is the most secure, cost-effective, and successful.
 
 ### Stage 3: Evaluation (Vetting Competency)
 *   **Buyer Mindset**: The buyer has selected a preferred methodology and is now vetting a highly restricted shortlist of 3-4 professional services firms. They are digging deep into case studies, analyzing partner credentials, and validating industry reputation.
 *   **The Challenge**: The entire multi-stakeholder buying committee (procurement, legal, department heads) is actively reviewing the selection to minimize corporate risk.
-*   **SiteOnLab Support**: We construct deep, mathematically precise case studies and authority trust hubs that document your real-world outcomes, showcase your security standards, and dismantle buying objections before they are voiced.
+*   **HybridMonks Support**: We construct deep, mathematically precise case studies and authority trust hubs that document your real-world outcomes, showcase your security standards, and dismantle buying objections before they are voiced.
 
 ### Stage 4: Decision (Contact & Selection)
 *   **Buyer Mindset**: The buying committee is ready to proceed. They want to schedule a discovery consultation, but they are wary of being subjected to aggressive, high-pressure sales pitches or receiving copy-paste generic proposals.
 *   **The Challenge**: Even a tiny amount of frictionâ€”such as slow response times, hard-to-navigate calendars, or lack of rep preparationâ€”can instantly kill the deal.
-*   **SiteOnLab Support**: We deploy frictionless, self-service partner scheduling interfaces integrated with intelligent CRM forms, ensuring your partners are fully armed with the buyer's detailed firmographic profile prior to the call.
+*   **HybridMonks Support**: We deploy frictionless, self-service partner scheduling interfaces integrated with intelligent CRM forms, ensuring your partners are fully armed with the buyer's detailed firmographic profile prior to the call.
 
 ---
 
@@ -523,7 +523,7 @@ We implement secure, enterprise-grade AI automation pipelines that pre-qualify i
 
 ---
 
-## 7. Why Professional Services Choose SiteOnLab
+## 7. Why Professional Services Choose HybridMonks
 
 ### Uncompromising B2B Exclusivity
 We do not work with e-commerce brands, local retailers, or consumer-facing mobile apps. We work exclusively with high-value B2B organizations, specializing in the unique, trust-based sales models of elite professional services.
@@ -535,7 +535,7 @@ We refuse to hide behind vanity metrics. We measure our success using the exact 
 While other agencies are still relying on outdated 2018 keyword lists, we are actively shaping the future of search. We ensure your partners' expertise and unique strategic models are deeply cited and recommended within ChatGPT, Gemini, and Perplexity.
 
 ### Senior-Level Strategic execution
-At SiteOnLab, you will never be handed off to a junior account executive or intern. Every client partners directly with senior strategists, world-class enterprise copywriters, and elite front-end engineers who possess years of proven experience.
+At HybridMonks, you will never be handed off to a junior account executive or intern. Every client partners directly with senior strategists, world-class enterprise copywriters, and elite front-end engineers who possess years of proven experience.
 
 ---
 
@@ -556,7 +556,7 @@ At SiteOnLab, you will never be handed off to a junior account executive or inte
 
 ### Apex Counsel Group (Enterprise Corporate Law)
 *   **Challenge**: Relied exclusively on static regional partner referrals. Website was an invisible brochure, resulting in zero inbound pipeline and stagnating partner profits.
-*   **Solution**: SiteOnLab developed a custom compliance digital flagship, published comprehensive, search-optimized guides on enterprise data security laws, and launched hyper-targeted ABM campaigns on LinkedIn targeting General Counsels.
+*   **Solution**: HybridMonks developed a custom compliance digital flagship, published comprehensive, search-optimized guides on enterprise data security laws, and launched hyper-targeted ABM campaigns on LinkedIn targeting General Counsels.
 *   **Business Outcome**: Generated $8.4M in pre-qualified new pipeline within 9 months, reduced sales cycle length by 22%, and achieved a #1 authority citation share for enterprise data privacy queries across major LLM search engines.
 
 ### Vanguard Strategy Group (Management Consulting)
@@ -573,7 +573,7 @@ At SiteOnLab, you will never be handed off to a junior account executive or inte
 
 ## 10. Partner Testimonial
 
-> "SiteOnLab completely transformed how we generate enterprise business. We went from crossing our fingers for referrals to managing a highly predictable, high-value inbound pipeline of corporate clients. They understand the nuances of selling advisory services better than any agency we have ever worked with."
+> "HybridMonks completely transformed how we generate enterprise business. We went from crossing our fingers for referrals to managing a highly predictable, high-value inbound pipeline of corporate clients. They understand the nuances of selling advisory services better than any agency we have ever worked with."
 > 
 > **Eleanor Vance**  
 > Managing Partner, Vanguard Strategy Group  
@@ -634,7 +634,7 @@ Once onboarding is complete and your Growth Blueprint is approved, we immediatel
 
 **Let's build a predictable growth engine for your Professional Services company.**
 
-Stop relying solely on unpredictable, static word-of-mouth networks. Partner with SiteOnLab to transform your firm's elite expertise into an active, high-value digital pipeline. We will align your website, search, and paid media to engage enterprise buying committees, defend your premium pricing, and drive predictable partner revenue.
+Stop relying solely on unpredictable, static word-of-mouth networks. Partner with HybridMonks to transform your firm's elite expertise into an active, high-value digital pipeline. We will align your website, search, and paid media to engage enterprise buying committees, defend your premium pricing, and drive predictable partner revenue.
 
 *   **Primary CTA**: Request a Growth Blueprint
 *   **Secondary CTA**: Book a Strategy Call

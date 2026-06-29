@@ -49,10 +49,10 @@ export default function App() {
 
   // Set document SEO tags dynamically
   useEffect(() => {
-    document.title = "GTM & Revenue Strategy Agency for B2B Pipeline Growth | SiteOnLab";
+    document.title = "GTM & Revenue Strategy Agency for B2B Pipeline Growth | HybridMonks";
     
     const metaDescription = document.querySelector('meta[name="description"]');
-    const descContent = "SiteOnLab helps B2B SaaS, technology, IT/MSP, and professional-services companies turn GTM & Revenue Strategy into qualified pipeline.";
+    const descContent = "HybridMonks helps B2B SaaS, technology, IT/MSP, and professional-services companies turn GTM & Revenue Strategy into qualified pipeline.";
     if (metaDescription) {
       metaDescription.setAttribute("content", descContent);
     } else {
@@ -118,7 +118,7 @@ export default function App() {
             </h1>
 
             <p className="text-base sm:text-lg text-gray-400 leading-relaxed max-w-xl">
-              SiteOnLab helps B2B SaaS, technology, IT/MSP, and professional-services companies turn Go-To-Market and Revenue Strategy into a measurable revenue engine. We help you design winning launch playbooks, align sales & marketing teams, and optimize pricing/funnels — measured by qualified pipeline, not vanity metrics.
+              HybridMonks helps B2B SaaS, technology, IT/MSP, and professional-services companies turn Go-To-Market and Revenue Strategy into a measurable revenue engine. We help you design winning launch playbooks, align sales & marketing teams, and optimize pricing/funnels — measured by qualified pipeline, not vanity metrics.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -329,7 +329,7 @@ export default function App() {
               A GTM & Revenue Strategy agency that connects channel performance to revenue.
             </h2>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Most agencies hand you a vanity spreadsheet of clicks and traffic and call it done. SiteOnLab builds a full measurement layer so you can see how Go-To-Market and Revenue Strategy initiatives contribute across the entire buyer journey, from first touch to qualified opportunity.
+              Most agencies hand you a vanity spreadsheet of clicks and traffic and call it done. HybridMonks builds a full measurement layer so you can see how Go-To-Market and Revenue Strategy initiatives contribute across the entire buyer journey, from first touch to qualified opportunity.
             </p>
             <div className="p-4 bg-slate-900/60 border border-white/5 rounded-xl flex gap-3">
               <Award className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />

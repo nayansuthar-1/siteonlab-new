@@ -148,7 +148,7 @@ export default function AboutPage() {
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 shadow-inner">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-pulse"></span>
-            <span className="text-xs font-bold tracking-wider uppercase text-brand-accent">About SiteOnLab</span>
+            <span className="text-xs font-bold tracking-wider uppercase text-brand-accent">About HybridMonks</span>
           </div>
 
           {/* Headline */}
@@ -209,7 +209,7 @@ export default function AboutPage() {
                 <span className="text-xs font-semibold uppercase tracking-widest text-brand-orange">THE STANDARD</span>
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Meet SiteOnLab. <br className="hidden md:inline"/>
+                Meet HybridMonks. <br className="hidden md:inline"/>
                 <span className="text-brand-text-secondary font-light">Growth isn't just a goal — it's the standard we hold ourselves to.</span>
               </h2>
 
@@ -251,7 +251,7 @@ export default function AboutPage() {
 
                 <div className="border-t border-slate-800 pt-3 flex justify-between items-center text-xs text-brand-text-muted">
                   <span>Audited: June 2026</span>
-                  <span className="font-mono text-brand-orange">SiteOnLab Inc.</span>
+                  <span className="font-mono text-brand-orange">HybridMonks Inc.</span>
                 </div>
               </div>
             </div>
@@ -322,7 +322,7 @@ export default function AboutPage() {
                   <p className="text-xs md:text-sm text-brand-text-secondary leading-relaxed font-light">{val.description}</p>
                 </div>
                 <div className="mt-6 border-t border-slate-800/60 pt-3 flex justify-between items-center text-[10px] text-brand-text-muted font-mono">
-                  <span>SITEONLAB CORE</span>
+                  <span>HYBRIDMONKS CORE</span>
                   <span>VALUE 0{val.id}</span>
                 </div>
               </div>
@@ -650,7 +650,7 @@ export default function AboutPage() {
                   {INDUSTRIES.find(i => i.id === selectedIndustry)?.description} We construct tailored semantic clusters and index your technical specs directly to Google Search Console and OpenAI crawlers to lock in category recommendation share.
                 </p>
                 <div className="flex justify-between items-center pt-2 text-[10px] text-brand-text-muted font-mono">
-                  <span>SITEONLAB LABS</span>
+                  <span>HYBRIDMONKS LABS</span>
                   <button
                     onClick={() => setIsBookingOpen(true)}
                     className="text-brand-accent hover:underline flex items-center gap-1 font-bold cursor-pointer"

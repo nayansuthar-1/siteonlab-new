@@ -200,7 +200,7 @@ export default function AutomationEngine() {
       <div className="flex items-center justify-between border-b border-zinc-800 pb-4 mb-4">
         <div className="flex items-center space-x-2">
           <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" />
-          <span className="text-xs font-mono tracking-widest text-blue-400 uppercase">SiteOnLab Engine</span>
+          <span className="text-xs font-mono tracking-widest text-blue-400 uppercase">HybridMonks Engine</span>
         </div>
         <div className="flex items-center space-x-2 bg-zinc-800 px-3 py-1 rounded-full border border-zinc-700">
           <TrendingUp className="w-3.5 h-3.5 text-green-400" />

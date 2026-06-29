@@ -23,7 +23,7 @@ export default function Testimonial() {
 
         {/* Client Quote */}
         <blockquote className="font-display text-xl sm:text-2xl lg:text-3xl font-medium text-white leading-relaxed italic max-w-3xl mx-auto">
-          &ldquo;SiteOnLab transformed our demand generation from a black box of vanity metrics into a predictable pipeline engine. We finally know exactly where our best customer accounts come from.&rdquo;
+          &ldquo;HybridMonks transformed our demand generation from a black box of vanity metrics into a predictable pipeline engine. We finally know exactly where our best customer accounts come from.&rdquo;
         </blockquote>
 
         {/* Client Author Details */}

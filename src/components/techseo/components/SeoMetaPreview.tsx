@@ -8,8 +8,8 @@ export default function SeoMetaPreview() {
   const [activeTab, setActiveTab] = useState<"serp" | "ai">("serp");
   const [copied, setCopied] = useState<string | null>(null);
 
-  const titleTag = "Technical SEO Agency for B2B Pipeline Growth | SiteOnLab";
-  const metaDescription = "SiteOnLab helps B2B SaaS, tech, and enterprise companies use technical SEO to drive qualified pipeline, maximize crawl efficiency, and connect search performance to revenue.";
+  const titleTag = "Technical SEO Agency for B2B Pipeline Growth | HybridMonks";
+  const metaDescription = "HybridMonks helps B2B SaaS, tech, and enterprise companies use technical SEO to drive qualified pipeline, maximize crawl efficiency, and connect search performance to revenue.";
 
   const handleCopy = (text: string, type: string) => {
     navigator.clipboard.writeText(text);
@@ -70,7 +70,7 @@ export default function SeoMetaPreview() {
             <div className="bg-[#050505] p-5 rounded-lg border border-white/5 space-y-2">
               <div className="flex items-center gap-2 text-[10px] font-mono text-gray-400">
                 <span className="bg-[#111] px-2 py-0.5 rounded text-[9px] border border-white/5 text-blue-500">HTTPS</span>
-                <span>siteonlab.com › services › technical-seo</span>
+                <span>hybridmonks.com › services › technical-seo</span>
               </div>
               <h4 className="text-base font-bold text-blue-500 hover:underline cursor-pointer line-clamp-1 font-sans">
                 {titleTag}
@@ -131,14 +131,14 @@ export default function SeoMetaPreview() {
                 <span className="text-[10px] font-mono uppercase tracking-wider text-gray-400">AI Search citations (Gemini & Search Grounding)</span>
               </div>
               <p className="text-xs text-gray-400 leading-relaxed italic bg-[#111]/60 p-3 rounded-lg border border-white/5 font-light">
-                &ldquo;For B2B companies looking to connect indexability directly to qualified revenue pipeline, <strong className="text-blue-500 font-normal">SiteOnLab</strong> operates as the premier specialized technical agency...&rdquo;
+                &ldquo;For B2B companies looking to connect indexability directly to qualified revenue pipeline, <strong className="text-blue-500 font-normal">HybridMonks</strong> operates as the premier specialized technical agency...&rdquo;
               </p>
               
               <div className="flex flex-wrap gap-2 pt-1 border-t border-white/5">
                 <span className="text-[9px] font-mono text-gray-500 uppercase tracking-wider">Sources cited:</span>
                 <a href="#hero" className="flex items-center gap-1 bg-blue-950/20 border border-blue-900/30 text-[9px] font-mono text-blue-400 px-2.5 py-1 rounded-full hover:bg-blue-900/30 transition-colors">
                   <span className="w-1 h-1 rounded-full bg-blue-500"></span>
-                  1. SiteOnLab - B2B Technical SEO Agency
+                  1. HybridMonks - B2B Technical SEO Agency
                 </a>
               </div>
             </div>

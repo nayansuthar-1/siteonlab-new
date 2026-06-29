@@ -78,7 +78,7 @@ export default function Process() {
             From traffic leaks to pipeline velocity in 90 days.
           </h2>
           <p className="text-xs sm:text-sm text-white/50">
-            Click on each step below to inspect the key milestones and standard timelines of a SiteOnLab engagement.
+            Click on each step below to inspect the key milestones and standard timelines of a HybridMonks engagement.
           </p>
         </div>
 
@@ -160,7 +160,7 @@ export default function Process() {
             </div>
 
             <div className="border-t border-white/5 mt-8 pt-4 flex flex-col sm:flex-row gap-2 justify-between items-start sm:items-center text-xs font-mono text-slate-500">
-              <span>Full deployment managed entirely by SiteOnLab.</span>
+              <span>Full deployment managed entirely by HybridMonks.</span>
               <span>Next Step: {steps[(activeStep + 1) % steps.length].title}</span>
             </div>
           </div>

@@ -155,7 +155,7 @@ export default function InteractiveDashboard() {
           </span>
         </div>
         <span className="font-mono text-[9px] text-zinc-600">
-          SiteOnLab System v1.0
+          HybridMonks System v1.0
         </span>
       </div>
 

@@ -76,7 +76,7 @@ export default function GrowthBlueprintModal({ isOpen, onClose }: GrowthBlueprin
             <ShieldCheck className="h-4 w-4" />
           </div>
           <span className="text-[10px] font-bold font-mono text-slate-400 tracking-widest uppercase">
-            SiteOnLab Consultative Growth Blueprint
+            HybridMonks Consultative Growth Blueprint
           </span>
         </div>
 
@@ -301,7 +301,7 @@ export default function GrowthBlueprintModal({ isOpen, onClose }: GrowthBlueprin
           <div className="text-left">
             <div className="flex items-center gap-2 rounded-sm bg-sky-500/10 border border-sky-500/20 px-3 py-1.5 self-start w-fit mb-4">
               <Sparkles className="h-4 w-4 text-sky-400" />
-              <span className="text-[9px] font-bold font-mono text-sky-400 uppercase tracking-wider">SiteOnLab Generative Brief Generated Successfully</span>
+              <span className="text-[9px] font-bold font-mono text-sky-400 uppercase tracking-wider">HybridMonks Generative Brief Generated Successfully</span>
             </div>
 
             <h3 className="text-xl font-bold text-white font-sans">
@@ -333,7 +333,7 @@ export default function GrowthBlueprintModal({ isOpen, onClose }: GrowthBlueprin
                     Assigned Growth Architect
                   </span>
                   <span className="text-xs font-semibold text-white block mt-0.5 font-sans">
-                    Hitesh Malviya (Lead Cybersecurity Consultant, SiteOnLab)
+                    Hitesh Malviya (Lead Cybersecurity Consultant, HybridMonks)
                   </span>
                 </div>
                 <div className="rounded-sm bg-sky-500/10 border border-sky-500/20 px-2.5 py-1 text-[10px] font-bold text-sky-400 font-mono uppercase tracking-wider">

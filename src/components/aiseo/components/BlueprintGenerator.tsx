@@ -273,7 +273,7 @@ export default function BlueprintGenerator({ onClose, initialGoal = "" }: Bluepr
               </div>
 
               <span className="font-mono text-xs font-semibold tracking-wider text-blue-400 uppercase mb-2">Analyzing Domain Data Nodes</span>
-              <h4 className="text-lg font-medium text-white mb-4">Building SiteOnLab Diagnostic Report</h4>
+              <h4 className="text-lg font-medium text-white mb-4">Building HybridMonks Diagnostic Report</h4>
               
               <div className="w-full max-w-md bg-slate-950 rounded-lg p-3 border border-slate-800">
                 <div className="flex items-center justify-between mb-2">
@@ -306,7 +306,7 @@ export default function BlueprintGenerator({ onClose, initialGoal = "" }: Bluepr
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
                 <div>
                   <span className="text-[10px] font-mono bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/20 font-bold uppercase tracking-wider">
-                    SiteOnLab Advanced Diagnostic Report
+                    HybridMonks Advanced Diagnostic Report
                   </span>
                   <h3 className="text-2xl font-bold font-display text-white mt-2">
                     {formData.companyName} Growth Blueprint
@@ -403,7 +403,7 @@ export default function BlueprintGenerator({ onClose, initialGoal = "" }: Bluepr
               <div className="border-t border-slate-800 pt-5">
                 <div className="flex items-center gap-2 mb-3.5">
                   <Calendar className="w-4 h-4 text-indigo-400" />
-                  <span className="text-xs font-mono font-semibold text-indigo-400 uppercase tracking-wider">SiteOnLab Standard 90-Day Sprint Roadmap</span>
+                  <span className="text-xs font-mono font-semibold text-indigo-400 uppercase tracking-wider">HybridMonks Standard 90-Day Sprint Roadmap</span>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -426,7 +426,7 @@ export default function BlueprintGenerator({ onClose, initialGoal = "" }: Bluepr
               {/* CTA Form Actions */}
               <div className="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 p-5 rounded-xl border border-blue-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="text-center sm:text-left">
-                  <h4 className="text-sm font-semibold text-white">Review this blueprint with a senior SiteOnLab strategist</h4>
+                  <h4 className="text-sm font-semibold text-white">Review this blueprint with a senior HybridMonks strategist</h4>
                   <p className="text-xs text-slate-300 mt-1">
                     Book a complimentary 30-minute growth strategy review. We will map this exact roadmap to your HubSpot/Salesforce revenue pipeline.
                   </p>

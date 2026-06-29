@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import HeroSection from "./components/HeroSection";
 import TrustCredibility from "./components/TrustCredibility";
 import IndustryChallenges from "./components/IndustryChallenges";
-import SiteOnLabSolutions from "./components/SiteOnLabSolutions";
+import HybridMonksSolutions from "./components/HybridMonksSolutions";
 import BuyingJourney from "./components/BuyingJourney";
 import ProcessSteps from "./components/ProcessSteps";
 import WhyChooseUs from "./components/WhyChooseUs";
@@ -60,7 +60,7 @@ export default function ManufacturingLandingPage() {
         <HeroSection onRequestBlueprint={triggerBlueprint} onSeeCaseStudies={() => scrollToSection("case-studies")} />
         <TrustCredibility />
         <IndustryChallenges />
-        <SiteOnLabSolutions />
+        <HybridMonksSolutions />
         <BuyingJourney />
         <ProcessSteps />
         <GrowthCalculator />

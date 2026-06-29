@@ -105,7 +105,7 @@ export default function App() {
             
             {/* Category / Service Eyebrow */}
             <div className="inline-block px-3 py-1 bg-[#3b82f6]/10 text-[#3b82f6] border border-[#3b82f6]/20 text-[10px] uppercase tracking-[0.2em]">
-              Conversion Rate Optimization | SiteOnLab Elite
+              Conversion Rate Optimization | HybridMonks Elite
             </div>
 
             {/* H1 Main Heading */}
@@ -115,7 +115,7 @@ export default function App() {
 
             {/* Subheading */}
             <p className="text-white/60 text-lg max-w-xl leading-relaxed">
-              SiteOnLab helps B2B SaaS, technology, IT/MSP, and professional-services companies turn existing web traffic and user journeys into a measurable revenue channel. We help you identify conversion friction, design high-impact A/B experiments, and maximize pipeline yield — measured by qualified pipeline, not vanity metrics.
+              HybridMonks helps B2B SaaS, technology, IT/MSP, and professional-services companies turn existing web traffic and user journeys into a measurable revenue channel. We help you identify conversion friction, design high-impact A/B experiments, and maximize pipeline yield — measured by qualified pipeline, not vanity metrics.
             </p>
 
             {/* CTAs */}

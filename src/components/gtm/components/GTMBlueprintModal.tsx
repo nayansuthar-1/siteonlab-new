@@ -102,7 +102,7 @@ export default function GTMBlueprintModal({ isOpen, onClose }: GTMBlueprintModal
             <span className="p-1.5 bg-blue-500/10 text-blue-400 rounded-md">
               <Sparkles className="w-4 h-4" />
             </span>
-            <span className="font-display font-semibold text-white text-sm">SiteOnLab Growth Blueprint Builder</span>
+            <span className="font-display font-semibold text-white text-sm">HybridMonks Growth Blueprint Builder</span>
           </div>
           <button 
             id="close-blueprint-modal"
@@ -326,7 +326,7 @@ export default function GTMBlueprintModal({ isOpen, onClose }: GTMBlueprintModal
 
                     <div className="flex items-center gap-2 text-[10px] text-gray-400">
                       <AlertCircle className="w-3.5 h-3.5 text-blue-400" />
-                      <span>We respect your privacy. SiteOnLab will never sell your information.</span>
+                      <span>We respect your privacy. HybridMonks will never sell your information.</span>
                     </div>
 
                     <button
@@ -379,7 +379,7 @@ export default function GTMBlueprintModal({ isOpen, onClose }: GTMBlueprintModal
               <div>
                 <h3 className="font-display text-xl font-bold text-white mb-2">Custom Blueprint Requested!</h3>
                 <p className="text-sm text-gray-400 max-w-md mx-auto">
-                  Thank you! We have sent a comprehensive diagnostic report to <span className="text-blue-400 font-medium">{email}</span>. A SiteOnLab strategist will review this within 12 hours.
+                  Thank you! We have sent a comprehensive diagnostic report to <span className="text-blue-400 font-medium">{email}</span>. A HybridMonks strategist will review this within 12 hours.
                 </p>
               </div>
 

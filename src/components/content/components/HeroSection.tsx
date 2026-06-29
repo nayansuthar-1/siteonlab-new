@@ -38,7 +38,7 @@ export default function HeroSection({ onRequestBlueprint, onSeeCaseStudies }: He
 
             {/* Subheading with explicit benefit mappings */}
             <p className="font-sans text-base sm:text-lg text-zinc-400 leading-relaxed max-w-2xl">
-              SiteOnLab helps <strong className="text-zinc-200">B2B SaaS, technology, cybersecurity, and professional-services</strong> companies turn content marketing into a measurable revenue channel. We help you <span className="text-emerald-400 font-medium">rank for buyer-intent searches</span>, <span className="text-blue-400 font-medium">get cited by AI engines</span>, and <span className="text-blue-500 font-medium">convert visibility into qualified pipeline</span> — measured by qualified pipeline, not vanity metrics.
+              HybridMonks helps <strong className="text-zinc-200">B2B SaaS, technology, cybersecurity, and professional-services</strong> companies turn content marketing into a measurable revenue channel. We help you <span className="text-emerald-400 font-medium">rank for buyer-intent searches</span>, <span className="text-blue-400 font-medium">get cited by AI engines</span>, and <span className="text-blue-500 font-medium">convert visibility into qualified pipeline</span> — measured by qualified pipeline, not vanity metrics.
             </p>
 
             {/* CTAs */}

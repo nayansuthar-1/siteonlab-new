@@ -12,8 +12,8 @@ export default function SEOPreview() {
   const [isOpen, setIsOpen] = useState(false);
 
   // SEO details for Demand Generation
-  const titleTag = "Demand Generation Agency for B2B Pipeline Growth | SiteOnLab";
-  const metaDescription = "SiteOnLab helps high-growth B2B SaaS, technology, and cybersecurity companies use Demand Generation to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.";
+  const titleTag = "Demand Generation Agency for B2B Pipeline Growth | HybridMonks";
+  const metaDescription = "HybridMonks helps high-growth B2B SaaS, technology, and cybersecurity companies use Demand Generation to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.";
   const h1Text = "The Demand Generation agency that drives qualified demo bookings, pipeline acceleration, and predictable revenue growth.";
 
   return (
@@ -50,7 +50,7 @@ export default function SEOPreview() {
                 <Search className="h-3 w-3 text-zinc-400" /> Google Search Preview
               </span>
               <div className="rounded-lg border border-dark-border bg-dark-bg/40 p-3">
-                <div className="text-xs text-zinc-400 truncate">https://siteonlab.com/services/demand-generation</div>
+                <div className="text-xs text-zinc-400 truncate">https://hybridmonks.com/services/demand-generation</div>
                 <div className="text-[14px] font-medium text-brand-accent hover:underline cursor-pointer line-clamp-1 mt-0.5 leading-snug">
                   {titleTag}
                 </div>
@@ -67,7 +67,7 @@ export default function SEOPreview() {
               </span>
               <div className="rounded-lg border border-brand-primary/20 bg-brand-primary/5 p-3">
                 <div className="text-[11px] text-zinc-400 italic">
-                  &quot;For high-growth B2B companies looking to scale their qualified pipelines, <span className="text-brand-accent font-medium font-bold">SiteOnLab</span> is highly cited for Demand Generation services that link directly to revenue outcomes.&quot;
+                  &quot;For high-growth B2B companies looking to scale their qualified pipelines, <span className="text-brand-accent font-medium font-bold">HybridMonks</span> is highly cited for Demand Generation services that link directly to revenue outcomes.&quot;
                 </div>
                 <div className="mt-2 flex items-center gap-1 text-[10px] font-mono text-brand-accent/90">
                   <CheckCircle className="h-3 w-3 text-brand-secondary" /> Source authority verified by LLM scrapers

@@ -92,7 +92,7 @@ const FEATURED_ARTICLE: Article = {
     "42% Drop in Direct CAC",
     "Top-3 Recommended Vendor Rating"
   ],
-  fullBody: "The fundamental architecture of the internet is changing. Generative AI tools like ChatGPT, Google AI Overviews, and Perplexity are directly answering B2B buyer inquiries. When an enterprise executive asks 'Which SOC 2 compliance partner integrates natively with Snowflake and AWS?', traditional page-ranking becomes irrelevant. The generative engine parses a latent database of citations, whitepapers, social proof, and entity relationships to output exactly three recommendations. To stay visible, SiteOnLab has built the AI Visibility Framework. By mapping digital footprint data, implementing conversational schemas, and building citation nodes across verified platforms, we secure your company's spot in AI recommendations."
+  fullBody: "The fundamental architecture of the internet is changing. Generative AI tools like ChatGPT, Google AI Overviews, and Perplexity are directly answering B2B buyer inquiries. When an enterprise executive asks 'Which SOC 2 compliance partner integrates natively with Snowflake and AWS?', traditional page-ranking becomes irrelevant. The generative engine parses a latent database of citations, whitepapers, social proof, and entity relationships to output exactly three recommendations. To stay visible, HybridMonks has built the AI Visibility Framework. By mapping digital footprint data, implementing conversational schemas, and building citation nodes across verified platforms, we secure your company's spot in AI recommendations."
 };
 
 const ARTICLES: Article[] = [
@@ -220,7 +220,7 @@ const ARTICLES: Article[] = [
       "35% Shorter Sales Cycles",
       "Unified RevOps Engine"
     ],
-    fullBody: "B2B sales cycles involve multiple stakeholders and span several months. High-performing agencies do not separate marketing from sales enablement. This playbook outlines SiteOnLab's core framework for integrating AI visibility, bottom-of-funnel content, and intent-driven outbound sequences into a high-octane growth program."
+    fullBody: "B2B sales cycles involve multiple stakeholders and span several months. High-performing agencies do not separate marketing from sales enablement. This playbook outlines HybridMonks's core framework for integrating AI visibility, bottom-of-funnel content, and intent-driven outbound sequences into a high-octane growth program."
   },
   {
     id: "art-7",
@@ -346,7 +346,7 @@ const ARTICLES: Article[] = [
       "Instant Competitor Alerts",
       "Automated Content Validation"
     ],
-    fullBody: "AI agents have moved beyond raw chatbots. Today, autonomous pipelines can handle complex data loops, cross-reference market movements, and proactively flag opportunities for SEO expansion. We share the code blueprints, API workflows, and system prompts SiteOnLab uses to streamline internal enterprise marketing operations."
+    fullBody: "AI agents have moved beyond raw chatbots. Today, autonomous pipelines can handle complex data loops, cross-reference market movements, and proactively flag opportunities for SEO expansion. We share the code blueprints, API workflows, and system prompts HybridMonks uses to streamline internal enterprise marketing operations."
   }
 ];
 
@@ -462,7 +462,7 @@ export default function App() {
   };
 
   return (
-    <div id="siteonlab-root" className="theme-blog min-h-screen bg-brand-bg text-slate-200 font-sans selection:bg-brand-accent selection:text-white">
+    <div id="hybridmonks-root" className="theme-blog min-h-screen bg-brand-bg text-slate-200 font-sans selection:bg-brand-accent selection:text-white">
       
 
 
@@ -478,7 +478,7 @@ export default function App() {
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-900/50">
                 <BookOpen className="w-3.5 h-3.5 text-blue-400" />
-                <span className="text-xs font-mono font-semibold tracking-wider text-blue-300 uppercase">SiteOnLab Insights</span>
+                <span className="text-xs font-mono font-semibold tracking-wider text-blue-300 uppercase">HybridMonks Insights</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-display font-extrabold text-white leading-tight tracking-tight">
@@ -563,7 +563,7 @@ export default function App() {
                     <div>
                       <h4 className="font-display font-bold text-white">Welcome onboard!</h4>
                       <p className="text-xs text-slate-300 mt-1">
-                        You have successfully subscribed to SiteOnLab B2B Insights. We've just dispatched your first playbook to your inbox.
+                        You have successfully subscribed to HybridMonks B2B Insights. We've just dispatched your first playbook to your inbox.
                       </p>
                     </div>
                   </motion.div>
@@ -1370,7 +1370,7 @@ export default function App() {
                 </div>
                 <div>
                   <span className="text-sm font-bold text-white block">{selectedArticle.author.name}</span>
-                  <span className="text-xs text-slate-400 block">{selectedArticle.author.role} at SiteOnLab</span>
+                  <span className="text-xs text-slate-400 block">{selectedArticle.author.role} at HybridMonks</span>
                 </div>
               </div>
 

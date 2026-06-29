@@ -249,11 +249,11 @@ export default function SeoAuditor() {
             </div>
           </div>
 
-          {/* SiteOnLab Playbook recommendations */}
+          {/* HybridMonks Playbook recommendations */}
           <div className="bg-white/[0.04] border border-white/10 rounded-sm p-5 space-y-4">
             <div className="flex items-center space-x-2 text-blue-400">
               <CheckCircle2 className="w-5 h-5" />
-              <h4 className="text-sm font-bold uppercase tracking-widest font-mono">SiteOnLab Rectification Strategy for {domain}</h4>
+              <h4 className="text-sm font-bold uppercase tracking-widest font-mono">HybridMonks Rectification Strategy for {domain}</h4>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">

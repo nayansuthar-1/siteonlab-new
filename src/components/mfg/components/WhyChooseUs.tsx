@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <p className="text-xs font-semibold font-mono text-blue-400 uppercase tracking-widest mb-3">
-            Why Companies Choose SiteOnLab
+            Why Companies Choose HybridMonks
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
             A B2B growth agency that understands {INDUSTRY_NAME}.

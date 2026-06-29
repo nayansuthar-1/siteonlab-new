@@ -16,7 +16,7 @@ export const HERO_CONTENT = {
     highlight: "Content Marketing",
     suffix: "agency that drives pipeline, organic demand, and industry authority."
   },
-  subheading: "SiteOnLab helps B2B SaaS, technology, cybersecurity, and enterprise-services companies turn high-quality editorial content into a compounding revenue engine. We help you establish undeniable search authority, earn citations in AI search engines, and convert readers into qualified pipelines.",
+  subheading: "HybridMonks helps B2B SaaS, technology, cybersecurity, and enterprise-services companies turn high-quality editorial content into a compounding revenue engine. We help you establish undeniable search authority, earn citations in AI search engines, and convert readers into qualified pipelines.",
   primaryCTA: "Request a Growth Blueprint",
   secondaryCTA: "See Case Studies"
 };
@@ -270,7 +270,7 @@ export const CASE_STUDIES: CaseStudy[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "test-1",
-    quote: "SiteOnLab's strategic approach helped us turn content and search into a serious source of qualified enterprise opportunities, not just empty website traffic. Their writer interviews with our engineers captured our voice perfectly.",
+    quote: "HybridMonks's strategic approach helped us turn content and search into a serious source of qualified enterprise opportunities, not just empty website traffic. Their writer interviews with our engineers captured our voice perfectly.",
     author: "Sarah Jenkins",
     role: "VP of Marketing",
     companyType: "B2B SaaS Security Platform",
@@ -280,7 +280,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "test-2",
-    quote: "Before SiteOnLab, we had no idea if our content was driving deals. Their revenue-first attribution model showed us exactly which cluster drove our biggest $100k contract. We finally have clarity on content ROI.",
+    quote: "Before HybridMonks, we had no idea if our content was driving deals. Their revenue-first attribution model showed us exactly which cluster drove our biggest $100k contract. We finally have clarity on content ROI.",
     author: "Marcus Chen",
     role: "Co-Founder",
     companyType: "Enterprise Cloud Middleware",
@@ -337,8 +337,8 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     id: "faq-5",
-    question: "What makes SiteOnLab different from other content agencies?",
-    answer: "Most content agencies are either 'writing factories' that spit out low-quality AI-assisted drafts with no strategic search relevance, or generic SEO agencies that focus purely on raw traffic volume. SiteOnLab is revenue-first. We plan your content around commercial intent, interview your internal subject matter experts to ensure extreme depth, and package schemas so LLM AI search engines recommend you. Finally, we attribute every asset to sales pipeline so you know your exact ROI."
+    question: "What makes HybridMonks different from other content agencies?",
+    answer: "Most content agencies are either 'writing factories' that spit out low-quality AI-assisted drafts with no strategic search relevance, or generic SEO agencies that focus purely on raw traffic volume. HybridMonks is revenue-first. We plan your content around commercial intent, interview your internal subject matter experts to ensure extreme depth, and package schemas so LLM AI search engines recommend you. Finally, we attribute every asset to sales pipeline so you know your exact ROI."
   },
   {
     id: "faq-6",

@@ -46,7 +46,7 @@ export default function HeroSection({ onPrimaryClick, onSecondaryClick }: HeroSe
               transition={{ duration: 0.7, delay: 0.2 }}
               className="text-base sm:text-lg text-zinc-400 font-sans leading-relaxed max-w-xl"
             >
-              SiteOnLab helps B2B SaaS and Tech companies turn digital surfaces into a <span className="text-white italic underline underline-offset-4 decoration-blue-500">measurable revenue channel</span>. We build for buyer-intent and AI visibility — measured by qualified pipeline, not vanity metrics.
+              HybridMonks helps B2B SaaS and Tech companies turn digital surfaces into a <span className="text-white italic underline underline-offset-4 decoration-blue-500">measurable revenue channel</span>. We build for buyer-intent and AI visibility — measured by qualified pipeline, not vanity metrics.
             </motion.p>
 
             <motion.div 
@@ -121,7 +121,7 @@ export default function HeroSection({ onPrimaryClick, onSecondaryClick }: HeroSe
                   <div className="w-2.5 h-2.5 rounded-full bg-green-500/50" />
                 </div>
                 <div className="text-[10px] font-mono text-zinc-600 bg-zinc-950 px-4 py-0.5 rounded border border-white/5">
-                  siteonlab.com/conversion-engine
+                  hybridmonks.com/conversion-engine
                 </div>
                 <div className="w-4" />
               </div>

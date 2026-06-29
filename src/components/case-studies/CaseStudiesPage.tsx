@@ -350,7 +350,7 @@ export default function App() {
               <div className="lg:col-span-5 h-72 sm:h-96 lg:h-full relative overflow-hidden rounded-xl border border-slate-800/60 bg-slate-950">
                 <img 
                   src={FEATURED_CASE_STUDY.imageUrl} 
-                  alt="SiteOnLab B2B SEO Case Study" 
+                  alt="HybridMonks B2B SEO Case Study" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102"
                   referrerPolicy="no-referrer"
                   id="featured-img"
@@ -700,7 +700,7 @@ export default function App() {
 
             {/* Micro-copy disclaimer */}
             <div className="bg-slate-950/50 px-6 py-3 border-t border-slate-900 text-[10px] text-slate-500 text-center">
-              * By booking, you confirm SiteOnLab is authorized to execute a public SEO crawler audit.
+              * By booking, you confirm HybridMonks is authorized to execute a public SEO crawler audit.
             </div>
 
           </div>

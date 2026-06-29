@@ -46,7 +46,7 @@ export default function Navigation({ onBookCall }: NavigationProps) {
                 S
               </div>
               <span className="font-display font-bold text-xl tracking-tight text-white transition-colors">
-                SiteOnLab
+                HybridMonks
               </span>
             </a>
           </div>

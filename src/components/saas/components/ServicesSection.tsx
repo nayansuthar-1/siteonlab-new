@@ -97,7 +97,7 @@ export default function ServicesSection() {
                     )}
                     <span className="break-all">{svc.exampleValue}</span>
                     {/* Tiny watermarked badge */}
-                    <span className="absolute right-1 bottom-1 text-[8px] font-mono text-slate-600/40 select-none">SITEONLAB</span>
+                    <span className="absolute right-1 bottom-1 text-[8px] font-mono text-slate-600/40 select-none">HYBRIDMONKS</span>
                   </div>
                 </div>
               )}

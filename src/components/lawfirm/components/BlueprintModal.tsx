@@ -178,7 +178,7 @@ export default function BlueprintModal({ isOpen, onClose, preselectedPractice }:
               <div className="flex items-start space-x-2 text-white/40 text-[10px] sm:text-xs leading-relaxed max-w-[400px]">
                 <Lock className="h-4 w-4 text-[#3b82f6]/60 mt-0.5 flex-shrink-0" />
                 <span>
-                  All submitted metrics are protected by secure, non-disclosure parameters. SiteOnLab does not share data and adheres strictly to attorney advertising ethics (ABA Model Rule 7.1).
+                  All submitted metrics are protected by secure, non-disclosure parameters. HybridMonks does not share data and adheres strictly to attorney advertising ethics (ABA Model Rule 7.1).
                 </span>
               </div>
               <button

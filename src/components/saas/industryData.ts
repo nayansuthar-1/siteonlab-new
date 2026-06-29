@@ -1,5 +1,5 @@
 /**
- * SITEONLAB - INDUSTRY LANDING PAGE TEMPLATE VARIABLES
+ * HYBRIDMONKS - INDUSTRY LANDING PAGE TEMPLATE VARIABLES
  * 
  * To duplicate this page for another industry (e.g. IT Services/MSPs, Cybersecurity, Manufacturing, Professional Services):
  * 1. Copy this file and rename it (or create a new export object).
@@ -290,7 +290,7 @@ export const b2bSaaSData: IndustryTemplate = {
   // 9. PROOF / TESTIMONIAL (Placeholder marked editable)
   // ==========================================
   testimonial: {
-    quote: "SiteOnLab completely transformed how we capture demand. They didn't just build backlinks; they systematically aligned our content with the way enterprise software buyers now research. Within 5 months, our SaaS platform was the #1 recommended solution in ChatGPT and Perplexity searches for our core category, resulting in a 47% increase in demo bookings and over $1.2M in new pipeline.",
+    quote: "HybridMonks completely transformed how we capture demand. They didn't just build backlinks; they systematically aligned our content with the way enterprise software buyers now research. Within 5 months, our SaaS platform was the #1 recommended solution in ChatGPT and Perplexity searches for our core category, resulting in a 47% increase in demo bookings and over $1.2M in new pipeline.",
     author: "Elena Rostova",
     role: "VP of Growth & Marketing",
     company: "CloudCore Analytics",

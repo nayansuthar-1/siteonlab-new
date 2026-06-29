@@ -75,7 +75,7 @@ export default function Metrics() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-xs font-mono text-blue-500 uppercase tracking-widest block mb-2">Our Operating Standards</span>
           <h2 className="text-xl sm:text-2xl font-display font-bold text-white tracking-tight">
-            The SiteOnLab Baseline Technical Standards
+            The HybridMonks Baseline Technical Standards
           </h2>
         </div>
 

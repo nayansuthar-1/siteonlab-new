@@ -155,7 +155,7 @@ export default function InteractiveDashboard() {
             <Activity className="w-5 h-5 text-blue-400 animate-pulse" />
           </div>
           <div>
-            <h4 className="font-display font-medium text-sm text-white">SiteOnLab Engine Sandbox</h4>
+            <h4 className="font-display font-medium text-sm text-white">HybridMonks Engine Sandbox</h4>
             <p className="text-xs text-gray-500 font-mono">Live attribution & data flow simulation</p>
           </div>
         </div>
@@ -456,7 +456,7 @@ export default function InteractiveDashboard() {
 
       {/* Bottom sandbox control bar */}
       <div className="px-6 py-3.5 bg-[#1e293b]/80 border-t border-white/5 flex items-center justify-between text-xs text-gray-500 font-mono">
-        <span>SiteOnLab Attribution Engine v2.4</span>
+        <span>HybridMonks Attribution Engine v2.4</span>
         <span className="text-blue-400">Secure Client Sandbox</span>
       </div>
     </div>

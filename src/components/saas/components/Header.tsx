@@ -76,7 +76,7 @@ export default function Header() {
             }}
           >
             <span className="font-display font-bold text-white text-xl tracking-tighter">
-              SiteOn<span className="text-blue-500">Lab</span>
+              Hybrid<span className="text-blue-500">Monks</span>
             </span>
           </a>
 

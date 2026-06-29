@@ -74,7 +74,7 @@ export default function HeroSection({ onRequestBlueprint, onScrollToSection }: H
 
             {/* Subheading */}
             <p className="text-base sm:text-lg text-zinc-400 leading-relaxed max-w-2xl">
-              SiteOnLab helps high-growth B2B SaaS, technology, and cybersecurity companies turn paid acquisition and content authority into a measurable revenue channel. We help you{' '}
+              HybridMonks helps high-growth B2B SaaS, technology, and cybersecurity companies turn paid acquisition and content authority into a measurable revenue channel. We help you{' '}
               <span className="text-zinc-200 font-medium">capture existing high-intent search demand</span>,{' '}
               <span className="text-zinc-200 font-medium">generate net-new industry authority</span>, and{' '}
               <span className="text-zinc-200 font-medium">turn anonymous website traffic into qualified sales opportunities</span>{' '}
@@ -129,7 +129,7 @@ export default function HeroSection({ onRequestBlueprint, onScrollToSection }: H
                   <div className="h-2.5 w-2.5 rounded-full bg-amber-500/80"></div>
                   <div className="h-2.5 w-2.5 rounded-full bg-emerald-500/80"></div>
                   <span className="ml-2 font-mono text-[10px] text-zinc-500 font-semibold tracking-wider uppercase">
-                    SiteOnLab Pipeline Signal Hub
+                    HybridMonks Pipeline Signal Hub
                   </span>
                 </div>
                 <span className="flex h-2 w-2 rounded-full bg-brand-secondary animate-pulse"></span>

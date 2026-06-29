@@ -141,7 +141,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
           <div className="bg-gradient-to-r from-brand-accent/20 to-brand-orange/20 px-6 py-4 flex items-center justify-between border-b border-slate-800">
             <div className="flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-brand-accent animate-pulse" />
-              <span className="text-sm font-semibold tracking-wider uppercase text-brand-accent">SiteOnLab Revenue Strategy</span>
+              <span className="text-sm font-semibold tracking-wider uppercase text-brand-accent">HybridMonks Revenue Strategy</span>
             </div>
             <button
               onClick={onClose}

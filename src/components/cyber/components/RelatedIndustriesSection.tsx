@@ -40,7 +40,7 @@ export default function RelatedIndustriesSection() {
               {/* internal linking trigger */}
               <div className="mt-4 pt-4 border-t border-slate-800 flex items-center justify-between">
                 <span className="text-[9px] font-bold tracking-widest uppercase text-slate-500 font-mono">
-                  SiteOnLab B2B
+                  HybridMonks B2B
                 </span>
                 <span className="inline-flex items-center gap-0.5 text-[10px] font-bold uppercase tracking-wider text-sky-400 group-hover:text-sky-300 hover:underline font-mono">
                   View Page

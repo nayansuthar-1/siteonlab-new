@@ -8,8 +8,8 @@ export const dynamic = "force-dynamic";
 const servicePageSchema = {
   type: Type.OBJECT,
   properties: {
-    seoTitle: { type: Type.STRING, description: "Title Tag strictly following: [Service Name] Agency for B2B Pipeline Growth | SiteOnLab" },
-    seoDescription: { type: Type.STRING, description: "Meta Description strictly following: SiteOnLab helps [ICP] use [service name] to drive qualified pipeline, improve visibility, and connect marketing performance to revenue." },
+    seoTitle: { type: Type.STRING, description: "Title Tag strictly following: [Service Name] Agency for B2B Pipeline Growth | HybridMonks" },
+    seoDescription: { type: Type.STRING, description: "Meta Description strictly following: HybridMonks helps [ICP] use [service name] to drive qualified pipeline, improve visibility, and connect marketing performance to revenue." },
     serviceCategory: { type: Type.STRING, description: "Short category name (e.g. Paid Ads, ABM, Conversion Optimization, Fractional CMO)" },
     serviceName: { type: Type.STRING, description: "Specific name of the service (e.g. Paid Acquisition)" },
     outcome1: { type: Type.STRING, description: "Short business outcome 1 (e.g. enterprise contract wins, demo request volume)" },
@@ -37,7 +37,7 @@ const servicePageSchema = {
     },
 
     overviewH2: { type: Type.STRING, description: "Section 3 H2 following: [Service Name] built for compounding B2B revenue growth." },
-    overviewParagraph: { type: Type.STRING, description: "Section 3 Paragraph criticizing generic agencies (e.g., 'Most agencies just run standard ads without segmenting cohorts...') and introducing SiteOnLab's strategic approach combining 4 high-value components." },
+    overviewParagraph: { type: Type.STRING, description: "Section 3 Paragraph criticizing generic agencies (e.g., 'Most agencies just run standard ads without segmenting cohorts...') and introducing HybridMonks's strategic approach combining 4 high-value components." },
     serviceComponents: {
       type: Type.ARRAY,
       description: "Exactly 5 to 6 core service components",
@@ -69,7 +69,7 @@ const servicePageSchema = {
     },
 
     whyChooseUsH2: { type: Type.STRING, description: "Section 5 H2 following: A [service name] agency that connects [channel/service performance] to revenue." },
-    whyChooseUsParagraph: { type: Type.STRING, description: "Paragraph criticizing vanity metrics reports and introducing SiteOnLab's CRM measurement layers." },
+    whyChooseUsParagraph: { type: Type.STRING, description: "Paragraph criticizing vanity metrics reports and introducing HybridMonks's CRM measurement layers." },
     differentiators: {
       type: Type.ARRAY,
       description: "Exactly 4 differentiator cards",
@@ -132,7 +132,7 @@ const servicePageSchema = {
     faqH2: { type: Type.STRING, description: "Section 9 H2 following: Frequently asked questions about [service name]." },
     faqs: {
       type: Type.ARRAY,
-      description: "Exactly 9 items. MUST use these EXACT questions in sequence: 1. What is [service name]? 2. How is [service name] different for B2B companies? 3. How long does it take to see results? 4. How do you measure ROI? 5. What makes SiteOnLab different from other agencies? 6. Do you handle implementation or only strategy? 7. We tried this before and it did not work. Why would this be different? 8. How does this service support AI visibility? 9. What does a typical engagement look like? Answers must be highly specific, professional, and commercial-focused.",
+      description: "Exactly 9 items. MUST use these EXACT questions in sequence: 1. What is [service name]? 2. How is [service name] different for B2B companies? 3. How long does it take to see results? 4. How do you measure ROI? 5. What makes HybridMonks different from other agencies? 6. Do you handle implementation or only strategy? 7. We tried this before and it did not work. Why would this be different? 8. How does this service support AI visibility? 9. What does a typical engagement look like? Answers must be highly specific, professional, and commercial-focused.",
       items: {
         type: Type.OBJECT,
         properties: {
@@ -216,10 +216,10 @@ export async function POST(req: Request) {
   });
 
   try {
-    const prompt = `You are an elite B2B enterprise copywriter and marketing strategist at SiteOnLab, a revenue-first growth agency.
+    const prompt = `You are an elite B2B enterprise copywriter and marketing strategist at HybridMonks, a revenue-first growth agency.
 Generate a complete, high-converting service landing page data package for this service: "${customServiceIdea}".
 
-The copy must follow the SiteOnLab voice: authoritative, highly professional, direct, zero-fluff, and laser-focused on qualified CRM pipeline and commercial metrics instead of vanity traffic.
+The copy must follow the HybridMonks voice: authoritative, highly professional, direct, zero-fluff, and laser-focused on qualified CRM pipeline and commercial metrics instead of vanity traffic.
 
 Structure your response to strictly match the provided JSON schema. Ensure:
 1. Every component, metric, case study, and answer is explicitly tailored to this specific service: "${customServiceIdea}".

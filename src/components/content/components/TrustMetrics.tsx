@@ -25,7 +25,7 @@ export default function TrustMetrics() {
         
         {/* Section Heading Label for architectural depth */}
         <div className="text-center mb-8">
-          <span className="font-mono text-[9px] tracking-widest text-zinc-500 uppercase font-semibold">SITEONLAB // PROVEN CAPABILITY</span>
+          <span className="font-mono text-[9px] tracking-widest text-zinc-500 uppercase font-semibold">HYBRIDMONKS // PROVEN CAPABILITY</span>
           <h3 className="font-sans text-xs text-zinc-400 mt-1 uppercase font-semibold tracking-wider">Strategic Credibility & Attributed Proof</h3>
         </div>
 

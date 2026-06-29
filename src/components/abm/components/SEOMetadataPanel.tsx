@@ -46,7 +46,7 @@ export default function SEOMetadataPanel() {
                 <span className="font-display font-bold text-sm text-white">SEO & Meta Fields Inspector</span>
               </div>
               <span className="text-[9px] font-mono bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/10">
-                SiteOnLab Schema
+                HybridMonks Schema
               </span>
             </div>
 
@@ -59,7 +59,7 @@ export default function SEOMetadataPanel() {
                   <span className="text-emerald-400 font-bold">73 Chars · Optimal</span>
                 </div>
                 <p className="font-sans text-gray-200 font-semibold leading-relaxed text-[11px]">
-                  Account-Based Marketing (ABM) Agency for B2B Pipeline Growth | SiteOnLab
+                  Account-Based Marketing (ABM) Agency for B2B Pipeline Growth | HybridMonks
                 </p>
               </div>
 
@@ -70,7 +70,7 @@ export default function SEOMetadataPanel() {
                   <span className="text-emerald-400 font-bold">185 Chars · Highly Rich</span>
                 </div>
                 <p className="font-sans text-gray-400 text-[10.5px] leading-relaxed">
-                  SiteOnLab helps B2B SaaS, enterprise technology, and professional-services companies use Account-Based Marketing (ABM) to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.
+                  HybridMonks helps B2B SaaS, enterprise technology, and professional-services companies use Account-Based Marketing (ABM) to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.
                 </p>
               </div>
 

@@ -62,7 +62,7 @@ export default function App() {
         <FinalCTA />
       </main>
 
-      {/* Structured Dark Footer representing SiteOnLab */}
+      {/* Structured Dark Footer representing HybridMonks */}
 
     </div>
   );

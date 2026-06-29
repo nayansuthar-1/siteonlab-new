@@ -20,7 +20,7 @@ export default function GrowthCalculator() {
   const currentContracts = Math.round(currentRfqs * (closeRate / 100));
   const currentAnnualRevenue = currentContracts * acv * 12;
 
-  // Optimized metrics with SiteOnLab (conservative estimates)
+  // Optimized metrics with HybridMonks (conservative estimates)
   // 1. Traffic increases by 50%
   // 2. Conversion rate lifts from e.g. 0.5% to 1.8%
   // 3. Close rate remains steady or improves slightly
@@ -179,7 +179,7 @@ export default function GrowthCalculator() {
                 </div>
 
                 <div className="space-y-4">
-                  <span className="text-[10px] font-mono text-blue-400 uppercase tracking-widest block font-semibold">âœ¨ SITEONLAB ENGINE</span>
+                  <span className="text-[10px] font-mono text-blue-400 uppercase tracking-widest block font-semibold">âœ¨ HYBRIDMONKS ENGINE</span>
                   
                   <div className="space-y-2">
                     <div className="flex justify-between text-xs">

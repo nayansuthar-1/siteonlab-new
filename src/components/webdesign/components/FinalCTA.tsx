@@ -41,7 +41,7 @@ export default function FinalCTA() {
   const currentLeads = Math.round(sessions * (currentConv / 100));
   const currentPipeline = currentLeads * acv;
 
-  // Assuming SiteOnLab conservative average improvement to 2.2% conversion rate
+  // Assuming HybridMonks conservative average improvement to 2.2% conversion rate
   const targetConv = 2.2;
   const targetLeads = Math.round(sessions * (targetConv / 100));
   const targetPipeline = targetLeads * acv;

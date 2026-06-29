@@ -126,21 +126,21 @@ export default function ReadinessAssessmentModal({ isOpen, onClose }: ReadinessA
       color: "text-emerald-400 border-emerald-500/20 bg-emerald-500/10",
       icon: Award,
       desc: "Your organization is primed for highly effective, high-velocity ABM program orchestration! You have the alignment, the high deal value, and the core understanding to make ABM your primary growth lever.",
-      rec: "Partner with SiteOnLab to design and deploy complex 1-to-1 campaigns for your top 20 accounts, while setting up automated 1-to-many plays to capture surge signals from Tier-2 lists."
+      rec: "Partner with HybridMonks to design and deploy complex 1-to-1 campaigns for your top 20 accounts, while setting up automated 1-to-many plays to capture surge signals from Tier-2 lists."
     };
     if (score >= 65) return {
       title: "Strong Foundations (Transition Ready)",
       color: "text-blue-400 border-blue-500/20 bg-blue-500/10",
       icon: Sparkles,
       desc: "You have strong prerequisites like high ACVs or solid sales alignment. However, you need to tighten target account validation and automate IP tracking to fully unlock high-yield ABM compounding.",
-      rec: "Work with SiteOnLab on a targeted 90-day pilot program focusing on Sales validation. We'll set up reverse-IP intent signals and launch multi-channel LinkedIn campaigns on a highly focused Tier-1 target list."
+      rec: "Work with HybridMonks on a targeted 90-day pilot program focusing on Sales validation. We'll set up reverse-IP intent signals and launch multi-channel LinkedIn campaigns on a highly focused Tier-1 target list."
     };
     return {
       title: "Developing Infrastructure (Strategy Phase)",
       color: "text-amber-400 border-amber-500/20 bg-amber-500/10",
       icon: ShieldAlert,
       desc: "Your contract values or teams are still leaning transactional. Running 1-to-1 account programs will be cost-inefficient right now until deal sizes grow or marketing-sales silos are bridged.",
-      rec: "Before launching ad spends, schedule a SiteOnLab ICP Strategy sprint. We will help you audit historical deal sizes, build a robust target account model, and implement basic reverse-IP tracking tools."
+      rec: "Before launching ad spends, schedule a HybridMonks ICP Strategy sprint. We will help you audit historical deal sizes, build a robust target account model, and implement basic reverse-IP tracking tools."
     };
   };
 
@@ -225,7 +225,7 @@ export default function ReadinessAssessmentModal({ isOpen, onClose }: ReadinessA
                   <ChevronLeft className="w-4 h-4" /> Previous
                 </button>
                 <span className="text-[10px] text-gray-500 font-mono">
-                  SiteOnLab Strategic Diagnostics
+                  HybridMonks Strategic Diagnostics
                 </span>
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function ReadinessAssessmentModal({ isOpen, onClose }: ReadinessA
               <div className="bg-[#121216] border border-blue-500/10 rounded-xl p-5 space-y-2.5">
                 <div className="flex items-center gap-2 text-blue-400">
                   <Sparkles className="w-4 h-4" />
-                  <span className="text-xs font-bold font-display uppercase tracking-wider">SiteOnLab Core Action Roadmap</span>
+                  <span className="text-xs font-bold font-display uppercase tracking-wider">HybridMonks Core Action Roadmap</span>
                 </div>
                 <p className="text-xs text-gray-300 leading-relaxed font-sans">
                   {result.rec}

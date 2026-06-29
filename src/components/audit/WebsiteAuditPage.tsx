@@ -176,7 +176,7 @@ export default function WebsiteAuditPage() {
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-brand-primary/20 bg-brand-primary/10 px-3 py-1 text-brand-primary">
             <Gauge className="h-4 w-4" />
             <span className="text-[10px] font-mono font-bold uppercase tracking-wide md:text-xs">
-              SiteOnLab Website Audit
+              HybridMonks Website Audit
             </span>
           </div>
 

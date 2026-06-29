@@ -268,7 +268,7 @@ export default function GrowthBlueprintModal({ isOpen, onClose, initialMode }: G
                   <div className="flex gap-2">
                     <button
                       id="btn-blueprint-schedule"
-                      onClick={() => alert("Redirecting to SiteOnLab Booking Calendar (Mock Event)")}
+                      onClick={() => alert("Redirecting to HybridMonks Booking Calendar (Mock Event)")}
                       className="flex-1 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs rounded-lg transition-all cursor-pointer"
                     >
                       Book 30-Min Walkthrough Call
@@ -423,7 +423,7 @@ export default function GrowthBlueprintModal({ isOpen, onClose, initialMode }: G
                     >
                       ← Back
                     </button>
-                    <span>SiteOnLab Security Sandbox</span>
+                    <span>HybridMonks Security Sandbox</span>
                   </div>
                 </div>
               ) : (

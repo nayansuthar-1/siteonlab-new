@@ -174,8 +174,8 @@ export const faqs: FAQItem[] = [
     answer: "We reject vanity metrics like bulk open rates. We measure ROI by connecting automation triggers directly to down-funnel sales metrics: increase in Lead-to-Opportunity conversion rates, reduction in sales cycle length, increase in qualified pipeline value, and total cost of acquisition (CAC) efficiency."
   },
   {
-    question: "What makes SiteOnLab different from other agencies?",
-    answer: "Most agencies stop at 'email setup.' SiteOnLab is a revenue-focused RevOps and Growth agency. We align your tech stack directly to your commercial strategy. We build custom-engineered measurement layers, integrate robust behavioral triggers, and focus entirely on creating qualified, trackable sales opportunities."
+    question: "What makes HybridMonks different from other agencies?",
+    answer: "Most agencies stop at 'email setup.' HybridMonks is a revenue-focused RevOps and Growth agency. We align your tech stack directly to your commercial strategy. We build custom-engineered measurement layers, integrate robust behavioral triggers, and focus entirely on creating qualified, trackable sales opportunities."
   },
   {
     question: "Do you handle implementation or only strategy?",
@@ -183,7 +183,7 @@ export const faqs: FAQItem[] = [
   },
   {
     question: "We tried this before and it did not work. Why would this be different?",
-    answer: "Past automation failures are usually due to two factors: 'set-it-and-forget-it' campaigns, or disjointed tooling with broken CRM synchronizations. SiteOnLab treats marketing automation as a living revenue engine. We build full-funnel measurement, run monthly optimization cycles, and align all metrics directly with sales priorities."
+    answer: "Past automation failures are usually due to two factors: 'set-it-and-forget-it' campaigns, or disjointed tooling with broken CRM synchronizations. HybridMonks treats marketing automation as a living revenue engine. We build full-funnel measurement, run monthly optimization cycles, and align all metrics directly with sales priorities."
   },
   {
     question: "How does this service support AI visibility?",

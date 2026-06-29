@@ -186,7 +186,7 @@ const FAQS: FAQItem[] = [
   },
   {
     question: "How is Account-Based Marketing different for B2B companies?",
-    answer: "Unlike general consumer marketing, B2B sales involve complex committee buying with 5 to 12 distinct decision-makers (from engineers to CFOs). SiteOnLab's B2B ABM maps out these individual roles, serving customized messaging to each stakeholder at a single target company to drive consensus."
+    answer: "Unlike general consumer marketing, B2B sales involve complex committee buying with 5 to 12 distinct decision-makers (from engineers to CFOs). HybridMonks's B2B ABM maps out these individual roles, serving customized messaging to each stakeholder at a single target company to drive consensus."
   },
   {
     question: "How long does it take to see results?",
@@ -197,8 +197,8 @@ const FAQS: FAQItem[] = [
     answer: "We connect our campaigns to your CRM to track target list engagement. We measure success by the increase in target accounts won, average contract sizes, cost-of-acquisition efficiency, and marketing-assisted pipeline value, not just impressions."
   },
   {
-    question: "What makes SiteOnLab different from other agencies?",
-    answer: "Most agencies run generic ad blasts and pass you lead lists of people who just downloaded a PDF. SiteOnLab coordinates marketing, tech, and sales plays together. We track buyer intent spikes, build highly tailored content pages, and optimize specifically for closed-won revenue."
+    question: "What makes HybridMonks different from other agencies?",
+    answer: "Most agencies run generic ad blasts and pass you lead lists of people who just downloaded a PDF. HybridMonks coordinates marketing, tech, and sales plays together. We track buyer intent spikes, build highly tailored content pages, and optimize specifically for closed-won revenue."
   },
   {
     question: "Do you handle implementation or only strategy?",
@@ -285,7 +285,7 @@ export default function App() {
             </h1>
 
             <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-              SiteOnLab helps B2B SaaS, enterprise technology, and professional-services companies turn high-value target accounts into a measurable revenue channel. We help you rank for buyer-intent searches, get recommended by AI platforms, and land key enterprise logos — measured by qualified pipeline, not vanity metrics.
+              HybridMonks helps B2B SaaS, enterprise technology, and professional-services companies turn high-value target accounts into a measurable revenue channel. We help you rank for buyer-intent searches, get recommended by AI platforms, and land key enterprise logos — measured by qualified pipeline, not vanity metrics.
             </p>
 
             {/* CTAs */}
@@ -467,7 +467,7 @@ export default function App() {
               An ABM agency that connects target account engagement to revenue.
             </h2>
             <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
-              Most agencies hand you click reports and MQL counts, then call it done. SiteOnLab builds a full target measurement and intent tracking layer, so you see exactly how accounts engage throughout the pipeline cycle.
+              Most agencies hand you click reports and MQL counts, then call it done. HybridMonks builds a full target measurement and intent tracking layer, so you see exactly how accounts engage throughout the pipeline cycle.
             </p>
           </div>
 
@@ -566,7 +566,7 @@ export default function App() {
           </div>
 
           <blockquote className="font-display font-bold text-lg md:text-xl lg:text-2xl text-white leading-relaxed tracking-tight max-w-3xl mx-auto">
-            “Their strategic ABM approach helped us turn target lists into a serious source of qualified opportunities, not just website traffic. SiteOnLab aligned our sales and marketing teams completely.”
+            “Their strategic ABM approach helped us turn target lists into a serious source of qualified opportunities, not just website traffic. HybridMonks aligned our sales and marketing teams completely.”
           </blockquote>
 
           <div className="space-y-1.5">
@@ -646,7 +646,7 @@ export default function App() {
               Frequently asked questions about ABM.
             </h2>
             <p className="text-gray-400 text-xs max-w-lg mx-auto">
-              Get answers to immediate operational questions about how SiteOnLab configures, launches, and attributes B2B target account programs.
+              Get answers to immediate operational questions about how HybridMonks configures, launches, and attributes B2B target account programs.
             </p>
           </div>
 

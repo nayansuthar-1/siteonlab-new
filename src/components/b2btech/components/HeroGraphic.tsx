@@ -18,7 +18,7 @@ export default function HeroGraphic() {
             <span className="w-3 h-3 bg-yellow-500/60 rounded-full inline-block" />
             <span className="w-3 h-3 bg-emerald-500/60 rounded-full inline-block" />
           </div>
-          <span className="text-xs font-mono text-white/40">siteonlab_growth_engine_v4.0.sys</span>
+          <span className="text-xs font-mono text-white/40">hybridmonks_growth_engine_v4.0.sys</span>
         </div>
         <div className="flex items-center space-x-2 bg-white/5 px-2.5 py-1 rounded border border-white/10">
           <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full inline-block animate-pulse" />
@@ -114,7 +114,7 @@ export default function HeroGraphic() {
               strokeDasharray="4 4"
             />
 
-            {/* SiteOnLab SEO Organic line (Steady curve) */}
+            {/* HybridMonks SEO Organic line (Steady curve) */}
             <path
               d="M 10 140 C 80 130, 150 90, 220 60 T 390 20"
               fill="url(#blue-grad)"
@@ -127,7 +127,7 @@ export default function HeroGraphic() {
               strokeWidth="3"
             />
 
-            {/* SiteOnLab AI Search Citations + High-Intent Paid line (Explosive hockey stick) */}
+            {/* HybridMonks AI Search Citations + High-Intent Paid line (Explosive hockey stick) */}
             <path
               d="M 10 150 C 90 140, 140 100, 200 50 T 390 10"
               fill="url(#emerald-grad)"
@@ -161,7 +161,7 @@ export default function HeroGraphic() {
           <div className="flex space-x-4">
             <div className="flex items-center space-x-1.5">
               <span className="w-2.5 h-1 bg-emerald-400 inline-block rounded-full" />
-              <span>SiteOnLab System</span>
+              <span>HybridMonks System</span>
             </div>
             <div className="flex items-center space-x-1.5">
               <span className="w-2.5 h-1 bg-blue-500 inline-block rounded-full" />
@@ -208,7 +208,7 @@ export default function HeroGraphic() {
 
       {/* Decorative design attributes (Honoring architectural honesty - clean labels) */}
       <div className="mt-4 flex items-center justify-between text-[10px] text-white/30 border-t border-white/10 pt-3">
-        <span>SiteOnLab B2B Engine v4.0</span>
+        <span>HybridMonks B2B Engine v4.0</span>
         <span>Secure SSL Data Pipeline</span>
       </div>
     </div>

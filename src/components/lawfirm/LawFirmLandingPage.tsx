@@ -104,7 +104,7 @@ export default function LawFirmLandingPage() {
               </h2>
               
               <p className="text-white/60 text-sm sm:text-base font-light leading-relaxed max-w-2xl mx-auto">
-                Stop losing high-value cases to generalist consumer agencies or outdated design templates. SiteOnLab engineers custom, state-bar-compliant growth architectures that align digital visibility with signed retainer agreements.
+                Stop losing high-value cases to generalist consumer agencies or outdated design templates. HybridMonks engineers custom, state-bar-compliant growth architectures that align digital visibility with signed retainer agreements.
               </p>
 
               {/* Conversion Actions */}

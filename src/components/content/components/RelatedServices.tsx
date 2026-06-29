@@ -61,7 +61,7 @@ export default function RelatedServices() {
 
               {/* Ecosystem synergy box bottom */}
               <div className="mt-6 pt-4 border-t border-zinc-900/80 text-left">
-                <span className="font-mono text-[9px] text-zinc-500 uppercase tracking-widest block font-bold">SITEONLAB SYNERGY</span>
+                <span className="font-mono text-[9px] text-zinc-500 uppercase tracking-widest block font-bold">HYBRIDMONKS SYNERGY</span>
                 <p className="font-sans text-[11px] text-blue-350 leading-normal mt-1 italic font-medium">
                   "{serv.synergy}"
                 </p>

@@ -33,7 +33,7 @@ export default function Hero({ onOpenBlueprint, onScrollToCases }: HeroProps) {
 
             {/* Supporting Copy */}
             <p className="text-white/60 text-base sm:text-lg leading-relaxed max-w-2xl font-light font-sans text-left">
-              SiteOnLab helps elite law firms establish jurisdictional dominance and secure high-value signed cases. By integrating authoritative practice-area SEO, pioneering Generative Engine Optimization (GEO) for AI search tools, prestige-tier web portals, and bar-compliant intake automation, we align your marketing directly with billable partner revenue.
+              HybridMonks helps elite law firms establish jurisdictional dominance and secure high-value signed cases. By integrating authoritative practice-area SEO, pioneering Generative Engine Optimization (GEO) for AI search tools, prestige-tier web portals, and bar-compliant intake automation, we align your marketing directly with billable partner revenue.
             </p>
 
             {/* CTA Buttons */}

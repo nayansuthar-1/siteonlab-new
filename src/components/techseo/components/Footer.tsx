@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
               <span className="font-display font-bold tracking-tight text-white text-base">
-                SiteOnLab
+                HybridMonks
               </span>
               <span className="font-mono text-[9px] text-gray-500 tracking-wider uppercase -mt-1">
                 Technical SEO Engine
@@ -26,7 +26,7 @@ export default function Footer() {
 
           {/* Copyright text */}
           <p className="text-xs text-gray-400 font-sans font-light">
-            &copy; 2026 SiteOnLab Services Inc. All rights reserved. Built for B2B pipeline scale.
+            &copy; 2026 HybridMonks Services Inc. All rights reserved. Built for B2B pipeline scale.
           </p>
 
         </div>
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
           
           <div className="text-gray-600 italic">
-            SiteOnLab is an independent technical engineering agency. All metrics verified via CRM endpoints.
+            HybridMonks is an independent technical engineering agency. All metrics verified via CRM endpoints.
           </div>
         </div>
 

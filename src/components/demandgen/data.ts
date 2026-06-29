@@ -214,7 +214,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: "faq-2",
     question: "How is Demand Generation different for B2B companies?",
-    answer: "B2B buying involves complex committees (typically 6-12 decision makers) and long sales cycles. SiteOnLab's B2B Demand Generation programs address the entire buying committee rather than isolated individuals. We combine account de-anonymization, high-level executive education, and targeted multi-channel distribution to nurture accounts collectively, resulting in higher close rates and larger average contract values (ACV)."
+    answer: "B2B buying involves complex committees (typically 6-12 decision makers) and long sales cycles. HybridMonks's B2B Demand Generation programs address the entire buying committee rather than isolated individuals. We combine account de-anonymization, high-level executive education, and targeted multi-channel distribution to nurture accounts collectively, resulting in higher close rates and larger average contract values (ACV)."
   },
   {
     id: "faq-3",
@@ -228,8 +228,8 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     id: "faq-5",
-    question: "What makes SiteOnLab different from other agencies?",
-    answer: "Most marketing agencies operate in silos—running search ads, posting on social, or doing SEO without any connection to sales outcomes. SiteOnLab is a full-funnel pipeline partner. We merge intent data, high-intent paid campaigns, interactive experiences, and CRM data. Our goals are tied directly to your pipeline growth, making us a true revenue partner."
+    question: "What makes HybridMonks different from other agencies?",
+    answer: "Most marketing agencies operate in silos—running search ads, posting on social, or doing SEO without any connection to sales outcomes. HybridMonks is a full-funnel pipeline partner. We merge intent data, high-intent paid campaigns, interactive experiences, and CRM data. Our goals are tied directly to your pipeline growth, making us a true revenue partner."
   },
   {
     id: "faq-6",
@@ -244,7 +244,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: "faq-8",
     question: "How does this service support AI visibility?",
-    answer: "B2B buyers are increasingly using ChatGPT, Gemini, and Perplexity for vendor evaluations. We build structured technical citations, high-authority backlink structures, and content patterns designed specifically to be cited by LLM crawlers. This ensures that when buyers ask AI engines for recommendations in your category, SiteOnLab's clients are listed as primary choices."
+    answer: "B2B buyers are increasingly using ChatGPT, Gemini, and Perplexity for vendor evaluations. We build structured technical citations, high-authority backlink structures, and content patterns designed specifically to be cited by LLM crawlers. This ensures that when buyers ask AI engines for recommendations in your category, HybridMonks's clients are listed as primary choices."
   },
   {
     id: "faq-9",

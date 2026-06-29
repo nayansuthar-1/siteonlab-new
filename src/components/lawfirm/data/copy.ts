@@ -85,8 +85,8 @@ export interface SEOMetadata {
 }
 
 export const seoMetadata: SEOMetadata = {
-  titleTag: "Law Firm B2B Marketing Agency & SEO Experts | SiteOnLab",
-  metaDescription: "Accelerate your law firm's pipeline and signed cases. SiteOnLab delivers elite SEO, AI search visibility (GEO), and revenue-focused B2B marketing for firms.",
+  titleTag: "Law Firm B2B Marketing Agency & SEO Experts | HybridMonks",
+  metaDescription: "Accelerate your law firm's pipeline and signed cases. HybridMonks delivers elite SEO, AI search visibility (GEO), and revenue-focused B2B marketing for firms.",
   urlSlug: "/industries/law-firm-marketing",
   h1: "B2B Marketing & High-Intent Client Acquisition for Elite Law Firms",
   suggestedInternalLinks: [
@@ -103,7 +103,7 @@ export const seoMetadata: SEOMetadata = {
   schemaRecommendations: {
     faqSchema: "Structured FAQPage schema targeting high-intent legal marketing queries to earn rich snippets in SERPs.",
     breadcrumbSchema: "Home > Industries > Law Firms (BreadcrumbList schema indicating hierarchical structure).",
-    organizationSchema: "SiteOnLab Organization schema with contactPoint, sameAs profiles, and specialized service classifications.",
+    organizationSchema: "HybridMonks Organization schema with contactPoint, sameAs profiles, and specialized service classifications.",
     serviceSchema: "Service schema defining 'B2B Growth Marketing for Law Firms' with specific inputs, outputs, and geographical/jurisdictional capabilities."
   }
 };
@@ -203,7 +203,7 @@ export const buyerJourney: BuyerStage[] = [
   {
     stage: "Awareness & Risk Assessment",
     buyerMindset: "The buyer (e.g., corporate GC, board member, or individual) identifies a potential legal risk, a regulatory compliance issue, or an active dispute. They are searching for initial clarifying rules, jurisdictional guidelines, and risk-mitigation frameworks, rather than a specific law firm.",
-    agencySupport: "We map out high-authority information assets and jurisdictional guides that rank for critical commercial risk terms. We position SiteOnLab clients as the primary intellectual authorities on these developing legal issues.",
+    agencySupport: "We map out high-authority information assets and jurisdictional guides that rank for critical commercial risk terms. We position HybridMonks clients as the primary intellectual authorities on these developing legal issues.",
     contentAssets: [
       "State-by-State Regulatory Compliance Checklists",
       "Explainers on Landmark Jurisdictional Rulings",
@@ -305,7 +305,7 @@ export const differentiators: Differentiator[] = [
   },
   {
     title: "Generative Search & AI Visibility (GEO) Pioneers",
-    description: "Traditional SEO agencies are stuck in 2021. SiteOnLab is at the absolute forefront of Generative Engine Optimization. We don't just optimize for search engine crawlers; we restructure your brand's digital footprints so that advanced LLMs cite and recommend your partners in conversational search answers.",
+    description: "Traditional SEO agencies are stuck in 2021. HybridMonks is at the absolute forefront of Generative Engine Optimization. We don't just optimize for search engine crawlers; we restructure your brand's digital footprints so that advanced LLMs cite and recommend your partners in conversational search answers.",
     proofPoint: "Our proprietary GEO frameworks routinely drive a 3x increase in citations across Perplexity, ChatGPT, and Google AI Overviews."
   },
   {
@@ -316,7 +316,7 @@ export const differentiators: Differentiator[] = [
   {
     title: "High-Prestige, Bespoke Design Philosophy",
     description: "Elite corporate clients do not hire law firms with cheap, outdated, template-based websites. We design ultra-premium, high-authority digital experiences that convey the exact weight, prestige, and intellectual rigor of your partners, immediately commanding premium billing rates.",
-    proofPoint: "All SiteOnLab legal portals are engineered from scratch on React/Vite, featuring Google Core Web Vitals scores averaging 98%+."
+    proofPoint: "All HybridMonks legal portals are engineered from scratch on React/Vite, featuring Google Core Web Vitals scores averaging 98%+."
   }
 ];
 
@@ -364,7 +364,7 @@ export const caseStudies: CaseStudy[] = [
     industry: "Corporate Litigation & IP",
     practiceArea: "Intellectual Property & Commercial Disputes",
     challenge: "An elite national intellectual property law firm was relying entirely on offline word-of-mouth and bleeding over $18,000 monthly on low-converting, broad-match Google PPC campaigns managed by a generalist retail marketing agency.",
-    solution: "SiteOnLab audited and rebuilt their digital infrastructure. We designed an ultra-premium web portal, established authoritative topical hubs around patent litigation and trademark protection, and deployed targeted LinkedIn campaigns matched to high-growth tech executives.",
+    solution: "HybridMonks audited and rebuilt their digital infrastructure. We designed an ultra-premium web portal, established authoritative topical hubs around patent litigation and trademark protection, and deployed targeted LinkedIn campaigns matched to high-growth tech executives.",
     outcome: "Generated a 310% increase in qualified organic commercial consultation requests, leading to 14 high-value IP defense cases with an estimated pipeline valuation exceeding $2.4M.",
     timeline: "First 6 Months",
     metrics: ["$2.4M+ New Case Pipeline", "310% Organic Case Increase", "64% Reduction in Paid Ad Waste"]
@@ -382,7 +382,7 @@ export const caseStudies: CaseStudy[] = [
     industry: "M&A, Corporate & Tax Law",
     practiceArea: "Mergers, Acquisitions, & Complex Corporate Tax",
     challenge: "A prestigious mid-Atlantic transactional and tax boutique struggled to track marketing ROI. They had high traffic from their legal blog but had no idea if any of it was driving actual M&A advisory engagements or billable partner hours.",
-    solution: "SiteOnLab integrated Clio with Google Analytics 4 and custom server-side tracking pipelines. We mapped out an editorial content calendar targeting mid-market business owners preparing for exit, optimized conversions, and implemented a secure calendar intake system.",
+    solution: "HybridMonks integrated Clio with Google Analytics 4 and custom server-side tracking pipelines. We mapped out an editorial content calendar targeting mid-market business owners preparing for exit, optimized conversions, and implemented a secure calendar intake system.",
     outcome: "Unlocked 100% closed-loop marketing attribution, enabling the partners to safely scale their content production and secure 5 new M&A advisory client engagements within 90 days.",
     timeline: "4 Months from Onboarding",
     metrics: ["5 Signed M&A Advisory Deals", "100% Attribution Transparency", "42% Growth in High-Net-Worth Traffic"]
@@ -390,7 +390,7 @@ export const caseStudies: CaseStudy[] = [
 ];
 
 export const testimonial: Testimonial = {
-  quote: "SiteOnLab fundamentally changed how we evaluate our marketing. Before working with them, our agency sent us reports filled with 'clicks' and 'impressions' while our partners felt disconnected from the pipeline. SiteOnLab built a custom CRM integration that connects our SEO directly to Clio. We now know exactly which content assets drive our most lucrative litigation cases. Their understanding of state-bar advertising rules was impeccable, giving us absolute peace of mind.",
+  quote: "HybridMonks fundamentally changed how we evaluate our marketing. Before working with them, our agency sent us reports filled with 'clicks' and 'impressions' while our partners felt disconnected from the pipeline. HybridMonks built a custom CRM integration that connects our SEO directly to Clio. We now know exactly which content assets drive our most lucrative litigation cases. Their understanding of state-bar advertising rules was impeccable, giving us absolute peace of mind.",
   author: "Marcus Vance, Esq.",
   role: "Managing Partner",
   company: "Vance & Sterling LLP",
@@ -475,7 +475,7 @@ export const faqs: FAQItem[] = [
     answer: "AI search completely redefines the research phase. High-net-worth individual and corporate clients increasingly use conversational AI to formulate risk theories and query solutions. If your firm's digital footprint lacks structured legal semantic markups, citations in major directory hubs, or authoritative topical structures, LLMs will recommend your competitors instead. Our Generative Engine Optimization (GEO) ensures your partners are cited as the preeminent authorities in these conversational outputs."
   },
   {
-    question: "Which SiteOnLab service should we start with?",
+    question: "Which HybridMonks service should we start with?",
     answer: "Most firms begin with our custom B2B Growth Blueprint process. This is a focused, 2-week engagement where our senior strategists perform a full audit of your current digital presence, map your competitors, analyze your jurisdictional search opportunities, and outline a complete, bar-compliant marketing road map for your firm with no long-term obligations."
   },
   {
@@ -497,7 +497,7 @@ In the highly competitive landscape of elite corporate law, boutique partnership
 
 To scale a modern law firm, partners must build a predictable, revenue-first growth engine that establishes unequivocal intellectual prestige, dominates localized search landscapes, and optimizes for the massive shift in how modern buyers discover legal representation: Generative AI Search.
 
-At **SiteOnLab**, we partner exclusively with B2B-focused and high-stakes regional law firms to engineer high-converting digital client acquisition pipelines. By combining deep jurisdictional SEO, pioneering Generative Engine Optimization (GEO), premium web development, and compliant AI intake automation, we transform digital presence into measurable billable revenue.
+At **HybridMonks**, we partner exclusively with B2B-focused and high-stakes regional law firms to engineer high-converting digital client acquisition pipelines. By combining deep jurisdictional SEO, pioneering Generative Engine Optimization (GEO), premium web development, and compliant AI intake automation, we transform digital presence into measurable billable revenue.
 
 ---
 
@@ -506,7 +506,7 @@ At **SiteOnLab**, we partner exclusively with B2B-focused and high-stakes region
 
 The legal sector is characterized by ultra-high average order values, extremely long sales cycles, multi-stakeholder decisions, and complex conflict-of-interest screening. In this environment, your digital presence is either a powerful asset that commands premium rates or a silent liability that drives prospects to competitors.
 
-SiteOnLab designs and executes bespoke full-funnel marketing strategies that map directly to the sophisticated legal buying journey. We focus entirely on commercial outcomes: pipeline valuation, signed retainer agreements, and cost-per-signed case—never vanity metrics like clicks or impressions.
+HybridMonks designs and executes bespoke full-funnel marketing strategies that map directly to the sophisticated legal buying journey. We focus entirely on commercial outcomes: pipeline valuation, signed retainer agreements, and cost-per-signed case—never vanity metrics like clicks or impressions.
 
 ### Request a Growth Blueprint
 Get a comprehensive, state-bar-compliant digital audit and pipeline strategy mapped out by our senior B2B legal strategists. 
@@ -516,7 +516,7 @@ Get a comprehensive, state-bar-compliant digital audit and pipeline strategy map
 ---
 
 ## 2. Trust & Credibility: Revenue-First Outcomes
-In an industry built on trust, prestige, and professional excellence, your marketing agency must reflect those identical standards. SiteOnLab operates with absolute transparency, data-driven precision, and strict ethical accountability.
+In an industry built on trust, prestige, and professional excellence, your marketing agency must reflect those identical standards. HybridMonks operates with absolute transparency, data-driven precision, and strict ethical accountability.
 
 * **4.2x Average ROI on High-Value Signed Cases**: Our closed-loop campaigns target high-value practice areas (e.g., patent disputes, antitrust litigation, employment class actions), ensuring every dollar spent translates directly to high-margin retainer agreements.
 * **185% Increase in Organic Client Acquisition**: By building authoritative topical hubs and targeting structured informational queries, we earn dominant jurisdictional search rankings that consistently drive high-net-worth prospects.
@@ -548,7 +548,7 @@ The majority of marketing agencies send monthly reports highlighting 'sessions',
 
 ---
 
-## 4. The SiteOnLab Solution: The Law Firm Growth Engine
+## 4. The HybridMonks Solution: The Law Firm Growth Engine
 We have engineered a comprehensive, state-bar-compliant marketing and software system designed specifically to address the unique challenges of elite, high-value law firms.
 
 ### Solution 1: Topical Authority SEO & Semantic Hubs
@@ -575,26 +575,26 @@ Our content team—composed of experienced legal writers and vetted legal expert
 ---
 
 ## 5. The Law Firm Buyer Journey: A Sophisticated 4-Stage Model
-Corporate and high-net-worth legal buyers navigate a highly analytical discovery and vetting process. SiteOnLab meticulously maps custom digital assets, tracking models, and nurture funnels to align with each of these 4 stages.
+Corporate and high-net-worth legal buyers navigate a highly analytical discovery and vetting process. HybridMonks meticulously maps custom digital assets, tracking models, and nurture funnels to align with each of these 4 stages.
 
 ### Stage 1: Awareness & Risk Assessment
 * **Buyer Mindset**: The prospect recognizes an active legal risk, regulatory shift, or corporate dispute. They search for structural rules, jurisdictional compliance guides, or clarifying legal definitions.
-* **SiteOnLab Support**: We build detailed compliance matrices, explainers, and search-optimized risk frameworks that position your firm as the default source of clarity.
+* **HybridMonks Support**: We build detailed compliance matrices, explainers, and search-optimized risk frameworks that position your firm as the default source of clarity.
 * **Key Assets**: State-by-state compliance calculators, AI Overview optimizations, deep regulatory briefings.
 
 ### Stage 2: Rigorous Evaluation & Research
 * **Buyer Mindset**: The buyer realizes they require formal counsel. They evaluate firms based on specific practice experience, attorney credentials, peer-reviewed directories, and published outcomes.
-* **SiteOnLab Support**: We design and optimize deep practice-area hubs and partner bio pages, highlighting technical competence and strategic approach.
+* **HybridMonks Support**: We design and optimize deep practice-area hubs and partner bio pages, highlighting technical competence and strategic approach.
 * **Key Assets**: Vetted practice area guides, partner credentials optimization, academic-grade law briefs.
 
 ### Stage 3: Trust Validation & Pre-Conflict Screening
 * **Buyer Mindset**: The prospective client narrows their selection to 2 or 3 firms. They seek to validate client experiences, read compliant case histories, and initiate preliminary contact to check for potential conflicts.
-* **SiteOnLab Support**: We optimize secure intake portals, bar-compliant success records, and automated intake flows that screen leads before partner time is utilized.
+* **HybridMonks Support**: We optimize secure intake portals, bar-compliant success records, and automated intake flows that screen leads before partner time is utilized.
 * **Key Assets**: Bar-vetted case outcomes, secure online intake forms, instant conflict screening bots.
 
 ### Stage 4: Decision & Retainer Execution
 * **Buyer Mindset**: The conflict check is cleared. The client is ready to schedule their strategic partner consultation, review the fee agreement, and sign the formal retainer.
-* **SiteOnLab Support**: We deploy secure digital onboarding sequences that answer initial pricing and workflow FAQs, preparing the client for a highly productive first partner consultation.
+* **HybridMonks Support**: We deploy secure digital onboarding sequences that answer initial pricing and workflow FAQs, preparing the client for a highly productive first partner consultation.
 * **Key Assets**: Automated intake confirmation calendars, digital consultation prep checklists, secure Clio-linked retainer onboarding.
 
 ---
@@ -609,7 +609,7 @@ We take a highly disciplined, phased approach to onboarding and scaling your fir
 
 ---
 
-## 7. Why Managing Partners Choose SiteOnLab
+## 7. Why Managing Partners Choose HybridMonks
 Elite law firms require an agency partner that matches their intellectual rigor, operational excellence, and absolute commitment to professional ethics.
 
 * **Legal-First Compliance Desk**: We don't guess at bar compliance. Every single campaign, landing page, and written insight is systematically reviewed against the specific professional code of your jurisdiction to ensure absolute brand safety.
@@ -634,28 +634,28 @@ Elite law firms require an agency partner that matches their intellectual rigor,
 ### Case Study 1: Intellectual Property & Commercial Disputes
 * **Practice Area**: Patent litigation & trade secret disputes.
 * **Challenge**: Saturated organic presence, bleeding $18k monthly on unoptimized Paid Ads with zero lead tracking.
-* **SiteOnLab Solution**: Built custom React portal, established semantic SEO hubs on IP regulations, deployed targeted executive LinkedIn outreach.
+* **HybridMonks Solution**: Built custom React portal, established semantic SEO hubs on IP regulations, deployed targeted executive LinkedIn outreach.
 * **Outcome**: 310% organic lead growth, 14 high-value IP defense cases signed, $2.4M new pipeline.
 * **Timeline**: 6 Months from onboarding.
 
 ### Case Study 2: Employment Law & Labor Relations
 * **Practice Area**: B2B labor and wage-and-hour defense.
 * **Challenge**: Low visibility across modern AI conversational channels (ChatGPT, Perplexity) where HR executives research defense counsel.
-* **SiteOnLab Solution**: Full-scale Generative Engine Optimization (GEO), structuring employment litigation reports and legal briefs.
+* **HybridMonks Solution**: Full-scale Generative Engine Optimization (GEO), structuring employment litigation reports and legal briefs.
 * **Outcome**: Acquired dominant citations across Gemini and Google AI Overviews, resulting in 8 premium corporate retainers.
 * **Timeline**: 9 Months.
 
 ### Case Study 3: Transactional & Mid-Market M&A
 * **Practice Area**: Mergers, acquisitions, and corporate exit tax advisory.
 * **Challenge**: Strong blog traffic but zero visibility on whether organic sessions translated into actual closed retainer billing.
-* **SiteOnLab Solution**: Integrated website tracking directly with partner Clio portals, optimized conversion structures for exit preparedness.
+* **HybridMonks Solution**: Integrated website tracking directly with partner Clio portals, optimized conversion structures for exit preparedness.
 * **Outcome**: 100% closed-loop marketing clarity, securing 5 new premium M&A advisory engagements.
 * **Timeline**: 4 Months from onboarding.
 
 ---
 
 ## 10. Client Endorsement & Partner Testimony
-"SiteOnLab fundamentally changed how we evaluate our marketing. Before working with them, our agency sent us reports filled with 'clicks' and 'impressions' while our partners felt disconnected from the pipeline. SiteOnLab built a custom CRM integration that connects our SEO directly to Clio. We now know exactly which content assets drive our most lucrative litigation cases. Their understanding of state-bar advertising rules was impeccable, giving us absolute peace of mind."
+"HybridMonks fundamentally changed how we evaluate our marketing. Before working with them, our agency sent us reports filled with 'clicks' and 'impressions' while our partners felt disconnected from the pipeline. HybridMonks built a custom CRM integration that connects our SEO directly to Clio. We now know exactly which content assets drive our most lucrative litigation cases. Their understanding of state-bar advertising rules was impeccable, giving us absolute peace of mind."
 * **Marcus Vance, Esq.**, Managing Partner, Vance & Sterling LLP
 * **Outcome**: 215% Increase in Organic B2B Signed Cases over 12 Months.
 
@@ -699,7 +699,7 @@ Yes. We implement meticulous 301 server redirect mapping, schema preservation, a
 ### Q8: How does AI search (Google AI Overviews, Perplexity, ChatGPT) impact our firm's visibility?
 AI search engines aggregate legal answers directly. If your web assets are not structured to be machine-readable and highly cited, LLMs will omit your firm when prospects query them for representation. We optimize your brand entities to ensure you are the cited authority.
 
-### Q9: Which SiteOnLab service should we start with?
+### Q9: Which HybridMonks service should we start with?
 Most firms begin with our 2-week B2B Growth Blueprint process. Our strategists build an absolute jurisdictional roadmap, competitive analysis, and tech integration plan with zero obligation.
 
 ### Q10: What happens after onboarding and during our first month?
@@ -727,19 +727,19 @@ Do not let your firm rely on unpredictable referral cycles, outdated website des
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://siteonlab.com"
+      "item": "https://hybridmonks.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Industries",
-      "item": "https://siteonlab.com/industries"
+      "item": "https://hybridmonks.com/industries"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Law Firms",
-      "item": "https://siteonlab.com/industries/law-firm-marketing"
+      "item": "https://hybridmonks.com/industries/law-firm-marketing"
     }
   ]
 }

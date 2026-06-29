@@ -273,7 +273,7 @@ export default function GrowthBlueprintModal({ isOpen, onClose }: GrowthBlueprin
               <Loader2 className="h-10 w-10 text-brand-primary animate-spin" />
               <div className="space-y-1.5">
                 <h4 className="font-display font-bold text-white text-base">Formulating Your Growth Blueprint</h4>
-                <p className="text-xs text-zinc-400 max-w-sm">SiteOnLab Engine is computing your customized account acceleration playbooks.</p>
+                <p className="text-xs text-zinc-400 max-w-sm">HybridMonks Engine is computing your customized account acceleration playbooks.</p>
               </div>
               <div className="w-full max-w-xs bg-dark-bg rounded-full h-1.5 overflow-hidden">
                 <div

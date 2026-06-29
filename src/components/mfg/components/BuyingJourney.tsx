@@ -101,9 +101,9 @@ export default function BuyingJourney() {
                     </p>
                   </div>
 
-                  {/* SiteOnLab Solutions */}
+                  {/* HybridMonks Solutions */}
                   <div className="p-5 rounded-xl bg-slate-950/80 border border-slate-800/60 space-y-2">
-                    <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest block font-semibold">âœ¨ HOW SITEONLAB CAPTURES & ASSISTS</span>
+                    <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest block font-semibold">âœ¨ HOW HYBRIDMONKS CAPTURES & ASSISTS</span>
                     <p className="text-slate-300 text-sm leading-relaxed font-sans">
                       {current.siteOnLabSupport}
                     </p>

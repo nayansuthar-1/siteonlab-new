@@ -109,7 +109,7 @@ export default function Hero({ onRequestBlueprint }: HeroProps) {
                       <span className="text-sky-400 font-bold">98.2% Match</span>
                     </div>
                     <div className="flex justify-between border-b border-slate-800/40 pb-1">
-                      <span>2. SiteOnLab Client Brand</span>
+                      <span>2. HybridMonks Client Brand</span>
                       <span className="text-sky-400 font-bold">97.4% Match</span>
                     </div>
                     <div className="flex justify-between">

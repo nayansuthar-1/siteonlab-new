@@ -19,7 +19,7 @@ export default function ComparisonSection() {
             — THE STRATEGIC FORK
           </span>
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-white tracking-tighter leading-tight">
-            What you've experienced vs. What SiteOnLab delivers
+            What you've experienced vs. What HybridMonks delivers
           </h2>
           <p className="text-xs sm:text-sm text-slate-400 mt-3 max-w-xl mx-auto">
             Our model is built around accountability and tangible results — designed specifically to break the traditional agency lock-in.
@@ -37,7 +37,7 @@ export default function ComparisonSection() {
             </div>
             <div className="flex items-center gap-2 pl-2 text-blue-500">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-              SITEONLAB SYSTEM
+              HYBRIDMONKS SYSTEM
             </div>
           </div>
 
@@ -72,15 +72,15 @@ export default function ComparisonSection() {
                 </div>
               </div>
 
-              {/* RIGHT: SiteOnLab (Positive - Glowing effect) */}
+              {/* RIGHT: HybridMonks (Positive - Glowing effect) */}
               <div className="flex gap-4 items-start pl-0 md:pl-8 mt-4 md:mt-0 relative">
-                {/* Visual glow backdrop for SiteOnLab column rows */}
+                {/* Visual glow backdrop for HybridMonks column rows */}
                 <div className="absolute inset-0 bg-blue-500/2 rounded-sm pointer-events-none"></div>
                 
                 <CheckCircle2 className="text-blue-500 flex-shrink-0 mt-0.5 relative z-10" size={18} />
                 <div className="relative z-10">
                   <span className="md:hidden text-[9px] font-bold text-blue-500 uppercase tracking-widest block mb-1">
-                    SiteOnLab Difference
+                    HybridMonks Difference
                   </span>
                   <p className="text-xs sm:text-sm text-slate-200 leading-relaxed font-medium">
                     {row.after}

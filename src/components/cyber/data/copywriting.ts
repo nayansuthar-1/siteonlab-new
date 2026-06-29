@@ -13,7 +13,7 @@ import {
 
 export const CYBERSECURITY_COPY = {
   seo: {
-    titleTag: "B2B Cybersecurity Marketing & SEO Agency | SiteOnLab",
+    titleTag: "B2B Cybersecurity Marketing & SEO Agency | HybridMonks",
     metaDescription: "We build revenue-first growth engines for cybersecurity firms. Scale pipeline, dominate high-intent organic search, and establish AI visibility. Get a Growth Blueprint.",
     urlSlug: "/industries/cybersecurity",
     h1: "B2B Cybersecurity Marketing That Translates Technical Authority into Predictable Pipeline.",
@@ -32,20 +32,20 @@ export const CYBERSECURITY_COPY = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://siteonlab.com" },
-          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://siteonlab.com/industries" },
-          { "@type": "ListItem", "position": 3, "name": "Cybersecurity B2B Marketing", "item": "https://siteonlab.com/industries/cybersecurity" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hybridmonks.com" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://hybridmonks.com/industries" },
+          { "@type": "ListItem", "position": 3, "name": "Cybersecurity B2B Marketing", "item": "https://hybridmonks.com/industries/cybersecurity" }
         ]
       },
       organization: {
         "@context": "https://schema.org",
         "@type": "GovernmentService",
-        "name": "SiteOnLab Growth Agency",
-        "url": "https://siteonlab.com",
-        "logo": "https://siteonlab.com/logo.png",
+        "name": "HybridMonks Growth Agency",
+        "url": "https://hybridmonks.com",
+        "logo": "https://hybridmonks.com/logo.png",
         "sameAs": [
-          "https://www.linkedin.com/company/siteonlab",
-          "https://twitter.com/siteonlab"
+          "https://www.linkedin.com/company/hybridmonks",
+          "https://twitter.com/hybridmonks"
         ]
       },
       faq: {
@@ -167,7 +167,7 @@ export const CYBERSECURITY_COPY = {
   journey: {
     eyebrow: "BUYER JOURNEY",
     h2: "How Modern Cybersecurity Buyers Evaluate and Select Vendors.",
-    introduction: "In B2B cybersecurity, purchasing is rarely linear. It's a highly deliberated team sport. SiteOnLab maps your growth initiatives against the distinct phases of the technical buying committee to ensure your product is the obvious choice.",
+    introduction: "In B2B cybersecurity, purchasing is rarely linear. It's a highly deliberated team sport. HybridMonks maps your growth initiatives against the distinct phases of the technical buying committee to ensure your product is the obvious choice.",
     stages: [
       {
         id: "awareness",
@@ -257,7 +257,7 @@ export const CYBERSECURITY_COPY = {
   },
 
   whyChoose: {
-    eyebrow: "WHY SITEONLAB",
+    eyebrow: "WHY HYBRIDMONKS",
     h2: "A B2B Growth Agency That Actually Understands Security.",
     introduction: "Most marketing agencies struggle to explain the difference between a firewalled port and a container endpoint. We live and breathe enterprise B2B cybersecurity, translating complex threat protection frameworks into high-converting revenue pipelines.",
     differentiators: [
@@ -392,7 +392,7 @@ export const CYBERSECURITY_COPY = {
   },
 
   testimonial: {
-    quote: "SiteOnLab is the first agency we've ever worked with that actually understands what a container breakout or a zero-trust architecture is. They speak our buyers' language with complete accuracy. Within 10 months, our non-branded search pipeline grew by 240%, and we now dominate AI-search recommendations across our enterprise product categories.",
+    quote: "HybridMonks is the first agency we've ever worked with that actually understands what a container breakout or a zero-trust architecture is. They speak our buyers' language with complete accuracy. Within 10 months, our non-branded search pipeline grew by 240%, and we now dominate AI-search recommendations across our enterprise product categories.",
     clientName: "Sarah Jenkins",
     role: "VP of Enterprise Marketing",
     company: "Ironclad Cloud Security",
@@ -445,7 +445,7 @@ export const CYBERSECURITY_COPY = {
       answer: "AI search engines are heavily disrupting traditional informational search. Instead of clicking links, security professionals increasingly ask LLMs to compare tools directly. We use Generative Engine Optimization (GEO) to optimize your brand's digital footprint. We structure entity schema markups, gain key citations on authoritative practitioner networks, and design content so that AI engines index your tool as a recommended solution."
     },
     {
-      question: "Which SiteOnLab service should we start with?",
+      question: "Which HybridMonks service should we start with?",
       answer: "Most partnerships begin with our comprehensive B2B Growth Blueprint. Over 4 weeks, we audit your existing marketing, analyze your AI visibility, identify keyword opportunities, and deliver an actionable execution roadmap. This allows you to evaluate our technical depth and strategic accuracy with zero long-term commitment."
     },
     {

@@ -24,7 +24,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-xl font-bold tracking-tight text-white">
-                  SiteOn<span className="text-brand-orange">Lab</span>
+                  Hybrid<span className="text-brand-orange">Monks</span>
                 </span>
                 <span className="text-[8px] font-mono tracking-widest text-slate-400 uppercase leading-none">
                   AI Revenue Agency
@@ -109,7 +109,7 @@ export default function Footer() {
               Company
             </span>
             <ul className="space-y-2.5 text-slate-400">
-              <li><a href="#about" className="hover:text-white transition-colors">About SiteOnLab</a></li>
+              <li><a href="#about" className="hover:text-white transition-colors">About HybridMonks</a></li>
               <li><a href="#framework" className="hover:text-white transition-colors">Our Methodology</a></li>
               <li><a href="#resources" className="hover:text-white transition-colors">B2B Search Lab</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact Team</a></li>
@@ -121,7 +121,7 @@ export default function Footer() {
         {/* Divider & Legal Strip */}
         <div className="border-t border-slate-900/80 pt-8 mt-12 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-500">
           <div>
-            <span>© {currentYear} SiteOnLab. All rights reserved.</span>
+            <span>© {currentYear} HybridMonks. All rights reserved.</span>
           </div>
           <div className="flex items-center space-x-6">
             <a href="#privacy" className="hover:text-slate-300 transition-colors">Privacy Policy</a>

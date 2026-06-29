@@ -1,8 +1,8 @@
 import { ServicePageData } from "./types";
 
 export const b2bSeoPreset: ServicePageData = {
-  seoTitle: "B2B SEO Agency for Pipeline Growth | SiteOnLab",
-  seoDescription: "SiteOnLab helps B2B companies use organic search and AI visibility to drive qualified pipeline, capture buying intent, and connect marketing to CRM revenue.",
+  seoTitle: "B2B SEO Agency for Pipeline Growth | HybridMonks",
+  seoDescription: "HybridMonks helps B2B companies use organic search and AI visibility to drive qualified pipeline, capture buying intent, and connect marketing to CRM revenue.",
   serviceCategory: "SEO & AI Visibility",
   serviceName: "B2B SEO",
   outcome1: "qualified demos",
@@ -22,7 +22,7 @@ export const b2bSeoPreset: ServicePageData = {
     { value: "50+", label: "B2B verticals successfully ranked" }
   ],
   overviewH2: "B2B SEO built for compounding revenue growth.",
-  overviewParagraph: "Most agencies just focus on high-volume, low-intent traffic that fails to drive commercial value. SiteOnLab builds a complete organic search system that combines buyer-intent optimization, topic cluster mapping, and advanced technical search setups into a single, high-converting revenue channel designed to earn trust with buyers, Google, and AI answer engines.",
+  overviewParagraph: "Most agencies just focus on high-volume, low-intent traffic that fails to drive commercial value. HybridMonks builds a complete organic search system that combines buyer-intent optimization, topic cluster mapping, and advanced technical search setups into a single, high-converting revenue channel designed to earn trust with buyers, Google, and AI answer engines.",
   serviceComponents: [
     {
       title: "Keyword Research & Search Intent Mapping",
@@ -83,7 +83,7 @@ export const b2bSeoPreset: ServicePageData = {
     }
   ],
   whyChooseUsH2: "A B2B SEO agency that connects organic performance to revenue.",
-  whyChooseUsParagraph: "Most agencies hand you a PDF report of traffic increases and call it done. SiteOnLab builds a full attribution layer so you can see exactly how search contributes across your buyer's journey, from first touch to closed opportunity.",
+  whyChooseUsParagraph: "Most agencies hand you a PDF report of traffic increases and call it done. HybridMonks builds a full attribution layer so you can see exactly how search contributes across your buyer's journey, from first touch to closed opportunity.",
   differentiators: [
     {
       title: "Revenue-first strategy",
@@ -174,8 +174,8 @@ export const b2bSeoPreset: ServicePageData = {
       answer: "We connect your search sessions directly to CRM contact creation and opportunity data inside HubSpot, Salesforce, or Marketo. ROI is measured by the dollar value of qualified sales opportunities created, cost reduction compared to paid advertising, and overall customer lifetime value generated from organic channels."
     },
     {
-      question: "What makes SiteOnLab different from other agencies?",
-      answer: "Most SEO agencies focus on vanity traffic spikes and hand off standard PDF keyword reports. SiteOnLab is a revenue-focused partner. We integrate directly with your sales pipelines, optimize heavily for AI search engine citations, write expert subject-matter content without relying on generic AI templates, and measure our success on pipeline rather than rankings."
+      question: "What makes HybridMonks different from other agencies?",
+      answer: "Most SEO agencies focus on vanity traffic spikes and hand off standard PDF keyword reports. HybridMonks is a revenue-focused partner. We integrate directly with your sales pipelines, optimize heavily for AI search engine citations, write expert subject-matter content without relying on generic AI templates, and measure our success on pipeline rather than rankings."
     },
     {
       question: "Do you handle implementation or only strategy?",
@@ -183,7 +183,7 @@ export const b2bSeoPreset: ServicePageData = {
     },
     {
       question: "We tried this before and it did not work. Why would this be different?",
-      answer: "Many organizations fail at SEO because they focus on generic, informational keywords with zero intent, or produce low-quality automated content. SiteOnLab targets buyer-intent keywords that capture active decision-makers. We combine traditional SEO with modern Generative Engine Optimization (GEO) to ensure your brand is cited inside new AI interfaces."
+      answer: "Many organizations fail at SEO because they focus on generic, informational keywords with zero intent, or produce low-quality automated content. HybridMonks targets buyer-intent keywords that capture active decision-makers. We combine traditional SEO with modern Generative Engine Optimization (GEO) to ensure your brand is cited inside new AI interfaces."
     },
     {
       question: "How does this service support AI visibility?",
@@ -201,8 +201,8 @@ export const b2bSeoPreset: ServicePageData = {
 };
 
 export const b2bAbmPreset: ServicePageData = {
-  seoTitle: "Account-Based Marketing & Paid Media Agency | SiteOnLab",
-  seoDescription: "SiteOnLab helps B2B enterprise tech companies target high-value accounts using paid media, personalized intent tracking, and account-based advertising.",
+  seoTitle: "Account-Based Marketing & Paid Media Agency | HybridMonks",
+  seoDescription: "HybridMonks helps B2B enterprise tech companies target high-value accounts using paid media, personalized intent tracking, and account-based advertising.",
   serviceCategory: "Paid Ads & ABM",
   serviceName: "Account-Based Marketing",
   outcome1: "target account pipeline",
@@ -222,7 +222,7 @@ export const b2bAbmPreset: ServicePageData = {
     { value: "$12M+", label: "Enterprise pipeline generated" }
   ],
   overviewH2: "ABM built for high-value enterprise pipeline.",
-  overviewParagraph: "Broad paid advertising wastes expensive ad budgets on unqualified clicks. SiteOnLab's Account-Based Marketing (ABM) combines IP-based ad targeting, intent signal analysis, and customized digital touchpoints to capture specific accounts, enabling your sales team to focus on enterprise buyers with massive lifetime value.",
+  overviewParagraph: "Broad paid advertising wastes expensive ad budgets on unqualified clicks. HybridMonks's Account-Based Marketing (ABM) combines IP-based ad targeting, intent signal analysis, and customized digital touchpoints to capture specific accounts, enabling your sales team to focus on enterprise buyers with massive lifetime value.",
   serviceComponents: [
     {
       title: "Account List & Intent Signal Mapping",
@@ -283,7 +283,7 @@ export const b2bAbmPreset: ServicePageData = {
     }
   ],
   whyChooseUsH2: "A target-account agency that connects paid spend directly to revenue.",
-  whyChooseUsParagraph: "Most ad agencies brag about impressions, clicks, and average CTRs. SiteOnLab coordinates with your outbound sales reps, analyzing account-level metrics to show how your marketing budget shortens enterprise cycles and drives large contracts.",
+  whyChooseUsParagraph: "Most ad agencies brag about impressions, clicks, and average CTRs. HybridMonks coordinates with your outbound sales reps, analyzing account-level metrics to show how your marketing budget shortens enterprise cycles and drives large contracts.",
   differentiators: [
     {
       title: "No wasted impressions",
@@ -331,7 +331,7 @@ export const b2bAbmPreset: ServicePageData = {
     }
   ],
   testimonial: {
-    quote: "SiteOnLab aligned our marketing spend and outbound sales teams. Instead of getting random clicks, we started seeing named target enterprise accounts booking meetings with our reps.",
+    quote: "HybridMonks aligned our marketing spend and outbound sales teams. Instead of getting random clicks, we started seeing named target enterprise accounts booking meetings with our reps.",
     author: "Michael Chang",
     title: "Chief Revenue Officer",
     companyType: "Cloud Security Platform",
@@ -374,8 +374,8 @@ export const b2bAbmPreset: ServicePageData = {
       answer: "ABM ROI is measured by account engagement rates, pipeline velocity, average contract value (ACV), and overall win rates within your target list. We help you transition away from tracking generic cost-per-click (CPC) metrics toward measuring target-account pipeline contribution."
     },
     {
-      question: "What makes SiteOnLab different from other agencies?",
-      answer: "Most ad agencies launch basic ad sets and let them run. SiteOnLab builds a full-funnel activation system. We coordinate directly with your sales development representatives, design high-end customized copy, and tie advertising touchpoints directly to CRM revenue."
+      question: "What makes HybridMonks different from other agencies?",
+      answer: "Most ad agencies launch basic ad sets and let them run. HybridMonks builds a full-funnel activation system. We coordinate directly with your sales development representatives, design high-end customized copy, and tie advertising touchpoints directly to CRM revenue."
     },
     {
       question: "Do you handle implementation or only strategy?",
@@ -383,7 +383,7 @@ export const b2bAbmPreset: ServicePageData = {
     },
     {
       question: "We tried this before and it did not work. Why would this be different?",
-      answer: "Generic ABM projects often fail due to incomplete target lists, poor creative coordination, and siloed sales teams. SiteOnLab solves this by setting up automated triggers, ensuring your sales reps receive alerts in Slack the second target accounts start researching your site."
+      answer: "Generic ABM projects often fail due to incomplete target lists, poor creative coordination, and siloed sales teams. HybridMonks solves this by setting up automated triggers, ensuring your sales reps receive alerts in Slack the second target accounts start researching your site."
     },
     {
       question: "How does this service support AI visibility?",
@@ -401,8 +401,8 @@ export const b2bAbmPreset: ServicePageData = {
 };
 
 export const b2bContentPreset: ServicePageData = {
-  seoTitle: "B2B Content Marketing Agency | SiteOnLab",
-  seoDescription: "SiteOnLab writes expert-level B2B content that builds authority, drives search intent, and turns readers into qualified enterprise leads.",
+  seoTitle: "B2B Content Marketing Agency | HybridMonks",
+  seoDescription: "HybridMonks writes expert-level B2B content that builds authority, drives search intent, and turns readers into qualified enterprise leads.",
   serviceCategory: "Content Marketing",
   serviceName: "B2B Content",
   outcome1: "domain authority",
@@ -422,7 +422,7 @@ export const b2bContentPreset: ServicePageData = {
     { value: "3M+", label: "Target words published" }
   ],
   overviewH2: "Editorial B2B content designed to earn buyer trust.",
-  overviewParagraph: "Most agencies churn out cheap, generic AI articles that damage brand credibility and get penalized by search algorithms. SiteOnLab produces authoritative, research-backed editorial assets designed to prove your expertise to buying committees and rank at the top of Google and AI Overviews.",
+  overviewParagraph: "Most agencies churn out cheap, generic AI articles that damage brand credibility and get penalized by search algorithms. HybridMonks produces authoritative, research-backed editorial assets designed to prove your expertise to buying committees and rank at the top of Google and AI Overviews.",
   serviceComponents: [
     {
       title: "Deep Topical Authority Research",
@@ -483,7 +483,7 @@ export const b2bContentPreset: ServicePageData = {
     }
   ],
   whyChooseUsH2: "A content agency that values expertise over word count.",
-  whyChooseUsParagraph: "Most agencies try to beat search engines with automated filler text. SiteOnLab focuses on deep, high-value industry research that educates buyers and drives pipeline growth.",
+  whyChooseUsParagraph: "Most agencies try to beat search engines with automated filler text. HybridMonks focuses on deep, high-value industry research that educates buyers and drives pipeline growth.",
   differentiators: [
     {
       title: "100% human, expert-authored",
@@ -531,7 +531,7 @@ export const b2bContentPreset: ServicePageData = {
     }
   ],
   testimonial: {
-    quote: "SiteOnLab doesn't just write articles. They understand our complex software product, translate deep technical engineering terms into clear B2B value propositions, and write content that ranks.",
+    quote: "HybridMonks doesn't just write articles. They understand our complex software product, translate deep technical engineering terms into clear B2B value propositions, and write content that ranks.",
     author: "Elena Rostova",
     title: "Director of Content Strategy",
     companyType: "DevOps & Infrastructure Platform",
@@ -574,8 +574,8 @@ export const b2bContentPreset: ServicePageData = {
       answer: "We analyze metrics like reader-to-lead conversion rates, average time-on-page, page scroll depths, download actions, and direct influence on customer acquisition cost (CAC) and CRM pipelines."
     },
     {
-      question: "What makes SiteOnLab different from other agencies?",
-      answer: "Most content agencies hire generalist freelance writers who output surface-level, AI-templated content. SiteOnLab employs technical copywriters and subject-matter experts to write detailed, high-impact content that commands industry respect."
+      question: "What makes HybridMonks different from other agencies?",
+      answer: "Most content agencies hire generalist freelance writers who output surface-level, AI-templated content. HybridMonks employs technical copywriters and subject-matter experts to write detailed, high-impact content that commands industry respect."
     },
     {
       question: "Do you handle implementation or only strategy?",
@@ -583,7 +583,7 @@ export const b2bContentPreset: ServicePageData = {
     },
     {
       question: "We tried this before and it did not work. Why would this be different?",
-      answer: "Generic content campaigns often fail because they focus on high-volume, irrelevant keywords or produce surface-level articles. SiteOnLab creates deeply researched thought-leadership and comparison pieces that solve genuine buyer problems."
+      answer: "Generic content campaigns often fail because they focus on high-volume, irrelevant keywords or produce surface-level articles. HybridMonks creates deeply researched thought-leadership and comparison pieces that solve genuine buyer problems."
     },
     {
       question: "How does this service support AI visibility?",

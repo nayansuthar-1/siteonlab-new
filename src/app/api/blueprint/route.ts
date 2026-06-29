@@ -48,7 +48,7 @@ export async function POST(req: Request) {
       const fallbackMarkdown = `
 # Bespoke Technical SEO Blueprint for **${domain}** (Local Simulation Mode)
 
-> **Note**: No API key detected. SiteOnLab is running in interactive demonstration mode. This is a baseline technical audit preview.
+> **Note**: No API key detected. HybridMonks is running in interactive demonstration mode. This is a baseline technical audit preview.
 
 ---
 
@@ -77,7 +77,7 @@ export async function POST(req: Request) {
     }
 
     const prompt = `
-You are a world-class Technical SEO Director at SiteOnLab, specializing in B2B SaaS, enterprise technology, and complex IT/MSP websites.
+You are a world-class Technical SEO Director at HybridMonks, specializing in B2B SaaS, enterprise technology, and complex IT/MSP websites.
 Generate an incredibly high-value, highly actionable, realistic, and detailed Technical SEO Growth Blueprint for a B2B company with the following details:
 - Domain/Website: ${domain}
 - Primary Business / Ideal Customer Profile: ${businessType || "Not specified, assume high-value B2B"}

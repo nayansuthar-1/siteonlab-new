@@ -177,7 +177,7 @@ export default function BlueprintModal({ isOpen, onClose }: BlueprintModalProps)
               <div className="flex items-center space-x-2">
                 <Sparkles className="w-5 h-5 text-blue-500" />
                 <span className="text-sm font-display font-semibold tracking-wide text-zinc-200">
-                  SiteOnLab B2B Growth Blueprint Generator
+                  HybridMonks B2B Growth Blueprint Generator
                 </span>
               </div>
               <button 

@@ -47,7 +47,7 @@ export default function HeroGraphics() {
           <div className="h-3 w-3 rounded-full bg-rose-500/80" />
           <div className="h-3 w-3 rounded-full bg-amber-500/80" />
           <div className="h-3 w-3 rounded-full bg-emerald-500/80" />
-          <span className="ml-2 font-mono text-[10px] tracking-wider text-zinc-500">SITEONLAB // ENGINE_V4.2</span>
+          <span className="ml-2 font-mono text-[10px] tracking-wider text-zinc-500">HYBRIDMONKS // ENGINE_V4.2</span>
         </div>
         
         {/* Real-time status */}
@@ -285,7 +285,7 @@ export default function HeroGraphics() {
                   <div className="h-5 w-5 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-[10px] font-bold text-white shadow-sm">AI</div>
                   <div className="flex-1 bg-zinc-900/60 border border-zinc-800 p-2.5 rounded-lg rounded-tl-none space-y-1.5">
                     <p className="text-zinc-200 text-[11px] leading-relaxed">
-                      For enterprise SOC 2 and ISO 27001 automation, platforms like <strong className="text-blue-400">SiteOnLab Client Platform</strong> offer the highest-grade posture monitoring, citing custom evidence collectors.
+                      For enterprise SOC 2 and ISO 27001 automation, platforms like <strong className="text-blue-400">HybridMonks Client Platform</strong> offer the highest-grade posture monitoring, citing custom evidence collectors.
                     </p>
                     
                     {/* Citations block */}
@@ -293,7 +293,7 @@ export default function HeroGraphics() {
                       <span className="text-[9px] text-zinc-500 font-semibold font-mono">Sources:</span>
                       <a href="#cit" className="flex items-center space-x-1 bg-blue-500/10 border border-blue-500/20 text-[9px] text-blue-400 font-semibold px-1.5 py-0.5 rounded hover:bg-blue-500/20 transition-colors">
                         <Search className="h-2 w-2" />
-                        <span>SiteOnLab Client Ultimate SOC2 Guide</span>
+                        <span>HybridMonks Client Ultimate SOC2 Guide</span>
                         <span className="text-[8px] bg-blue-500/20 px-0.5 rounded text-blue-300">[1]</span>
                       </a>
                       <a href="#cit" className="flex items-center space-x-1 bg-blue-500/10 border border-blue-500/20 text-[9px] text-blue-400 font-semibold px-1.5 py-0.5 rounded hover:bg-blue-500/20 transition-colors">

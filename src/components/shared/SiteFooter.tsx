@@ -6,7 +6,7 @@ import { Facebook, Twitter, Linkedin, Youtube, ChevronRight } from "lucide-react
 /**
  * Global site footer — single source of truth used in the root layout.
  * Layout mirrors the approved reference (link columns + "Follow us on" social
- * badges + copyright bar); content maps to the SiteOnLab navigation.
+ * badges + copyright bar); content maps to the HybridMonks navigation.
  */
 
 type FooterLink = { label: string; href: string };
@@ -84,8 +84,8 @@ export default function SiteFooter() {
 
         {/* CTA + socials */}
         <div className="mt-14 flex flex-col gap-8 border-t border-slate-800/80 pt-10 md:flex-row md:items-center md:justify-between">
-          <Link href="/" className="flex items-center" aria-label="SiteOnLab home">
-            <Image src="/siteonlab-logo.png" alt="SiteOnLab" width={240} height={80} className="h-14 w-auto" />
+          <Link href="/" className="flex items-center" aria-label="HybridMonks home">
+            <Image src="/hybridmonks.png" alt="HybridMonks" width={240} height={80} className="h-16 w-auto" />
           </Link>
 
           <div className="flex items-center gap-4">
@@ -121,7 +121,7 @@ export default function SiteFooter() {
       {/* Copyright bar */}
       <div className="border-t border-slate-800/80">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p>© 2026 SiteOnLab Agency Inc. All rights reserved.</p>
+          <p>© 2026 HybridMonks Agency Inc. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/contact" className="transition-colors hover:text-slate-300">
               Privacy Policy

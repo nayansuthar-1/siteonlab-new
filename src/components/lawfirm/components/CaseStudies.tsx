@@ -92,7 +92,7 @@ const CaseStudies = forwardRef<HTMLDivElement, CaseStudiesProps>(
                   <div>
                     <h4 className="text-xs font-mono font-bold text-[#3b82f6] uppercase tracking-wide mb-2 flex items-center space-x-1.5">
                       <Trophy className="h-3.5 w-3.5 text-[#3b82f6]" />
-                      <span>SiteOnLab Solution</span>
+                      <span>HybridMonks Solution</span>
                     </h4>
                     <p className="text-white/80 font-light bg-[#0A0A0B]/40 border border-white/10 p-4 rounded-sm">
                       {caseStudies[activeCase].solution}

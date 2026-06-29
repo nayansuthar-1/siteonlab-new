@@ -78,7 +78,7 @@ export default function Services() {
             Paid Media built for compounding B2B revenue growth.
           </h2>
           <p className="text-slate-400 mt-4 leading-relaxed text-sm sm:text-base font-light">
-            Most agencies just handle basic bidding setups and call it a day. SiteOnLab builds a complete growth system that combines high-intent paid search, account-based paid social, custom conversion-focused landing pages, and multi-touch CRM attribution into one unified revenue channel designed to earn trust and maximize pipeline value.
+            Most agencies just handle basic bidding setups and call it a day. HybridMonks builds a complete growth system that combines high-intent paid search, account-based paid social, custom conversion-focused landing pages, and multi-touch CRM attribution into one unified revenue channel designed to earn trust and maximize pipeline value.
           </p>
         </div>
 

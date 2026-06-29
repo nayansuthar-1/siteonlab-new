@@ -5,9 +5,9 @@ export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
 /**
- * SiteOnLab Website Audit engine.
+ * HybridMonks Website Audit engine.
  * Runs a server-side performance + quality analysis and returns a normalized,
- * SiteOnLab-branded result. The underlying analysis provider is intentionally
+ * HybridMonks-branded result. The underlying analysis provider is intentionally
  * never exposed to the client.
  */
 

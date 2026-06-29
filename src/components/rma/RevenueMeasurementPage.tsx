@@ -88,7 +88,7 @@ export default function RevenueMeasurementPage() {
 
             {/* Subheading Paragraph */}
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed font-sans max-w-xl">
-              SiteOnLab helps B2B SaaS and technology companies turn raw data into a measurable revenue channel. We help you connect activity to qualified pipeline, not vanity metrics.
+              HybridMonks helps B2B SaaS and technology companies turn raw data into a measurable revenue channel. We help you connect activity to qualified pipeline, not vanity metrics.
             </p>
 
             {/* CTAs */}
@@ -245,7 +245,7 @@ export default function RevenueMeasurementPage() {
           </div>
           <div className="lg:col-span-7">
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed pt-2">
-              Most generic digital agencies hand you a vanity click report or impression tally and call it done. SiteOnLab builds a full-funnel, secure measurement layer so you can see exactly how every campaign and content cluster contributes across the buyer journey, from first touch to qualified pipeline.
+              Most generic digital agencies hand you a vanity click report or impression tally and call it done. HybridMonks builds a full-funnel, secure measurement layer so you can see exactly how every campaign and content cluster contributes across the buyer journey, from first touch to qualified pipeline.
             </p>
           </div>
         </div>

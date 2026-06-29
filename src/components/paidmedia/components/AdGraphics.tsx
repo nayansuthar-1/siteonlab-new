@@ -103,7 +103,7 @@ export default function AdGraphics() {
           {/* Footnote */}
           <div className="flex items-center justify-center gap-1 pt-1 text-[9px] font-mono text-slate-500">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
-            <span>SiteOnLab Performance Verified</span>
+            <span>HybridMonks Performance Verified</span>
           </div>
         </div>
       </div>

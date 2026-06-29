@@ -97,7 +97,7 @@ export default function IndustryChallenges() {
 
                   <div className="pt-2">
                     <p className="text-xs text-slate-500 italic">
-                      ðŸ’¡ Click other challenges to explore specific B2B impact factors and see why industrial manufacturers partner with SiteOnLab.
+                      ðŸ’¡ Click other challenges to explore specific B2B impact factors and see why industrial manufacturers partner with HybridMonks.
                     </p>
                   </div>
                 </div>

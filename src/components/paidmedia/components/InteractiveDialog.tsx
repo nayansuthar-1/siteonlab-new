@@ -181,7 +181,7 @@ export default function InteractiveDialog({ isOpen, onClose, type }: Interactive
               <h3 className="font-semibold text-white">
                 {type === "blueprint" ? "Request a Growth Blueprint" : "B2B Paid Media Maturity Assessment"}
               </h3>
-              <p className="text-xs text-slate-400">SiteOnLab Revenue Optimization Engine</p>
+              <p className="text-xs text-slate-400">HybridMonks Revenue Optimization Engine</p>
             </div>
           </div>
           <button 

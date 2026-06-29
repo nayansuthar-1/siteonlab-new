@@ -3,8 +3,8 @@
 import React, { useState, useRef, useEffect, FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-const titleTag = "AI Software Development Agency for B2B Pipeline Growth | SiteOnLab";
-const metaDescription = "SiteOnLab helps B2B SaaS, enterprise, and high-growth technology companies use AI Software Development to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.";
+const titleTag = "AI Software Development Agency for B2B Pipeline Growth | HybridMonks";
+const metaDescription = "HybridMonks helps B2B SaaS, enterprise, and high-growth technology companies use AI Software Development to drive qualified pipeline, improve visibility, and connect marketing performance to revenue.";
 import {
   Sparkles,
   ArrowRight,
@@ -189,7 +189,7 @@ const FAQS: FAQItem[] = [
   {
     id: "faq-1",
     question: "What is AI Software Development?",
-    answer: "AI Software Development refers to building applications that embed machine learning models, custom prompt engineering, agentic workflows, and semantic vector indexing directly into software pipelines. SiteOnLab goes beyond simple API wrapper integration; we build robust, compliance-first software systems that automate manual bottlenecks and convert advanced interactions into measurable enterprise pipeline."
+    answer: "AI Software Development refers to building applications that embed machine learning models, custom prompt engineering, agentic workflows, and semantic vector indexing directly into software pipelines. HybridMonks goes beyond simple API wrapper integration; we build robust, compliance-first software systems that automate manual bottlenecks and convert advanced interactions into measurable enterprise pipeline."
   },
   {
     id: "faq-2",
@@ -204,12 +204,12 @@ const FAQS: FAQItem[] = [
   {
     id: "faq-4",
     question: "How do you measure ROI?",
-    answer: "We reject vanity metrics. SiteOnLab deploys a dedicated telemetry and measurement layer that connects custom software usage, search intent clicks, and AI feature engagement directly to CRM pipeline signals. We track first-touch, multi-touch, and system-assisted revenue, measuring performance by qualified opportunities, closed deals, and operational hours saved."
+    answer: "We reject vanity metrics. HybridMonks deploys a dedicated telemetry and measurement layer that connects custom software usage, search intent clicks, and AI feature engagement directly to CRM pipeline signals. We track first-touch, multi-touch, and system-assisted revenue, measuring performance by qualified opportunities, closed deals, and operational hours saved."
   },
   {
     id: "faq-5",
-    question: "What makes SiteOnLab different from other agencies?",
-    answer: "Most traditional agencies deliver abstract strategy reports or simple API wrappers. SiteOnLab is a deep technical engineering partner. We write production-grade TypeScript/Node.js backend infrastructure, configure SOC2 compliance controls, implement semantic RAG caches, and build custom web interfaces. Most importantly, we are a revenue-first agency; we make sure your technical investments build compounding pipeline."
+    question: "What makes HybridMonks different from other agencies?",
+    answer: "Most traditional agencies deliver abstract strategy reports or simple API wrappers. HybridMonks is a deep technical engineering partner. We write production-grade TypeScript/Node.js backend infrastructure, configure SOC2 compliance controls, implement semantic RAG caches, and build custom web interfaces. Most importantly, we are a revenue-first agency; we make sure your technical investments build compounding pipeline."
   },
   {
     id: "faq-6",
@@ -277,7 +277,7 @@ export default function App() {
 
   // Set page title and favicon placeholder dynamically for SEO alignment
   useEffect(() => {
-    document.title = "AI Software Development Agency for B2B Pipeline Growth | SiteOnLab";
+    document.title = "AI Software Development Agency for B2B Pipeline Growth | HybridMonks";
   }, []);
 
   return (
@@ -340,7 +340,7 @@ export default function App() {
 
                 {/* Subheading */}
                 <p className="font-sans text-lg text-white/60 leading-relaxed max-w-2xl mb-8">
-                  SiteOnLab helps <strong className="text-white font-medium">B2B SaaS, enterprise, and high-growth technology companies</strong> turn AI software development into a measurable revenue channel. We help you build intelligent features, integrate custom LLMs, and convert advanced technology into qualified pipeline — measured by qualified pipeline, not vanity metrics.
+                  HybridMonks helps <strong className="text-white font-medium">B2B SaaS, enterprise, and high-growth technology companies</strong> turn AI software development into a measurable revenue channel. We help you build intelligent features, integrate custom LLMs, and convert advanced technology into qualified pipeline — measured by qualified pipeline, not vanity metrics.
                 </p>
 
                 {/* Call to Actions */}
@@ -645,7 +645,7 @@ export default function App() {
 
                         <div className="pt-6 mt-6 border-t border-white/10 flex justify-between items-center text-[10px] font-mono text-white/30 uppercase tracking-widest">
                           <span>SYSTEM INTEGRATOR PATH</span>
-                          <span>SITEONLAB SECURE ENGINEERING</span>
+                          <span>HYBRIDMONKS SECURE ENGINEERING</span>
                         </div>
                       </motion.div>
                     );
@@ -674,7 +674,7 @@ export default function App() {
               </div>
               <div className="lg:col-span-4 text-left">
                 <p className="font-sans text-sm sm:text-base text-white/60 leading-relaxed">
-                  Most agencies hand you standard api wrapper reports and call it done. SiteOnLab builds a full enterprise measurement layer so you can see how AI-driven features contribute across the buyer journey, from first touch to qualified opportunity.
+                  Most agencies hand you standard api wrapper reports and call it done. HybridMonks builds a full enterprise measurement layer so you can see how AI-driven features contribute across the buyer journey, from first touch to qualified opportunity.
                 </p>
               </div>
             </div>
@@ -868,7 +868,7 @@ export default function App() {
                 Diagnose your AI readiness and explore search visibility.
               </h2>
               <p className="font-sans text-sm sm:text-base text-white/60 leading-relaxed">
-                Use the interactive utilities below to assess your infrastructure gaps, get scoring diagnostics, and preview how SiteOnLab optimizes metadata for modern search and citation nodes.
+                Use the interactive utilities below to assess your infrastructure gaps, get scoring diagnostics, and preview how HybridMonks optimizes metadata for modern search and citation nodes.
               </p>
             </div>
 
@@ -883,7 +883,7 @@ export default function App() {
                 {/* Embedded quick guide */}
                 <div className="bg-[#080808] border border-white/10 rounded-sm p-6 text-left space-y-4">
                   <h4 className="font-serif font-semibold text-white flex items-center gap-1.5 text-sm sm:text-base">
-                    <BookOpen className="w-4 h-4 text-blue-400" /> SiteOnLab GEO Methodology
+                    <BookOpen className="w-4 h-4 text-blue-400" /> HybridMonks GEO Methodology
                   </h4>
                   <p className="text-xs sm:text-sm text-white/60 font-sans leading-relaxed">
                     Most agencies build AI features that are invisible to search indexing. We engineer authority clusters and JSON-LD structural graphs so that crawler systems citation routers recognize your domain, driving both buyer intent search indexing and direct chatbot recommendations.
@@ -1017,7 +1017,7 @@ export default function App() {
               <div className="p-6 sm:p-8 space-y-6">
                 <div className="space-y-2 text-left">
                   <h3 className="text-2xl font-serif font-semibold text-white">
-                    SiteOnLab SEO & Generative Visibility Preview
+                    HybridMonks SEO & Generative Visibility Preview
                   </h3>
                   <p className="text-sm text-white/60 font-sans leading-relaxed">
                     This page is optimized with precise search indexes and semantic structures. View Google Search snippet previews and AI Engine recommendations below.

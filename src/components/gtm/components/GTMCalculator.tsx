@@ -195,7 +195,7 @@ export default function GTMCalculator() {
 
             <div className="flex items-center gap-1.5 text-[10px] text-blue-400/90 bg-blue-500/10 p-1.5 rounded border border-blue-500/20 mt-1">
               <Zap className="w-3.5 h-3.5 flex-shrink-0 animate-bounce" />
-              <span>Pipeline velocity can increase by 2.4x with SiteOnLab.</span>
+              <span>Pipeline velocity can increase by 2.4x with HybridMonks.</span>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function Services({ onOpenBlueprint }: ServicesProps) {
             Growth services built for <span className="italic font-serif text-[#3b82f6]">Law Firms</span>.
           </h2>
           <p className="mt-4 text-white/60 text-base sm:text-lg font-light leading-relaxed">
-            SiteOnLab deploys tailored modules of our growth suite to fit your firm's specific practice profile, geographic footprint, and budget constraints.
+            HybridMonks deploys tailored modules of our growth suite to fit your firm's specific practice profile, geographic footprint, and budget constraints.
           </p>
         </div>
 

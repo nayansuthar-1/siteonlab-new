@@ -15,8 +15,8 @@ const faqData: FAQItem[] = [
     answer: "GEO is the process of optimizing your brand's digital footprint so that AI search engines (like ChatGPT, Perplexity, Gemini, and Google AI Overviews) recognize your company's authority and cite your platform as the primary recommended solution when prospective enterprise buyers search for solutions."
   },
   {
-    question: "How is SiteOnLab different from a traditional SEO agency?",
-    answer: "Traditional agencies focus on vanity metrics like clicks and impressions for general informational keywords. SiteOnLab focuses exclusively on bottom-of-funnel revenue metrics. We deploy industry-native content optimized for both human decision-makers and AI crawlers, and build precise attribution setups to tie organic search directly to pipeline and ARR."
+    question: "How is HybridMonks different from a traditional SEO agency?",
+    answer: "Traditional agencies focus on vanity metrics like clicks and impressions for general informational keywords. HybridMonks focuses exclusively on bottom-of-funnel revenue metrics. We deploy industry-native content optimized for both human decision-makers and AI crawlers, and build precise attribution setups to tie organic search directly to pipeline and ARR."
   },
   {
     question: "How does the 90-day proof pilot program work?",
