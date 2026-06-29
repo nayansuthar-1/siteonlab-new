@@ -23,6 +23,8 @@ import {
   Cpu,
   BarChart3,
   Cloud,
+  ShieldCheck,
+  Briefcase,
   BookOpen,
   Gauge,
   type LucideIcon,
@@ -65,6 +67,8 @@ const services: MenuItem[] = [
 
 const industries: MenuItem[] = [
   { label: "B2B SaaS", href: "/industries/b2b-saas", description: "Growth & AI visibility for SaaS.", icon: Cloud },
+  { label: "Cybersecurity", href: "/industries/cybersecurity", description: "Revenue-first growth for security firms.", icon: ShieldCheck },
+  { label: "Professional Services", href: "/industries/professional-services", description: "Pipeline & authority for advisory firms.", icon: Briefcase },
 ];
 
 const resources: MenuItem[] = [

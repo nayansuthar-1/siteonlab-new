@@ -789,6 +789,71 @@ html:has(.theme-rma) ::-webkit-scrollbar-thumb:hover {
 }
 
 /* ============================================================
+   Per-page theme scope: Cybersecurity industry page. The zip uses
+   literal Tailwind colors throughout (slate base + sky-* accent,
+   with emerald only on the final-CTA block), so no color tokens are
+   overridden here — the .theme-cyber class exists solely so the
+   unified-typography rule below applies (Inter / Space Grotesk /
+   JetBrains Mono). The scrollbar mirrors the zip's index.css. */
+html:has(.theme-cyber) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:has(.theme-cyber) ::-webkit-scrollbar-track {
+  background: #020617;
+}
+html:has(.theme-cyber) ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+html:has(.theme-cyber) ::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* ============================================================
+   Per-page theme scope: Professional Services industry page. The
+   zip uses literal Tailwind/hex colors throughout (slate base +
+   sky-* accent), so no color tokens are overridden — the
+   .theme-profsvc class exists so the unified-typography rule below
+   applies (Inter / Space Grotesk / JetBrains Mono; the zip's own
+   Outfit display font is intentionally unified away). The utility
+   classes below mirror the zip's index.css, scoped to this page. */
+.theme-profsvc .card-glass {
+  background: rgba(30, 41, 59, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.theme-profsvc .accent-glow {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
+}
+.theme-profsvc .geo-circle {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-profsvc .geo-line {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+html:has(.theme-profsvc) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:has(.theme-profsvc) ::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+html:has(.theme-profsvc) ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+html:has(.theme-profsvc) ::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+/* ============================================================
    UNIFIED TYPOGRAPHY
    Every page uses the homepage font system, regardless of its
    per-page theme scope:
