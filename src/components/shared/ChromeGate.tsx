@@ -3,9 +3,10 @@
 import { usePathname } from "next/navigation";
 
 /**
- * Hides the global site chrome (SiteNav / SiteFooter) on standalone,
- * directly-accessed pages that ship their own header + footer.
- * Currently: the /package landing page.
+ * Hides whatever it wraps (currently the global SiteFooter) on standalone,
+ * directly-accessed pages that ship their own footer.
+ * Currently: the /package landing page — it uses the global SiteNav but
+ * keeps its own footer, so only the footer is gated here.
  */
 const STANDALONE_PREFIXES = ["/package"];
 

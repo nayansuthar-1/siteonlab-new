@@ -105,7 +105,7 @@ const navEntries: NavEntry[] = [
   { label: "Services", columns: serviceColumns, featured: true },
   { label: "Industries", columns: splitIntoColumns(industries, 2), cta: true },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Resources", columns: [resources] },
+  { label: "Resources", columns: splitIntoColumns(resources, 2) },
 ];
 
 function MegaLink({ item, onClick }: { item: MenuItem; onClick?: () => void }) {

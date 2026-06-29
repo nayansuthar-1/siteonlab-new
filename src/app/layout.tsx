@@ -90,9 +90,7 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${manrope.variable} ${outfit.variable} ${plusJakarta.variable} ${playfairDisplay.variable} ${lora.variable} ${firaCode.variable}`}
     >
       <body>
-        <ChromeGate>
-          <SiteNav />
-        </ChromeGate>
+        <SiteNav />
         {children}
         <ChromeGate>
           <SiteFooter />

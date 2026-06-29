@@ -229,33 +229,6 @@ export default function LandingPage() {
       <div className="absolute top-[30%] right-[-10%] w-[60%] h-[60%] rounded-full bg-blue-900/10 blur-[150px] pointer-events-none"></div>
       <div className="absolute bottom-[10%] left-[10%] w-[40%] h-[40%] rounded-full bg-indigo-950/15 blur-[120px] pointer-events-none"></div>
 
-      {/* 1. STICKY HEADER */}
-      <header id="header" className="sticky top-0 z-40 w-full backdrop-blur-md bg-[#0B1120]/80 border-b border-white/5 transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="font-display text-2xl font-bold tracking-tight text-white flex items-center">
-              SiteOn<span className="text-[#6366F1]">Lab</span>
-            </span>
-          </div>
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-            <a href="#problems" className="hover:text-white transition-colors">Problems</a>
-            <a href="#offer" className="hover:text-white transition-colors">The Engine</a>
-            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
-            <a href="#timeline" className="hover:text-white transition-colors">90-Day Arc</a>
-            <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
-          </nav>
-          <div>
-            <button 
-              onClick={() => scrollToForm()} 
-              className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-blue-500/20 cursor-pointer"
-              id="header-cta"
-            >
-              Book a Strategy Call
-            </button>
-          </div>
-        </div>
-      </header>
-
       <main>
         {/* 2. HERO SECTION */}
         <section id="hero" className="relative pt-16 pb-24 md:pt-24 md:pb-32 px-6 sm:px-8 lg:px-10">
