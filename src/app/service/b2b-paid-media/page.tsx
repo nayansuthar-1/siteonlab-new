@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import PaidMediaPage from "@/components/paidmedia/PaidMediaPage";
 
 export const metadata: Metadata = {
-  title: "B2B Paid Media Agency for B2B Pipeline Growth | SiteOnLab",
+  title: "Paid Media Agency | SiteOnLab",
   description:
-    "A high-converting B2B Paid Media service page for SiteOnLab, driving demos, sales inquiries, and qualified pipeline.",
+    "High-intent search ads, account-based paid social, and pipeline-first measurement to turn paid spend into compounding B2B revenue.",
 };
 
 export default function B2bPaidMedia() {

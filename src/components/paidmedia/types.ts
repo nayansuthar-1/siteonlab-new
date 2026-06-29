@@ -3,11 +3,18 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+export interface MetricItem {
+  id: string;
+  value: string;
+  label: string;
+  description: string;
+}
+
 export interface ServiceComponent {
   id: string;
   title: string;
   description: string;
-  bulletPoints: string[];
+  bullets: string[];
 }
 
 export interface ProcessStep {
@@ -17,34 +24,27 @@ export interface ProcessStep {
   timeline: string;
 }
 
-export interface DifferentiatorCard {
-  id: string;
+export interface Differentiator {
   title: string;
   description: string;
-  benefit: string;
+  badge: string;
 }
 
 export interface CaseStudy {
-  id: string;
   industry: string;
-  subCategory: string;
   headline: string;
   shortCopy: string;
   metric: string;
-  metricLabel: string;
   timeline: string;
-  tags: string[];
+  adChannels: string[];
 }
 
 export interface RelatedService {
-  id: string;
   title: string;
   description: string;
-  primaryMetric: string;
 }
 
 export interface FAQItem {
-  id: string;
   question: string;
   answer: string;
 }

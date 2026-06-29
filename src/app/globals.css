@@ -314,14 +314,39 @@
 }
 
 /* ============================================================
-   Per-page theme scope: B2B Paid Media service page.
-   Literal colors; Inter / Outfit / Playfair (serif) / JetBrains.
-   ============================================================ */
-.theme-paidmedia {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-outfit), sans-serif;
-  --font-serif: var(--font-playfair), serif;
-  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+   Per-page theme scope: B2B Paid Media service page (re-ported
+   from paid-media-agency-_-siteonlab.zip). The zip uses literal
+   colors throughout (zinc/black base + homepage blue-* accent), so
+   no color tokens are overridden — the class exists so the
+   unified-typography rule applies (Inter / Space Grotesk /
+   JetBrains Mono). Per request, typography matches the homepage:
+   the zip put no font family on its big headings (they fell back to
+   Inter) and used one `font-serif` italic accent, so headings h1–h4
+   and that serif accent are mapped to the homepage display font
+   (Space Grotesk). h5 mono labels keep their `font-mono` (h1–h4
+   only, so those uppercase labels are untouched). */
+.theme-paidmedia h1,
+.theme-paidmedia h2,
+.theme-paidmedia h3,
+.theme-paidmedia h4,
+.theme-paidmedia .font-serif {
+  font-family: var(--font-display);
+  font-style: normal;
+}
+
+html:has(.theme-paidmedia) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:has(.theme-paidmedia) ::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+html:has(.theme-paidmedia) ::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+html:has(.theme-paidmedia) ::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
 }
 
 /* ============================================================
