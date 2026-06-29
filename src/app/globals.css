@@ -932,6 +932,49 @@ html:has(.theme-b2btech) ::-webkit-scrollbar-thumb:hover {
 }
 
 /* ============================================================
+   Per-page theme scope: Law Firm industry page.
+   The zip shipped a gold (#C5A47E) accent on a near-black base and
+   a Playfair Display serif for its elegant headings. Per request it
+   is recolored to the homepage blue (gold hex literals were swapped
+   to #3b82f6 / #2563eb in the components) and refonted to the
+   homepage system: serif → Space Grotesk and ALL headings forced to
+   the display font, so nothing renders Playfair/Georgia. The unified
+   block below still maps --font-sans/-display/-mono. The zip's
+   index.css fadeIn view-transition is ported here, scoped. */
+.theme-lawfirm {
+  --font-serif: var(--font-space-grotesk), sans-serif;
+}
+.theme-lawfirm h1,
+.theme-lawfirm h2,
+.theme-lawfirm h3,
+.theme-lawfirm h4 {
+  font-family: var(--font-display);
+}
+
+@keyframes lawfirm-fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.theme-lawfirm .animate-fadeIn {
+  animation: lawfirm-fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+html:has(.theme-lawfirm) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:has(.theme-lawfirm) ::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+html:has(.theme-lawfirm) ::-webkit-scrollbar-thumb {
+  background: #222224;
+  border-radius: 4px;
+}
+html:has(.theme-lawfirm) ::-webkit-scrollbar-thumb:hover {
+  background: #333336;
+}
+
+/* ============================================================
    UNIFIED TYPOGRAPHY
    Every page uses the homepage font system, regardless of its
    per-page theme scope:

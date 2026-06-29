@@ -26,6 +26,7 @@ import {
   ShieldCheck,
   Briefcase,
   Factory,
+  Scale,
   BookOpen,
   Gauge,
   type LucideIcon,
@@ -72,6 +73,7 @@ const industries: MenuItem[] = [
   { label: "Professional Services", href: "/industries/professional-services", description: "Pipeline & authority for advisory firms.", icon: Briefcase },
   { label: "Manufacturing & Industrial", href: "/industries/manufacturing-industrial", description: "Qualified pipeline for industrial brands.", icon: Factory },
   { label: "B2B Technology", href: "/industries/b2b-technology", description: "Pipeline & AI search visibility for tech firms.", icon: Cpu },
+  { label: "Law Firm", href: "/industries/law-firm", description: "Signed-case growth for legal practices.", icon: Scale },
 ];
 
 const resources: MenuItem[] = [
