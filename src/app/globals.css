@@ -854,6 +854,36 @@ html:has(.theme-profsvc) ::-webkit-scrollbar-thumb:hover {
 }
 
 /* ============================================================
+   Per-page theme scope: Manufacturing & Industrial industry page.
+   The zip uses literal colors (near-black #0A0A0B base + homepage
+   blue-* accent), so no color tokens are overridden — the
+   .theme-mfg class exists so the unified-typography rule below
+   applies (Inter / Space Grotesk / JetBrains Mono). The zip's
+   index.css applied the display font to all bare headings, so that
+   rule is replicated here, scoped. */
+.theme-mfg h1,
+.theme-mfg h2,
+.theme-mfg h3,
+.theme-mfg h4 {
+  font-family: var(--font-display);
+}
+
+html:has(.theme-mfg) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:has(.theme-mfg) ::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+html:has(.theme-mfg) ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+html:has(.theme-mfg) ::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* ============================================================
    UNIFIED TYPOGRAPHY
    Every page uses the homepage font system, regardless of its
    per-page theme scope:

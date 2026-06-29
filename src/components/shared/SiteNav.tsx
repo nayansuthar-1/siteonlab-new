@@ -25,6 +25,7 @@ import {
   Cloud,
   ShieldCheck,
   Briefcase,
+  Factory,
   BookOpen,
   Gauge,
   type LucideIcon,
@@ -69,6 +70,7 @@ const industries: MenuItem[] = [
   { label: "B2B SaaS", href: "/industries/b2b-saas", description: "Growth & AI visibility for SaaS.", icon: Cloud },
   { label: "Cybersecurity", href: "/industries/cybersecurity", description: "Revenue-first growth for security firms.", icon: ShieldCheck },
   { label: "Professional Services", href: "/industries/professional-services", description: "Pipeline & authority for advisory firms.", icon: Briefcase },
+  { label: "Manufacturing & Industrial", href: "/industries/manufacturing-industrial", description: "Qualified pipeline for industrial brands.", icon: Factory },
 ];
 
 const resources: MenuItem[] = [
