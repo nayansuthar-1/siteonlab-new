@@ -85,9 +85,9 @@ export default async function ArticlePage({
         </div>
 
         {/* Metrics callout */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-brand-card border border-brand-border p-5 rounded-xl">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4">
           {article.metrics.map((metric, i) => (
-            <div key={i} className="text-center sm:text-left space-y-1">
+            <div key={i} className="space-y-1">
               <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">
                 Pillar Outcome
               </span>
@@ -104,14 +104,11 @@ export default async function ArticlePage({
           </h2>
           <ul className="space-y-3">
             {article.keyTakeaways.map((takeaway, i) => (
-              <li
-                key={i}
-                className="flex items-start gap-3 bg-brand-card p-4 rounded-lg border border-brand-border"
-              >
-                <span className="w-5 h-5 rounded-full bg-brand-accent/20 text-brand-accent flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
-                  {i + 1}
+              <li key={i} className="flex items-start gap-3">
+                <span className="text-brand-accent font-bold text-sm sm:text-base shrink-0">
+                  {i + 1}.
                 </span>
-                <p className="text-slate-300 text-sm leading-relaxed">{takeaway}</p>
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">{takeaway}</p>
               </li>
             ))}
           </ul>
