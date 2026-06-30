@@ -267,7 +267,7 @@ export default function App() {
       </section>
 
       {/* 4. SEARCH + CATEGORY FILTER BAR */}
-      <div id="filter-bar" className="sticky top-[125px] sm:top-[125px] z-30 bg-brand-bg/95 backdrop-blur-md border-b border-brand-border py-5">
+      <div id="filter-bar" className="sticky top-20 z-30 bg-brand-bg/95 backdrop-blur-md border-b border-brand-border py-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
             
