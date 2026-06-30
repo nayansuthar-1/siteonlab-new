@@ -121,13 +121,13 @@ export default function SiteFooter() {
       {/* Copyright bar */}
       <div className="border-t border-slate-800/80">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p>© 2026 HybridMonks Agency Inc. All rights reserved.</p>
+          <p>© 2026 Hybrid Monks LLP. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/contact" className="transition-colors hover:text-slate-300">
+            <Link href="/privacy-policy" className="transition-colors hover:text-slate-300">
               Privacy Policy
             </Link>
-            <Link href="/contact" className="transition-colors hover:text-slate-300">
-              Terms of Service
+            <Link href="/terms-and-conditions" className="transition-colors hover:text-slate-300">
+              Terms &amp; Conditions
             </Link>
           </div>
         </div>
