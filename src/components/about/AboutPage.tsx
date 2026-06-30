@@ -540,7 +540,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 10: OUR TEAM */}
+      {/* SECTION 10: OUR TEAM — temporarily hidden per request (2026-07-01).
+          Code kept intact; to restore, remove the `{false && (` line below and
+          its matching `)}` after this section's closing </section> tag. */}
+      {false && (
       <section id="team" className="py-20 md:py-28 bg-brand-bg border-b border-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
 
@@ -594,6 +597,7 @@ export default function AboutPage() {
 
         </div>
       </section>
+      )}
 
       {/* SECTION 11: INDUSTRIES WE SERVE (QUICK BAND) */}
       <section id="industries" className="py-16 bg-slate-950 border-b border-slate-900 relative">
