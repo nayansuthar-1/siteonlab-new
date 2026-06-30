@@ -30,7 +30,13 @@ export const AGGREGATE_METRICS = [
   }
 ];
 
-export const FEATURED_CASE_STUDY: CaseStudy = {
+const slugify = (text: string): string =>
+  text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
+const rawFeatured: Omit<CaseStudy, 'slug'> = {
   id: 'featured-1',
   clientName: 'ThreatShield AI',
   industry: 'Cybersecurity',
@@ -42,7 +48,7 @@ export const FEATURED_CASE_STUDY: CaseStudy = {
   imageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80&q=80' // Tech geometric abstract, high contrast dark
 };
 
-export const GRID_CASE_STUDIES: CaseStudy[] = [
+const rawGridCaseStudies: Omit<CaseStudy, 'slug'>[] = [
   {
     id: 'cs-1',
     clientName: 'LogiFlow Systems',
@@ -143,6 +149,23 @@ export const GRID_CASE_STUDIES: CaseStudy[] = [
     imageUrl: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80' // Industrial steel sparks
   }
 ];
+
+export const FEATURED_CASE_STUDY: CaseStudy = {
+  ...rawFeatured,
+  slug: slugify(rawFeatured.clientName),
+};
+
+export const GRID_CASE_STUDIES: CaseStudy[] = rawGridCaseStudies.map((cs) => ({
+  ...cs,
+  slug: slugify(cs.clientName),
+}));
+
+// Featured first, then the grid — the canonical lookup list for routing.
+export const ALL_CASE_STUDIES: CaseStudy[] = [FEATURED_CASE_STUDY, ...GRID_CASE_STUDIES];
+
+export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
+  return ALL_CASE_STUDIES.find((cs) => cs.slug === slug);
+}
 
 export const CLIENT_LOGOS = [
   { name: 'Apex Group', text: 'APEX' },

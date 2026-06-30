@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
-import { 
+import Link from 'next/link';
+import {
   ArrowRight, 
   Sparkles, 
   Filter, 
@@ -331,17 +332,14 @@ export default function App() {
 
                 {/* Action CTA */}
                 <div className="pt-2">
-                  <button 
-                    onClick={() => {
-                      // Anchor link simulator or booking opening
-                      setIsBookingOpen(true);
-                    }}
+                  <Link
+                    href={`/case-studies/${FEATURED_CASE_STUDY.slug}`}
                     id="featured-read-link"
                     className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-blue-400 hover:text-white transition-colors duration-200"
                   >
-                    <span>Analyze the Strategy Outline</span>
+                    <span>Read the Full Case Study</span>
                     <ArrowRight className="w-4 h-4 text-brand-orange" />
-                  </button>
+                  </Link>
                 </div>
 
               </div>

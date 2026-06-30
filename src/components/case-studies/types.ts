@@ -1,5 +1,6 @@
 export interface CaseStudy {
   id: string;
+  slug: string; // URL slug derived from the client name
   title: string; // Bold outcome-focused transformation statement
   clientName: string; // e.g. "HealthTech SaaS" or "SecOps Pro"
   industry: 'B2B SaaS' | 'IT Services & MSPs' | 'Cybersecurity' | 'Professional Services' | 'Manufacturing';

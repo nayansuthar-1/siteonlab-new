@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { ArrowRight, Star, TrendingUp, Cpu, Globe, Search, Sparkles } from 'lucide-react';
 import { CaseStudy } from '../types';
 
@@ -28,7 +29,8 @@ export default function CaseStudyCard({ caseStudy, index }: CaseStudyCardProps) 
   };
 
   return (
-    <div 
+    <Link
+      href={`/case-studies/${caseStudy.slug}`}
       id={`case-study-card-${caseStudy.id}`}
       data-industry={caseStudy.industry}
       data-service={caseStudy.service}
@@ -109,6 +111,6 @@ export default function CaseStudyCard({ caseStudy, index }: CaseStudyCardProps) 
           <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" id={`arrow-icon-${caseStudy.id}`} />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
