@@ -24,6 +24,7 @@ import {
   ChevronUp,
   Award,
 } from "lucide-react";
+import Image from "next/image";
 import InteractiveVisualizer from "./InteractiveVisualizer";
 import {
   SERVICES_DATA,
@@ -34,6 +35,15 @@ import {
   FAQS_DATA,
   BLOG_POSTS
 } from "@/lib/data";
+
+const BRAND_LOGOS = [
+  { src: "/brands/group-11.png", alt: "SR Industries", heightClass: "h-10" },
+  { src: "/brands/group-12.png", alt: "Client logo", heightClass: "h-10" },
+  { src: "/brands/group-13.png", alt: "Client logo", heightClass: "h-10" },
+  { src: "/brands/mask-group.png", alt: "Client logo", heightClass: "h-16" },
+  { src: "/brands/mask-group-1.png", alt: "Client logo", heightClass: "h-16" },
+  { src: "/brands/mask-group-2.png", alt: "Client logo", heightClass: "h-26" },
+];
 
 export default function HomePage() {
   // Navigation & UI States
@@ -424,40 +434,25 @@ export default function HomePage() {
             Trusted by growth-stage B2B enterprise teams
           </p>
 
-          {/* Row of 6 grayscale mock logos (constructed with pure HTML/Tailwind for crisp vector presentation) */}
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-6 items-center justify-items-center opacity-40 hover:opacity-60 transition-all duration-300" id="logos-row">
-
-            <div className="flex items-center gap-1.5 font-display font-semibold text-sm tracking-tight text-white" id="logo-1">
-              <Shield className="w-4 h-4 text-gray-400" />
-              <span>Intellect<span className="font-bold text-gray-400">Sec</span></span>
+          {/* Continuously sliding marquee of real client logos from /public/brands.
+              The list is rendered twice so the -50% translate loops seamlessly. */}
+          <div className="logo-marquee-mask overflow-hidden" id="logos-row">
+            <div className="flex w-max items-center animate-logo-marquee hover:[animation-play-state:paused]">
+              {[...BRAND_LOGOS, ...BRAND_LOGOS].map((logo, i) => (
+                <div
+                  key={`${logo.src}-${i}`}
+                  className={`mx-10 flex ${logo.heightClass} shrink-0 items-center justify-center opacity-70 transition-opacity duration-300 hover:opacity-100`}
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={180}
+                    height={48}
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
+              ))}
             </div>
-
-            <div className="flex items-center gap-1 font-sans font-black text-sm uppercase tracking-wider text-white" id="logo-2">
-              <Layers className="w-3.5 h-3.5 text-gray-400" />
-              <span>CloudScale</span>
-            </div>
-
-            <div className="flex items-center gap-1.5 font-display font-extrabold text-sm tracking-wide text-white" id="logo-3">
-              <Cpu className="w-4 h-4 text-gray-400" />
-              <span>Apex<span className="text-gray-400">Systems</span></span>
-            </div>
-
-            <div className="flex items-center gap-1 font-mono text-xs text-white" id="logo-4">
-              <span>[</span>
-              <span className="font-bold tracking-widest">SaaSify</span>
-              <span>]</span>
-            </div>
-
-            <div className="flex items-center gap-1.5 font-sans font-bold text-sm tracking-tight text-white" id="logo-5">
-              <span className="w-2 h-2 rounded-full bg-gray-400" />
-              <span>Optima<span className="font-light text-gray-400">IT</span></span>
-            </div>
-
-            <div className="flex items-center gap-1 font-display font-black text-base tracking-widest text-white" id="logo-6">
-              <span>SYNC</span>
-              <span className="text-gray-400 font-light">PRO</span>
-            </div>
-
           </div>
         </div>
       </section>

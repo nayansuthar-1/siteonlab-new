@@ -454,6 +454,45 @@ html:has(.theme-paidmedia) ::-webkit-scrollbar-thumb:hover {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+/* Continuous logo marquee (homepage trust bar) */
+@keyframes logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Track holds two identical copies of the logo set, so shifting by
+       half the track width loops seamlessly. */
+    transform: translateX(-50%);
+  }
+}
+
+.animate-logo-marquee {
+  animation: logo-marquee 30s linear infinite;
+}
+
+.logo-marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-marquee {
+    animation: none;
+  }
+}
+
 /* Custom styles for animations and smooth transitions (About) */
 .transition-all-300 {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
