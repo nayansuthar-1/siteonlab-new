@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Twitter, Linkedin, Youtube, ChevronRight } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Youtube, Instagram, ChevronRight } from "lucide-react";
 
 /**
  * Global site footer — single source of truth used in the root layout.
@@ -55,9 +55,10 @@ const columns: FooterColumn[] = [
 ];
 
 const socials: { label: string; href: string; icon: typeof Facebook }[] = [
-  { label: "LinkedIn", href: "https://www.linkedin.com", icon: Linkedin },
-  { label: "Twitter", href: "https://www.twitter.com", icon: Twitter },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/hybrid-monks/", icon: Linkedin },
+  { label: "Instagram", href: "https://www.instagram.com/hybridmonks/", icon: Instagram },
   { label: "Facebook", href: "https://www.facebook.com", icon: Facebook },
+  { label: "Twitter", href: "https://www.twitter.com", icon: Twitter },
   { label: "YouTube", href: "https://www.youtube.com", icon: Youtube },
 ];
 
