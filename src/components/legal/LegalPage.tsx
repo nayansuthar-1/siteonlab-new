@@ -1,10 +1,69 @@
 import Link from "next/link";
 
+/** A glossary/definition entry. When `term` is present it renders bold, inline
+ *  before the definition text (e.g. **Account** means a unique account…). */
+export type LegalDefinition = { term?: string; definition: string };
+
+/** An optional nested block under a section (e.g. "Interpretation",
+ *  "Personal Data", "Tracking Technologies and Cookies"). */
+export type LegalSubsection = {
+  subheading?: string;
+  paragraphs?: string[];
+  bullets?: string[];
+  definitions?: LegalDefinition[];
+};
+
 export type LegalSection = {
   heading: string;
   paragraphs?: string[];
   bullets?: string[];
+  definitions?: LegalDefinition[];
+  subsections?: LegalSubsection[];
 };
+
+function Paragraphs({ items }: { items?: string[] }) {
+  if (!items) return null;
+  return (
+    <>
+      {items.map((p, j) => (
+        <p key={j} className="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">
+          {p}
+        </p>
+      ))}
+    </>
+  );
+}
+
+function Bullets({ items }: { items?: string[] }) {
+  if (!items) return null;
+  return (
+    <ul className="mt-4 space-y-2">
+      {items.map((b, j) => (
+        <li key={j} className="flex gap-3 text-sm leading-relaxed text-slate-400 sm:text-base">
+          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+          <span>{b}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Definitions({ items }: { items?: LegalDefinition[] }) {
+  if (!items) return null;
+  return (
+    <ul className="mt-4 space-y-3">
+      {items.map((d, j) => (
+        <li key={j} className="flex gap-3 text-sm leading-relaxed text-slate-400 sm:text-base">
+          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
+          <span>
+            {d.term && <span className="font-semibold text-slate-200">{d.term} </span>}
+            {d.definition}
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 /**
  * Shared layout for static legal pages (Privacy Policy, Terms & Conditions).
@@ -15,11 +74,13 @@ export default function LegalPage({
   lastUpdated,
   intro,
   sections,
+  contactEmail = "growth@hybridmonks.com",
 }: {
   title: string;
   lastUpdated: string;
   intro: string;
   sections: LegalSection[];
+  contactEmail?: string;
 }) {
   return (
     <main className="min-h-screen bg-brand-bg font-(family-name:--font-inter)">
@@ -42,21 +103,20 @@ export default function LegalPage({
               <h2 className="text-xl font-bold text-white sm:text-2xl">
                 {i + 1}. {section.heading}
               </h2>
-              {section.paragraphs?.map((p, j) => (
-                <p key={j} className="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">
-                  {p}
-                </p>
+              <Paragraphs items={section.paragraphs} />
+              <Bullets items={section.bullets} />
+              <Definitions items={section.definitions} />
+
+              {section.subsections?.map((sub, j) => (
+                <div key={j} className="mt-6">
+                  {sub.subheading && (
+                    <h3 className="text-base font-semibold text-white sm:text-lg">{sub.subheading}</h3>
+                  )}
+                  <Paragraphs items={sub.paragraphs} />
+                  <Bullets items={sub.bullets} />
+                  <Definitions items={sub.definitions} />
+                </div>
               ))}
-              {section.bullets && (
-                <ul className="mt-4 space-y-2">
-                  {section.bullets.map((b, j) => (
-                    <li key={j} className="flex gap-3 text-sm leading-relaxed text-slate-400 sm:text-base">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
             </section>
           ))}
         </div>
@@ -68,8 +128,8 @@ export default function LegalPage({
               Contact us
             </Link>{" "}
             or email{" "}
-            <a href="mailto:growth@hybridmonks.com" className="font-semibold text-blue-400 hover:text-blue-300">
-              growth@hybridmonks.com
+            <a href={`mailto:${contactEmail}`} className="font-semibold text-blue-400 hover:text-blue-300">
+              {contactEmail}
             </a>
             .
           </p>

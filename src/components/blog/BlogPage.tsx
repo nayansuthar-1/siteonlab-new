@@ -27,23 +27,23 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useRouter } from "next/navigation";
-import { FEATURED_ARTICLE, ARTICLES } from "@/lib/blog-data";
+import type { Article } from "@/lib/wp";
 
-// ==========================================
-// EDITABLE PLACEHOLDER DATA (Commented)
-// ==========================================
-const CATEGORIES = [
-  "All",
-  "AI Visibility & GEO",
-  "B2B Revenue Growth",
-  "B2B SEO",
-  "Demand Generation",
-  "AI & Automation"
-];
+interface BlogPageProps {
+  featuredArticle: Article | null;
+  articles: Article[];
+}
 
-
-export default function App() {
+export default function App({ featuredArticle, articles }: BlogPageProps) {
   const router = useRouter();
+
+  // Category pills derived from the fetched posts' WordPress categories
+  const CATEGORIES = useMemo(() => {
+    const categories = new Set<string>();
+    if (featuredArticle) categories.add(featuredArticle.category);
+    articles.forEach((article) => categories.add(article.category));
+    return ["All", ...categories];
+  }, [featuredArticle, articles]);
 
   // Navigation active resource state
   const [activeNav, setActiveNav] = useState("Resources");
@@ -74,7 +74,7 @@ export default function App() {
 
   // Filter & Search Logic combined
   const filteredArticles = useMemo(() => {
-    return ARTICLES.filter((article) => {
+    return articles.filter((article) => {
       const matchesCategory = selectedCategory === "All" || article.category === selectedCategory;
       const matchesSearch = 
         article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -82,22 +82,25 @@ export default function App() {
         article.category.toLowerCase().includes(searchQuery.toLowerCase());
       return matchesCategory && matchesSearch;
     });
-  }, [selectedCategory, searchQuery]);
+  }, [articles, selectedCategory, searchQuery]);
 
   // Is Featured Article visible with search/category
   const isFeaturedVisible = useMemo(() => {
-    if (selectedCategory !== "All" && FEATURED_ARTICLE.category !== selectedCategory) {
+    if (!featuredArticle) {
+      return false;
+    }
+    if (selectedCategory !== "All" && featuredArticle.category !== selectedCategory) {
       return false;
     }
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       return (
-        FEATURED_ARTICLE.title.toLowerCase().includes(query) ||
-        FEATURED_ARTICLE.excerpt.toLowerCase().includes(query)
+        featuredArticle.title.toLowerCase().includes(query) ||
+        featuredArticle.excerpt.toLowerCase().includes(query)
       );
     }
     return true;
-  }, [selectedCategory, searchQuery]);
+  }, [featuredArticle, selectedCategory, searchQuery]);
 
   // Paginated articles based on the filtered results
   const paginatedArticles = useMemo(() => {
@@ -360,7 +363,7 @@ export default function App() {
         )}
 
         {/* 5. FEATURED ARTICLE SPOTLIGHT */}
-        {isFeaturedVisible && (
+        {isFeaturedVisible && featuredArticle && (
           <div id="featured-article-spotlight" className="space-y-6">
             <div className="flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-brand-accent" />
@@ -368,14 +371,14 @@ export default function App() {
             </div>
 
             <div 
-              onClick={() => router.push(`/blog/${FEATURED_ARTICLE.slug}`)}
+              onClick={() => router.push(`/blog/${featuredArticle.slug}`)}
               className="group bg-brand-card border border-brand-border rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 cursor-pointer hover:border-slate-600/80 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/5 hover:-translate-y-0.5 relative"
             >
               {/* Image side */}
               <div className="lg:col-span-7 h-64 sm:h-96 lg:h-full relative overflow-hidden">
                 <img 
-                  src={FEATURED_ARTICLE.imageUrl} 
-                  alt={FEATURED_ARTICLE.title}
+                  src={featuredArticle.imageUrl} 
+                  alt={featuredArticle.title}
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
                 />
@@ -391,15 +394,15 @@ export default function App() {
               <div className="lg:col-span-5 p-6 sm:p-10 flex flex-col justify-between space-y-6 bg-gradient-to-br from-[#1E222B] to-brand-card">
                 <div className="space-y-4">
                   <span className="text-xs font-semibold text-brand-accent font-mono tracking-wider uppercase block">
-                    {FEATURED_ARTICLE.category}
+                    {featuredArticle.category}
                   </span>
                   
                   <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white leading-snug group-hover:text-brand-accent transition-colors">
-                    {FEATURED_ARTICLE.title}
+                    {featuredArticle.title}
                   </h2>
                   
                   <p className="text-slate-300 text-sm leading-relaxed">
-                    {FEATURED_ARTICLE.excerpt}
+                    {featuredArticle.excerpt}
                   </p>
                 </div>
 
@@ -407,7 +410,7 @@ export default function App() {
                 <div className="border-t border-brand-border pt-4 space-y-2 hidden sm:block">
                   <span className="text-slate-400 text-[11px] font-mono tracking-wider uppercase block">Inside this playbook:</span>
                   <div className="space-y-1">
-                    {FEATURED_ARTICLE.keyTakeaways.slice(0, 2).map((takeaway, i) => (
+                    {featuredArticle.keyTakeaways.slice(0, 2).map((takeaway, i) => (
                       <div key={i} className="flex items-start gap-2 text-xs text-slate-300">
                         <Check className="w-3.5 h-3.5 text-brand-accent shrink-0 mt-0.5" />
                         <span className="line-clamp-1">{takeaway}</span>
@@ -420,22 +423,22 @@ export default function App() {
                 <div className="flex items-center justify-between pt-4 border-t border-brand-border">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-brand-bg border border-brand-border flex items-center justify-center font-bold text-brand-accent text-sm">
-                      {FEATURED_ARTICLE.author.initials}
+                      {featuredArticle.author.initials}
                     </div>
                     <div>
-                      <span className="text-xs font-semibold text-white block">{FEATURED_ARTICLE.author.name}</span>
-                      <span className="text-[10px] text-slate-400 block">{FEATURED_ARTICLE.author.role}</span>
+                      <span className="text-xs font-semibold text-white block">{featuredArticle.author.name}</span>
+                      <span className="text-[10px] text-slate-400 block">{featuredArticle.author.role}</span>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-4 text-xs font-mono text-slate-400">
                     <span className="flex items-center gap-1.5">
                       <Calendar className="w-3.5 h-3.5" />
-                      {FEATURED_ARTICLE.date}
+                      {featuredArticle.date}
                     </span>
                     <span className="flex items-center gap-1.5">
                       <Clock className="w-3.5 h-3.5" />
-                      {FEATURED_ARTICLE.readTime}
+                      {featuredArticle.readTime}
                     </span>
                   </div>
                 </div>

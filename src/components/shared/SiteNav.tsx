@@ -79,6 +79,7 @@ const industries: MenuItem[] = [
 const resources: MenuItem[] = [
   { label: "Website Audit", href: "/website-audit", description: "Free instant performance & SEO report.", icon: Gauge },
   { label: "Blog", href: "/blog", description: "Insights on B2B growth & AI search.", icon: BookOpen },
+  { label: "Portfolio", href: "/portfolio", description: "Websites we've designed & built.", icon: Briefcase },
 ];
 
 // Split services into 3 balanced columns for the mega menu, in order.
@@ -105,7 +106,7 @@ const navEntries: NavEntry[] = [
   { label: "Services", columns: serviceColumns, featured: true },
   { label: "Industries", columns: splitIntoColumns(industries, 2), cta: true },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Resources", columns: splitIntoColumns(resources, 2) },
+  { label: "Resources", columns: splitIntoColumns(resources, 3) },
 ];
 
 function MegaLink({ item, onClick }: { item: MenuItem; onClick?: () => void }) {
@@ -237,11 +238,13 @@ export default function SiteNav() {
                 className={`grid gap-8 ${
                   entry.featured
                     ? "lg:grid-cols-[1fr_1fr_1fr_minmax(0,17rem)]"
-                    : entry.columns.length >= 2
-                      ? entry.cta
-                        ? "lg:grid-cols-[minmax(0,20rem)_minmax(0,20rem)_minmax(0,17rem)]"
-                        : "lg:grid-cols-[minmax(0,20rem)_minmax(0,20rem)]"
-                      : "lg:grid-cols-[minmax(0,28rem)]"
+                    : entry.cta
+                      ? "lg:grid-cols-[minmax(0,20rem)_minmax(0,20rem)_minmax(0,17rem)]"
+                      : entry.columns.length >= 3
+                        ? "lg:grid-cols-[minmax(0,20rem)_minmax(0,20rem)_minmax(0,20rem)]"
+                        : entry.columns.length === 2
+                          ? "lg:grid-cols-[minmax(0,20rem)_minmax(0,20rem)]"
+                          : "lg:grid-cols-[minmax(0,28rem)]"
                 }`}
               >
                 {entry.columns.map((col, i) => (

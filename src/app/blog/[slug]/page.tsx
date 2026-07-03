@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, Calendar, Clock, CheckCircle } from "lucide-react";
-import { ALL_ARTICLES, getArticleBySlug } from "@/lib/blog-data";
+import { getAllSlugs, getArticleBySlug } from "@/lib/wp";
 
-export function generateStaticParams() {
-  return ALL_ARTICLES.map((article) => ({ slug: article.slug }));
+export const revalidate = 60;
+
+export async function generateStaticParams() {
+  const slugs = await getAllSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -14,7 +17,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const article = await getArticleBySlug(slug);
   if (!article) {
     return { title: "Article not found | HybridMonks" };
   }
@@ -30,7 +33,7 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const article = await getArticleBySlug(slug);
 
   if (!article) {
     notFound();
@@ -85,43 +88,48 @@ export default async function ArticlePage({
         </div>
 
         {/* Metrics callout */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4">
-          {article.metrics.map((metric, i) => (
-            <div key={i} className="space-y-1">
-              <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">
-                Pillar Outcome
-              </span>
-              <span className="text-sm font-semibold text-brand-accent block">{metric}</span>
-            </div>
-          ))}
-        </div>
+        {article.metrics.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4">
+            {article.metrics.map((metric, i) => (
+              <div key={i} className="space-y-1">
+                <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest block">
+                  Pillar Outcome
+                </span>
+                <span className="text-sm font-semibold text-brand-accent block">{metric}</span>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Key takeaways */}
-        <div className="space-y-4">
-          <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-white flex items-center gap-2">
-            <CheckCircle className="w-4 h-4 text-brand-accent" />
-            <span>Key Strategic Takeaways</span>
-          </h2>
-          <ul className="space-y-3">
-            {article.keyTakeaways.map((takeaway, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <span className="text-brand-accent font-bold text-sm sm:text-base shrink-0">
-                  {i + 1}.
-                </span>
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">{takeaway}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {article.keyTakeaways.length > 0 && (
+          <div className="space-y-4">
+            <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-white flex items-center gap-2">
+              <CheckCircle className="w-4 h-4 text-brand-accent" />
+              <span>Key Strategic Takeaways</span>
+            </h2>
+            <ul className="space-y-3">
+              {article.keyTakeaways.map((takeaway, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-brand-accent font-bold text-sm sm:text-base shrink-0">
+                    {i + 1}.
+                  </span>
+                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed">{takeaway}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-        {/* Full body */}
+        {/* Full body — rendered WordPress HTML */}
         <div className="space-y-4 pt-2 border-t border-brand-border">
           <h2 className="text-xs font-mono font-bold uppercase tracking-widest text-white">
             Executive Briefing &amp; Analysis
           </h2>
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            {article.fullBody}
-          </p>
+          <div
+            className="text-slate-300 text-sm sm:text-base leading-relaxed space-y-4 [&_a]:text-brand-accent [&_a]:underline [&_h2]:text-white [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-xl [&_h3]:text-white [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-lg [&_strong]:text-white [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:space-y-2 [&_img]:rounded-xl [&_blockquote]:border-l-2 [&_blockquote]:border-brand-accent [&_blockquote]:pl-4 [&_blockquote]:italic"
+            dangerouslySetInnerHTML={{ __html: article.fullBody }}
+          />
         </div>
 
         {/* Author */}
