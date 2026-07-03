@@ -6,11 +6,21 @@
 // - Posts use the native title, excerpt, content, featured image, author,
 //   categories and publish date.
 // - The featured "Spotlight" article is the post marked Sticky in WordPress.
-// - Extra fields come from an ACF field group exposed to REST under `acf`:
-//     key_takeaways (textarea, one per line)
-//     metrics       (textarea, one per line)
-//     read_time     (text, e.g. "8 min read")
-//     author_role   (text, e.g. "Chief AI Officer")
+// - The article body is composed in the "Headless CMS" plugin (wp-admin) as
+//   an ordered list of repeatable, optional sections, stored as JSON in the
+//   `sections` post meta and exposed to REST under `meta.sections`.
+//   `read_time` / `author_role` are simple optional post meta. Posts created
+//   before the section builder are synthesized from their legacy fields.
+
+/** One block of a composed article, rendered in order. */
+export type ArticleSection =
+  | { type: "heading"; text: string }
+  | { type: "paragraph"; text: string }
+  | { type: "html"; html: string }
+  | { type: "image"; url: string; caption?: string }
+  | { type: "takeaways"; title?: string; items: string[] }
+  | { type: "metrics"; title?: string; items: string[] }
+  | { type: "quote"; text: string; cite?: string };
 
 export interface Article {
   id: string;
@@ -27,10 +37,10 @@ export interface Article {
   date: string;
   readTime: string;
   imageUrl: string;
+  /** Items of the first takeaways section — used by the featured card. */
   keyTakeaways: string[];
-  metrics: string[];
-  /** Rendered HTML from WordPress. */
-  fullBody: string;
+  /** Ordered body blocks composed in the Headless CMS builder. */
+  sections: ArticleSection[];
 }
 
 const WP_URL = (process.env.WORDPRESS_API_URL ?? "https://hybridmonks.com").replace(/\/$/, "");
@@ -44,7 +54,8 @@ interface WPPost {
   title: { rendered: string };
   excerpt: { rendered: string };
   content: { rendered: string };
-  acf?: {
+  meta?: {
+    sections?: string;
     key_takeaways?: string | string[];
     metrics?: string | string[];
     read_time?: string;
@@ -106,30 +117,77 @@ const toList = (value: string | string[] | undefined): string[] => {
     .filter(Boolean);
 };
 
+/** Sections JSON written by the Headless CMS plugin; null when absent/invalid. */
+const parseSections = (raw: string | undefined): ArticleSection[] | null => {
+  if (!raw) return null;
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? (parsed as ArticleSection[]) : null;
+  } catch {
+    return null;
+  }
+};
+
+/** Plain text of all sections, for read-time estimation and excerpt fallback. */
+const sectionsToText = (sections: ArticleSection[]): string =>
+  sections
+    .map((s) => {
+      switch (s.type) {
+        case "html":
+          return stripHtml(s.html);
+        case "image":
+          return s.caption ?? "";
+        case "takeaways":
+        case "metrics":
+          return s.items.join(" ");
+        default:
+          return s.text;
+      }
+    })
+    .join(" ");
+
 const mapPost = (post: WPPost): Article => {
   const authorName = post._embedded?.author?.[0]?.name ?? "HybridMonks Team";
   const categories = (post._embedded?.["wp:term"] ?? [])
     .flat()
     .filter((term) => term?.taxonomy === "category" && term.name && term.name !== "Uncategorized");
 
+  // Prefer the section builder; synthesize sections for legacy posts.
+  let sections = parseSections(post.meta?.sections);
+  if (!sections) {
+    sections = [];
+    const metrics = toList(post.meta?.metrics);
+    if (metrics.length > 0) sections.push({ type: "metrics", items: metrics });
+    const takeaways = toList(post.meta?.key_takeaways);
+    if (takeaways.length > 0)
+      sections.push({ type: "takeaways", title: "Key Takeaways", items: takeaways });
+    if (stripHtml(post.content.rendered))
+      sections.push({ type: "html", html: post.content.rendered });
+  }
+
+  const bodyText = sectionsToText(sections);
+  const excerpt = stripHtml(post.excerpt.rendered) || bodyText.slice(0, 160).trim();
+
   return {
     id: String(post.id),
     slug: post.slug,
     title: stripHtml(post.title.rendered),
     category: categories[0]?.name ?? "Insights",
-    excerpt: stripHtml(post.excerpt.rendered),
+    excerpt,
     author: {
       name: authorName,
-      role: post.acf?.author_role ?? "Contributor",
+      role: post.meta?.author_role ?? "Contributor",
       avatar: post._embedded?.author?.[0]?.avatar_urls?.["96"] ?? "",
       initials: initialsFromName(authorName),
     },
     date: formatDate(post.date),
-    readTime: post.acf?.read_time || estimateReadTime(post.content.rendered),
+    readTime: post.meta?.read_time || estimateReadTime(bodyText),
     imageUrl: post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? "",
-    keyTakeaways: toList(post.acf?.key_takeaways),
-    metrics: toList(post.acf?.metrics),
-    fullBody: post.content.rendered,
+    keyTakeaways:
+      sections.find(
+        (s): s is Extract<ArticleSection, { type: "takeaways" }> => s.type === "takeaways"
+      )?.items ?? [],
+    sections,
   };
 };
 
