@@ -9,8 +9,8 @@
 // - The article body is composed in the "Headless CMS" plugin (wp-admin) as
 //   an ordered list of repeatable, optional sections, stored as JSON in the
 //   `sections` post meta and exposed to REST under `meta.sections`.
-//   `read_time` / `author_role` are simple optional post meta. Posts created
-//   before the section builder are synthesized from their legacy fields.
+//   `read_time` is simple optional post meta. Posts authored outside the
+//   builder fall back to their rendered post content.
 
 /** One block of a composed article, rendered in order. */
 export type ArticleSection =
@@ -27,18 +27,16 @@ export interface Article {
   slug: string;
   title: string;
   category: string;
+  /** Author-written excerpt, or a snippet derived from the body (cards / meta description only). */
   excerpt: string;
   author: {
     name: string;
-    role: string;
     avatar: string;
     initials: string;
   };
   date: string;
   readTime: string;
   imageUrl: string;
-  /** Items of the first takeaways section — used by the featured card. */
-  keyTakeaways: string[];
   /** Ordered body blocks composed in the Headless CMS builder. */
   sections: ArticleSection[];
 }
@@ -56,10 +54,7 @@ interface WPPost {
   content: { rendered: string };
   meta?: {
     sections?: string;
-    key_takeaways?: string | string[];
-    metrics?: string | string[];
     read_time?: string;
-    author_role?: string;
   };
   _embedded?: {
     author?: { name?: string; avatar_urls?: Record<string, string> }[];
@@ -106,17 +101,6 @@ const estimateReadTime = (html: string): string => {
   return `${Math.max(1, Math.round(words / 200))} min read`;
 };
 
-// ACF textareas arrive as a single string (one item per line); ACF Pro
-// repeaters arrive as arrays. Accept both.
-const toList = (value: string | string[] | undefined): string[] => {
-  if (!value) return [];
-  if (Array.isArray(value)) return value.map((v) => String(v).trim()).filter(Boolean);
-  return value
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter(Boolean);
-};
-
 /** Sections JSON written by the Headless CMS plugin; null when absent/invalid. */
 const parseSections = (raw: string | undefined): ArticleSection[] | null => {
   if (!raw) return null;
@@ -152,17 +136,13 @@ const mapPost = (post: WPPost): Article => {
     .flat()
     .filter((term) => term?.taxonomy === "category" && term.name && term.name !== "Uncategorized");
 
-  // Prefer the section builder; synthesize sections for legacy posts.
+  // Prefer the section builder; fall back to the rendered post content for
+  // posts authored outside it.
   let sections = parseSections(post.meta?.sections);
-  if (!sections) {
-    sections = [];
-    const metrics = toList(post.meta?.metrics);
-    if (metrics.length > 0) sections.push({ type: "metrics", items: metrics });
-    const takeaways = toList(post.meta?.key_takeaways);
-    if (takeaways.length > 0)
-      sections.push({ type: "takeaways", title: "Key Takeaways", items: takeaways });
-    if (stripHtml(post.content.rendered))
-      sections.push({ type: "html", html: post.content.rendered });
+  if (!sections || sections.length === 0) {
+    sections = stripHtml(post.content.rendered)
+      ? [{ type: "html", html: post.content.rendered }]
+      : [];
   }
 
   const bodyText = sectionsToText(sections);
@@ -176,17 +156,12 @@ const mapPost = (post: WPPost): Article => {
     excerpt,
     author: {
       name: authorName,
-      role: post.meta?.author_role ?? "Contributor",
       avatar: post._embedded?.author?.[0]?.avatar_urls?.["96"] ?? "",
       initials: initialsFromName(authorName),
     },
     date: formatDate(post.date),
     readTime: post.meta?.read_time || estimateReadTime(bodyText),
     imageUrl: post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? "",
-    keyTakeaways:
-      sections.find(
-        (s): s is Extract<ArticleSection, { type: "takeaways" }> => s.type === "takeaways"
-      )?.items ?? [],
     sections,
   };
 };

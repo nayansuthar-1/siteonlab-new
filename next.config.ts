@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
   // Produce a self-contained build (.next/standalone) that can run on any
   // machine with Node.js — also fully compatible with Vercel.
   output: "standalone",
+  // Blog images are served through next/image so the browser loads them from
+  // this app (Vercel) instead of hitting the WordPress origin directly.
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "backend.hybridmonks.com" },
+      { protocol: "http", hostname: "localhost", port: "8882" },
+    ],
+  },
   async redirects() {
     if (!WP_ADMIN_URL) return [];
     return [

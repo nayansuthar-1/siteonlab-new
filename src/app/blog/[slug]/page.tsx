@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
@@ -65,11 +66,13 @@ function SectionBlock({ section }: { section: ArticleSection }) {
     case "image":
       return (
         <figure className="space-y-2">
-          <img
+          <Image
             src={section.url}
             alt={section.caption ?? ""}
-            referrerPolicy="no-referrer"
-            className="w-full rounded-2xl border border-brand-border"
+            width={1200}
+            height={675}
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="w-full h-auto rounded-2xl border border-brand-border"
           />
           {section.caption && (
             <figcaption className="text-xs text-slate-500 text-center">
@@ -175,33 +178,24 @@ export default async function ArticlePage({
             {article.title}
           </h1>
 
-          {article.excerpt && (
-            <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
-              {article.excerpt}
-            </p>
-          )}
-
           <div className="flex items-center gap-3 border-t border-brand-border pt-5">
             <div className="w-10 h-10 rounded-full bg-brand-card border border-brand-border flex items-center justify-center font-bold text-brand-accent text-sm">
               {article.author.initials}
             </div>
-            <div>
-              <span className="text-sm font-bold text-white block">{article.author.name}</span>
-              {article.author.role && (
-                <span className="text-xs text-slate-400 block">{article.author.role}</span>
-              )}
-            </div>
+            <span className="text-sm font-bold text-white">{article.author.name}</span>
           </div>
         </header>
 
         {/* Hero image (only when set) */}
         {article.imageUrl && (
-          <div className="aspect-[16/9] rounded-2xl overflow-hidden border border-brand-border">
-            <img
+          <div className="relative aspect-video rounded-2xl overflow-hidden border border-brand-border">
+            <Image
               src={article.imageUrl}
               alt={article.title}
-              referrerPolicy="no-referrer"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+              priority
             />
           </div>
         )}
