@@ -1,25 +1,19 @@
 import type { NextConfig } from "next";
 
-// Origin server where WordPress actually runs (Hostinger internal hostname).
-// When set, WordPress paths on this domain are proxied to it, so
-// hybridmonks.com serves the Next.js site while hybridmonks.com/wp-admin
-// opens the WordPress dashboard.
-const WP_ORIGIN = process.env.WORDPRESS_ORIGIN?.replace(/\/$/, "");
+// Production WordPress lives on its own subdomain (cms.hybridmonks.com) and
+// wp-admin is used there directly. The apex only serves the Next.js site;
+// /wp-admin on the apex is a convenience redirect to the real dashboard.
+const WP_ADMIN_URL = process.env.WORDPRESS_ADMIN_URL;
 
 const nextConfig: NextConfig = {
   // Produce a self-contained build (.next/standalone) that can run on any
   // machine with Node.js — also fully compatible with Vercel.
   output: "standalone",
-  async rewrites() {
-    if (!WP_ORIGIN) return [];
+  async redirects() {
+    if (!WP_ADMIN_URL) return [];
     return [
-      { source: "/wp-admin", destination: `${WP_ORIGIN}/wp-admin/` },
-      { source: "/wp-admin/:path*", destination: `${WP_ORIGIN}/wp-admin/:path*` },
-      { source: "/wp-login.php", destination: `${WP_ORIGIN}/wp-login.php` },
-      { source: "/wp-json/:path*", destination: `${WP_ORIGIN}/wp-json/:path*` },
-      { source: "/wp-content/:path*", destination: `${WP_ORIGIN}/wp-content/:path*` },
-      { source: "/wp-includes/:path*", destination: `${WP_ORIGIN}/wp-includes/:path*` },
-      { source: "/wp-cron.php", destination: `${WP_ORIGIN}/wp-cron.php` },
+      { source: "/wp-admin", destination: WP_ADMIN_URL, permanent: false },
+      { source: "/wp-admin/:path*", destination: WP_ADMIN_URL, permanent: false },
     ];
   },
 };
