@@ -167,8 +167,10 @@ const mapPost = (post: WPPost): Article => {
 };
 
 async function wpFetch(path: string): Promise<WPPost[]> {
+  // Tagged so /api/revalidate can purge everything WordPress-derived at once;
+  // the timed revalidate stays as a fallback if the webhook ever fails.
   const res = await fetch(`${WP_URL}/wp-json/wp/v2${path}`, {
-    next: { revalidate: REVALIDATE_SECONDS },
+    next: { revalidate: REVALIDATE_SECONDS, tags: ["wp"] },
   });
   if (!res.ok) {
     throw new Error(`WordPress request failed: ${res.status} ${path}`);
