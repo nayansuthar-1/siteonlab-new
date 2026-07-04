@@ -43,7 +43,7 @@ export interface Article {
   sections: ArticleSection[];
 }
 
-const WP_URL = (process.env.WORDPRESS_API_URL ?? "https://hybridmonks.com").replace(/\/$/, "");
+const WP_URL = (process.env.WORDPRESS_API_URL ?? "https://backend.hybridmonks.com").replace(/\/$/, "");
 const REVALIDATE_SECONDS = 60;
 
 interface WPPost {
