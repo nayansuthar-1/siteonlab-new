@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Space_Grotesk, JetBrains_Mono, Manrope, Outfit, Plus_Jakarta_Sans, Playfair_Display, Lora, Fira_Code } from "next/font/google";
 import "./globals.css";
 import SiteNav from "@/components/shared/SiteNav";
 import SiteFooter from "@/components/shared/SiteFooter";
 import ChromeGate from "@/components/shared/ChromeGate";
+import { SITE_URL, GA_ID } from "@/lib/site";
 
 // Self-hosted via next/font — the same Google fonts each AI Studio zip loaded,
 // with the same static weights so rendering (incl. font-black fallbacks) matches.
@@ -74,6 +76,7 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "HybridMonks | AI-Powered B2B Revenue Growth & AI Visibility Agency",
   description:
     "AI-Powered B2B Revenue Growth & AI Visibility Agency. Get found in Google and recommended by ChatGPT, Perplexity, and AI Overviews.",
@@ -95,6 +98,18 @@ export default function RootLayout({
         <ChromeGate>
           <SiteFooter />
         </ChromeGate>
+
+        {/* Google tag (gtag.js) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
       </body>
     </html>
   );

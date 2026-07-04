@@ -3,6 +3,7 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { X, Calendar, Clock, User, Mail, Building, Globe, ChevronRight, CheckCircle2, Sparkles, AlertCircle } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { submitLead } from "@/lib/submitLead";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -113,6 +114,18 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (validateStep2()) {
+      submitLead({
+        source: "About Page — Strategy Call Booking",
+        name: formData.name,
+        email: formData.email,
+        fields: {
+          Company: formData.company,
+          Website: formData.website,
+          Bottleneck: formData.bottleneck,
+          "Preferred Date": selectedDate,
+          "Preferred Time": selectedTime,
+        },
+      });
       setStep(3);
     }
   };

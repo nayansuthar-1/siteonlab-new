@@ -6,6 +6,7 @@ import {
   X, CheckCircle2, ChevronRight, HelpCircle, AlertCircle, 
   BarChart2, Zap, Trophy, ShieldAlert, ArrowRight, ArrowLeft, Mail, Info 
 } from 'lucide-react';
+import { submitLead } from '@/lib/submitLead';
 
 interface RevenueAssessmentModalProps {
   isOpen: boolean;
@@ -113,13 +114,19 @@ export default function RevenueAssessmentModal({ isOpen, onClose }: RevenueAsses
 
   const maturity = getMaturityLevel(scorePercentage);
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      setCompleted(true);
-    }, 1000);
+    await submitLead({
+      source: "GTM Landing Page — Revenue Assessment",
+      email,
+      fields: {
+        "Assessment Score": `${scorePercentage}%`,
+        "Maturity Level": maturity.title,
+      },
+    });
+    setSubmitting(false);
+    setCompleted(true);
   };
 
   return (

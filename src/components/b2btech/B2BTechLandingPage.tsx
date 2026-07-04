@@ -30,6 +30,7 @@ import {
 import HeroGraphic from './components/HeroGraphic';
 import GrowthBlueprintModal from './components/GrowthBlueprintModal';
 import SeoAuditor from './components/SeoAuditor';
+import { submitLead } from '@/lib/submitLead';
 
 import {
   HERO_DATA,
@@ -112,6 +113,15 @@ export default function B2BTechLandingPage() {
       alert('Please fill in your name and email to book.');
       return;
     }
+    submitLead({
+      source: "B2B Tech Landing Page — Discovery Session Booking",
+      name: bookingName,
+      email: bookingEmail,
+      fields: {
+        "Preferred Date": selectedDate,
+        "Preferred Time": selectedTimeSlot,
+      },
+    });
     setBookingConfirmed(true);
   };
 

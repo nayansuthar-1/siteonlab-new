@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Calculator, CheckCircle2, ClipboardList, RefreshCw, Send, Sparkles } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 export default function FinalCTA() {
   const [activeTab, setActiveTab] = useState<"blueprint" | "assessment">("blueprint");
@@ -22,14 +23,20 @@ export default function FinalCTA() {
   const [currentConv, setCurrentConv] = useState<number>(0.5);
   const [acv, setAcv] = useState<number>(15000);
 
-  const handleFormSubmit = (e: FormEvent) => {
+  const handleFormSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API request
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormSubmitted(true);
-    }, 1200);
+    await submitLead({
+      source: "Web Design Landing Page — Blueprint",
+      name: formData.name,
+      email: formData.email,
+      fields: {
+        Website: formData.url,
+        Challenge: formData.challenge,
+      },
+    });
+    setIsSubmitting(false);
+    setFormSubmitted(true);
   };
 
   const handleResetForm = () => {

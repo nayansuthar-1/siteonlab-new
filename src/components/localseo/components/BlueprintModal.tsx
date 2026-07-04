@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { X, Search, Terminal, ArrowRight, Loader2, BarChart2, Zap, Calendar, Download, Sparkles, CheckCircle2 } from 'lucide-react';
+import { submitLead } from '@/lib/submitLead';
 
 interface BlueprintModalProps {
   isOpen: boolean;
@@ -57,6 +58,17 @@ export default function BlueprintModal({ isOpen, onClose, initialData }: Bluepri
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!companyUrl || !targetCity || !email) return;
+    submitLead({
+      source: "Local SEO Landing Page — Blueprint",
+      name: companyName,
+      email,
+      fields: {
+        Company: companyName,
+        Website: companyUrl,
+        "Target City": targetCity,
+        Locations: locations,
+      },
+    });
     setStep('loading');
   };
 

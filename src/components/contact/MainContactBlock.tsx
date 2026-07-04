@@ -19,6 +19,7 @@ import {
   TrendingUp,
   Search
 } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 interface MainContactBlockProps {
   onDirectBook: () => void;
@@ -88,17 +89,34 @@ export default function MainContactBlock({
   };
 
   // Form Submit Handler
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     setIsSubmitting(true);
-    
-    // Simulate API request
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    const ok = await submitLead({
+      source: "Contact Page — Growth Strategy Session",
+      name: formData.fullName,
+      email: formData.workEmail,
+      fields: {
+        Company: formData.company,
+        "Website URL": formData.websiteUrl,
+        "Company Size": formData.companySize,
+        "Needs Help With": formData.helpType,
+        Message: formData.message,
+      },
+    });
+
+    setIsSubmitting(false);
+    if (ok) {
       setIsSuccess(true);
-    }, 1500);
+    } else {
+      setFormErrors({
+        workEmail:
+          "Something went wrong sending your request. Please try again or email us directly.",
+      });
+    }
   };
 
   // Assessment Handler

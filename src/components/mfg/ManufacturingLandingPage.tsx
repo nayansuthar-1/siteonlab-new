@@ -17,6 +17,7 @@ import FinalCTA from "./components/FinalCTA";
 import GrowthCalculator from "./components/GrowthCalculator";
 
 import { ArrowRight, CheckCircle, X } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 export default function ManufacturingLandingPage() {
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -42,6 +43,14 @@ export default function ManufacturingLandingPage() {
   const handleModalSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (modalEmail) {
+      submitLead({
+        source: `Manufacturing Landing Page — ${modalType === "blueprint" ? "Growth Blueprint" : "Strategy Call"}`,
+        email: modalEmail,
+        fields: {
+          Company: modalCompany,
+          Phone: modalPhone,
+        },
+      });
       setModalSubmitted(true);
     }
   };

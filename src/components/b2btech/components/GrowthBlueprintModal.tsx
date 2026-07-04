@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { X, ChevronRight, ChevronLeft, CheckCircle2, Shield, Calendar, Sparkles, Building, BarChart, AlertTriangle } from 'lucide-react';
+import { submitLead } from '@/lib/submitLead';
 
 interface GrowthBlueprintModalProps {
   isOpen: boolean;
@@ -41,13 +42,25 @@ export default function GrowthBlueprintModal({ isOpen, onClose }: GrowthBlueprin
     }, 250); // slight delay for visual transition satisfaction
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.companyName || !formData.contactName || !formData.contactEmail) {
       setErrorMsg('Please fill out all required contact fields.');
       return;
     }
     setErrorMsg('');
+    submitLead({
+      source: "B2B Tech Landing Page — Growth Blueprint",
+      name: formData.contactName,
+      email: formData.contactEmail,
+      fields: {
+        Company: formData.companyName,
+        Website: formData.currentWebsite,
+        "Sub-Sector": formData.subSector,
+        "Revenue Range": formData.revenueRange,
+        "Biggest Bottleneck": formData.biggestBottleneck,
+      },
+    });
     setIsSubmitted(true);
   };
 

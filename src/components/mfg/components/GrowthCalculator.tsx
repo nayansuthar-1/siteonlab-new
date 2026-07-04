@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { DollarSign, Percent, Users, ArrowRight, CheckCircle2, Info } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 export default function GrowthCalculator() {
   // Calculator States
@@ -35,6 +36,16 @@ export default function GrowthCalculator() {
   const handleLeadSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
+      submitLead({
+        source: "Manufacturing Landing Page — Growth Calculator",
+        email,
+        fields: {
+          Capabilities: capabilities,
+          "Avg. Contract Value": `$${acv.toLocaleString()}`,
+          "Monthly Traffic": String(traffic),
+          "Projected Annual Lift": `$${annualLift.toLocaleString()}`,
+        },
+      });
       setSubmitted(true);
     }
   };

@@ -36,6 +36,7 @@ import HeroVisualizer from "./components/HeroVisualizer";
 import AIReadinessAssessment from "./components/AIReadinessAssessment";
 import SEOPreview from "./components/SEOPreview";
 import { CaseStudy, ServiceComponent, ProcessStep, FAQItem, Differentiator, RelatedService } from "./types";
+import { submitLead } from "@/lib/submitLead";
 
 // Static data based on user constraints
 const TRUST_METRICS = [
@@ -268,6 +269,17 @@ export default function App() {
       alert("Please fill in all required fields.");
       return;
     }
+    submitLead({
+      source: "AI Software Landing Page — Blueprint",
+      name: blueprintForm.name,
+      email: blueprintForm.email,
+      fields: {
+        Company: blueprintForm.company,
+        Role: blueprintForm.role,
+        Bottleneck: blueprintForm.bottleneck,
+        Budget: blueprintForm.budget,
+      },
+    });
     setBlueprintForm({ ...blueprintForm, submitted: true });
   };
 

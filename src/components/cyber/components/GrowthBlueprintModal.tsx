@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from "react";
 import { X, ArrowRight, ShieldCheck, Check, AlertCircle, FileText, Send, Sparkles } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 interface GrowthBlueprintModalProps {
   isOpen: boolean;
@@ -23,13 +24,22 @@ export default function GrowthBlueprintModal({ isOpen, onClose }: GrowthBlueprin
   const handleNext = () => setStep((s) => s + 1);
   const handleBack = () => setStep((s) => s - 1);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setStep(4); // Strategy Brief results screen
-    }, 1500);
+    await submitLead({
+      source: "Cybersecurity Landing Page — Growth Blueprint",
+      name,
+      email,
+      fields: {
+        Company: company,
+        Niche: niche,
+        "Biggest Bottleneck": bottleneck,
+        ARR: arr,
+      },
+    });
+    setIsSubmitting(false);
+    setStep(4); // Strategy Brief results screen
   };
 
   const getCustomizedStrategy = () => {

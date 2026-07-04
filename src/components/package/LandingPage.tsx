@@ -23,6 +23,7 @@ import {
   Mail,
   User
 } from 'lucide-react';
+import { submitLead } from '@/lib/submitLead';
 
 // Define structures for FAQ items
 interface FAQItem {
@@ -184,17 +185,24 @@ export default function LandingPage() {
     return Object.keys(errors).length === 0;
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     setIsSubmitting(true);
-    
-    // Simulate API pipeline submit
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormSuccess(true);
-    }, 1200);
+
+    await submitLead({
+      source: "Growth Package Landing Page",
+      name: formData.name,
+      email: formData.email,
+      fields: {
+        Company: formData.company,
+        Website: formData.website,
+        Message: formData.message,
+      },
+    });
+    setIsSubmitting(false);
+    setFormSuccess(true);
   };
 
   // FAQ items array

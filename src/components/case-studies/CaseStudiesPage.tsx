@@ -21,6 +21,7 @@ import Counter from './components/Counter';
 import CaseStudyCard from './components/CaseStudyCard';
 import { AGGREGATE_METRICS, FEATURED_CASE_STUDY, GRID_CASE_STUDIES, CLIENT_LOGOS } from './data';
 import { IndustryFilter, ServiceFilter } from './types';
+import { submitLead } from '@/lib/submitLead';
 
 export default function App() {
   // 1. Filter States
@@ -89,6 +90,17 @@ export default function App() {
 
   const handleBookingSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    submitLead({
+      source: "Case Studies Page — Strategy Call Booking",
+      name: bookingForm.name,
+      email: bookingForm.email,
+      fields: {
+        Company: bookingForm.company,
+        Website: bookingForm.website,
+        Revenue: bookingForm.revenue,
+        Challenge: bookingForm.challenge,
+      },
+    });
     setBookingSuccess(true);
     setTimeout(() => {
       // Simulate close after success message

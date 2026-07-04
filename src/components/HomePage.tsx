@@ -35,6 +35,7 @@ import {
   FAQS_DATA,
   BLOG_POSTS
 } from "@/lib/data";
+import { submitLead } from "@/lib/submitLead";
 
 const BRAND_LOGOS = [
   { src: "/brands/group-11.png", alt: "SR Industries", heightClass: "h-10" },
@@ -138,6 +139,19 @@ export default function HomePage() {
       score -= 25;
     }
     score = Math.max(28, score); // Min score 28%
+    submitLead({
+      source: "Home Page — AI Visibility Assessment",
+      name: assessmentAnswers.name,
+      email: assessmentAnswers.email,
+      fields: {
+        Website: assessmentAnswers.website,
+        Industry: assessmentAnswers.industry,
+        "Cited in AI": assessmentAnswers.cited,
+        Bottleneck: assessmentAnswers.bottleneck,
+        "Growth Rate": assessmentAnswers.growthRate,
+        "Assessment Score": `${score}%`,
+      },
+    });
     setAssessmentScore(score);
     setAssessmentStep(6); // Report Step
   };
@@ -160,6 +174,17 @@ export default function HomePage() {
   // Handle Booking submission
   const processBooking = (e: React.FormEvent) => {
     e.preventDefault();
+    submitLead({
+      source: "Home Page — Strategy Call Booking",
+      name: bookingForm.name,
+      email: bookingForm.email,
+      fields: {
+        Website: bookingForm.website,
+        "Monthly Spend": bookingForm.spend,
+        "Preferred Day": bookingForm.day,
+        "Preferred Time": bookingForm.time,
+      },
+    });
     setBookingForm(prev => ({ ...prev, completed: true }));
   };
 

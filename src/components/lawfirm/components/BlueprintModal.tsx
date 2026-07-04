@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { X, Send, CheckCircle2, Shield, Settings, FileSpreadsheet, Lock } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 interface BlueprintModalProps {
   isOpen: boolean;
@@ -28,6 +29,17 @@ export default function BlueprintModal({ isOpen, onClose, preselectedPractice }:
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!firmName || !contactName || !contactEmail) return;
+    submitLead({
+      source: "Law Firm Landing Page — Growth Blueprint",
+      name: contactName,
+      email: contactEmail,
+      fields: {
+        "Firm Name": firmName,
+        "Practice Area": practice,
+        "Partner Count": partnerCount,
+        "Biggest Bottleneck": bottleneck,
+      },
+    });
     setFormSubmitted(true);
   };
 

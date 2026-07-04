@@ -7,6 +7,7 @@
 
 import React, { useState } from "react";
 import { X, Sparkles, Send, CheckCircle2, AlertTriangle, ChevronRight, BarChart, Percent, Target, Clock } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 interface InteractiveDialogProps {
   isOpen: boolean;
@@ -38,7 +39,21 @@ export default function InteractiveDialog({ isOpen, onClose, type }: Interactive
 
   const handleBlueprintSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
+    submitLead({
+      source: "Paid Media Landing Page — Blueprint",
+      name: blueprintData.name,
+      email: blueprintData.email,
+      fields: {
+        Company: blueprintData.company,
+        Website: blueprintData.website,
+        "Monthly Spend": blueprintData.spend,
+        "Primary Channel": blueprintData.primaryChannel,
+        ICP: blueprintData.icp,
+        "Primary Goal": blueprintData.primaryGoal,
+      },
+    });
+
     // Perform simulated high-fidelity calculation based on actual inputs
     const spendNum = blueprintData.spend === "under-15k" ? 10000 : blueprintData.spend === "15k-50k" ? 32000 : 75000;
     const estimatedWastedSpend = Math.round(spendNum * 0.34); // Average B2B waste is 34%

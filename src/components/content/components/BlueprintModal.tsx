@@ -11,8 +11,9 @@ import {
   FileText, 
   BarChart, 
   TrendingUp, 
-  Lock 
+  Lock
 } from 'lucide-react';
+import { submitLead } from '@/lib/submitLead';
 
 interface BlueprintModalProps {
   isOpen: boolean;
@@ -32,15 +33,23 @@ export default function BlueprintModal({ isOpen, onClose }: BlueprintModalProps)
   
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate real-time growth scorecard calculation
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setStep(2);
-    }, 1500);
+
+    await submitLead({
+      source: "Content Marketing Landing Page — Growth Blueprint",
+      email: formData.email,
+      fields: {
+        Company: formData.companyName,
+        Website: formData.website,
+        ICP: formData.icp,
+        "Traffic Range": formData.trafficRange,
+        "Biggest Blocker": formData.blocker,
+      },
+    });
+    setIsSubmitting(false);
+    setStep(2);
   };
 
   const getCustomRecommendations = (blocker: string) => {

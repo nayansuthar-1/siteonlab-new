@@ -7,6 +7,7 @@ import {
   Building2, Trophy, HelpCircle, Users, Sparkles, 
   AlertCircle, FileText, Calendar 
 } from 'lucide-react';
+import { submitLead } from '@/lib/submitLead';
 
 interface GTMBlueprintModalProps {
   isOpen: boolean;
@@ -29,13 +30,23 @@ export default function GTMBlueprintModal({ isOpen, onClose }: GTMBlueprintModal
   const nextStep = () => setStep((s) => Math.min(s + 1, 4));
   const prevStep = () => setStep((s) => Math.max(s - 1, 1));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 1200);
+    await submitLead({
+      source: "GTM Landing Page — GTM Blueprint",
+      name: companyName,
+      email,
+      fields: {
+        Company: companyName,
+        Industry: industry,
+        "Deal Size": dealSize,
+        Bottleneck: bottleneck,
+        "Outbound Status": outboundStatus,
+      },
+    });
+    setIsSubmitting(false);
+    setIsSubmitted(true);
   };
 
   // Diagnostic calculations

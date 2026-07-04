@@ -15,6 +15,7 @@ import {
   FileText,
   Loader2
 } from 'lucide-react';
+import { submitLead } from '@/lib/submitLead';
 
 interface ROIBlueprintModalProps {
   isOpen: boolean;
@@ -39,15 +40,25 @@ export default function ROIBlueprintModal({ isOpen, onClose }: ROIBlueprintModal
   const projectedRevenue = Math.round(projectedAccountsWon * acv);
   const estimatedROAS = acv > 0 ? Math.round((projectedRevenue / (acv * 0.45)) * 10) / 10 : 0;
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!companyName.trim() || !workEmail.trim()) return;
 
     setIsGenerating(true);
-    setTimeout(() => {
-      setIsGenerating(false);
-      setGeneratedBlueprint(true);
-    }, 2500);
+    await submitLead({
+      source: "ABM Landing Page — ROI Blueprint",
+      name: companyName,
+      email: workEmail,
+      fields: {
+        Company: companyName,
+        "Avg. Contract Value": `$${acv.toLocaleString()}`,
+        "Target Accounts": String(targetAccounts),
+        "Win Rate": `${winRate}%`,
+        "Projected Revenue": `$${projectedRevenue.toLocaleString()}`,
+      },
+    });
+    setIsGenerating(false);
+    setGeneratedBlueprint(true);
   };
 
   const handleReset = () => {

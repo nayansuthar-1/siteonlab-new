@@ -7,6 +7,7 @@
 
 import { useState, FormEvent } from "react";
 import { ShieldCheck, ArrowRight, Loader2, Calendar, FileText } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 export default function GrowthBlueprintForm() {
   const [formData, setFormData] = useState({
@@ -22,15 +23,24 @@ export default function GrowthBlueprintForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate premium B2B intake orchestration
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-    }, 1200);
+
+    await submitLead({
+      source: "Professional Services Landing Page — Growth Blueprint",
+      name: formData.name,
+      email: formData.email,
+      fields: {
+        Company: formData.company,
+        "Sub-Segment": formData.subSegment,
+        "Pain Point": formData.painPoint,
+        Revenue: formData.revenue,
+        Context: formData.customContext,
+      },
+    });
+    setIsSubmitting(false);
+    setIsSuccess(true);
   };
 
   if (isSuccess) {

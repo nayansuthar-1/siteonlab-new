@@ -7,6 +7,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { X, Check, ArrowRight, Loader2, Award, Zap, Compass, Sparkles } from 'lucide-react';
+import { submitLead } from '@/lib/submitLead';
 
 interface GrowthBlueprintModalProps {
   isOpen: boolean;
@@ -62,6 +63,18 @@ export default function GrowthBlueprintModal({ isOpen, onClose }: GrowthBlueprin
     if (step < 3) {
       setStep(step + 1);
     } else if (step === 3) {
+      submitLead({
+        source: "Demand Generation Landing Page — Growth Blueprint",
+        name: formData.fullName,
+        email: formData.workEmail,
+        fields: {
+          Company: formData.companyName,
+          Website: formData.website,
+          "Company Size": formData.companySize,
+          "Current Ad Spend": formData.currentAdSpend,
+          "Primary Bottleneck": formData.primaryBottleneck,
+        },
+      });
       setStep(4); // trigger generation loading
       setLoadingStep(0);
     }

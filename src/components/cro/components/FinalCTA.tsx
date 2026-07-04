@@ -8,6 +8,7 @@
 import React, { useState } from 'react';
 import { Calendar, Send, CheckCircle, ArrowRight, ShieldCheck, Sparkles, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { submitLead } from '@/lib/submitLead';
 
 export default function FinalCTA() {
   const [formMode, setFormMode] = useState<'idle' | 'blueprint' | 'assessment'>('idle');
@@ -38,6 +39,14 @@ export default function FinalCTA() {
   const handleSubmitBlueprint = (e: React.FormEvent) => {
     e.preventDefault();
     if (!websiteUrl || !email) return;
+    submitLead({
+      source: "CRO Landing Page — Blueprint",
+      email,
+      fields: {
+        Website: websiteUrl,
+        "Company Size": companySize,
+      },
+    });
     setHasSubmitted(true);
   };
 

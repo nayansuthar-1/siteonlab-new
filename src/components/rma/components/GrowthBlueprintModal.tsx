@@ -16,6 +16,7 @@ import {
   Calculator,
   Compass
 } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 interface GrowthBlueprintModalProps {
   isOpen: boolean;
@@ -42,14 +43,22 @@ export default function GrowthBlueprintModal({ isOpen, onClose, initialMode }: G
   const [q3, setQ3] = useState<string>(""); // LLM/AI referral tracking
   const [q4, setQ4] = useState<string>(""); // Attribution Model
 
-  const handleBlueprintSubmit = (e: React.FormEvent) => {
+  const handleBlueprintSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !website) return;
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      setFormSubmitted(true);
-    }, 1800);
+    await submitLead({
+      source: "Revenue Measurement Landing Page — Growth Blueprint",
+      email,
+      fields: {
+        Company: companyName,
+        Website: website,
+        Challenge: challenge,
+        CRM: crmType,
+      },
+    });
+    setSubmitting(false);
+    setFormSubmitted(true);
   };
 
   const calculateScore = () => {

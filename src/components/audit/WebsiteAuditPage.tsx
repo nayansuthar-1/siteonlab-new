@@ -15,6 +15,7 @@ import {
   AlertCircle,
   CheckCircle,
 } from "lucide-react";
+import { submitLead } from "@/lib/submitLead";
 
 type Strategy = "mobile" | "desktop";
 
@@ -156,6 +157,15 @@ export default function WebsiteAuditPage() {
 
   const handleLeadSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    submitLead({
+      source: "Website Audit Tool",
+      name: lead.name,
+      email: lead.email,
+      fields: {
+        Company: lead.company,
+        "Audited URL": url,
+      },
+    });
     setShowForm(false);
     setLeadCaptured(true);
     runAudit(strategy);
