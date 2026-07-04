@@ -212,7 +212,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed font-sans" id="hero-subtitle">
-              HybridMonks  the AI-Powered B2B Revenue Growth agency for SaaS, tech, IT/MSP, cybersecurity, and professional-services firms. We engineer demand, win the shortlist in Google AND AI search, and convert it into revenue we can prove.
+              HybridMonks is the AI-Powered B2B Revenue Growth agency for SaaS, tech, IT/MSP, cybersecurity, and professional-services firms. We engineer demand, win the shortlist in Google AND AI search, and convert it into revenue we can prove.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto" id="hero-ctas">
