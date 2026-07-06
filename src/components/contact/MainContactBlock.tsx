@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { 
   Mail, 
@@ -14,7 +14,6 @@ import {
   Globe,
   User,
   Sparkles,
-  HelpCircle,
   AlertCircle,
   TrendingUp,
   Search
@@ -26,6 +25,12 @@ interface MainContactBlockProps {
   directBookTrigger: boolean;
   onDirectBookClose: () => void;
 }
+
+type AssessmentResult = {
+  score: number;
+  leaks: string[];
+  grade: string;
+};
 
 export default function MainContactBlock({ 
   onDirectBook, 
@@ -56,7 +61,7 @@ export default function MainContactBlock({
     mentions: "rarely",
     industry: ""
   });
-  const [assessmentResult, setAssessmentResult] = useState<any>(null);
+  const [assessmentResult, setAssessmentResult] = useState<AssessmentResult | null>(null);
 
   // Form Validation
   const validateForm = () => {
@@ -64,15 +69,9 @@ export default function MainContactBlock({
     if (!formData.fullName.trim()) errors.fullName = "Full Name is required";
     
     if (!formData.workEmail.trim()) {
-      errors.workEmail = "Work Email is required";
+      errors.workEmail = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.workEmail)) {
       errors.workEmail = "Please enter a valid email address";
-    } else if (
-      /gmail\.com|yahoo\.com|hotmail\.com|outlook\.com|aol\.com|live\.com|mail\.ru/.test(
-        formData.workEmail.toLowerCase()
-      )
-    ) {
-      errors.workEmail = "Please enter a work/corporate email address";
     }
 
     if (!formData.company.trim()) errors.company = "Company name is required";
@@ -229,7 +228,7 @@ export default function MainContactBlock({
                         {/* Email */}
                         <div className="space-y-1.5">
                           <label htmlFor="workEmail" className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
-                            Work Email <span className="text-red-500">*</span>
+                            Email <span className="text-red-500">*</span>
                           </label>
                           <div className="relative">
                             <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-500">
@@ -241,7 +240,7 @@ export default function MainContactBlock({
                               name="workEmail"
                               value={formData.workEmail}
                               onChange={(e) => setFormData({ ...formData, workEmail: e.target.value })}
-                              placeholder="sarah@enterprise.com"
+                              placeholder="sarah@gmail.com"
                               className={`w-full pl-10 pr-4 py-2.5 bg-slate-950 border ${
                                 formErrors.workEmail ? "border-red-500" : "border-slate-800 hover:border-slate-700/80"
                               } rounded-md text-sm text-slate-300 placeholder-slate-600 focus:outline-none focus:border-blue-500/50 transition-colors`}
@@ -449,7 +448,7 @@ export default function MainContactBlock({
                         <Sparkles className="w-3.5 h-3.5" /> Next steps for {formData.company}:
                       </div>
                       <ol className="text-xs text-slate-400 space-y-2 list-decimal list-inside font-sans">
-                        <li>You'll receive an email within 2 hours with draft schedule options.</li>
+                        <li>You&apos;ll receive an email within 2 hours with draft schedule options.</li>
                         <li>Our analysts are scanning your current Google indexing & AI presence.</li>
                         <li>We will present your complete, custom leak map on our live web call.</li>
                       </ol>
@@ -491,7 +490,7 @@ export default function MainContactBlock({
                   Prefer to book directly?
                 </h4>
                 <p className="text-sm text-slate-400 leading-relaxed">
-                  Lock in a spot on our senior partner's calendar immediately. Zero back-and-forth emails.
+                  Lock in a spot on our senior partner&apos;s calendar immediately. Zero back-and-forth emails.
                 </p>
 
                 <button
@@ -521,7 +520,7 @@ export default function MainContactBlock({
 
                   {/* Phone contact */}
                   <a 
-                    href="tel:+18005550199" 
+                    href="tel:+919660877411" 
                     className="flex items-center gap-2.5 text-xs text-slate-400 hover:text-blue-400 transition-colors"
                   >
                     <div className="p-2 bg-slate-950 rounded-lg border border-slate-800">
@@ -529,8 +528,7 @@ export default function MainContactBlock({
                     </div>
                     <div>
                       <p className="text-[10px] text-slate-500 uppercase tracking-widest font-mono">Call Us</p>
-                      {/* EDITABLE PLACEHOLDER: +1 (800) 555-0199 */}
-                      <p className="font-medium font-mono text-white">+1 (800) 555-0199</p>
+                      <p className="font-medium font-mono text-white">+91 96608 77411</p>
                     </div>
                   </a>
                 </div>
@@ -800,7 +798,7 @@ export default function MainContactBlock({
                     className="space-y-4"
                   >
                     <p className="text-xs text-slate-400 leading-relaxed">
-                      Let's gauge how readily your corporate website is crawled and recommended by search models like ChatGPT & Perplexity.
+                      Let&apos;s gauge how readily your corporate website is crawled and recommended by search models like ChatGPT & Perplexity.
                     </p>
                     <div className="space-y-2">
                       <label htmlFor="assessDomain" className="block text-xs font-semibold uppercase tracking-wider text-slate-300">
@@ -1002,7 +1000,7 @@ export default function MainContactBlock({
 
                     <div className="pt-4 border-t border-slate-800 space-y-3">
                       <p className="text-xs text-slate-400 font-sans leading-relaxed">
-                        We have compiled a localized leak map report for <strong className="text-white">{assessmentData.domain}</strong> detailing how to repair these conversational indexes. Let's cover it in depth during your Strategy Call!
+                        We have compiled a localized leak map report for <strong className="text-white">{assessmentData.domain}</strong> detailing how to repair these conversational indexes. Let&apos;s cover it in depth during your Strategy Call!
                       </p>
                       <button
                         type="button"
