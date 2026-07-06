@@ -506,7 +506,7 @@ export default function MainContactBlock({
                 <div className="pt-4 border-t border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/* Email contact */}
                   <a 
-                    href="mailto:growth@hybridmonks.com" 
+                    href="mailto:hitesh@hybridmonks.com" 
                     className="flex items-center gap-2.5 text-xs text-slate-400 hover:text-blue-400 transition-colors"
                   >
                     <div className="p-2 bg-slate-950 rounded-lg border border-slate-800">
@@ -514,8 +514,8 @@ export default function MainContactBlock({
                     </div>
                     <div>
                       <p className="text-[10px] text-slate-500 uppercase tracking-widest font-mono">Mail Us</p>
-                      {/* EDITABLE PLACEHOLDER: growth@hybridmonks.com */}
-                      <p className="font-medium font-mono text-white">growth@hybridmonks.com</p>
+                      {/* EDITABLE PLACEHOLDER: hitesh@hybridmonks.com */}
+                      <p className="font-medium font-mono text-white">hitesh@hybridmonks.com</p>
                     </div>
                   </a>
 

@@ -343,13 +343,13 @@ export default function ExportModal({ isOpen, onClose }: ExportModalProps) {
                         <!-- Direct Contacts (Commented Placeholders) -->
                         <div class="pt-4 mt-4 border-t border-white/5 grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <!-- EDITABLE EMAIL LINK -->
-                            <a href="mailto:growth@hybridmonks.com" class="flex items-center gap-2.5 text-xs text-brand-muted hover:text-brand-cyan transition-colors">
+                            <a href="mailto:hitesh@hybridmonks.com" class="flex items-center gap-2.5 text-xs text-brand-muted hover:text-brand-cyan transition-colors">
                                 <div class="p-2 bg-white/5 rounded-lg border border-white/5">
                                     <i data-lucide="mail" class="w-3.5 h-3.5 text-brand-cyan"></i>
                                 </div>
                                 <div>
                                     <p class="text-[10px] text-brand-muted/50 uppercase tracking-widest">Mail Us</p>
-                                    <p class="font-medium font-mono text-brand-text">growth@hybridmonks.com</p>
+                                    <p class="font-medium font-mono text-brand-text">hitesh@hybridmonks.com</p>
                                 </div>
                             </a>
 

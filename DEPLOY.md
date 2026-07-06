@@ -39,7 +39,7 @@ In the app's **Environment Variables** section, add:
   2-Step Verification → App passwords). Required for the lead form emails.
 - `GEMINI_API_KEY` — optional; only the AI blueprint/service-generator tools
   need it.
-- `LEAD_RECIPIENT` — optional; defaults to growth@hybridmonks.com.
+- `LEAD_RECIPIENT` — optional; defaults to hitesh@hybridmonks.com.
 
 These override anything in `.env.production` and are never stored in the zip.
 Redeploy or restart the app after adding them so the running server picks
@@ -51,7 +51,7 @@ them up.
   pings `https://<domain>/api/revalidate` with the configured secret so blog
   edits appear instantly.
 - Submit the contact form once and confirm both emails arrive (lead
-  notification at growth@hybridmonks.com + auto-reply to the sender).
+  notification at hitesh@hybridmonks.com + auto-reply to the sender).
 
 ## Redeploying
 

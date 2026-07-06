@@ -74,7 +74,7 @@ export default function LegalPage({
   lastUpdated,
   intro,
   sections,
-  contactEmail = "growth@hybridmonks.com",
+  contactEmail = "hitesh@hybridmonks.com",
 }: {
   title: string;
   lastUpdated: string;

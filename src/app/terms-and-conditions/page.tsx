@@ -82,7 +82,7 @@ const sections: LegalSection[] = [
   {
     heading: "Contact Us",
     paragraphs: [
-      "If you have questions about these Terms, contact us at growth@hybridmonks.com or through our contact page.",
+      "If you have questions about these Terms, contact us at hitesh@hybridmonks.com or through our contact page.",
     ],
   },
 ];

@@ -18,6 +18,6 @@ export function getTransport() {
 }
 
 export const LEAD_RECIPIENT =
-  process.env.LEAD_RECIPIENT ?? "growth@hybridmonks.com";
+  process.env.LEAD_RECIPIENT ?? "hitesh@hybridmonks.com";
 
 export const FROM_NAME = "HybridMonks";
