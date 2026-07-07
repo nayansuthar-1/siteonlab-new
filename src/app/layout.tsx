@@ -80,6 +80,17 @@ export const metadata: Metadata = {
   title: "HybridMonks | AI-Powered B2B Revenue Growth & AI Visibility Agency",
   description:
     "AI-Powered B2B Revenue Growth & AI Visibility Agency. Get found in Google and recommended by ChatGPT, Perplexity, and AI Overviews.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -93,23 +104,23 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} ${manrope.variable} ${outfit.variable} ${plusJakarta.variable} ${playfairDisplay.variable} ${lora.variable} ${firaCode.variable}`}
     >
       <body>
-        <SiteNav />
-        {children}
-        <ChromeGate>
-          <SiteFooter />
-        </ChromeGate>
-
         {/* Google tag (gtag.js) */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
-        <Script id="ga-init" strategy="afterInteractive">
+        <Script id="ga-init" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${GA_ID}');`}
         </Script>
+
+        <SiteNav />
+        {children}
+        <ChromeGate>
+          <SiteFooter />
+        </ChromeGate>
       </body>
     </html>
   );
