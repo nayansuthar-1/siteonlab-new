@@ -157,12 +157,12 @@ export default function SiteNav() {
         {/* Logo */}
         <Link href="/" className="flex shrink-0 items-center" aria-label="HybridMonks home">
           <Image
-            src="/hybridmonks.png"
+            src="/hybridmonks-logo.png"
             alt="HybridMonks"
-            width={210}
-            height={70}
+            width={207}
+            height={72}
             priority
-            className="h-14 w-auto sm:h-16"
+            className="h-10.25 w-auto sm:h-12.25"
           />
         </Link>
 

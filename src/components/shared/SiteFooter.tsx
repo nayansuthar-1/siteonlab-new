@@ -86,7 +86,7 @@ export default function SiteFooter() {
         {/* CTA + socials */}
         <div className="mt-14 flex flex-col gap-8 border-t border-slate-800/80 pt-10 md:flex-row md:items-center md:justify-between">
           <Link href="/" className="flex items-center" aria-label="HybridMonks home">
-            <Image src="/hybridmonks.png" alt="HybridMonks" width={240} height={80} className="h-16 w-auto" />
+            <Image src="/hybridmonks-logo.png" alt="HybridMonks" width={230} height={80} className="h-12.25 w-auto" />
           </Link>
 
           <div className="flex items-center gap-4">

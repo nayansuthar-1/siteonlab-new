@@ -42,7 +42,7 @@ export const CYBERSECURITY_COPY = {
         "@type": "GovernmentService",
         "name": "HybridMonks Growth Agency",
         "url": "https://hybridmonks.com",
-        "logo": "https://hybridmonks.com/logo.png",
+        "logo": "https://hybridmonks.com/hybridmonks-mark.png",
         "sameAs": [
           "https://www.linkedin.com/company/hybridmonks",
           "https://twitter.com/hybridmonks"
