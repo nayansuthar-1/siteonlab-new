@@ -85,9 +85,35 @@ export default function SiteFooter() {
 
         {/* CTA + socials */}
         <div className="mt-14 flex flex-col gap-8 border-t border-slate-800/80 pt-10 md:flex-row md:items-center md:justify-between">
-          <Link href="/" className="flex items-center" aria-label="HybridMonks home">
-            <Image src="/hybridmonks-logo.png" alt="HybridMonks" width={230} height={80} className="h-12.25 w-auto" />
-          </Link>
+          <div className="flex flex-wrap items-center gap-6">
+            <Link href="/" className="flex items-center" aria-label="HybridMonks home">
+              <Image src="/hybridmonks-logo.png" alt="HybridMonks" width={230} height={80} className="h-12.25 w-auto" />
+            </Link>
+
+            {/* Hosting partner badges */}
+            <a
+              href="https://www.hostinger.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hostinger Partner"
+              className="flex items-center gap-3"
+            >
+              <Image
+                src="/partners/hostinger-partner-banner.png"
+                alt="Hostinger Partner"
+                width={330}
+                height={330}
+                className="h-16 w-16 rounded-xl"
+              />
+              <Image
+                src="/partners/hostinger-partner-badge.png"
+                alt="Hostinger Partner badge"
+                width={330}
+                height={330}
+                className="h-16 w-16"
+              />
+            </a>
+          </div>
 
           <div className="flex items-center gap-4">
             <span className="text-sm text-slate-400">Follow us on:</span>
